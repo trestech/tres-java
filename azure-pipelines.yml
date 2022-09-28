@@ -13,7 +13,7 @@ steps:
   # https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/pipeline-artifacts
   - task: PublishPipelineArtifact@1
     inputs:
-      targetPath: target/**
+      targetPath: target/
       archiveFilePatterns: '*-SNAPSHOT.jar'
       artifactName: snapshot
       artifactType: 'pipeline'
