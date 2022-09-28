@@ -1,0 +1,78 @@
+diagnostic: query_pending_activities_multiple_app_users
+url: https://api-dev.trestechnologies.com/ActivitySearch
+method: POST
+requestBody: "{\"startingRow\":0,\"appUserRecNo\":{\"value\":[1825,1],\"compareCondition\"\
+  :1},\"completed\":false}"
+body: "[{\"recNo\":1253701,\"type\":1,\"appUser_recNo\":1825,\"appUserId\":\"SHARON\"\
+  ,\"subject\":\"Final Payment Due\",\"priority\":1,\"targetDate\":\"2002-01-10T00:00:00\"\
+  ,\"clientProfileRecNo\":1723284,\"clientProfileName\":\"Burdan/Greg\",\"tripRecNo\"\
+  :6720121,\"tripName\":\"England\"},{\"recNo\":1253706,\"type\":1,\"appUser_recNo\"\
+  :1825,\"appUserId\":\"SHARON\",\"subject\":\"Marketing Promo Decision\",\"priority\"\
+  :2,\"targetDate\":\"2002-01-10T00:00:00\",\"supplierProfileRecNo\":1723091,\"supplierProfileName\"\
+  :\"Funjet Vacations\",\"remarks\":\"Call Funjet and give approval\"},{\"recNo\"\
+  :1253708,\"type\":1,\"appUser_recNo\":1825,\"appUserId\":\"SHARON\",\"subject\"\
+  :\"Trip Inquiry Follow-Up\",\"priority\":1,\"targetDate\":\"2002-01-10T00:00:00\"\
+  ,\"clientProfileRecNo\":1723274,\"clientProfileName\":\"Steigler/Charles\",\"tripRecNo\"\
+  :6720137,\"tripName\":\"2 Week Great Britain\",\"remarks\":\"Call to followup.\"\
+  },{\"recNo\":1253724,\"type\":1,\"appUser_recNo\":1825,\"appUserId\":\"SHARON\"\
+  ,\"subject\":\"Bi-Annual Touch Base\",\"priority\":2,\"targetDate\":\"2002-01-10T00:00:00\"\
+  ,\"clientProfileRecNo\":1723573,\"clientProfileName\":\"Ford/Harrison\"},{\"recNo\"\
+  :1253730,\"type\":1,\"appUser_recNo\":1825,\"appUserId\":\"SHARON\",\"subject\"\
+  :\"Check for Documents\",\"priority\":1,\"targetDate\":\"2002-04-01T00:00:00\",\"\
+  clientProfileRecNo\":1723386,\"clientProfileName\":\"Kazamek/Tom\",\"tripRecNo\"\
+  :6720100,\"tripName\":\"Cabo San Lucas\"},{\"recNo\":1253798,\"type\":1,\"appUser_recNo\"\
+  :1825,\"appUserId\":\"SHARON\",\"subject\":\"Welcome Home\",\"priority\":2,\"targetDate\"\
+  :\"2002-01-10T00:00:00\",\"clientProfileRecNo\":1723636,\"clientProfileName\":\"\
+  Amaral/Steve\",\"tripRecNo\":6720070,\"tripName\":\"Disney Cruise & Florida Vacati\"\
+  },{\"recNo\":1253826,\"type\":1,\"appUser_recNo\":1825,\"appUserId\":\"SHARON\"\
+  ,\"subject\":\"Final Payment Due\",\"priority\":1,\"targetDate\":\"2002-01-31T00:00:00\"\
+  ,\"clientProfileRecNo\":1723282,\"clientProfileName\":\"Young/Patrick\",\"tripRecNo\"\
+  :6720123,\"tripName\":\"Hawai Vacation\"},{\"recNo\":1253831,\"type\":1,\"appUser_recNo\"\
+  :1825,\"appUserId\":\"SHARON\",\"subject\":\"Trip Inquiry Follow-Up\",\"priority\"\
+  :1,\"targetDate\":\"2002-01-10T00:00:00\",\"clientProfileRecNo\":1723453,\"clientProfileName\"\
+  :\"Chase/Herb\",\"tripRecNo\":6720101,\"tripName\":\"Caribbean Cruise\"},{\"recNo\"\
+  :1253922,\"type\":3,\"appUser_recNo\":1825,\"appUserId\":\"SHARON\",\"subject\"\
+  :\"New Trip Inquiry\",\"priority\":1,\"targetDateTime\":\"2001-12-01T03:51:00-08:00\"\
+  ,\"clientProfileRecNo\":1723297,\"clientProfileName\":\"Rose/Stet\",\"remarks\"\
+  :\"Discussed Panama Canal Cruise\"},{\"recNo\":1253923,\"type\":3,\"appUser_recNo\"\
+  :1825,\"appUserId\":\"SHARON\",\"subject\":\"New Trip Inquiry\",\"priority\":1,\"\
+  targetDateTime\":\"2001-12-31T04:16:00-08:00\",\"clientProfileRecNo\":1723274,\"\
+  clientProfileName\":\"Steigler/Charles\",\"tripRecNo\":6720137,\"tripName\":\"2\
+  \ Week Great Britain\",\"remarks\":\"Sent home with Contintental Vacations brochure.\
+  \  2 weeks in Great Britain, planning on July of next year.\"},{\"recNo\":1253927,\"\
+  type\":3,\"appUser_recNo\":1825,\"appUserId\":\"SHARON\",\"subject\":\"New Trip\
+  \ Inquiry\",\"priority\":1,\"targetDateTime\":\"2002-01-02T04:40:00-08:00\",\"clientProfileRecNo\"\
+  :1723311,\"clientProfileName\":\"Costa/Dan\",\"tripRecNo\":6720129,\"tripName\"\
+  :\"Jamaica Honeymoom\",\"remarks\":\"Dan came in and wants to start planning honeymoon.\
+  \  Wedding date is 050102.  Thinking  Couples in Ocho Rios.  Sent home with Funjet\
+  \ Vacations brochure.\"},{\"recNo\":1253932,\"type\":3,\"appUser_recNo\":1825,\"\
+  appUserId\":\"SHARON\",\"subject\":\"New Trip Inquiry\",\"priority\":1,\"targetDateTime\"\
+  :\"2001-08-01T08:01:00-07:00\",\"clientProfileRecNo\":1723386,\"clientProfileName\"\
+  :\"Kazamek/Tom\",\"tripRecNo\":6720100,\"tripName\":\"Cabo San Lucas\"},{\"recNo\"\
+  :1253937,\"type\":3,\"appUser_recNo\":1825,\"appUserId\":\"SHARON\",\"subject\"\
+  :\"New Trip Inquiry\",\"priority\":1,\"targetDateTime\":\"2001-12-06T10:03:00-08:00\"\
+  ,\"clientProfileRecNo\":1723623,\"clientProfileName\":\"Jonder/Kent\",\"remarks\"\
+  :\"Intersted in Panama Canal\"},{\"recNo\":1253938,\"type\":3,\"appUser_recNo\"\
+  :1825,\"appUserId\":\"SHARON\",\"subject\":\"New Trip Inquiry\",\"priority\":1,\"\
+  targetDateTime\":\"2001-12-22T04:11:00-08:00\",\"clientProfileRecNo\":1723453,\"\
+  clientProfileName\":\"Chase/Herb\",\"tripRecNo\":6720101,\"tripName\":\"Caribbean\
+  \ Cruise\",\"remarks\":\"Called about Royal Caribean Mailing.  Interested in June\
+  \ sailing\"},{\"recNo\":1253942,\"type\":3,\"appUser_recNo\":1825,\"appUserId\"\
+  :\"SHARON\",\"subject\":\"New Trip Inquiry\",\"priority\":1,\"targetDateTime\":\"\
+  2001-12-15T07:02:00-08:00\",\"clientProfileRecNo\":1723359,\"clientProfileName\"\
+  :\"Evans/Gary\",\"tripRecNo\":6720138,\"tripName\":\"Vegas Trip\"},{\"recNo\":1253948,\"\
+  type\":3,\"appUser_recNo\":1825,\"appUserId\":\"SHARON\",\"subject\":\"New Trip\
+  \ Inquiry\",\"priority\":1,\"targetDateTime\":\"2001-12-26T22:48:00-08:00\",\"clientProfileRecNo\"\
+  :1723511,\"clientProfileName\":\"Foran/Dave\",\"remarks\":\"Asking about Safari\"\
+  },{\"recNo\":1253949,\"type\":3,\"appUser_recNo\":1825,\"appUserId\":\"SHARON\"\
+  ,\"subject\":\"New Trip Inquiry\",\"priority\":1,\"targetDateTime\":\"2001-10-01T10:38:00-07:00\"\
+  ,\"clientProfileRecNo\":1723359,\"clientProfileName\":\"Evans/Gary\",\"tripRecNo\"\
+  :6720074,\"tripName\":\"Disney World\",\"remarks\":\"Diane called and inquired about\
+  \ a Disney trip they would like to take in the spring.  Sent her a Delta Vacations\
+  \ brochure.\"}]"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIyLTA5LTI4VDE2OjQ1OjE2LjMyMDk0NjUrMDA6MDAiLA0KICAiZXhwaXJlSW50ZXJ2YWwiOiAzMCwNCiAgImFnZW5jeVJlY05vIjogMjMsDQogICJhcHBVc2VyUmVjTm8iOiBudWxsLA0KICAiYWRtaW5Vc2VyUmVjTm8iOiAyMiwNCiAgInVzZXJOYW1lIjogImFudGhvbnkubWFydGluQHRyZXN0ZWNobm9sb2dpZXMuY29tIiwNCiAgImFsaWFzIjogIkFWREIiLA0KICAidG9rZW5SZWNObyI6IDE3NDkwMywNCiAgImFwcE5hbWUiOiAiV2ViIEFQSSIsDQogICJjbGllbnRJUEFkZHJlc3MiOiAiMTAuMS4yLjYiLA0KICAiYWZmaWxpYXRpb25SZWNObyI6IG51bGwNCn0.x6TkSsV7G60eUZY8acXG1pky19vAvco78py-iWNzfis
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

@@ -1,0 +1,59 @@
+diagnostic: query_tags
+url: https://api-dev.trestechnologies.com/TagSearch
+method: POST
+requestBody: "{\"startingRow\":0}"
+body: "[{\"recNo\":3179,\"name\":\"When?\",\"referenced\":true,\"activeStatus\":true,\"\
+  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3180,\"name\":\"Where?\"\
+  ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :false},{\"recNo\":3181,\"name\":\"With Whom?\",\"referenced\":true,\"activeStatus\"\
+  :true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3182,\"name\":\"\
+  What Type?\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"\
+  valueRequired\":false},{\"recNo\":3183,\"name\":\"What Interests?\",\"referenced\"\
+  :true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"\
+  recNo\":3184,\"name\":\"What Budget?\",\"referenced\":true,\"activeStatus\":true,\"\
+  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3185,\"name\":\"Client\
+  \ Status\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :false},{\"recNo\":3186,\"name\":\"Trams Staff\",\"referenced\":true,\"activeStatus\"\
+  :true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3187,\"name\":\"\
+  CBTravelerNo\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"\
+  valueRequired\":false},{\"recNo\":3188,\"name\":\"CBProfileNo\",\"referenced\":true,\"\
+  activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3189,\"\
+  name\":\"TBOUnappliedBalance\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
+  :true,\"valueRequired\":false},{\"recNo\":3190,\"name\":\"CBResCard\",\"referenced\"\
+  :true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"\
+  recNo\":3191,\"name\":\"CBResCycle\",\"referenced\":true,\"activeStatus\":true,\"\
+  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3192,\"name\":\"TBOBookingNo\"\
+  ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :false},{\"recNo\":3193,\"name\":\"TBOInvoiceNo\",\"referenced\":true,\"activeStatus\"\
+  :true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3194,\"name\":\"\
+  TBOPartPayInvoiceNo\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
+  :true,\"valueRequired\":false},{\"recNo\":3195,\"name\":\"TBOPaymentNo\",\"referenced\"\
+  :true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"\
+  recNo\":9657,\"name\":\"MOCKINGBIRD\",\"referenced\":true,\"activeStatus\":true,\"\
+  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":9672,\"name\":\"UD01\"\
+  ,\"referenced\":false,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :false},{\"recNo\":9673,\"name\":\"01\",\"referenced\":true,\"activeStatus\":true,\"\
+  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":9674,\"name\":\"02\",\"\
+  referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :false},{\"recNo\":9675,\"name\":\"03\",\"referenced\":true,\"activeStatus\":true,\"\
+  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":9676,\"name\":\"04\",\"\
+  referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :false},{\"recNo\":9677,\"name\":\"05\",\"referenced\":true,\"activeStatus\":true,\"\
+  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":9678,\"name\":\"06\",\"\
+  referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :false},{\"recNo\":9679,\"name\":\"13\",\"referenced\":true,\"activeStatus\":true,\"\
+  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":9680,\"name\":\"20\",\"\
+  referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :false},{\"recNo\":9682,\"name\":\"07\",\"referenced\":true,\"activeStatus\":true,\"\
+  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":12877,\"name\":\"TEST\"\
+  ,\"referenced\":false,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :true,\"valueList\":\"TEST\",\"description\":\"TEST\"},{\"recNo\":12909,\"name\"\
+  :\"Java-TEST-Client\",\"referenced\":false,\"activeStatus\":true,\"valueFreeFlow\"\
+  :true,\"valueRequired\":true,\"valueList\":\"Java-TEST-Client\",\"description\"\
+  :\"Java TEST Client\"}]"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIyLTA5LTI4VDE2OjQ1OjA5LjQ2NzQxMjUrMDA6MDAiLA0KICAiZXhwaXJlSW50ZXJ2YWwiOiAzMCwNCiAgImFnZW5jeVJlY05vIjogMjMsDQogICJhcHBVc2VyUmVjTm8iOiBudWxsLA0KICAiYWRtaW5Vc2VyUmVjTm8iOiAyMiwNCiAgInVzZXJOYW1lIjogImFudGhvbnkubWFydGluQHRyZXN0ZWNobm9sb2dpZXMuY29tIiwNCiAgImFsaWFzIjogIkFWREIiLA0KICAidG9rZW5SZWNObyI6IDE3NDg5OSwNCiAgImFwcE5hbWUiOiAiV2ViIEFQSSIsDQogICJjbGllbnRJUEFkZHJlc3MiOiAiMTAuMS4yLjQiLA0KICAiYWZmaWxpYXRpb25SZWNObyI6IG51bGwNCn0.aWblXMmv4Mlm6SiVt2DNEayGRYeDdaFQdbUTgUH33QM
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

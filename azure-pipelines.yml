@@ -1,0 +1,18 @@
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - script: |
+      echo Maven
+      mvn package
+    displayName: 'Maven'
+  
+  # https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/pipeline-artifacts
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: target/*-SNAPSHOT.jar
+      artifactName: snapshot
+      artifactType: 'pipeline'
