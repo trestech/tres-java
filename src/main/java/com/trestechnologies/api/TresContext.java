@@ -240,6 +240,7 @@ public class TresContext extends APIContextAdapter {
     return post(method, object, null);
   }
   
+  @Override
   public void batch ( Group<APIContext> group ) throws IOException {
     group.by(this);
     close();
