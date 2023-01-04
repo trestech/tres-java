@@ -1,5 +1,6 @@
 package com.trestechnologies.api;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.trestechnologies.api.interfaces.APIContext;
 import junit.framework.TestCase;
 import kotlin.Pair;
@@ -23,6 +24,8 @@ import org.jetbrains.annotations.NotNull;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Arrays;
@@ -44,7 +47,17 @@ public abstract class BaseTestCase extends TestCase {
 
   protected static final String DOMAIN = "domain";
 
-  protected static final String TOKEN = "ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIyLTA5LTA4VDIwOjA5OjQwLjMyNjIxMjUrMDA6MDAiLA0KICAiZXhwaXJlSW50ZXJ2YWwiOiAzMCwNCiAgImFnZW5jeVJlY05vIjogMjMsDQogICJhcHBVc2VyUmVjTm8iOiAxODI1LA0KICAiYWRtaW5Vc2VyUmVjTm8iOiBudWxsLA0KICAidXNlck5hbWUiOiAiU0hBUk9OIiwNCiAgImFsaWFzIjogIkFWREIiLA0KICAidG9rZW5SZWNObyI6IDE2MTEyMywNCiAgImFwcE5hbWUiOiAiV2ViIEFQSSIsDQogICJjbGllbnRJUEFkZHJlc3MiOiAiMTAuMS4yLjQiLA0KICAiYWZmaWxpYXRpb25SZWNObyI6IG51bGwNCn0.5-zkxXuEyGv8BHmubHNuksm5JntrenyW4tQpq0KE1VA";
+  // To grab a new token, use this command at the root of the project:
+  // 
+  // ./bin/tres.sh RefreshIdentityToken
+  // 
+  // And clear the fixtures:
+  // 
+  // rm src/test/fixtures/*.yml
+  //
+  // Otherwise, set USE_TOKEN = false (and set USERNAME, PASSWORD, and DOMAIN)
+  protected static final String TOKEN = "ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIyLTA5LTA4VDIwOjA5OjQwLjMyNjIxMjUrMDA6MDAiLA0KICAiZXhwaXJlSW50ZXJ2YWwiOiAzMCwNCiAgImFnZW5jeVJlY05vIjogMjMsDQogICJhcHBVc2VyUmVjTm8iOiAxODI1LA0KICAiYWRtaW5Vc2VyUmVjTm8iOiBudWxsLA0KICAidXNlck5hbWUiOiAiU0hBUk9OIiwNCiAgImFsaWFzIjogIkFWREIiLA0KICAidG9rZW5SZWNObyI6IDE2MTEyMywNCiAgImFwcE5hbWUiOiAiV2ViIEFQSSIsDQogICJjbGllbnRJUEFkZHJlc3MiOiAiMTAuMS4yLjQiLA0KICAiYWZmaWxpYXRpb25SZWNObyI6IG51bGwNCn0.5-zkxXuEyGv8BHmubHNuksm5JntrenyW4tQpq0KE1VA";  
+  protected static final boolean USE_TOKEN = true;
   
   private static final String[] REQUEST_HEADER_WHITELIST = new String[] {
     "Content-Type",
@@ -67,9 +80,12 @@ public abstract class BaseTestCase extends TestCase {
         server.start();
         server.setDispatcher(DISPATCHER);
         mockUrl = server.url("");
-        //mockUrl = HttpUrl.get(LIVE_URL);
-        //context = new TresContext(mockUrl.url(), USERNAME, PASSWORD, DOMAIN, by);
-        context = new TresContext(mockUrl.url(), TOKEN, by);
+        
+        if ( USE_TOKEN ) {
+          context = new TresContext(mockUrl.url(), TOKEN, by);
+        } else {
+          context = new TresContext(mockUrl.url(), USERNAME, PASSWORD, DOMAIN, by);
+        }
         
         context.batch(this);
         
@@ -194,4 +210,16 @@ public abstract class BaseTestCase extends TestCase {
       return mockResponse;
     }
   };
+  
+  protected boolean isNodeEmpty ( JsonNode node ) {
+    Class<? extends JsonNode> c = node.getClass();
+    
+    try {
+      Method m = c.getMethod("isEmpty");
+      
+      return (boolean) m.invoke(node);
+    } catch ( InvocationTargetException | NoSuchMethodException | IllegalAccessException e ) {
+      return node.isArray() && node.size() == 0;
+    }
+  }
 }

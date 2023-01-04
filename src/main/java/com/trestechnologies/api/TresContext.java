@@ -1,6 +1,7 @@
 package com.trestechnologies.api;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.trestechnologies.api.interfaces.APIContext;
@@ -26,6 +27,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -54,6 +57,8 @@ import static org.apache.http.HttpStatus.*;
  */
 public class TresContext extends APIContextAdapter {
   public static final String DEFAULT_URL = "https://api.trestechnologies.com";
+  
+  public static final String DEVELOP_URL = "https://api-dev.trestechnologies.com";
   
   private static final Logger LOG = Logger.getLogger(TresContext.class.toString());
   
@@ -144,7 +149,7 @@ public class TresContext extends APIContextAdapter {
   @Override public String getToken ( ) { return token; }
 
   @Override public String getApiVersion ( ) { return apiVersion; }
-  
+
   @Override
   public JsonNode login ( String username, String password, String domain ) throws IOException {
     JsonNode result = getWithBasicAuth(LOGIN + URL_SEP + domain, username, password);
@@ -153,7 +158,7 @@ public class TresContext extends APIContextAdapter {
     
     return result;
   }
-  
+
   @Override
   public JsonNode logout ( ) throws IOException {
     JsonNode result = get(LOGOUT);
@@ -162,7 +167,7 @@ public class TresContext extends APIContextAdapter {
     
     return result;
   }
-  
+
   @Override
   public JsonNode refreshIdentityToken ( ) throws IOException {
     JsonNode result = get(REFRESH_IDENTITY_TOKEN);
@@ -171,7 +176,7 @@ public class TresContext extends APIContextAdapter {
     
     return result;
   }
-  
+
   @Override
   public JsonNode version ( ) throws IOException {
     JsonNode result = get(VERSION);
@@ -224,7 +229,7 @@ public class TresContext extends APIContextAdapter {
       }
       
       if ( LOG.isLoggable(FINE) ) {
-        json = mapper.readTree(json).toPrettyString();
+        json = toJson(mapper.readTree(json));
         
         LOG.fine("post -> " + json);
       }
@@ -300,12 +305,10 @@ public class TresContext extends APIContextAdapter {
         String message = "No result code for request: " + request;
         
         if ( LOG.isLoggable(FINE) ) {
-          message += "\n" + node.toPrettyString();
-        } else {
-          message += node;
+          message += "\n" + toJson(node);
+
+          LOG.warning(message);
         }
-        
-        LOG.warning(message);
       }
       
       switch ( response.getStatusLine().getStatusCode() ) {
@@ -325,10 +328,24 @@ public class TresContext extends APIContextAdapter {
           
           throw new TresException(response.getStatusLine() + ": " + request + " " + body);
       }
+    } catch ( JsonMappingException e ) {
+      throw new TresException("Unable to map response", e);
     } catch ( IOException | TresException e ) {
       throw e;
     } catch ( Exception e ) {
       throw new TresException("Unable to execute request", e);
+    }
+  }
+  
+  private String toJson ( JsonNode node ) {
+    Class<? extends JsonNode> c = node.getClass();
+
+    try {
+      Method m = c.getMethod("toPrettyString");
+
+      return m.invoke(node).toString();
+    } catch ( NoSuchMethodException | IllegalAccessException | InvocationTargetException e ) {
+      return node.toString();
     }
   }
 }
