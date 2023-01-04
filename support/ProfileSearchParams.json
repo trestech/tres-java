@@ -1,0 +1,16 @@
+{
+  "profileType": {
+    "value": 1
+  },
+  "activestatus": true,
+  "profileName": {
+    "value": [
+      "Able"
+    ],
+    "compareCondition": 5
+  },
+  "includeCols": [
+    "recNo",
+    "name"
+  ]
+}
