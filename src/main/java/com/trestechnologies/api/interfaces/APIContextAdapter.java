@@ -57,7 +57,7 @@ public class APIContextAdapter implements APIContext {
 
   @Override
   public JsonNode post ( String method, RequestHeaders headers ) throws IOException {
-    return post(method, null);
+    return post(method, null, null);
   }
 
   @Override

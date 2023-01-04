@@ -45,12 +45,43 @@ public interface APIContext extends Closeable {
 
   String getApiVersion ( );
 
+  /**
+   * Logs into the Tres API.
+   *
+   * @see <a href="https://devportal.trestechnologies.com/api/Login.html">Login</a>
+   * @param username Username of user or automatic process.
+   * @param password Password of user or automatic process.
+   * @param domain PCC or identifier of user ot automatic process.
+   * @return <a href="https://devportal.trestechnologies.com/api/Login.html#example-success-response">result object</a>
+   * @throws IOException
+   */
   JsonNode login ( String username, String password, String domain ) throws IOException;
 
+  /**
+   * Logs out of the Tres API.
+   *
+   * @see <a href="https://devportal.trestechnologies.com/api/Logout.html">Logout</a>
+   * @return <a href="https://devportal.trestechnologies.com/api/Logout.html#example-success-response">result object</a>
+   * @throws IOException
+   */
   JsonNode logout () throws IOException;
 
+  /**
+   * Refreshes the identity token of the Tres API.
+   *
+   * @see <a href="https://devportal.trestechnologies.com/search/?q=refreshIdentityToken">refreshIdentityToken</a>
+   * @return result object
+   * @throws IOException
+   */
   JsonNode refreshIdentityToken () throws IOException;
 
+  /**
+   * Version of the Tres API.
+   *
+   * @see <a href="https://devportal.trestechnologies.com/api/Version.html">Version</a>
+   * @return <a href="https://devportal.trestechnologies.com/api/Version.html#example-response">result object</a>
+   * @throws IOException
+   */
   JsonNode version () throws IOException;
 
   JsonNode getWithBasicAuth ( String method, String username, String password, RequestHeaders headers ) throws IOException;

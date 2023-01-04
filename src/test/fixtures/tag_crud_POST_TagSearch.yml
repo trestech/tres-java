@@ -3,55 +3,49 @@ url: https://api-dev.trestechnologies.com/TagSearch
 method: POST
 requestBody: "{\"name\":{\"name\":\"Java-TEST-Client\",\"compareCondition\":1},\"\
   startingRow\":0,\"rowCount\":1}"
-body: "[{\"recNo\":3179,\"name\":\"When?\",\"referenced\":true,\"activeStatus\":true,\"\
-  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3180,\"name\":\"Where?\"\
+body: "[{\"recNo\":21917,\"name\":\"ProfileMF_Company DK\",\"referenced\":true,\"\
+  activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\"\
+  :5},{\"recNo\":21918,\"name\":\"ProfileMF_Departure City\",\"referenced\":true,\"\
+  activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\"\
+  :5},{\"recNo\":21919,\"name\":\"ProfileMF_Can't delete me!\",\"referenced\":true,\"\
+  activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\"\
+  :5},{\"recNo\":21920,\"name\":\"ProfileMF_Hobbies\",\"referenced\":true,\"activeStatus\"\
+  :true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\":5},{\"recNo\"\
+  :21921,\"name\":\"ProfileMF_#5\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
+  :true,\"valueRequired\":false,\"areaFlags\":5},{\"recNo\":21922,\"name\":\"ProfileMF_Testing\"\
   ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
-  :false},{\"recNo\":3181,\"name\":\"With Whom?\",\"referenced\":true,\"activeStatus\"\
-  :true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3182,\"name\":\"\
-  What Type?\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"\
-  valueRequired\":false},{\"recNo\":3183,\"name\":\"What Interests?\",\"referenced\"\
-  :true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"\
-  recNo\":3184,\"name\":\"What Budget?\",\"referenced\":true,\"activeStatus\":true,\"\
-  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3185,\"name\":\"Client\
-  \ Status\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
-  :false},{\"recNo\":3186,\"name\":\"Trams Staff\",\"referenced\":true,\"activeStatus\"\
-  :true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3187,\"name\":\"\
-  CBTravelerNo\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"\
-  valueRequired\":false},{\"recNo\":3188,\"name\":\"CBProfileNo\",\"referenced\":true,\"\
-  activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3189,\"\
-  name\":\"TBOUnappliedBalance\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
-  :true,\"valueRequired\":false},{\"recNo\":3190,\"name\":\"CBResCard\",\"referenced\"\
-  :true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"\
-  recNo\":3191,\"name\":\"CBResCycle\",\"referenced\":true,\"activeStatus\":true,\"\
-  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3192,\"name\":\"TBOBookingNo\"\
+  :false,\"areaFlags\":5},{\"recNo\":21923,\"name\":\"ResCardMF_Test Today\",\"referenced\"\
+  :true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\"\
+  :16},{\"recNo\":21924,\"name\":\"CBTravelerNo\",\"referenced\":true,\"activeStatus\"\
+  :true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\":2},{\"recNo\"\
+  :21925,\"name\":\"CBProfileNo\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
+  :true,\"valueRequired\":false,\"areaFlags\":5},{\"recNo\":21926,\"name\":\"TBOUnappliedBalance\"\
   ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
-  :false},{\"recNo\":3193,\"name\":\"TBOInvoiceNo\",\"referenced\":true,\"activeStatus\"\
-  :true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":3194,\"name\":\"\
-  TBOPartPayInvoiceNo\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
-  :true,\"valueRequired\":false},{\"recNo\":3195,\"name\":\"TBOPaymentNo\",\"referenced\"\
-  :true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false},{\"\
-  recNo\":9657,\"name\":\"MOCKINGBIRD\",\"referenced\":true,\"activeStatus\":true,\"\
-  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":9672,\"name\":\"UD01\"\
-  ,\"referenced\":false,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
-  :false},{\"recNo\":9673,\"name\":\"01\",\"referenced\":true,\"activeStatus\":true,\"\
-  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":9674,\"name\":\"02\",\"\
-  referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
-  :false},{\"recNo\":9675,\"name\":\"03\",\"referenced\":true,\"activeStatus\":true,\"\
-  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":9676,\"name\":\"04\",\"\
-  referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
-  :false},{\"recNo\":9677,\"name\":\"05\",\"referenced\":true,\"activeStatus\":true,\"\
-  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":9678,\"name\":\"06\",\"\
-  referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
-  :false},{\"recNo\":9679,\"name\":\"13\",\"referenced\":true,\"activeStatus\":true,\"\
-  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":9680,\"name\":\"20\",\"\
-  referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
-  :false},{\"recNo\":9682,\"name\":\"07\",\"referenced\":true,\"activeStatus\":true,\"\
-  valueFreeFlow\":true,\"valueRequired\":false},{\"recNo\":12877,\"name\":\"TEST\"\
-  ,\"referenced\":false,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
-  :true,\"valueList\":\"TEST\",\"description\":\"TEST\"},{\"recNo\":12909,\"name\"\
-  :\"Java-TEST-Client\",\"referenced\":false,\"activeStatus\":true,\"valueFreeFlow\"\
-  :true,\"valueRequired\":true,\"valueList\":\"Java-TEST-Client\",\"description\"\
-  :\"Java TEST Client\"}]"
+  :false,\"areaFlags\":5},{\"recNo\":21927,\"name\":\"ProfileGroup\",\"referenced\"\
+  :true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\"\
+  :5},{\"recNo\":21928,\"name\":\"CBResCard\",\"referenced\":true,\"activeStatus\"\
+  :true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\":16},{\"recNo\"\
+  :21929,\"name\":\"CBResCycle\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
+  :true,\"valueRequired\":false,\"areaFlags\":16},{\"recNo\":21930,\"name\":\"TBOInvoiceRecNo\"\
+  ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :false,\"areaFlags\":16},{\"recNo\":21931,\"name\":\"TBOBookingNo\",\"referenced\"\
+  :true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\"\
+  :32},{\"recNo\":21932,\"name\":\"ResCardGroup\",\"referenced\":true,\"activeStatus\"\
+  :true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\":16},{\"recNo\"\
+  :21933,\"name\":\"InvoiceGroup\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
+  :true,\"valueRequired\":false,\"areaFlags\":16},{\"recNo\":21934,\"name\":\"TBOPartPayInvoiceRecNo\"\
+  ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\"\
+  :false,\"areaFlags\":16},{\"recNo\":21935,\"name\":\"UDID_UDID #1\",\"referenced\"\
+  :true,\"activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\"\
+  :16},{\"recNo\":21936,\"name\":\"TBOPaymentNo\",\"referenced\":true,\"activeStatus\"\
+  :true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\":64},{\"recNo\"\
+  :21937,\"name\":\"PaymentGroup\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
+  :true,\"valueRequired\":false,\"areaFlags\":64},{\"recNo\":21944,\"name\":\"MAST\
+  \ Promotion\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":false,\"\
+  valueRequired\":false,\"valueList\":\"EML01\",\"areaFlags\":3},{\"recNo\":21945,\"\
+  name\":\"No Marketing\",\"referenced\":false,\"activeStatus\":true,\"valueFreeFlow\"\
+  :false,\"valueRequired\":false,\"valueList\":\"NOEMM\\nNOCBM\\nNOTBM\\nNOMKT\\nBDATA\"\
+  ,\"areaFlags\":3}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
   Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIyLTA5LTI4VDE2OjQ1OjA2Ljg0NDMxNjYrMDA6MDAiLA0KICAiZXhwaXJlSW50ZXJ2YWwiOiAzMCwNCiAgImFnZW5jeVJlY05vIjogMjMsDQogICJhcHBVc2VyUmVjTm8iOiBudWxsLA0KICAiYWRtaW5Vc2VyUmVjTm8iOiAyMiwNCiAgInVzZXJOYW1lIjogImFudGhvbnkubWFydGluQHRyZXN0ZWNobm9sb2dpZXMuY29tIiwNCiAgImFsaWFzIjogIkFWREIiLA0KICAidG9rZW5SZWNObyI6IDE3NDg5NSwNCiAgImFwcE5hbWUiOiAiV2ViIEFQSSIsDQogICJjbGllbnRJUEFkZHJlc3MiOiAiMTAuMS4yLjQiLA0KICAiYWZmaWxpYXRpb25SZWNObyI6IG51bGwNCn0.deh0na4g2n8gZMhwTgyzpZQs8HYeAIpEtXFSdj8aQso

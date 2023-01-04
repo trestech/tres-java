@@ -1,5 +1,11 @@
 trigger:
-  - main
+  tags:
+    include:
+      - '*'
+  branches:
+    exclude:
+      - main
+      - develop
 
 pool:
   vmImage: ubuntu-latest

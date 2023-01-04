@@ -2,7 +2,7 @@ diagnostic: cbms_list_pull_with_marketing
 url: https://api-dev.trestechnologies.com/Version
 method: GET
 requestBody: null
-body: "{\"version\":\"0.9.8.13\",\"resultCode\":0,\"resultDescription\":\"\"}"
+body: "{\"version\":\"1.0.5.8\",\"resultCode\":0,\"resultDescription\":\"\"}"
 status: HTTP/1.1 200 OK
 requestHeaders:
   Content-Type: application/json
