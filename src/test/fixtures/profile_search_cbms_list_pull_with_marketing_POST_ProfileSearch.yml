@@ -1,0 +1,20 @@
+diagnostic: profile_search_cbms_list_pull_with_marketing
+url: https://api-dev.trestechnologies.com/ProfileSearch
+method: POST
+requestBody: "{\"startingRow\":0,\"includeCols\":[\"recNo\",\"clientInformalSalutation\"\
+  ,\"primaryPersonFirstName\",\"primaryPersonLastName\",\"primaryEmail\",\"primaryEmailPermitMarketing\"\
+  ,\"stateProvince\",\"country\",\"clientAdvisorProfileRecNo\"],\"tags\":[{\"value\"\
+  :{\"value\":[\"NOEMM\",\"NOCBM\",\"NOTBM\",\"NOMKT\",\"BDATA\"],\"compareCondition\"\
+  :5}}],\"emailPermitMarketing\":true}"
+body: "[{\"recNo\":6518213,\"primaryPersonFirstName\":\"Charlie\",\"primaryPersonLastName\"\
+  :\"Penrose\",\"clientAdvisorProfileRecNo\":6517942,\"primaryEmail\":\"avdbaan04@gmail.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"},{\"recNo\":6518518,\"\
+  primaryPersonFirstName\":\"Janice\",\"primaryPersonLastName\":\"Lordeon\",\"primaryEmail\"\
+  :\"avdbaan02@gmail.com\",\"primaryEmailPermitMarketing\":true,\"stateProvince\"\
+  :\"CA\"}]"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTI3VDAxOjA2OjU2KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQxODI1LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.oL602w0jXnrcjWbK2WWJ_k-o7K5E-s437IW3SFcXAYU
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

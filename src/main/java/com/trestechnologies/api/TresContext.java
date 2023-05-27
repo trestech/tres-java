@@ -4,8 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.trestechnologies.api.interfaces.APIContext;
 import com.trestechnologies.api.interfaces.APIContextAdapter;
+import org.apache.http.Header;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpResponse;
 import org.apache.http.auth.AuthScope;
@@ -172,7 +174,13 @@ public class TresContext extends APIContextAdapter {
   public JsonNode refreshIdentityToken ( ) throws IOException {
     JsonNode result = get(REFRESH_IDENTITY_TOKEN);
     
-    this.token = result.get("refreshIdentityToken").textValue();
+    assert result != null : "Did not receive a response from the server.";
+    
+    if ( result.get("resultCode").intValue() == 0 && this.token != null ) {
+      ((ObjectNode) result).put("refreshIdentityToken", this.token);
+    } else {
+      this.token = result.get("refreshIdentityToken").textValue();
+    }
     
     return result;
   }
@@ -194,6 +202,7 @@ public class TresContext extends APIContextAdapter {
     
     credentialsProvider = new BasicCredentialsProvider();
     credentialsProvider.setCredentials(authScope, credentials);
+    token = null; // If we got this far, we're not using a token.
     
     return execute(request, headers);
   }
@@ -247,8 +256,11 @@ public class TresContext extends APIContextAdapter {
   
   @Override
   public void batch ( Group<APIContext> group ) throws IOException {
-    group.by(this);
-    close();
+    try {
+      group.by(this);
+    } finally {
+      close();
+    }
   }
   
   @Override
@@ -283,6 +295,12 @@ public class TresContext extends APIContextAdapter {
     localContext.setAuthCache(authCache);
 
     try {
+      HttpResponse response;
+      int statusCode;
+      String contentType;
+      InputStream stream;
+      JsonNode node = null;
+      
       if ( client == null ) {
         client = HttpClients.createDefault();
       }
@@ -297,11 +315,21 @@ public class TresContext extends APIContextAdapter {
         headers.andThen(request, diagnostic);
       }
 
-      HttpResponse response = client.execute(target, request, localContext);
-      InputStream stream = response.getEntity().getContent();
-      JsonNode node = mapper.readTree(stream);
+      response = client.execute(target, request, localContext);
+      statusCode = response.getStatusLine().getStatusCode();
+      contentType = findContentType(response);
       
-      if ( node.isObject() && !node.has("resultCode") ) {
+      if ( response.getEntity() != null ) {
+        stream = response.getEntity().getContent();
+      } else {
+        stream = null;
+      }
+      
+      if ( contentType != null && contentType.startsWith("application/json") && stream != null ) {
+        node = mapper.readTree(stream);
+      }
+      
+      if ( node != null && node.isObject() && !node.has("resultCode") ) {
         String message = "No result code for request: " + request;
         
         if ( LOG.isLoggable(FINE) ) {
@@ -311,20 +339,26 @@ public class TresContext extends APIContextAdapter {
         }
       }
       
-      switch ( response.getStatusLine().getStatusCode() ) {
+      switch ( statusCode ) {
         case SC_OK: return node;
         case SC_BAD_REQUEST: case SC_UNAUTHORIZED: 
-          if ( node.isObject() && node.has("resultCode") ) {
+          if ( node != null && node.isObject() && node.has("resultCode") ) {
             int code = node.get("resultCode").intValue();
 
             if ( code != 0 ) {
               throw new TresException(code, node.toString());
             }
+            
+            throw new TresException("Unknown error: " + node);
           }
-          
-          throw new TresException("Unknown error: " + node);
         default:
-          String body = new BufferedReader(new InputStreamReader(stream)).lines().collect(Collectors.joining("\n"));
+          String body;
+          
+          if ( stream != null ) {
+            body = new BufferedReader(new InputStreamReader(stream)).lines().collect(Collectors.joining("\n"));
+          } else {
+            body = "<No Body In Response>";
+          }
           
           throw new TresException(response.getStatusLine() + ": " + request + " " + body);
       }
@@ -336,7 +370,17 @@ public class TresContext extends APIContextAdapter {
       throw new TresException("Unable to execute request", e);
     }
   }
-  
+
+  private String findContentType ( HttpResponse response ) {
+    Header[] headers = response.getHeaders("Content-Type");
+    
+    if ( headers.length == 0 ) {
+      return null;
+    }
+    
+    return headers[0].getValue();
+  }
+
   private String toJson ( JsonNode node ) {
     Class<? extends JsonNode> c = node.getClass();
 

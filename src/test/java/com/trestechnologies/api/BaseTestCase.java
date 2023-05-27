@@ -10,6 +10,7 @@ import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
 import org.apache.http.Header;
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -41,11 +42,11 @@ public abstract class BaseTestCase extends TestCase {
 
   protected static final String LIVE_URL = "https://api-dev.trestechnologies.com";
   
-  protected static final String USERNAME = "username";
+  protected static final String USERNAME = "MAST";
 
-  protected static final String PASSWORD = "password";
+  protected static final String PASSWORD = "Tres#0523";
 
-  protected static final String DOMAIN = "domain";
+  protected static final String DOMAIN = "MST1";
 
   // To grab a new token, use this command at the root of the project:
   // 
@@ -56,8 +57,8 @@ public abstract class BaseTestCase extends TestCase {
   // rm src/test/fixtures/*.yml
   //
   // Otherwise, set USE_TOKEN = false (and set USERNAME, PASSWORD, and DOMAIN)
-  protected static final String TOKEN = "ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIyLTA5LTA4VDIwOjA5OjQwLjMyNjIxMjUrMDA6MDAiLA0KICAiZXhwaXJlSW50ZXJ2YWwiOiAzMCwNCiAgImFnZW5jeVJlY05vIjogMjMsDQogICJhcHBVc2VyUmVjTm8iOiAxODI1LA0KICAiYWRtaW5Vc2VyUmVjTm8iOiBudWxsLA0KICAidXNlck5hbWUiOiAiU0hBUk9OIiwNCiAgImFsaWFzIjogIkFWREIiLA0KICAidG9rZW5SZWNObyI6IDE2MTEyMywNCiAgImFwcE5hbWUiOiAiV2ViIEFQSSIsDQogICJjbGllbnRJUEFkZHJlc3MiOiAiMTAuMS4yLjQiLA0KICAiYWZmaWxpYXRpb25SZWNObyI6IG51bGwNCn0.5-zkxXuEyGv8BHmubHNuksm5JntrenyW4tQpq0KE1VA";  
-  protected static final boolean USE_TOKEN = true;
+  protected static final String TOKEN = "ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTIzVDIzOjQ1OjU0KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQwNTA5LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.TxFProNfx82_EjFAQWPzFSjn99IevQ61_oaLKvjsbMI";
+  protected static final boolean USE_TOKEN = false;
   
   private static final String[] REQUEST_HEADER_WHITELIST = new String[] {
     "Content-Type",
@@ -109,15 +110,19 @@ public abstract class BaseTestCase extends TestCase {
   protected static final Dispatcher DISPATCHER = new Dispatcher() {
     @NotNull @Override
     public MockResponse dispatch ( @NotNull RecordedRequest request ) {
+      MockResponse mockResponse;
       Fixture fixture;
       
       try {
         fixture = Fixture.read(request);
         
         if ( fixture.getStatus() != null ) {
-          MockResponse mockResponse = new MockResponse();
+          mockResponse = new MockResponse();
           
-          mockResponse.setBody(fixture.getBody());
+          if ( fixture.getBody() != null ) {
+            mockResponse.setBody(fixture.getBody());
+          }
+          
           mockResponse.setStatus(fixture.getStatus());
           
           if ( fixture.getResponseHeaders() != null ) {
@@ -177,10 +182,18 @@ public abstract class BaseTestCase extends TestCase {
           fixture.getResponseHeaders().put(key, val);
         }
         
-        fixture.setBody(
-          new BufferedReader(new InputStreamReader(liveResponse.getEntity().getContent())).lines().
-            collect(Collectors.joining("\n"))
-        );
+        try {
+          HttpEntity entity = liveResponse.getEntity();
+          
+          if ( entity != null ) {
+            fixture.setBody(
+              new BufferedReader(new InputStreamReader(entity.getContent())).lines().
+                collect(Collectors.joining("\n"))
+            );
+          }
+        } catch ( Exception e ) {
+          System.err.println("Unable to read response body: " + e);
+        }
 
         fixture.setStatus(liveResponse.getStatusLine().toString());
       } catch ( Exception e ) {
@@ -201,9 +214,13 @@ public abstract class BaseTestCase extends TestCase {
           setBody(e.toString());
       }
       
-      MockResponse mockResponse = new MockResponse().
-        setBody(fixture.getBody()).
-        setStatus(fixture.getStatus());
+      mockResponse = new MockResponse();
+      
+      if ( fixture.getBody() != null ) {
+        mockResponse.setBody(fixture.getBody());
+      }
+      
+      mockResponse.setStatus(fixture.getStatus());
       
       fixture.getResponseHeaders().forEach(mockResponse::setHeader);
       

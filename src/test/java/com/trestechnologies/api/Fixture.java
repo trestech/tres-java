@@ -9,6 +9,8 @@ import okhttp3.mockwebserver.RecordedRequest;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -80,7 +82,11 @@ public class Fixture {
 
     retVal = retVal.replaceAll("[_]+$", "");
 
-    if ( diagnostic != null && diagnostic.length() > 0 ) {
+    if ( diagnostic == null || diagnostic.isEmpty() ) {
+      // This is probably a constructor test, so we can use an anonymous fixture.
+      
+      retVal = "anonymous_" + retVal;
+    } else {
       retVal = diagnostic + "_" + retVal;
     }
     

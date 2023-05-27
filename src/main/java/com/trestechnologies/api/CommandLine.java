@@ -12,6 +12,22 @@ import java.util.concurrent.atomic.AtomicReference;
 import static com.trestechnologies.api.Methods.*;
 import static com.trestechnologies.api.TresContext.DEVELOP_URL;
 
+/**
+ * Command line interface for Tres API.  This class is used to test the API and
+ * is not intended for production use.
+ * 
+ * <p>Environment variables:</p>
+ * <ul>
+ *   <li>TRES_URL - URL of Tres API</li>
+ *   <li>TRES_USERNAME - Username for Tres API</li>
+ *   <li>TRES_PASSWORD - Password for Tres API</li>
+ *   <li>TRES_DOMAIN - Domain for Tres API</li>
+ *   <li>TRES_TOKEN - Token for Tres API</li>
+ *   <li>TRES_DEBUG - Debug flag for Tres API</li>
+ *   <li>TRES_TIMEOUT - Timeout for Tres API</li>
+ *   <li>TRES_VERSION - Version for Tres API</li>
+ * </ul>
+ */
 public class CommandLine {
   public static void main ( String[] args ) throws IOException {
     Map<String, String> env = System.getenv();
@@ -43,6 +59,8 @@ public class CommandLine {
 
       System.exit(2);
     }
+    
+    assert args.length < 2 : "Too many arguments";
     
     if ( args.length == 0 ) {
       String cmd;

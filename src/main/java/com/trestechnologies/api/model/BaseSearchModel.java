@@ -1,5 +1,8 @@
 package com.trestechnologies.api.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BaseSearchModel {
   private NumSearchParam recNo;
   
@@ -19,7 +22,7 @@ public class BaseSearchModel {
 
   private Long displayTagRecNo;
 
-  //  private TagsSearchParams[] tags;
+  private List<TagsSearchParams> tags;
   
   public NumSearchParam getRecNo ( ) { return recNo; }
 
@@ -57,4 +60,16 @@ public class BaseSearchModel {
 
   public void setDisplayTagRecNo ( Long displayTagRecNo ) { this.displayTagRecNo = displayTagRecNo; }
   public void setDisplayTagRecNo ( long displayTagRecNo ) { this.displayTagRecNo = displayTagRecNo; }
+
+  public List<TagsSearchParams> getTags () { return tags; }
+
+  public void setTags ( List<TagsSearchParams> tags ) { this.tags = tags; }
+  public void setTags ( TagsSearchParams tags ) {
+    this.tags = new ArrayList<>();
+    
+    this.tags.add(tags);
+  }
+  public void setTags ( StringSearchParam.Compare compare, List<String> value ) {
+    this.setTags(new TagsSearchParams(compare, value));
+  }
 }

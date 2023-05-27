@@ -6,13 +6,25 @@
 
   <groupId>trestech</groupId>
   <artifactId>tres-java</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   
   <build>
     <defaultGoal>package</defaultGoal>
     
     <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <executable>java</executable>
+          <arguments>
+            <argument>-ea</argument>
+          </arguments>
+        </configuration>
+      </plugin>
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>

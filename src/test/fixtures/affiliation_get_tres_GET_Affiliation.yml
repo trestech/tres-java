@@ -1,0 +1,20 @@
+diagnostic: affiliation_get_tres
+url: https://api-dev.trestechnologies.com/Affiliation/1
+method: GET
+requestBody: null
+body: "[{\"recNo\":1,\"name\":\"Tres\",\"affiliationMarketingCategory\":[{\"affiliation_recNo\"\
+  :1,\"recNo\":1,\"name\":\"Color\",\"affiliationMarketingElement\":[{\"recNo\":1,\"\
+  affiliationMarketingCategory_recNo\":1,\"name\":\"Red\",\"id\":\"RED\"},{\"recNo\"\
+  :2,\"affiliationMarketingCategory_recNo\":1,\"name\":\"Green\",\"id\":\"GREEN\"\
+  },{\"recNo\":3,\"affiliationMarketingCategory_recNo\":1,\"name\":\"Blue\",\"id\"\
+  :\"BLUE\"}]},{\"affiliation_recNo\":1,\"recNo\":2,\"name\":\"Temperature\",\"affiliationMarketingElement\"\
+  :[{\"recNo\":4,\"affiliationMarketingCategory_recNo\":2,\"name\":\"Cold\",\"id\"\
+  :\"COLD\"},{\"recNo\":5,\"affiliationMarketingCategory_recNo\":2,\"name\":\"Warm\"\
+  ,\"id\":\"WARM\"},{\"recNo\":6,\"affiliationMarketingCategory_recNo\":2,\"name\"\
+  :\"Hot\",\"id\":\"HOT\"}]}]}]"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTI3VDAxOjA2OjM2KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQxODA1LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.rv9W-aLhL8M8G23Wq4ZkuRcaK2xmeEimPnsQVAcdLWg
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

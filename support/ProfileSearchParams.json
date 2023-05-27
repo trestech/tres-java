@@ -1,7 +1,5 @@
 {
-  "profileType": {
-    "value": 1
-  },
+  "profileType": 1,
   "activestatus": true,
   "profileName": {
     "value": [

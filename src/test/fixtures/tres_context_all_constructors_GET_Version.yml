@@ -1,0 +1,10 @@
+diagnostic: tres_context_all_constructors
+url: https://api-dev.trestechnologies.com/Version
+method: GET
+requestBody: null
+body: "{\"version\":\"1.0.15.8\",\"resultCode\":0,\"resultDescription\":\"\"}"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json; charset=utf-8

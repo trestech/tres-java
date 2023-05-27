@@ -14,6 +14,12 @@ public class TresException extends RuntimeException {
       case 106 : return "Agency not initialized";
       case 107 : return "Agency disabled";
       case 108 : return "Agency cancelled";
+      case 109 : return "Cannot clear agency";
+      case 500 : return "Not found: " + message;
+      case 501 : return "Permission invalid: " + message;
+      case 502 : return "No decrypt permission: " + message;
+      case 503 : return "SQL error: " + message;
+      case 504 : return "Need admin login: " + message;
       default :
         if ( message != null ) { return message; }
         

@@ -1,40 +1,46 @@
 package com.trestechnologies.api.model;
 
-import com.trestechnologies.api.interfaces.Affiliation;
-
 public class MarketingSearchParam {
   private Short affiliation;
 
   private Long marketingElementRecNo;
 
-  private String marketingElementId;
+  private StringSearchParam marketingElementId;
   
   private Boolean checked;
 
-  public MarketingSearchParam ( Affiliation affiliation, long marketingElementRecNo, boolean checked ) {
-    this.affiliation = affiliation.id;
+  public MarketingSearchParam ( ) { }
+
+  public MarketingSearchParam ( Short affiliation, Long marketingElementRecNo, Boolean checked ) {
+    this.affiliation = affiliation;
     this.marketingElementRecNo = marketingElementRecNo;
     this.checked = checked;
   }
 
-  public MarketingSearchParam ( Affiliation affiliation, String marketingElementId, boolean checked ) {
-    this.affiliation = affiliation.id;
+  public MarketingSearchParam ( Short affiliation, StringSearchParam marketingElementId, Boolean checked ) {
+    this.affiliation = affiliation;
     this.marketingElementId = marketingElementId;
     this.checked = checked;
   }
 
-  public Short getAffiliation () { return affiliation; }
+  public MarketingSearchParam ( Short affiliation, String marketingElementId, Boolean checked ) {
+    this.affiliation = affiliation;
+    this.marketingElementId = new StringSearchParam(marketingElementId);
+    this.checked = checked;
+  }
 
-  public void setAffiliation ( Short affiliation ) { this.affiliation = affiliation; }
+  public short getAffiliation () { return affiliation; }
+
+  public void setAffiliation ( short affiliation ) { this.affiliation = affiliation; }
 
   public Long getMarketingElementRecNo () { return marketingElementRecNo; }
 
   public void setMarketingElementRecNo ( Long marketingElementRecNo ) { this.marketingElementRecNo = marketingElementRecNo; }
   public void setMarketingElementRecNo ( long marketingElementRecNo ) { this.marketingElementRecNo = marketingElementRecNo; }
 
-  public String getMarketingElementId () { return marketingElementId; }
+  public StringSearchParam getMarketingElementId () { return marketingElementId; }
 
-  public void setMarketingElementId ( String marketingElementId ) { this.marketingElementId = marketingElementId; }
+  public void setMarketingElementId ( StringSearchParam marketingElementId ) { this.marketingElementId = marketingElementId; }
 
   public Boolean getChecked () { return checked; }
 

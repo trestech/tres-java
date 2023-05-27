@@ -111,3 +111,9 @@ Tests:
 mvn test
 ```
 
+Tests without fixtures:
+
+```bash
+rm src/test/fixtures/*.yml
+mvn test
+```

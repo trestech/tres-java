@@ -1,5 +1,7 @@
 package com.trestechnologies.api.model;
 
+import java.util.List;
+
 public class ProfileSearchParams extends BaseSearchModel {
   private Long profileType;
 
@@ -47,7 +49,7 @@ public class ProfileSearchParams extends BaseSearchModel {
 
   private StringSearchParam country;
 
-  private MarketingSearchParam[] marketing;
+  private List<MarketingSearchParam> marketing;
 
   private StringSearchParam id;
 
@@ -179,9 +181,9 @@ public class ProfileSearchParams extends BaseSearchModel {
 
   public void setCountry ( StringSearchParam country ) { this.country = country; }
 
-  public MarketingSearchParam[] getMarketing ( ) { return marketing; }
+  public List<MarketingSearchParam> getMarketing ( ) { return marketing; }
 
-  public void setMarketing ( MarketingSearchParam[] marketing ) { this.marketing = marketing; }
+  public void setMarketing ( List<MarketingSearchParam> marketing ) { this.marketing = marketing; }
 
   public StringSearchParam getId ( ) { return id; }
 
