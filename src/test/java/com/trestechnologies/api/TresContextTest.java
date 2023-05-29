@@ -13,6 +13,7 @@ import org.apache.http.conn.HttpHostConnectException;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class TresContextTest extends BaseTestCase {
   JsonNode node;
@@ -166,7 +167,10 @@ public class TresContextTest extends BaseTestCase {
     ActivitySearchParams params = new ActivitySearchParams();
 
     params.setStartingRow(0);
-    params.setAppUserRecNo(new NumSearchParam(new Long[] {1825L, 1L}));
+    params.setAppUserRecNo(new NumSearchParam(new ArrayList<Long>() {{
+      add(1825L);
+      add(1L);
+    }}));
     params.setCompleted(false);
 
     node = context.post("ActivitySearch", params);

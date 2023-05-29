@@ -1,15 +1,20 @@
 package com.trestechnologies.api.model;
 
-import java.util.Date;
+import com.trestechnologies.api.interfaces.APIContext;
 
-public class Profile {
-  public static final ModelMapper<Profile> MAPPER = new ModelMapper<Profile>() {
-    @Override
-    public Class<Profile> getModel () {
-      return Profile.class;
-    }
-  };
-  
+import java.io.IOException;
+import java.util.Date;
+import java.util.List;
+
+public class Profile extends BaseModel {
+  public static ModelMapper<Profile> mapper ( ) { return new ModelMapper<Profile>() {
+    @Override public Class<Profile> getModel () { return Profile.class; }
+  }; }
+
+  public static List<Profile> search ( APIContext context, ProfileSearchParam params ) throws IOException {
+    return mapper().treeToList(context.post("ProfileSearch", params));
+  }
+
   public enum Type { UNKNOWN, CLIENT, SUPPLIER, ADVISOR, OTHER }
   
   public enum ClientType { UNKNOWN, PERSONAL, CORPORATE }

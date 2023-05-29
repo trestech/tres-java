@@ -1,27 +1,25 @@
 package com.trestechnologies.api;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.trestechnologies.api.model.Affiliation;
-
-import java.util.List;
 
 public class AffiliationTest extends BaseTestCase {
   public void testGetTres ( ) { ((WithMockWebServer) ( context ) -> {
-    List<Affiliation> list;
-    Affiliation affiliation;
+    Affiliation affiliation = Affiliation.find(context, 1);
     
-    list = Affiliation.MAPPER.treeToList(context.get("Affiliation/1"));
-    
-    assertEquals("expect result to have one element", 1, list.size());
-    
-    affiliation = list.get(0);
     assertEquals(1, affiliation.getRecNo());
     assertEquals("Tres", affiliation.getName());
   }).group("affiliation_get_tres"); }
   
+  public void testGetSignatureTravelNetwork ( ) { ((WithMockWebServer) ( context ) -> {
+    Affiliation affiliation = Affiliation.find(context, 2);
+    
+    assertEquals(2, affiliation.getRecNo());
+    assertEquals("Signature Travel Network", affiliation.getName());
+  }).group("affiliation_get_signature_travel_network"); }
+  
   public void testGetUnknown ( ) { ((WithMockWebServer) ( context ) -> {
     try {
-      Affiliation.MAPPER.treeToList(context.get("Affiliation/99"));
+      Affiliation.find(context, 99);
     } catch ( TresException ignore ) {
       // success
     }

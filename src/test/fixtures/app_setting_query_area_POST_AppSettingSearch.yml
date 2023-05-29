@@ -1,0 +1,74 @@
+diagnostic: app_setting_query_area
+url: https://api-dev.trestechnologies.com/AppSettingSearch
+method: POST
+requestBody: "{\"startingRow\":0,\"area\":\"clientProfileSearch\"}"
+body: "[{\"recNo\":674,\"createDateTime\":\"2023-05-26T18:57:35+00:00\",\"lastModifiedDateTime\"\
+  :\"2023-05-26T19:30:17+00:00\",\"area\":\"clientProfileSearch\",\"name\":\"MAST\
+  \ View\",\"data\":\"{\\\"recNo\\\":674,\\\"name\\\":\\\"MAST View\\\",\\\"orderId\\\
+  \":1,\\\"isDefault\\\":null,\\\"isSelected\\\":true,\\\"isMain\\\":true,\\\"isDisplayInReportMenu\\\
+  \":null,\\\"categoryName\\\":null,\\\"reportOutputFormat\\\":null,\\\"isAgencyLevel\\\
+  \":true,\\\"sortColumn\\\":null,\\\"sortDirection\\\":null,\\\"searchAreaViewType\\\
+  \":null,\\\"columns\\\":[{\\\"recNo\\\":101,\\\"header\\\":\\\"All\\\",\\\"width\\\
+  \":null,\\\"orderId\\\":null,\\\"entityRecNo\\\":null,\\\"entityName\\\":null},{\\\
+  \"recNo\\\":1,\\\"header\\\":\\\"Client Type\\\",\\\"width\\\":null,\\\"orderId\\\
+  \":1,\\\"entityRecNo\\\":null,\\\"entityName\\\":null},{\\\"recNo\\\":2,\\\"header\\\
+  \":\\\"Client Name\\\",\\\"width\\\":null,\\\"orderId\\\":2,\\\"entityRecNo\\\"\
+  :null,\\\"entityName\\\":null},{\\\"recNo\\\":3,\\\"header\\\":\\\"Primary Traveler\
+  \ Name\\\",\\\"width\\\":null,\\\"orderId\\\":3,\\\"entityRecNo\\\":null,\\\"entityName\\\
+  \":null},{\\\"recNo\\\":4,\\\"header\\\":\\\"Primary Email\\\",\\\"width\\\":null,\\\
+  \"orderId\\\":4,\\\"entityRecNo\\\":null,\\\"entityName\\\":null},{\\\"recNo\\\"\
+  :5,\\\"header\\\":\\\"Primary Phone\\\",\\\"width\\\":null,\\\"orderId\\\":5,\\\"\
+  entityRecNo\\\":null,\\\"entityName\\\":null},{\\\"recNo\\\":6,\\\"header\\\":\\\
+  \"Primary Advisor\\\",\\\"width\\\":null,\\\"orderId\\\":6,\\\"entityRecNo\\\":null,\\\
+  \"entityName\\\":null},{\\\"recNo\\\":7,\\\"header\\\":\\\"Status\\\",\\\"width\\\
+  \":null,\\\"orderId\\\":7,\\\"entityRecNo\\\":null,\\\"entityName\\\":null},{\\\"\
+  recNo\\\":34,\\\"header\\\":\\\"Interface ID\\\",\\\"width\\\":null,\\\"orderId\\\
+  \":34,\\\"entityRecNo\\\":null,\\\"entityName\\\":null}],\\\"filters\\\":[{\\\"\
+  recNo\\\":1,\\\"label\\\":\\\"Client Name\\\",\\\"filterArea\\\":1,\\\"filterFieldList\\\
+  \":[{\\\"recNo\\\":0,\\\"field\\\":\\\"profileName\\\",\\\"label\\\":\\\"Supplier\
+  \ Name\\\",\\\"value\\\":null,\\\"type\\\":\\\"TextBoxAreaOperator\\\",\\\"placeHolder\\\
+  \":\\\"Client Name\\\",\\\"displayText\\\":\\\"\\\"}]},{\\\"recNo\\\":2,\\\"label\\\
+  \":\\\"Client Type\\\",\\\"filterArea\\\":1,\\\"filterFieldList\\\":[{\\\"recNo\\\
+  \":0,\\\"field\\\":\\\"clientType\\\",\\\"label\\\":\\\"Client Type\\\",\\\"value\\\
+  \":null,\\\"type\\\":\\\"DropDownField\\\",\\\"placeHolder\\\":\\\"Client Type\\\
+  \",\\\"displayText\\\":\\\"\\\"}]},{\\\"recNo\\\":3,\\\"label\\\":\\\"Client Branch\\\
+  \",\\\"filterArea\\\":1,\\\"filterFieldList\\\":[{\\\"recNo\\\":0,\\\"field\\\"\
+  :\\\"clientBranchRecNo\\\",\\\"label\\\":\\\"Client Branch\\\",\\\"value\\\":null,\\\
+  \"type\\\":\\\"DropDownFieldOperator\\\",\\\"placeHolder\\\":\\\"Branch\\\",\\\"\
+  displayText\\\":\\\"\\\"}]},{\\\"recNo\\\":4,\\\"label\\\":\\\"Client Primary Advisor\\\
+  \",\\\"filterArea\\\":1,\\\"filterFieldList\\\":[{\\\"recNo\\\":0,\\\"field\\\"\
+  :\\\"clientAdvisorProfileRecNo\\\",\\\"label\\\":\\\"Client Advisor\\\",\\\"value\\\
+  \":null,\\\"type\\\":\\\"LookupFilter\\\",\\\"placeHolder\\\":\\\"Primary Advisor\\\
+  \",\\\"displayText\\\":\\\"\\\"}]},{\\\"recNo\\\":8000,\\\"label\\\":\\\"Client\
+  \ Tag\\\",\\\"filterArea\\\":null,\\\"filterFieldList\\\":[{\\\"recNo\\\":0,\\\"\
+  field\\\":\\\"recNo\\\",\\\"label\\\":\\\"Client Tag\\\",\\\"value\\\":21944,\\\"\
+  type\\\":\\\"TagKeyPairFilter\\\",\\\"placeHolder\\\":\\\"Client Tag\\\",\\\"displayText\\\
+  \":\\\"MAST Promotion\\\"},{\\\"recNo\\\":0,\\\"field\\\":\\\"value\\\",\\\"label\\\
+  \":\\\"Tag Value\\\",\\\"value\\\":{\\\"compareCondition\\\":5,\\\"value\\\":[\\\
+  \"\\\"]},\\\"type\\\":\\\"TagValueFilter\\\",\\\"placeHolder\\\":\\\"Tag Value\\\
+  \",\\\"displayText\\\":\\\"\\\"}]},{\\\"recNo\\\":8001,\\\"label\\\":\\\"Client\
+  \ Tag\\\",\\\"filterArea\\\":null,\\\"filterFieldList\\\":[{\\\"recNo\\\":0,\\\"\
+  field\\\":\\\"recNo\\\",\\\"label\\\":\\\"Client Tag\\\",\\\"value\\\":21945,\\\"\
+  type\\\":\\\"TagKeyPairFilter\\\",\\\"placeHolder\\\":\\\"Client Tag\\\",\\\"displayText\\\
+  \":\\\"No Marketing\\\"},{\\\"recNo\\\":0,\\\"field\\\":\\\"value\\\",\\\"label\\\
+  \":\\\"Tag Value\\\",\\\"value\\\":{\\\"compareCondition\\\":5,\\\"value\\\":[\\\
+  \"\\\"]},\\\"type\\\":\\\"TagValueFilter\\\",\\\"placeHolder\\\":\\\"Tag Value\\\
+  \",\\\"displayText\\\":\\\"\\\"}]},{\\\"recNo\\\":13,\\\"label\\\":\\\"Client Primary\
+  \ Email Permit Marketing\\\",\\\"filterArea\\\":1,\\\"filterFieldList\\\":[{\\\"\
+  recNo\\\":0,\\\"field\\\":\\\"emailPermitMarketing\\\",\\\"label\\\":\\\"Email Permit\
+  \ Marketing\\\",\\\"value\\\":true,\\\"type\\\":\\\"DropDownField\\\",\\\"placeHolder\\\
+  \":\\\"Primary Email Permit Marketing\\\",\\\"displayText\\\":\\\"Yes\\\"}]},{\\\
+  \"recNo\\\":9,\\\"label\\\":\\\"Client Communication\\\",\\\"filterArea\\\":1,\\\
+  \"filterFieldList\\\":[{\\\"recNo\\\":0,\\\"field\\\":\\\"commType\\\",\\\"label\\\
+  \":\\\"Communication\\\",\\\"value\\\":2,\\\"type\\\":\\\"DropDownField\\\",\\\"\
+  placeHolder\\\":\\\"Communication\\\",\\\"displayText\\\":\\\"Email\\\"},{\\\"recNo\\\
+  \":0,\\\"field\\\":\\\"commValue\\\",\\\"label\\\":\\\"Communication Value\\\",\\\
+  \"value\\\":{\\\"trimString\\\":null,\\\"compareCondition\\\":5,\\\"value\\\":[\\\
+  \"\\\"]},\\\"type\\\":\\\"TextBoxAreaOperator\\\",\\\"placeHolder\\\":\\\"Communication\
+  \ value\\\",\\\"displayText\\\":\\\"\\\"}]}]}\"}]"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTI5VDAzOjMxOjE0KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQyMjE1LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.tCwFfhW3udi4TXFL-noYiL2uAhlewRouqAL1h4CaCJY
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

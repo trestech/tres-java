@@ -1,6 +1,6 @@
 package com.trestechnologies.api.model;
 
-public class Communication {
+public class Communication extends BaseModel {
   public enum Type { UNKNOWN, PHONE, EMAIL, SOCIAL_MEDIA, WEB }
   
   private long recNo;

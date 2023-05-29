@@ -1,11 +1,18 @@
 package com.trestechnologies.api.model;
 
+import com.trestechnologies.api.interfaces.APIContext;
+
+import java.io.IOException;
 import java.util.List;
 
-public class Affiliation {
-  public static final ModelMapper<Affiliation> MAPPER = new ModelMapper<Affiliation>() {
+public class Affiliation extends BaseModel {
+  public static ModelMapper<Affiliation> mapper ( ) { return new ModelMapper<Affiliation>() {
     @Override public Class<Affiliation> getModel () { return Affiliation.class; }
-  };
+  }; }
+
+  public static Affiliation find ( APIContext context, long recNo ) throws IOException {
+    return mapper().treeToList(context.get("Affiliation/" + recNo)).get(0);
+  }
 
   private long recNo;
 

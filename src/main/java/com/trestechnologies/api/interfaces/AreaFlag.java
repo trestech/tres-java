@@ -13,28 +13,28 @@ import java.util.Set;
  *   int selectedAreas = AreaFlag.CLIENT.flag | AreaFlag.TRAVELER.flag
  * </code></pre>
  */
-public enum AreaFlag {
+public enum AreaFlag implements Flaggable<AreaFlag> {
   ALL, CLIENT, TRAVELER, SUPPLIER, ADVISOR, TRIP, RESERVATION, PAYMENT, ACTIVITY,
   ADVISOR_ADJUSTMENT;
   
-  public final Integer flag;
-
+  public final int flag;
+  
   AreaFlag ( ) { this.flag = 1 << ordinal() - 1; }
   
-  public static boolean hasFlag ( Integer flags, AreaFlag flag ) {
-    return flags != null && (flags & flag.flag) == flag.flag;
-  }
-    
-  public static Set<AreaFlag> of ( Integer flags ) {
+  @Override
+  public int getFlag ( ) { return this.flag; }
+  
+  @Override
+  public Set<AreaFlag> of ( int flags ) {
     EnumSet<AreaFlag> result = EnumSet.noneOf(AreaFlag.class);
 
     for ( AreaFlag flag : AreaFlag.values() ) {
-      if ( hasFlag(flags, flag) ) {
+      if ( Flaggable.hasFlag(flags, flag) ) {
         result.add(flag);
       }
     }
 
-    if ( flags != null && flags != 0 ) {
+    if ( flags != -1 ) {
       result.remove(AreaFlag.ALL);
     }
 

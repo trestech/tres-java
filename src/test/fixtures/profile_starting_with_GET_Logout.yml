@@ -1,0 +1,11 @@
+diagnostic: profile_starting_with
+url: https://api-dev.trestechnologies.com/Logout
+method: GET
+requestBody: null
+body: "{\"resultCode\":0,\"resultDescription\":\"Logout Successful\"}"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTI5VDAzOjMxOjEyKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQyMjEyLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.A2OgCYQFycjbYjNU38IAjRldZk0VetJvKD2veZ4pJew
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json; charset=utf-8

@@ -1,9 +1,9 @@
 package com.trestechnologies.api.model;
 
-public class AffiliationMarketingElement {
-  public static final ModelMapper<AffiliationMarketingElement> MAPPER = new ModelMapper<AffiliationMarketingElement>() {
+public class AffiliationMarketingElement extends BaseModel {
+  public static ModelMapper<AffiliationMarketingElement> mapper ( ) { return new ModelMapper<AffiliationMarketingElement>() {
     @Override public Class<AffiliationMarketingElement> getModel () { return AffiliationMarketingElement.class; }
-  };
+  }; }
   
   private long affiliationMarketingCategory_recNo;
   

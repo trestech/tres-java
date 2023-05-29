@@ -13,28 +13,28 @@ import java.util.Set;
  *   int selectedCategories = SupplierTravelCategoryFlag.CRUISE.flag | SupplierTravelCategoryFlag.INSURANCE.flag
  * </code></pre>
  */
-public enum SupplierTravelCategoryFlag {
+public enum SupplierTravelCategoryFlag implements Flaggable<SupplierTravelCategoryFlag> {
   ALL, AIR, HOTEL, CAR, CRUISE, TOUR, RAIL, TRANSFER, INSURANCE, SERVICE_FEE,
     EXCURSION;
   
-  public final Integer flag;
+  public final int flag;
 
   SupplierTravelCategoryFlag ( ) { this.flag = 1 << ordinal() - 1; }
   
-  public static boolean hasFlag ( Integer flags, SupplierTravelCategoryFlag flag ) {
-    return flags != null && (flags & flag.flag) == flag.flag;
-  }
-    
-  public static Set<SupplierTravelCategoryFlag> of ( Integer flags ) {
+  @Override
+  public int getFlag () { return this.flag; }
+
+  @Override
+  public Set<SupplierTravelCategoryFlag> of ( int flags ) {
     EnumSet<SupplierTravelCategoryFlag> result = EnumSet.noneOf(SupplierTravelCategoryFlag.class);
 
     for ( SupplierTravelCategoryFlag flag : SupplierTravelCategoryFlag.values() ) {
-      if ( hasFlag(flags, flag) ) {
+      if ( Flaggable.hasFlag(flags, flag) ) {
         result.add(flag);
       }
     }
 
-    if ( flags != null && flags != 0 ) {
+    if ( flags != 0 ) {
       result.remove(SupplierTravelCategoryFlag.ALL);
     }
 

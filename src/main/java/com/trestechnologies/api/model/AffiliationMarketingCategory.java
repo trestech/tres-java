@@ -2,10 +2,10 @@ package com.trestechnologies.api.model;
 
 import java.util.List;
 
-public class AffiliationMarketingCategory {
-  public static final ModelMapper<AffiliationMarketingCategory> MAPPER = new ModelMapper<AffiliationMarketingCategory>() {
+public class AffiliationMarketingCategory extends BaseModel {
+  public static ModelMapper<AffiliationMarketingCategory> mapper ( ) { return new ModelMapper<AffiliationMarketingCategory>() {
     @Override public Class<AffiliationMarketingCategory> getModel () { return AffiliationMarketingCategory.class; }
-  };
+  }; }
   
   private long affiliation_recNo;
   

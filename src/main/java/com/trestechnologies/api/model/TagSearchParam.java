@@ -3,11 +3,11 @@ package com.trestechnologies.api.model;
 import com.trestechnologies.api.interfaces.AreaFlag;
 
 import java.util.Arrays;
+import java.util.List;
 
-/**
- * Used when calling "TagSearch".
- */
 public class TagSearchParam extends BaseSearchModel {
+  StringSearchParam value;
+
   private StringSearchParam name;
   
   private Boolean activeStatus;
@@ -15,7 +15,17 @@ public class TagSearchParam extends BaseSearchModel {
   private Integer areaFlags;
 
   public TagSearchParam ( ) { }
-  
+
+  public TagSearchParam ( Long recNo ) { setRecNo(recNo); }
+
+  public TagSearchParam ( StringSearchParam value ) { this.value = value; }
+
+  public TagSearchParam ( StringSearchParam.Compare compare, List<String> value ) { this.value = new StringSearchParam(compare, value); }
+
+  public StringSearchParam getValue () { return value; }
+
+  public void setValue ( StringSearchParam value ) { this.value = value; }
+  public void setValue ( StringSearchParam.Compare compare, List<String> value ) { this.value = new StringSearchParam(compare, value); }
   public StringSearchParam getName () {
     return name;
   }

@@ -1,0 +1,12 @@
+diagnostic: profile_include_cols_invalid
+url: https://api-dev.trestechnologies.com/ProfileSearch
+method: POST
+requestBody: "{\"includeCols\":[\"BOGUS\"]}"
+body: "{\"resultCode\":405,\"resultDescription\":\"Invalid column: BOGUS\",\"method\"\
+  :\"Param\"}"
+status: HTTP/1.1 400 Bad Request
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTI5VDAzOjMxOjEzKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQyMjEzLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.G8J_rGzYYHguR3QrBgSEy6zdir7kDQ28ZATMnoFDgbs
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

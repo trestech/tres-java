@@ -1,0 +1,369 @@
+diagnostic: affiliation_get_signature_travel_network
+url: https://api-dev.trestechnologies.com/Affiliation/2
+method: GET
+requestBody: null
+body: "[{\"recNo\":2,\"name\":\"Signature Travel Network\",\"affiliationMarketingCategory\"\
+  :[{\"affiliation_recNo\":2,\"recNo\":500,\"name\":\"Client Status\",\"affiliationMarketingElement\"\
+  :[{\"recNo\":2000,\"affiliationMarketingCategory_recNo\":500,\"name\":\"Prospect\"\
+  ,\"id\":\"10056\"},{\"recNo\":2001,\"affiliationMarketingCategory_recNo\":500,\"\
+  name\":\"Referral\",\"id\":\"10055\"},{\"recNo\":2002,\"affiliationMarketingCategory_recNo\"\
+  :500,\"name\":\"Client\",\"id\":\"10054\"},{\"recNo\":2003,\"affiliationMarketingCategory_recNo\"\
+  :500,\"name\":\"VIP\",\"id\":\"10053\"}]},{\"affiliation_recNo\":2,\"recNo\":501,\"\
+  name\":\"Trip Budget\",\"affiliationMarketingElement\":[{\"recNo\":2004,\"affiliationMarketingCategory_recNo\"\
+  :501,\"name\":\"Budget (Less than $700 pp, per trip)\",\"id\":\"10021\"},{\"recNo\"\
+  :2005,\"affiliationMarketingCategory_recNo\":501,\"name\":\"Moderate ($700-$1500\
+  \ pp, per trip)\",\"id\":\"10022\"},{\"recNo\":2006,\"affiliationMarketingCategory_recNo\"\
+  :501,\"name\":\"Premium ($1500-$3000 pp, per trip)\",\"id\":\"10023\"},{\"recNo\"\
+  :2007,\"affiliationMarketingCategory_recNo\":501,\"name\":\"Deluxe (3001-$5000 pp,\
+  \ per trip)\",\"id\":\"10095\"},{\"recNo\":2008,\"affiliationMarketingCategory_recNo\"\
+  :501,\"name\":\"Luxury ($5000+ pp, per trip)\",\"id\":\"10069\"}]},{\"affiliation_recNo\"\
+  :2,\"recNo\":502,\"name\":\"Cruise Vacation\",\"affiliationMarketingElement\":[{\"\
+  recNo\":2009,\"affiliationMarketingCategory_recNo\":502,\"name\":\"Large Ships\"\
+  ,\"id\":\"10294\"},{\"recNo\":2010,\"affiliationMarketingCategory_recNo\":502,\"\
+  name\":\"Quick Getaways/Short Notice\",\"id\":\"10019\"},{\"recNo\":2011,\"affiliationMarketingCategory_recNo\"\
+  :502,\"name\":\"River Cruises\",\"id\":\"10380\"},{\"recNo\":2012,\"affiliationMarketingCategory_recNo\"\
+  :502,\"name\":\"Small Ships\",\"id\":\"10381\"},{\"recNo\":2013,\"affiliationMarketingCategory_recNo\"\
+  :502,\"name\":\"World Cruises\",\"id\":\"10382\"},{\"recNo\":2014,\"affiliationMarketingCategory_recNo\"\
+  :502,\"name\":\"Luxury Cruising Only\",\"id\":\"21103\"},{\"recNo\":2015,\"affiliationMarketingCategory_recNo\"\
+  :502,\"name\":\"Expedition Cruise\",\"id\":\"24031\"},{\"recNo\":2016,\"affiliationMarketingCategory_recNo\"\
+  :502,\"name\":\"Luxury Cruise (not exclusively)\",\"id\":\"24032\"},{\"recNo\":2017,\"\
+  affiliationMarketingCategory_recNo\":502,\"name\":\"Mid-size ships\",\"id\":\"24033\"\
+  },{\"recNo\":2018,\"affiliationMarketingCategory_recNo\":502,\"name\":\"Yacht\"\
+  ,\"id\":\"24030\"}]},{\"affiliation_recNo\":2,\"recNo\":503,\"name\":\"Land Vacation\
+  \ Type\",\"affiliationMarketingElement\":[{\"recNo\":2019,\"affiliationMarketingCategory_recNo\"\
+  :503,\"name\":\"All-Inclusive\",\"id\":\"10065\"},{\"recNo\":2020,\"affiliationMarketingCategory_recNo\"\
+  :503,\"name\":\"Escorted Tours\",\"id\":\"10295\"},{\"recNo\":2021,\"affiliationMarketingCategory_recNo\"\
+  :503,\"name\":\"Custom Itinerary/Tailor-Made\",\"id\":\"10299\"},{\"recNo\":2022,\"\
+  affiliationMarketingCategory_recNo\":503,\"name\":\"Quick Getaways/Short Notice\"\
+  ,\"id\":\"10300\"},{\"recNo\":2023,\"affiliationMarketingCategory_recNo\":503,\"\
+  name\":\"Rail\",\"id\":\"10078\"},{\"recNo\":2024,\"affiliationMarketingCategory_recNo\"\
+  :503,\"name\":\"Upscale Land Only\",\"id\":\"21104\"},{\"recNo\":2025,\"affiliationMarketingCategory_recNo\"\
+  :503,\"name\":\"Luxury Hotels & Resorts\",\"id\":\"24034\"}]},{\"affiliation_recNo\"\
+  :2,\"recNo\":504,\"name\":\"Marketing Parameters\",\"affiliationMarketingElement\"\
+  :[{\"recNo\":2026,\"affiliationMarketingCategory_recNo\":504,\"name\":\"Do not send\
+  \ direct mail\",\"id\":\"1001\"},{\"recNo\":2027,\"affiliationMarketingCategory_recNo\"\
+  :504,\"name\":\"Do not send cruise marketing\",\"id\":\"1002\"},{\"recNo\":2028,\"\
+  affiliationMarketingCategory_recNo\":504,\"name\":\"Do Not Send Hotel/Tour Marketing\"\
+  ,\"id\":\"1003\"},{\"recNo\":2029,\"affiliationMarketingCategory_recNo\":504,\"\
+  name\":\"Invalid address\",\"id\":\"1004\"},{\"recNo\":2030,\"affiliationMarketingCategory_recNo\"\
+  :504,\"name\":\"Deceased\",\"id\":\"1005\"},{\"recNo\":2031,\"affiliationMarketingCategory_recNo\"\
+  :504,\"name\":\"Change of address\",\"id\":\"1006\"},{\"recNo\":2032,\"affiliationMarketingCategory_recNo\"\
+  :504,\"name\":\"Signature Duplicate\",\"id\":\"1007\"},{\"recNo\":2033,\"affiliationMarketingCategory_recNo\"\
+  :504,\"name\":\"No Client Reach\",\"id\":\"22214\"},{\"recNo\":2034,\"affiliationMarketingCategory_recNo\"\
+  :504,\"name\":\"No more than ONE email a WEEK\",\"id\":\"22388\"},{\"recNo\":2035,\"\
+  affiliationMarketingCategory_recNo\":504,\"name\":\"No more than TWO emails a MONTH\"\
+  ,\"id\":\"22389\"},{\"recNo\":2036,\"affiliationMarketingCategory_recNo\":504,\"\
+  name\":\"No more than ONE email a MONTH\",\"id\":\"22390\"},{\"recNo\":2037,\"affiliationMarketingCategory_recNo\"\
+  :504,\"name\":\"EMarketing Hiatus\",\"id\":\"22187\"},{\"recNo\":2038,\"affiliationMarketingCategory_recNo\"\
+  :504,\"name\":\"Non-US Resident\",\"id\":\"22438\"},{\"recNo\":2039,\"affiliationMarketingCategory_recNo\"\
+  :504,\"name\":\"Non-US Resident Email Express Consent\",\"id\":\"22439\"}]},{\"\
+  affiliation_recNo\":2,\"recNo\":505,\"name\":\"Activity Interest\",\"affiliationMarketingElement\"\
+  :[{\"recNo\":2040,\"affiliationMarketingCategory_recNo\":505,\"name\":\"Adult-Only\"\
+  ,\"id\":\"10028\"},{\"recNo\":2041,\"affiliationMarketingCategory_recNo\":505,\"\
+  name\":\"Adventure\",\"id\":\"10064\"},{\"recNo\":2042,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Art\",\"id\":\"10032\"},{\"recNo\":2043,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Beach/Sun\",\"id\":\"10281\"},{\"recNo\":2044,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Bicycling\",\"id\":\"10039\"},{\"recNo\":2045,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Cultural Travel\",\"id\":\"10033\"},{\"recNo\":2046,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Disney\",\"id\":\"10313\"},{\"recNo\":2047,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Ecotourism\",\"id\":\"24029\"},{\"recNo\":2048,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Family\",\"id\":\"10003\"},{\"recNo\":2049,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Fishing\",\"id\":\"10010\"},{\"recNo\":2050,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Fitness\",\"id\":\"10027\"},{\"recNo\":2051,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Food & Wine\",\"id\":\"10034\"},{\"recNo\":2052,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Golf\",\"id\":\"10041\"},{\"recNo\":2053,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Hiking & Walking\",\"id\":\"10001\"},{\"recNo\":2054,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"History\",\"id\":\"10077\"},{\"recNo\":2055,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Honeymoon/Romance\",\"id\":\"10002\"},{\"recNo\":2056,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Horseback Riding\",\"id\":\"10045\"},{\"recNo\":2057,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"LGBTQ\",\"id\":\"24028\"},{\"recNo\":2058,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Music\",\"id\":\"10035\"},{\"recNo\":2059,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Safari\",\"id\":\"10297\"},{\"recNo\":2060,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Sailing\",\"id\":\"10006\"},{\"recNo\":2061,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Scuba/Snorkeling\",\"id\":\"10285\"},{\"recNo\":2062,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Snow Ski\",\"id\":\"10020\"},{\"recNo\":2063,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Social Impact\",\"id\":\"24035\"},{\"recNo\":2064,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Spa\",\"id\":\"10040\"},{\"recNo\":2065,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Theater\",\"id\":\"10036\"},{\"recNo\":2066,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Ultimate Values\",\"id\":\"22296\"},{\"recNo\":2067,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Ultimate Values EXCLUSIVE\",\"id\":\"22362\"},{\"recNo\":2068,\"\
+  affiliationMarketingCategory_recNo\":505,\"name\":\"Villas/Private Homes\",\"id\"\
+  :\"10298\"},{\"recNo\":2069,\"affiliationMarketingCategory_recNo\":505,\"name\"\
+  :\"Watersports\",\"id\":\"10066\"},{\"recNo\":2070,\"affiliationMarketingCategory_recNo\"\
+  :505,\"name\":\"Whale Watching\",\"id\":\"10007\"}]},{\"affiliation_recNo\":2,\"\
+  recNo\":506,\"name\":\"Destination Interest\",\"affiliationMarketingElement\":[{\"\
+  recNo\":2071,\"affiliationMarketingCategory_recNo\":506,\"name\":\"Africa\",\"id\"\
+  :\"1\"},{\"recNo\":2072,\"affiliationMarketingCategory_recNo\":506,\"name\":\"Alaska\"\
+  ,\"id\":\"2\"},{\"recNo\":2073,\"affiliationMarketingCategory_recNo\":506,\"name\"\
+  :\"Antarctica\",\"id\":\"45\"},{\"recNo\":2074,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Asia/Far East\",\"id\":\"66\"},{\"recNo\":2075,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Australia/New Zealand\",\"id\":\"4\"},{\"recNo\":2076,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Bahamas\",\"id\":\"18\"},{\"recNo\":2077,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Baltic\",\"id\":\"304\"},{\"recNo\":2078,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Bermuda\",\"id\":\"5\"},{\"recNo\":2079,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Black Sea\",\"id\":\"27\"},{\"recNo\":2080,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Canada\",\"id\":\"46\"},{\"recNo\":2081,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Caribbean\",\"id\":\"7\"},{\"recNo\":2082,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Central America\",\"id\":\"342\"},{\"recNo\":2083,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Cuba\",\"id\":\"659\"},{\"recNo\":2084,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Eastern Europe\",\"id\":\"326\"},{\"recNo\":2085,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Florida\",\"id\":\"325\"},{\"recNo\":2086,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Hawaii\",\"id\":\"9\"},{\"recNo\":2087,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"India\",\"id\":\"65\"},{\"recNo\":2088,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Las Vegas\",\"id\":\"324\"},{\"recNo\":2089,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Mediterranean\",\"id\":\"11\"},{\"recNo\":2090,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Mexico\",\"id\":\"10\"},{\"recNo\":2091,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Middle East\",\"id\":\"247\"},{\"recNo\":2092,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"New England\",\"id\":\"245\"},{\"recNo\":2093,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Panama Canal\",\"id\":\"19\"},{\"recNo\":2094,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"South America\",\"id\":\"15\"},{\"recNo\":2095,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"South Pacific\",\"id\":\"35\"},{\"recNo\":2096,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Tahiti\",\"id\":\"37\"},{\"recNo\":2097,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"USA\",\"id\":\"39\"},{\"recNo\":2098,\"affiliationMarketingCategory_recNo\"\
+  :506,\"name\":\"Western Europe\",\"id\":\"328\"}]},{\"affiliation_recNo\":2,\"recNo\"\
+  :507,\"name\":\"Lifecycle\",\"affiliationMarketingElement\":[{\"recNo\":2099,\"\
+  affiliationMarketingCategory_recNo\":507,\"name\":\"Solo\",\"id\":\"10059\"},{\"\
+  recNo\":2100,\"affiliationMarketingCategory_recNo\":507,\"name\":\"Married\",\"\
+  id\":\"10057\"},{\"recNo\":2101,\"affiliationMarketingCategory_recNo\":507,\"name\"\
+  :\"Senior\",\"id\":\"10058\"},{\"recNo\":2102,\"affiliationMarketingCategory_recNo\"\
+  :507,\"name\":\"Widowed\",\"id\":\"10060\"}]},{\"affiliation_recNo\":2,\"recNo\"\
+  :508,\"name\":\"Cruise Lines\",\"affiliationMarketingElement\":[{\"recNo\":2103,\"\
+  affiliationMarketingCategory_recNo\":508,\"name\":\"AMAWATERWAYS\",\"id\":\"21331\"\
+  },{\"recNo\":2104,\"affiliationMarketingCategory_recNo\":508,\"name\":\"American\
+  \ Cruise Line\",\"id\":\"23749\"},{\"recNo\":2105,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Avalon Waterways\",\"id\":\"24289\"},{\"recNo\":2106,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Azamara Cruises\",\"id\":\"21333\"},{\"recNo\":2107,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Carnival\",\"id\":\"21335\"},{\"recNo\":2108,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Celebrity Cruises\",\"id\":\"21336\"},{\"recNo\":2109,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Crystal Cruises\",\"id\":\"21338\"},{\"recNo\":2110,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Cunard Line\",\"id\":\"21339\"},{\"recNo\":2111,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Disney Cruise Line\",\"id\":\"21340\"},{\"recNo\":2112,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Holland America Line\",\"id\":\"21341\"},{\"recNo\":2113,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Hurtigruten\",\"id\":\"22838\"},{\"recNo\":2114,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Lindblad Expeditions\",\"id\":\"21342\"},{\"recNo\":2115,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Norwegian Cruise Line\",\"id\":\"21343\"},{\"recNo\":2116,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Oceania Cruises\",\"id\":\"21344\"},{\"recNo\":2117,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Paul Gauguin Cruises\",\"id\":\"21578\"},{\"recNo\":2118,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Princess Cruises\",\"id\":\"21346\"},{\"recNo\":2119,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Quark Expeditions\",\"id\":\"22929\"},{\"recNo\":2120,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Regent Seven Seas Cruises\",\"id\":\"21348\"},{\"recNo\":2121,\"\
+  affiliationMarketingCategory_recNo\":508,\"name\":\"Royal Caribbean International\"\
+  ,\"id\":\"21349\"},{\"recNo\":2122,\"affiliationMarketingCategory_recNo\":508,\"\
+  name\":\"Seabourn Cruise Line\",\"id\":\"21350\"},{\"recNo\":2123,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"SeaDream Yacht Club\",\"id\":\"21351\"},{\"recNo\":2124,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Silversea Cruises\",\"id\":\"21352\"},{\"recNo\":2125,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Star Clippers LTD\",\"id\":\"21353\"},{\"recNo\":2126,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Tauck River Cruises\",\"id\":\"22222\"},{\"recNo\":2127,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"U by Uniworld\",\"id\":\"23615\"},{\"recNo\":2128,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Un-Cruise Adventure\",\"id\":\"22938\"},{\"recNo\":2129,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Uniworld River Cruises\",\"id\":\"21354\"},{\"recNo\":2130,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Viking River Cruises\"},{\"recNo\":2131,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Virgin Voyages\",\"id\":\"24325\"},{\"recNo\":2132,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Windstar Cruises\",\"id\":\"21355\"},{\"recNo\":2133,\"affiliationMarketingCategory_recNo\"\
+  :508,\"name\":\"Zegrahm Expeditions\",\"id\":\"22935\"}]},{\"affiliation_recNo\"\
+  :2,\"recNo\":509,\"name\":\"Cruise Preference\",\"affiliationMarketingElement\"\
+  :[{\"recNo\":2134,\"affiliationMarketingCategory_recNo\":509,\"name\":\"AMAWATERWAYS\
+  \ - Not Preferred\",\"id\":\"21357\"},{\"recNo\":2135,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"AMAWATERWAYS - Preferred\",\"id\":\"21356\"},{\"recNo\":2136,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"American Cruise Line Not Preferred\"\
+  ,\"id\":\"23751\"},{\"recNo\":2137,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"American Cruise Line Preferred\",\"id\":\"23750\"},{\"recNo\":2138,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Aqua Expeditions\",\"id\":\"21332\"},{\"recNo\":2139,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Aqua Expeditions - Not Preferred\",\"id\":\"21359\"},{\"recNo\"\
+  :2140,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Aqua Expeditions - Preferred\"\
+  ,\"id\":\"21358\"},{\"recNo\":2141,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"Avalon Waterways Not Preferred\",\"id\":\"24291\"},{\"recNo\":2142,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Avalon Waterways Preferred\",\"id\":\"24290\"},{\"recNo\":2143,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Azamara Cruises - Not Preferred\"\
+  ,\"id\":\"21361\"},{\"recNo\":2144,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"Azamara Cruises - Preferred\",\"id\":\"21360\"},{\"recNo\":2145,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Carnival Not Preferred\",\"id\":\"21365\"},{\"recNo\":2146,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Carnival Preferred\",\"id\":\"21364\"},{\"recNo\":2147,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Celebrity Cruises - Not Preferred\",\"id\":\"21367\"},{\"recNo\"\
+  :2148,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Celebrity Cruises -\
+  \ Preferred\",\"id\":\"21366\"},{\"recNo\":2149,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Crystal Cruises - Not Preferred\",\"id\":\"21371\"},{\"recNo\":2150,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Crystal Cruises - Preferred\"\
+  ,\"id\":\"21370\"},{\"recNo\":2151,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"Cunard Line® - Not Preferred\",\"id\":\"21373\"},{\"recNo\":2152,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Cunard Line® - Preferred\",\"id\":\"21372\"},{\"recNo\":2153,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Disney Cruise Line® - Not Preferred\"\
+  ,\"id\":\"21375\"},{\"recNo\":2154,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"Disney Cruise Line® - Preferred\",\"id\":\"21374\"},{\"recNo\":2155,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Fathom\",\"id\":\"22932\"},{\"\
+  recNo\":2156,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Fathom - Not\
+  \ Preferred\",\"id\":\"22934\"},{\"recNo\":2157,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Fathom - Preferred\",\"id\":\"22933\"},{\"recNo\":2158,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Holland America Line - Not Preferred\",\"id\":\"21377\"},{\"recNo\"\
+  :2159,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Holland America Line\
+  \ - Preferred\",\"id\":\"21376\"},{\"recNo\":2160,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Hurtigruten\"},{\"recNo\":2161,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Hurtigruten - Not Preferred\",\"id\":\"22840\"},{\"recNo\":2162,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Hurtigruten - Preferred\",\"\
+  id\":\"22839\"},{\"recNo\":2163,\"affiliationMarketingCategory_recNo\":509,\"name\"\
+  :\"Lindblad Expeditions - Not Preferred\",\"id\":\"21379\"},{\"recNo\":2164,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Lindblad Expeditions - Preferred\",\"id\":\"21378\"},{\"recNo\"\
+  :2165,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Norwegian Cruise Line\
+  \ - Not Preferred\",\"id\":\"21381\"},{\"recNo\":2166,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Norwegian Cruise Line - Preferred\",\"id\":\"21380\"},{\"recNo\"\
+  :2167,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Oceania Cruises - Not\
+  \ Preferred\",\"id\":\"21383\"},{\"recNo\":2168,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Oceania Cruises - Preferred\",\"id\":\"21382\"},{\"recNo\":2169,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Paul Gauguin - Not Preferred\"\
+  ,\"id\":\"21582\"},{\"recNo\":2170,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"Paul Gauguin - Preferred\",\"id\":\"21580\"},{\"recNo\":2171,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Princess Cruises - Not Preferred\",\"id\":\"21387\"},{\"recNo\"\
+  :2172,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Princess Cruises - Preferred\"\
+  ,\"id\":\"21386\"},{\"recNo\":2173,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"Quark Expeditions\"},{\"recNo\":2174,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Quark Expeditions - Not Preferred\",\"id\":\"22931\"},{\"recNo\"\
+  :2175,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Quark Expeditions -\
+  \ Preferred\",\"id\":\"22930\"},{\"recNo\":2176,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Regent Seven Seas Cruises - Not Preferred\",\"id\":\"21391\"},{\"\
+  recNo\":2177,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Regent Seven\
+  \ Seas Cruises - Preferred\",\"id\":\"21390\"},{\"recNo\":2178,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Royal Caribbean - Not Preferred\",\"id\":\"21393\"},{\"recNo\":2179,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Royal Caribbean - Preferred\"\
+  ,\"id\":\"21392\"},{\"recNo\":2180,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"Seabourn Cruise Line - Not Preferred\",\"id\":\"21395\"},{\"recNo\":2181,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Seabourn Cruise Line - Preferred\"\
+  ,\"id\":\"21394\"},{\"recNo\":2182,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"SeaDream Yacht Club - Not Preferred\",\"id\":\"21397\"},{\"recNo\":2183,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"SeaDream Yacht Club - Preferred\"\
+  ,\"id\":\"21396\"},{\"recNo\":2184,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"Silversea Cruises - Not Preferred\",\"id\":\"21399\"},{\"recNo\":2185,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Silversea Cruises - Preferred\"\
+  ,\"id\":\"21398\"},{\"recNo\":2186,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"Star Clippers LTD - Not Preferred\",\"id\":\"21401\"},{\"recNo\":2187,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Star Clippers LTD - Preferred\"\
+  ,\"id\":\"21400\"},{\"recNo\":2188,\"affiliationMarketingCategory_recNo\":509,\"\
+  name\":\"Tauck River Cruises\"},{\"recNo\":2189,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Tauck River Cruises - Not Preferred\",\"id\":\"22223\"},{\"recNo\"\
+  :2190,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Tauck River Cruises\
+  \ - Preferred\",\"id\":\"22224\"},{\"recNo\":2191,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"U by Uniworld Not Preferred\",\"id\":\"23617\"},{\"recNo\":2192,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"U by Uniworld Preferred\",\"\
+  id\":\"23616\"},{\"recNo\":2193,\"affiliationMarketingCategory_recNo\":509,\"name\"\
+  :\"Un-Cruise Adventures\"},{\"recNo\":2194,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Un-Cruise Adventures - Not Preferred\",\"id\":\"22940\"},{\"recNo\"\
+  :2195,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Un-Cruise Adventures\
+  \ - Preferred\",\"id\":\"22939\"},{\"recNo\":2196,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Uniworld River Cruises - Not Preferred\",\"id\":\"21403\"},{\"recNo\"\
+  :2197,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Uniworld River Cruises\
+  \ - Preferred\",\"id\":\"21402\"},{\"recNo\":2198,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Viking River Cruises\",\"id\":\"22434\"},{\"recNo\":2199,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Viking River Cruises - Not Preferred\",\"id\":\"22432\"},{\"recNo\"\
+  :2200,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Viking River Cruises\
+  \ - Preferred\",\"id\":\"22433\"},{\"recNo\":2201,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Virgin Voyages Not Preferred\",\"id\":\"24327\"},{\"recNo\":2202,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Virgin Voyages Preferred\",\"\
+  id\":\"24328\"},{\"recNo\":2203,\"affiliationMarketingCategory_recNo\":509,\"name\"\
+  :\"Windstar Cruises - Not Preferred\",\"id\":\"21405\"},{\"recNo\":2204,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Windstar Cruises - Preferred\",\"id\":\"21404\"},{\"recNo\":2205,\"\
+  affiliationMarketingCategory_recNo\":509,\"name\":\"Zegrahm Expeditions\"},{\"recNo\"\
+  :2206,\"affiliationMarketingCategory_recNo\":509,\"name\":\"Zegrahm Expeditions\
+  \ - Not Preferred\",\"id\":\"22937\"},{\"recNo\":2207,\"affiliationMarketingCategory_recNo\"\
+  :509,\"name\":\"Zegrahm Expeditions - Preferred\",\"id\":\"22936\"}]},{\"affiliation_recNo\"\
+  :2,\"recNo\":510,\"name\":\"SIG Segment Codes\",\"affiliationMarketingElement\"\
+  :[{\"recNo\":2208,\"affiliationMarketingCategory_recNo\":510,\"name\":\"Premium\
+  \ Escorted Vacation\",\"id\":\"21780\"},{\"recNo\":2209,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Deluxe Escorted Vacation\",\"id\":\"21781\"},{\"recNo\":2210,\"\
+  affiliationMarketingCategory_recNo\":510,\"name\":\"Luxury Escorted Vacation\",\"\
+  id\":\"21782\"},{\"recNo\":2211,\"affiliationMarketingCategory_recNo\":510,\"name\"\
+  :\"Premium FIT Vacation\",\"id\":\"21783\"},{\"recNo\":2212,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Deluxe FIT Vacation\",\"id\":\"21784\"},{\"recNo\":2213,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Luxury FIT Vacation\",\"id\":\"21785\"},{\"recNo\":2214,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Contemporary Cruise\",\"id\":\"21786\"},{\"recNo\":2215,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Premium Cruise\",\"id\":\"21787\"},{\"recNo\":2216,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Upper Premium Cruise\",\"id\":\"21788\"},{\"recNo\":2217,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Luxury Cruise\",\"id\":\"21789\"},{\"recNo\":2218,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Small Ship Cruise\",\"id\":\"21790\"},{\"recNo\":2219,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Family Travel\",\"id\":\"21791\"},{\"recNo\":2220,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Luxury Travel\",\"id\":\"21792\"},{\"recNo\":2221,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"High Value Customer\",\"id\":\"21796\"},{\"recNo\":2222,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Medium-High Value Customer\",\"id\":\"21797\"},{\"recNo\":2223,\"\
+  affiliationMarketingCategory_recNo\":510,\"name\":\"Medium Value Customer\",\"id\"\
+  :\"21798\"},{\"recNo\":2224,\"affiliationMarketingCategory_recNo\":510,\"name\"\
+  :\"Medium-Low Value Customer\",\"id\":\"21799\"},{\"recNo\":2225,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Low Value Customer\",\"id\":\"21800\"},{\"recNo\":2226,\"affiliationMarketingCategory_recNo\"\
+  :510,\"name\":\"Expedition Cruise\",\"id\":\"23123\"}]},{\"affiliation_recNo\":2,\"\
+  recNo\":511,\"name\":\"SIG Print Marketing Codes\",\"affiliationMarketingElement\"\
+  :[{\"recNo\":2227,\"affiliationMarketingCategory_recNo\":511,\"name\":\"Wall Calendar\"\
+  ,\"id\":\"22009\"},{\"recNo\":2228,\"affiliationMarketingCategory_recNo\":511,\"\
+  name\":\"Hotels & Resorts Directory\",\"id\":\"22010\"},{\"recNo\":2229,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"Travel Redefined, February\",\"id\":\"22016\"},{\"recNo\":2230,\"\
+  affiliationMarketingCategory_recNo\":511,\"name\":\"Travel Redefined, May\",\"id\"\
+  :\"22019\"},{\"recNo\":2231,\"affiliationMarketingCategory_recNo\":511,\"name\"\
+  :\"Ultimate Experiences, July\",\"id\":\"22195\"},{\"recNo\":2232,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"October Travel Redefined, October\",\"id\":\"22023\"},{\"recNo\"\
+  :2233,\"affiliationMarketingCategory_recNo\":511,\"name\":\"Hotels & Resorts Brochure,\
+  \ 1st Mailing\",\"id\":\"22011\"},{\"recNo\":2234,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"The Travel Magazine, 1st Edition\",\"id\":\"22015\"},{\"recNo\"\
+  :2235,\"affiliationMarketingCategory_recNo\":511,\"name\":\"The Travel Magazine,\
+  \ 2nd Edition\",\"id\":\"22017\"},{\"recNo\":2236,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"The Travel Magazine, 3rd Edition\",\"id\":\"22018\"},{\"recNo\"\
+  :2237,\"affiliationMarketingCategory_recNo\":511,\"name\":\"The Travel Magazine,\
+  \ 4th Edition\",\"id\":\"22020\"},{\"recNo\":2238,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"The Travel Magazine, 5th Edition\",\"id\":\"22021\"},{\"recNo\"\
+  :2239,\"affiliationMarketingCategory_recNo\":511,\"name\":\"The Travel Magazine,\
+  \ 6th Edition\",\"id\":\"22022\"},{\"recNo\":2240,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"Ultimate Experiences, 1st Edition\",\"id\":\"22014\"},{\"recNo\"\
+  :2241,\"affiliationMarketingCategory_recNo\":511,\"name\":\"Luxury Benefits Brochure,\
+  \ 1st Mailing\",\"id\":\"22277\"},{\"recNo\":2242,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"Hotels & Resorts Brochure, 2nd Mailing\",\"id\":\"23124\"},{\"recNo\"\
+  :2243,\"affiliationMarketingCategory_recNo\":511,\"name\":\"Hotels & Resorts Brochure,\
+  \ 3rd Mailing\",\"id\":\"23377\"},{\"recNo\":2244,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"Ultimate Experiences, 2nd Edition\"},{\"recNo\":2245,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"Luxury Benefits Brochure, 2nd Mailing\",\"id\":\"22483\"},{\"recNo\"\
+  :2246,\"affiliationMarketingCategory_recNo\":511,\"name\":\"Travel Benefits (6-Panel),\
+  \ 1st Mailing\",\"id\":\"22486\"},{\"recNo\":2247,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"Travel Benefits (6-Panel), 2nd Mailing\",\"id\":\"22487\"},{\"recNo\"\
+  :2248,\"affiliationMarketingCategory_recNo\":511,\"name\":\"Travel Benefits Brochure,\
+  \ 1st Mailing\",\"id\":\"22484\"},{\"recNo\":2249,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"Travel Benefits Brochure, 2nd Mailing\",\"id\":\"22485\"},{\"recNo\"\
+  :2250,\"affiliationMarketingCategory_recNo\":511,\"name\":\"Subscription The Travel\
+  \ Magazine\",\"id\":\"22647\"},{\"recNo\":2251,\"affiliationMarketingCategory_recNo\"\
+  :511,\"name\":\"Subscription Ultimate Experiences\"}]},{\"affiliation_recNo\":2,\"\
+  recNo\":512,\"name\":\"Print Subscriptions\",\"affiliationMarketingElement\":[{\"\
+  recNo\":2252,\"affiliationMarketingCategory_recNo\":512,\"name\":\"The Travel Magazine\"\
+  },{\"recNo\":2253,\"affiliationMarketingCategory_recNo\":512,\"name\":\"Travel Redefined\"\
+  ,\"id\":\"22649\"},{\"recNo\":2254,\"affiliationMarketingCategory_recNo\":512,\"\
+  name\":\"Ultimate Experiences\"}]},{\"affiliation_recNo\":2,\"recNo\":513,\"name\"\
+  :\"Travel Personality\",\"affiliationMarketingElement\":[{\"recNo\":2255,\"affiliationMarketingCategory_recNo\"\
+  :513,\"name\":\"What's HOT? What's NEW?\",\"id\":\"23852\"},{\"recNo\":2256,\"affiliationMarketingCategory_recNo\"\
+  :513,\"name\":\"Life is Too Short… Enjoy it!\",\"id\":\"23853\"},{\"recNo\":2257,\"\
+  affiliationMarketingCategory_recNo\":513,\"name\":\"Seeking Togetherness & Memory\
+  \ Making\",\"id\":\"23854\"},{\"recNo\":2258,\"affiliationMarketingCategory_recNo\"\
+  :513,\"name\":\"Relax. Restore. Rejuvenate\",\"id\":\"23855\"},{\"recNo\":2259,\"\
+  affiliationMarketingCategory_recNo\":513,\"name\":\"Giving + Travel = Pure Happiness\"\
+  ,\"id\":\"23856\"},{\"recNo\":2260,\"affiliationMarketingCategory_recNo\":513,\"\
+  name\":\"The Power of One\",\"id\":\"24039\"},{\"recNo\":2261,\"affiliationMarketingCategory_recNo\"\
+  :513,\"name\":\"Earth Day, Every Day\",\"id\":\"24040\"},{\"recNo\":2262,\"affiliationMarketingCategory_recNo\"\
+  :513,\"name\":\"Loyal and Reliable\",\"id\":\"23857\"},{\"recNo\":2263,\"affiliationMarketingCategory_recNo\"\
+  :513,\"name\":\"The Finer Things in Life\",\"id\":\"23858\"}]},{\"affiliation_recNo\"\
+  :2,\"recNo\":514,\"name\":\"Trip Duration\",\"affiliationMarketingElement\":[{\"\
+  recNo\":2264,\"affiliationMarketingCategory_recNo\":514,\"name\":\"No Preference\"\
+  ,\"id\":\"10031\"},{\"recNo\":2265,\"affiliationMarketingCategory_recNo\":514,\"\
+  name\":\"3 to 4 nights\",\"id\":\"10048\"},{\"recNo\":2266,\"affiliationMarketingCategory_recNo\"\
+  :514,\"name\":\"5 to 6 nights\",\"id\":\"10049\"},{\"recNo\":2267,\"affiliationMarketingCategory_recNo\"\
+  :514,\"name\":\"7 to 10 nights\",\"id\":\"10017\"},{\"recNo\":2268,\"affiliationMarketingCategory_recNo\"\
+  :514,\"name\":\"11+ nights\",\"id\":\"10070\"}]},{\"affiliation_recNo\":2,\"recNo\"\
+  :515,\"name\":\"Trip Frequency\",\"affiliationMarketingElement\":[{\"recNo\":2269,\"\
+  affiliationMarketingCategory_recNo\":515,\"name\":\"1 time a year\",\"id\":\"10050\"\
+  },{\"recNo\":2270,\"affiliationMarketingCategory_recNo\":515,\"name\":\"2 times\
+  \ a year\",\"id\":\"10018\"},{\"recNo\":2271,\"affiliationMarketingCategory_recNo\"\
+  :515,\"name\":\"3 to 4 times a year\",\"id\":\"10051\"},{\"recNo\":2272,\"affiliationMarketingCategory_recNo\"\
+  :515,\"name\":\"5 or more times a year\",\"id\":\"10052\"}]},{\"affiliation_recNo\"\
+  :2,\"recNo\":516,\"name\":\"Preferred Time of Yr\",\"affiliationMarketingElement\"\
+  :[{\"recNo\":2273,\"affiliationMarketingCategory_recNo\":516,\"name\":\"Anytime\"\
+  ,\"id\":\"10073\"},{\"recNo\":2274,\"affiliationMarketingCategory_recNo\":516,\"\
+  name\":\"Fall\",\"id\":\"10075\"},{\"recNo\":2275,\"affiliationMarketingCategory_recNo\"\
+  :516,\"name\":\"Spring\",\"id\":\"10076\"},{\"recNo\":2276,\"affiliationMarketingCategory_recNo\"\
+  :516,\"name\":\"Summer\",\"id\":\"10074\"},{\"recNo\":2277,\"affiliationMarketingCategory_recNo\"\
+  :516,\"name\":\"Winter\",\"id\":\"10030\"}]}]}]"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTI5VDAzOjMxOjE2KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQyMjE4LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.-qaszkXAatk3J6Ihz5rd2QWkxXkiUdIV7TmGMRy95v4
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

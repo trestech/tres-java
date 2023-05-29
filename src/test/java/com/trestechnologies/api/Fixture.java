@@ -77,6 +77,20 @@ public class Fixture {
     MAPPER.writeValue(file, fixture);
   }
 
+  /**
+   * Deletes the fixture file for the given method and request path.  Use with
+   * caution, as this might make tests tricky to repeat.
+   * 
+   * @param fileName
+   */
+  public static void clobber ( String fileName ) {
+    File file = new File(FIXTURES_PATH + File.separator + fileName + ".yml");
+
+    if ( file.isFile() && file.exists() ) {
+      file.delete();
+    }
+  }
+
   private static String filePath ( String method, String requestPath, String diagnostic ) {
     String retVal = method + requestPath.replaceAll("[^a-zA-Z]+", "_");
 

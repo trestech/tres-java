@@ -1,7 +1,10 @@
 package com.trestechnologies.api.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class NumSearchParam {
-  private Long[] value;
+  private List<Long> value;
 
   private Short compareCondition;
 
@@ -14,15 +17,13 @@ public class NumSearchParam {
   }
 
   public NumSearchParam ( long value ) {
-    this.value = new Long[] {value};
+    this.value = new ArrayList<Long>() {{ add(value); }};
     this.compareCondition = Compare.EQUAL.id;
   }
 
-  public NumSearchParam ( Compare compareCondition, long value ) {
-    this(compareCondition, new Long[] {value});
-  }
+  public NumSearchParam ( Compare compareCondition, long value ) { this(compareCondition, new ArrayList<Long>() {{ add(value); }}); }
   
-  public NumSearchParam ( Compare compareCondition, Long[] value ) {
+  public NumSearchParam ( Compare compareCondition, List<Long> value ) {
     this(compareCondition);
     this.value = value;
   }
@@ -31,13 +32,13 @@ public class NumSearchParam {
     this.compareCondition = compareCondition.id;
   }
 
-  public NumSearchParam ( Long[] value ) {
+  public NumSearchParam ( List<Long> value ) {
     this(Compare.EQUAL, value);
   }
 
-  public Long[] getValue ( ) { return value; }
+  public List<Long> getValue ( ) { return value; }
 
-  public void setValue ( Long[] value ) { this.value = value; }
+  public void setValue ( List<Long> value ) { this.value = value; }
 
   public Short getCompareCondition ( ) { return compareCondition; }
 

@@ -1,12 +1,24 @@
 package com.trestechnologies.api.model;
 
-import java.util.Date;
+import com.trestechnologies.api.interfaces.APIContext;
 
-public class Tag {
-  public static final ModelMapper<Tag> MAPPER = new ModelMapper<Tag>() {
+import java.io.IOException;
+import java.util.Date;
+import java.util.List;
+
+public class Tag extends BaseModel {
+  public static ModelMapper<Tag> mapper ( ) { return new ModelMapper<Tag>() {
     @Override public Class<Tag> getModel () { return Tag.class; }
-  };
-  
+  }; }
+
+  public static Tag find ( APIContext context, long recNo ) throws IOException {
+    return mapper().treeToList(context.get("Tag/" + recNo)).get(0);
+  }
+
+  public static List<Tag> search ( APIContext context, TagSearchParam params ) throws IOException {
+    return mapper().treeToList(context.post("TagSearch", params));
+  }
+
   private long recNo;
 
   private String name;
