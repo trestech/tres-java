@@ -5,6 +5,9 @@ import com.trestechnologies.api.interfaces.AreaFlag;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Used for filtering by tag when searching tags.
+ */
 public class TagSearchParam extends BaseSearchModel {
   StringSearchParam value;
 

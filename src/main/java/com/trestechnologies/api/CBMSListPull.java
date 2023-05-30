@@ -7,10 +7,7 @@ import com.trestechnologies.api.model.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-
-import static com.trestechnologies.api.Methods.*;
 
 /**
  * Dumps the Tres API schema for a method to stdout.
@@ -42,10 +39,11 @@ public class CBMSListPull extends CommandLine {
     });
     
     if ( marketingPartnerId != null ) {
-      TagSearchParam tagSearchParams = new TagSearchParam(StringSearchParam.Compare.STARTING_WITH, Collections.singletonList(marketingPartnerId));
-      NumSearchParam recNos = new NumSearchParam(NumSearchParam.Compare.EQUAL, marketingPartnerIdRecNos);
+      BaseSearchModel.TagSearchParam tagSearchParams = new BaseSearchModel.TagSearchParam();
       
-      tagSearchParams.setRecNo(recNos);
+      tagSearchParams.setValue(new StringSearchParam(StringSearchParam.Compare.STARTING_WITH, marketingPartnerId));
+      tagSearchParams.setRecNo(marketingPartnerIdRecNos.get(0));
+      params.setTags(tagSearchParams);
     }
 
     return Profile.search(ctx, params);
@@ -56,13 +54,13 @@ public class CBMSListPull extends CommandLine {
     
     assert args.length < 2 : "Too many arguments";
     
-//    if ( args.length == 0 ) {
-//      String command = cmd.bestCommand("./bin/cbms-list-pull.sh");
-//      
-//      System.out.println("Usage: " + command + " [Marketing Partner ID]");
-//      
-//      System.exit(1);
-//    }
+    if ( args.length == 0 ) {
+      String command = cmd.bestCommand("./bin/cbms-list-pull.sh");
+
+      System.out.println("Usage: " + command + " <Marketing Partner ID>");
+
+      System.exit(1);
+    }
     
     cmd.refreshToken();
     
@@ -84,7 +82,7 @@ public class CBMSListPull extends CommandLine {
         tagSearchParams.setStartingRow(0);
         tagSearchParams.setRowCount(1);
         tagSearchParams.setTopRows(1);
-        tagSearchParams.setIncludeCols(new String[] {"valueList"});
+        tagSearchParams.setIncludeCols(new String[] {"recNo", "valueList"});
         tagSearchParams.setAreaFlags(AreaFlag.CLIENT, AreaFlag.TRAVELER);
 
         tagSearchParams.setName("Marketing");

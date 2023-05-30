@@ -4,6 +4,44 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class BaseSearchModel extends BaseModel {
+  /**
+   * Used for filtering by tag when searching other objects.
+   */
+  public static class TagSearchParam {
+    public TagSearchParam ( ) { }
+
+    public TagSearchParam ( StringSearchParam.Compare compare, List<String> value ) {
+      this.value = new StringSearchParam(compare, value);
+    }
+
+    public TagSearchParam ( StringSearchParam.Compare compare, String value ) {
+      this.value = new StringSearchParam(compare, value);
+    }
+    
+    public TagSearchParam ( String value ) {
+      this(StringSearchParam.Compare.EQUAL, new ArrayList<String>() {{ add(value); }});
+    }
+    private Long recNo;
+
+    private StringSearchParam value;
+
+    public Long getRecNo () {
+      return recNo;
+    }
+
+    public void setRecNo ( Long recNo ) {
+      this.recNo = recNo;
+    }
+
+    public StringSearchParam getValue () {
+      return value;
+    }
+
+    public void setValue ( StringSearchParam value ) {
+      this.value = value;
+    }
+  }
+
   private NumSearchParam recNo;
   
   private Long startingRow;
