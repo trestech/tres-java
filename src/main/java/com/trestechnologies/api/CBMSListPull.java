@@ -21,10 +21,10 @@ public class CBMSListPull extends CommandLine {
   }
 
   protected List<Profile> queryProfiles ( APIContext ctx ) throws IOException {
-    return queryProfiles(ctx, null);
+    return queryProfiles(ctx, null, null);
   }
   
-  protected List<Profile> queryProfiles ( APIContext ctx, String marketingPartnerId ) throws IOException {
+  protected List<Profile> queryProfiles ( APIContext ctx, String marketingPartnerId, List<Long> marketingPartnerIdRecNos ) throws IOException {
     ProfileSearchParam params = new ProfileSearchParam();
     
     params.setStartingRow(0);
@@ -42,7 +42,10 @@ public class CBMSListPull extends CommandLine {
     });
     
     if ( marketingPartnerId != null ) {
-      params.setTags(StringSearchParam.Compare.STARTING_WITH, Collections.singletonList(marketingPartnerId));
+      TagSearchParam tagSearchParams = new TagSearchParam(StringSearchParam.Compare.STARTING_WITH, Collections.singletonList(marketingPartnerId));
+      NumSearchParam recNos = new NumSearchParam(NumSearchParam.Compare.EQUAL, marketingPartnerIdRecNos);
+      
+      tagSearchParams.setRecNo(recNos);
     }
 
     return Profile.search(ctx, params);
@@ -70,6 +73,7 @@ public class CBMSListPull extends CommandLine {
         String priority;
         List<Long> excludedProfileRecNos = new ArrayList<>();
         List<Profile> profiles;
+        List<Long> marketingPartnerIdRecNos = new ArrayList<>();
         
         if ( args.length > 0 ) {
           marketingPartnerId = args[0];
@@ -82,8 +86,13 @@ public class CBMSListPull extends CommandLine {
         tagSearchParams.setTopRows(1);
         tagSearchParams.setIncludeCols(new String[] {"valueList"});
         tagSearchParams.setAreaFlags(AreaFlag.CLIENT, AreaFlag.TRAVELER);
-        tagSearchParams.setName("No Marketing");
+
+        tagSearchParams.setName("Marketing");
+        Tag.search(ctx, tagSearchParams).forEach(tag -> {
+          marketingPartnerIdRecNos.add(tag.getRecNo());
+        });
         
+        tagSearchParams.setName("No Marketing");
         Tag.search(ctx, tagSearchParams).forEach(tag -> {
           List<String> values = Arrays.asList(tag.getValueList().split("\n"));
           ProfileSearchParam profileParams = new ProfileSearchParam();
@@ -105,7 +114,7 @@ public class CBMSListPull extends CommandLine {
           priority = "0";
           profiles = cmd.queryProfiles(ctx);
         } else {
-          profiles = cmd.queryProfiles(ctx, marketingPartnerId);
+          profiles = cmd.queryProfiles(ctx, marketingPartnerId, marketingPartnerIdRecNos);
           
           if ( profiles.isEmpty() ) {
             priority = "1";
