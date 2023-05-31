@@ -41,6 +41,7 @@ public abstract class BaseTestCase extends TestCase {
   protected static final boolean SKIP_PENDING_FIX = true;
 
   protected static final String LIVE_URL = "https://api-dev.trestechnologies.com";
+//  protected static final String LIVE_URL = "https://api-dev-staging.trestechnologies.com";
   
   protected static final String USERNAME = "MAST";
 

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.trestechnologies.api.interfaces.APIContext;
 import com.trestechnologies.api.interfaces.APIContextAdapter;
@@ -61,6 +62,7 @@ public class TresContext extends APIContextAdapter {
   public static final String DEFAULT_URL = "https://api.trestechnologies.com";
   
   public static final String DEVELOP_URL = "https://api-dev.trestechnologies.com";
+//  public static final String DEVELOP_URL = "https://api-dev-staging.trestechnologies.com";
   
   private static final Logger LOG = Logger.getLogger(TresContext.class.toString());
   
@@ -341,6 +343,7 @@ public class TresContext extends APIContextAdapter {
       
       switch ( statusCode ) {
         case SC_OK: return node;
+        case SC_NO_CONTENT: return JsonNodeFactory.instance.arrayNode(0); // Hopefully you were expecting an array.
         case SC_BAD_REQUEST: case SC_UNAUTHORIZED: 
           if ( node != null && node.isObject() && node.has("resultCode") ) {
             int code = node.get("resultCode").intValue();

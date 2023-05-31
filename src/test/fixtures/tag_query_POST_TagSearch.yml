@@ -45,17 +45,17 @@ body: "[{\"recNo\":21917,\"name\":\"ProfileMF_Company DK\",\"referenced\":true,\
   :true,\"valueRequired\":false,\"areaFlags\":64,\"requirement\":1},{\"recNo\":21937,\"\
   name\":\"PaymentGroup\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
   :true,\"valueRequired\":false,\"areaFlags\":64,\"requirement\":1},{\"recNo\":21944,\"\
-  createDateTime\":\"2022-12-22T00:00:41+00:00\",\"lastModifiedDateTime\":\"2023-05-28T18:38:36+00:00\"\
+  createDateTime\":\"2022-12-22T00:00:41+00:00\",\"lastModifiedDateTime\":\"2023-05-30T19:10:49+00:00\"\
   ,\"name\":\"Marketing\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
-  :false,\"valueRequired\":false,\"valueList\":\"BDATA\\nEML01\\nNOCBM\\nNOEMM\\nNOMKT\\\
-  nNOTBM\\nNOMTAG\\n\",\"areaFlags\":1,\"requirement\":1},{\"recNo\":21945,\"createDateTime\"\
-  :\"2022-12-22T00:03:11+00:00\",\"lastModifiedDateTime\":\"2022-12-22T00:03:11+00:00\"\
-  ,\"name\":\"No Marketing\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
-  :false,\"valueRequired\":false,\"valueList\":\"NOEMM\\nNOCBM\\nNOTBM\\nNOMKT\\nBDATA\"\
-  ,\"areaFlags\":3,\"requirement\":1}]"
+  :false,\"valueRequired\":false,\"valueList\":\"BDATA:\\nEML01:Promotion\\nNOCBM:\\\
+  nNOEMM:\\nNOMKT:\\nNOTBM:\\nNOMTAG:\\n\",\"areaFlags\":1,\"requirement\":1},{\"\
+  recNo\":21945,\"createDateTime\":\"2022-12-22T00:03:11+00:00\",\"lastModifiedDateTime\"\
+  :\"2022-12-22T00:03:11+00:00\",\"name\":\"No Marketing\",\"referenced\":true,\"\
+  activeStatus\":true,\"valueFreeFlow\":false,\"valueRequired\":false,\"valueList\"\
+  :\"NOEMM\\nNOCBM\\nNOTBM\\nNOMKT\\nBDATA\",\"areaFlags\":3,\"requirement\":1}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTI5VDAzOjMwOjU3KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQyMjAyLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.01UQd3vrB9hDL6LPWnZj1TKraJUIufM2xYO2Di0SO3E
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTMxVDE3OjIwOjIxKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQyNzc5LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.N37FUld7ou_jHLuZ2bC6Ahe1UqR-7smCOHtBqcabCWM
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

@@ -12,7 +12,9 @@ public class Tag extends BaseModel {
   }; }
 
   public static Tag find ( APIContext context, long recNo ) throws IOException {
-    return mapper().treeToList(context.get("Tag/" + recNo)).get(0);
+    List<Tag> list = mapper().treeToList(context.get("Tag/" + recNo));
+    
+    return list.isEmpty() ? null : list.get(0);
   }
 
   public static List<Tag> search ( APIContext context, TagSearchParam params ) throws IOException {

@@ -11,7 +11,9 @@ public class Affiliation extends BaseModel {
   }; }
 
   public static Affiliation find ( APIContext context, long recNo ) throws IOException {
-    return mapper().treeToList(context.get("Affiliation/" + recNo)).get(0);
+    List<Affiliation> list = mapper().treeToList(context.get("Affiliation/" + recNo));
+    
+    return list.isEmpty() ? null : list.get(0);
   }
 
   private long recNo;
