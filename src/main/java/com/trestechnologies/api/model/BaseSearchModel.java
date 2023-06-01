@@ -10,16 +10,18 @@ public abstract class BaseSearchModel extends BaseModel {
   public static class TagSearchParam {
     public TagSearchParam ( ) { }
 
-    public TagSearchParam ( StringSearchParam.Compare compare, List<String> value ) {
+    public TagSearchParam ( Long recNo, StringSearchParam.Compare compare, List<String> value ) {
+      this.recNo = recNo;
       this.value = new StringSearchParam(compare, value);
     }
 
-    public TagSearchParam ( StringSearchParam.Compare compare, String value ) {
+    public TagSearchParam ( Long recNo, StringSearchParam.Compare compare, String value ) {
+      this.recNo = recNo;
       this.value = new StringSearchParam(compare, value);
     }
     
-    public TagSearchParam ( String value ) {
-      this(StringSearchParam.Compare.EQUAL, new ArrayList<String>() {{ add(value); }});
+    public TagSearchParam ( Long recNo, String value ) {
+      this(recNo, StringSearchParam.Compare.EQUAL, new ArrayList<String>() {{ add(value); }});
     }
     private Long recNo;
 
@@ -107,7 +109,7 @@ public abstract class BaseSearchModel extends BaseModel {
     
     this.tags.add(tags);
   }
-  public void setTags ( StringSearchParam.Compare compare, List<String> value ) {
-    this.setTags(new TagSearchParam(compare, value));
+  public void setTags ( Long recNo, StringSearchParam.Compare compare, List<String> value ) {
+    this.setTags(new TagSearchParam(recNo, compare, value));
   }
 }

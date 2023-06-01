@@ -39,7 +39,7 @@ public class ProfileTest extends BaseTestCase {
     Tag.search(context, tagsParams).forEach(tag -> {
       List<String> values = Arrays.asList(tag.getValueList().split("\n"));
       
-      params.setTags(STARTING_WITH, values);
+      params.setTags(tag.getRecNo(), STARTING_WITH, values);
     });
 
     params.setStartingRow(0);

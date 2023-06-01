@@ -329,6 +329,7 @@ public class TresContext extends APIContextAdapter {
       
       if ( contentType != null && contentType.startsWith("application/json") && stream != null ) {
         node = mapper.readTree(stream);
+        stream = null;
       }
       
       if ( node != null && node.isObject() && !node.has("resultCode") ) {
@@ -353,12 +354,15 @@ public class TresContext extends APIContextAdapter {
             }
             
             throw new TresException("Unknown error: " + node);
+          } else if ( node.has("error") ) {
+            throw new TresException(node.get("error").textValue());
           }
         default:
           String body;
           
           if ( stream != null ) {
             body = new BufferedReader(new InputStreamReader(stream)).lines().collect(Collectors.joining("\n"));
+            stream = null;
           } else {
             body = "<No Body In Response>";
           }
