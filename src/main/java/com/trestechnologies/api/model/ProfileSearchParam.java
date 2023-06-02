@@ -3,7 +3,7 @@ package com.trestechnologies.api.model;
 import java.util.List;
 
 public class ProfileSearchParam extends BaseSearchModel {
-  private Long profileType;
+  private Short profileType;
 
   private StringSearchParam profileName;
 
@@ -75,10 +75,10 @@ public class ProfileSearchParam extends BaseSearchModel {
 
 //  private ActivitySearchParams clientActivitySearchParams;
 
-  public Long getProfileType ( ) { return profileType; }
+  public Short getProfileType ( ) { return profileType; }
 
-  public void setProfileType ( Long profileType ) { this.profileType = profileType; }
-  public void setProfileType ( long profileType ) { this.profileType = profileType; }
+  public void setProfileType ( Short profileType ) { this.profileType = profileType; }
+  public void setProfileType ( Profile.Type profileType ) { this.profileType = (short) profileType.ordinal(); }
 
   public StringSearchParam getProfileName ( ) { return profileName; }
 
@@ -128,12 +128,12 @@ public class ProfileSearchParam extends BaseSearchModel {
   public Long getClientType ( ) { return clientType; }
 
   public void setClientType ( Long clientType ) { this.clientType = clientType; }
-  public void setClientType ( long clientType ) { this.clientType = clientType; }
+  public void setClientType ( Profile.ClientType clientType ) { this.clientType = (long) clientType.ordinal(); }
 
   public Long getSupplierType ( ) { return supplierType; }
 
   public void setSupplierType ( Long supplierType ) { this.supplierType = supplierType; }
-  public void setSupplierType ( long supplierType ) { this.supplierType = supplierType; }
+  public void setSupplierType ( Profile.SupplierType supplierType ) { this.supplierType = (long) supplierType.ordinal(); }
 
   public Short getActivestatus ( ) { return activeStatus; }
 

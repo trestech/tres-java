@@ -16,7 +16,7 @@ public class ProfileTest extends BaseTestCase {
     List<Profile> list;
     
     params.setStartingRow(0);
-    params.setProfileType(1);
+    params.setProfileType(Profile.Type.CLIENT);
     params.setIncludeCols(new String[] {"recNo", "name"});
     params.setActiveStatus(Profile.ActiveStatus.ACTIVE);
     
@@ -59,7 +59,7 @@ public class ProfileTest extends BaseTestCase {
     list = Profile.search(context, params);
 
     assertFalse("did not expect empty result", list.isEmpty());
-    assertEquals(2, list.size());
+    assertEquals(5, list.size());
   }).group("profile_cbms_list_pull_with_marketing"); }
 
   public void testListCbmsListPull ( ) { ((WithMockWebServer) (context) -> {
@@ -69,6 +69,7 @@ public class ProfileTest extends BaseTestCase {
     params.setStartingRow(0);
     params.setEmailPermitMarketing(true);
     params.setActiveStatus(Profile.ActiveStatus.ACTIVE);
+    params.setProfileType(Profile.Type.CLIENT);
     params.setIncludeCols(new String[] {
       "recNo",
       "clientInformalSalutation",
@@ -84,7 +85,7 @@ public class ProfileTest extends BaseTestCase {
     list = Profile.search(context, params);
 
     assertFalse("did not exepct empty result", list.isEmpty());
-    assertEquals(97, list.size());
+    assertEquals(69, list.size());
   }).group("profile_cbms_list_pull"); }
 
   public void testListStartingWith ( ) { ((WithMockWebServer) (context) -> {
