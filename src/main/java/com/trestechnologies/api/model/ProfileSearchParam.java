@@ -27,7 +27,7 @@ public class ProfileSearchParam extends BaseSearchModel {
 
   private Long supplierType;
 
-  private Boolean activestatus;
+  private Short activeStatus;
 
   private NumSearchParam clientBranchRecNo;
 
@@ -135,9 +135,10 @@ public class ProfileSearchParam extends BaseSearchModel {
   public void setSupplierType ( Long supplierType ) { this.supplierType = supplierType; }
   public void setSupplierType ( long supplierType ) { this.supplierType = supplierType; }
 
-  public Boolean isActivestatus ( ) { return activestatus; }
+  public Short getActivestatus ( ) { return activeStatus; }
 
-  public void setActivestatus ( Boolean activestatus ) { this.activestatus = activestatus; }
+  public void setActiveStatus ( Short activeStatus ) { this.activeStatus = activeStatus; }
+  public void setActiveStatus ( Profile.ActiveStatus activeStatus ) { this.activeStatus = (short) activeStatus.ordinal(); }
 
   public NumSearchParam getClientBranchRecNo ( ) { return clientBranchRecNo; }
 

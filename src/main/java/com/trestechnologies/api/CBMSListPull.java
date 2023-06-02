@@ -26,6 +26,7 @@ public class CBMSListPull extends CommandLine {
     
     params.setStartingRow(0);
     params.setEmailPermitMarketing(true);
+    params.setActiveStatus(Profile.ActiveStatus.ACTIVE);
     params.setIncludeCols(new String[] {
       "recNo",
       "clientInformalSalutation",

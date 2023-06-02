@@ -18,7 +18,7 @@ public class ProfileTest extends BaseTestCase {
     params.setStartingRow(0);
     params.setProfileType(1);
     params.setIncludeCols(new String[] {"recNo", "name"});
-    params.setActivestatus(true);
+    params.setActiveStatus(Profile.ActiveStatus.ACTIVE);
     
     list = Profile.search(context, params);
     
@@ -68,6 +68,7 @@ public class ProfileTest extends BaseTestCase {
 
     params.setStartingRow(0);
     params.setEmailPermitMarketing(true);
+    params.setActiveStatus(Profile.ActiveStatus.ACTIVE);
     params.setIncludeCols(new String[] {
       "recNo",
       "clientInformalSalutation",
