@@ -1,12 +1,12 @@
 diagnostic: profile_include_cols_invalid
-url: https://api-dev.trestechnologies.com/ProfileSearch
+url: https://api-dev-staging.trestechnologies.com/ProfileSearch
 method: POST
 requestBody: "{\"includeCols\":[\"BOGUS\"]}"
 body: "{\"resultCode\":405,\"resultDescription\":\"Invalid column: BOGUS\",\"method\"\
   :\"Param\"}"
 status: HTTP/1.1 400 Bad Request
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTMxVDE3OjIwOjQ4KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQyNzg3LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.3jVurb7ogJP0TTeS39dWJ4OJGwxvOqmm78O--kqLfeE
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTA4VDE4OjU5OjIwKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1MDMxLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.OHK4pyWbu52s0GEq8qrEfdI3UTtOP_-fwT41tjf51so
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

@@ -1,5 +1,5 @@
 diagnostic: null
-url: https://api-dev.trestechnologies.com/Login/domain
+url: https://api-dev-staging.trestechnologies.com/Login/domain
 method: GET
 requestBody: null
 body: "{\"resultCode\":105,\"resultDescription\":\"Invalid alias\",\"method\":\"login\"\

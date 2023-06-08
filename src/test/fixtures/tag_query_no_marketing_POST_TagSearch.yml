@@ -1,15 +1,16 @@
 diagnostic: tag_query_no_marketing
-url: https://api-dev.trestechnologies.com/TagSearch
+url: https://api-dev-staging.trestechnologies.com/TagSearch
 method: POST
 requestBody: "{\"startingRow\":0,\"rowCount\":1,\"topRows\":1,\"name\":{\"value\"\
   :[\"No Marketing\"],\"compareCondition\":1},\"areaFlags\":3}"
 body: "[{\"recNo\":21945,\"createDateTime\":\"2022-12-22T00:03:11+00:00\",\"lastModifiedDateTime\"\
-  :\"2022-12-22T00:03:11+00:00\",\"name\":\"No Marketing\",\"referenced\":true,\"\
+  :\"2023-06-01T00:20:11+00:00\",\"name\":\"No Marketing\",\"referenced\":true,\"\
   activeStatus\":true,\"valueFreeFlow\":false,\"valueRequired\":false,\"valueList\"\
-  :\"NOEMM\\nNOCBM\\nNOTBM\\nNOMKT\\nBDATA\",\"areaFlags\":3,\"requirement\":1}]"
+  :\"NOEMM:\\nNOCBM:\\nNOTBM:\\nNOMKT:\\nBDATA:\",\"areaFlags\":1,\"requirement\"\
+  :1}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTMxVDE3OjIwOjI1KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQyNzgxLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.rZcrhUs6pNCgHmqcPmWlcDOL4a1NgDzTKgIVK62R5iU
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTA4VDE4OjU5OjExKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1MDIyLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.92NpfUe8ZR67mDfPPuWgqTFFmbs2Hrt2ALHQG3wIGkA
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

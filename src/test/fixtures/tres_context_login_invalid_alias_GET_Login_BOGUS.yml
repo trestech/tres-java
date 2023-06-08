@@ -1,5 +1,5 @@
 diagnostic: tres_context_login_invalid_alias
-url: https://api-dev.trestechnologies.com/Login/BOGUS
+url: https://api-dev-staging.trestechnologies.com/Login/BOGUS
 method: GET
 requestBody: null
 body: "{\"resultCode\":105,\"resultDescription\":\"Invalid alias\",\"method\":\"login\"\

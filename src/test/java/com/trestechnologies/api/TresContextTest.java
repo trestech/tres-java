@@ -5,10 +5,7 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.trestechnologies.api.interfaces.APIContext;
-import com.trestechnologies.api.model.ActivitySearchParams;
-import com.trestechnologies.api.model.NumSearchParam;
-import com.trestechnologies.api.model.StringSearchParam;
-import com.trestechnologies.api.model.Tag;
+import com.trestechnologies.api.model.*;
 import org.apache.http.conn.HttpHostConnectException;
 
 import java.io.IOException;
@@ -68,6 +65,46 @@ public class TresContextTest extends BaseTestCase {
       } catch ( Exception ignore ) { }
     }).group("tres_context_all_constructors");
   }
+
+  public void testAdminProductSearch ( ) { ((WithMockAdminWebServer) (context) -> {
+    ObjectNode params = JsonNodeFactory.instance.objectNode();
+    ArrayNode includeCols = params.putArray("includeCols");
+    ObjectNode tramsId = params.putObject("tramsId");
+    ArrayNode tramsIdValues = tramsId.putArray("value");
+    JsonNode result, productResult;
+
+    params.put("startingRow", 0);
+    tramsIdValues.add(57052); // <- MAST TrinID on Dev Admin 57052 <-> CustomerProfile_RecNo 5058 <-> MST1
+    tramsIdValues.add(24323);
+    tramsIdValues.add(1951);
+    tramsIdValues.add(41082);
+    tramsIdValues.add(48800);
+    includeCols.add("recNo");
+    includeCols.add("tramsId");
+
+    result = context.post("CustomerProfileSearch", params);
+
+    System.out.println(result);
+
+    ObjectNode productParams = JsonNodeFactory.instance.objectNode();
+    ArrayNode productIncludeCols = productParams.putArray("includeCols");
+    ObjectNode customerProfileRecNo = productParams.putObject("CustomerProfile_recNo");
+    ArrayNode customerProfileRecNos = customerProfileRecNo.putArray("value");
+
+    productParams.put("startingRow", 0);
+    productIncludeCols.add("recNo");
+    productIncludeCols.add("productName");
+    productIncludeCols.add("cboAlias");
+
+    result.forEach(( JsonNode customer ) -> {
+      customerProfileRecNos.add(customer.get("recNo"));
+    });
+
+    System.out.println(productParams);
+    productResult = context.post("CustomerProductSearch", productParams);
+
+    System.out.println(productResult);
+  }).group("tres_context_admin_product_search"); }
   
   public void testUrlInvalid ( ) { ((WithMockWebServer) (context) -> {
     try ( TresContext ctx = new TresContext("http://localhost:9876", null, "url_invalid") ) {
@@ -78,8 +115,18 @@ public class TresContextTest extends BaseTestCase {
   }).group("tres_context_url_invalid"); }
 
   public void testApiVersion ( ) { ((WithMockWebServer) (context) -> {
-    assertEquals("1.0.15.8", context.getApiVersion());
+    assertSemanticVersion("1.0.17.3", context.getApiVersion());
   }).group("tres_context_api_version"); }
+
+  private void assertSemanticVersion ( @SuppressWarnings("SameParameterValue") String expectedVersion, String actualVersion ) {
+    String[] expectedSemanticVersion = expectedVersion.split("\\.");
+    String[] actualSemanticVersion = actualVersion.split("\\.");
+    
+    assertEquals("major version", expectedSemanticVersion[0], actualSemanticVersion[0]);
+    assertEquals("minor version", expectedSemanticVersion[1], actualSemanticVersion[1]);
+    assertEquals("major build", expectedSemanticVersion[2], actualSemanticVersion[2]);
+    assertEquals("minor build", expectedSemanticVersion[3], actualSemanticVersion[3]);
+  }
 
   public void testAddCustomHeaders ( ) { ((WithMockWebServer) (context) -> {
     // Note, this header will replace bearer token.
@@ -122,7 +169,7 @@ public class TresContextTest extends BaseTestCase {
       context.login("BOGUS", "BOGUS", null);
       fail("expect invalid login");
     } catch ( TresException e ) {
-      assertEquals("Invalid alias", e.getMessage());
+      assert e.getMessage().contains("HTTP/1.1 404 Not Found: GET http://localhost") : "expected 404, got " + e.getMessage();
     }
   }).group("tres_context_login_missing_alias"); }
 

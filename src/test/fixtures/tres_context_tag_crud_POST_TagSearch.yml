@@ -1,5 +1,5 @@
 diagnostic: tres_context_tag_crud
-url: https://api-dev.trestechnologies.com/TagSearch
+url: https://api-dev-staging.trestechnologies.com/TagSearch
 method: POST
 requestBody: "{\"name\":{\"name\":\"Java-TEST-Client\",\"compareCondition\":1},\"\
   startingRow\":0,\"rowCount\":1}"
@@ -46,17 +46,22 @@ body: "[{\"recNo\":21917,\"name\":\"ProfileMF_Company DK\",\"referenced\":true,\
   :true,\"valueRequired\":false,\"areaFlags\":64,\"requirement\":1},{\"recNo\":21937,\"\
   name\":\"PaymentGroup\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
   :true,\"valueRequired\":false,\"areaFlags\":64,\"requirement\":1},{\"recNo\":21944,\"\
-  createDateTime\":\"2022-12-22T00:00:41+00:00\",\"lastModifiedDateTime\":\"2023-05-30T19:10:49+00:00\"\
+  createDateTime\":\"2022-12-22T00:00:41+00:00\",\"lastModifiedDateTime\":\"2023-06-01T23:41:01+00:00\"\
   ,\"name\":\"Marketing\",\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\"\
   :false,\"valueRequired\":false,\"valueList\":\"BDATA:\\nEML01:Promotion\\nNOCBM:\\\
-  nNOEMM:\\nNOMKT:\\nNOTBM:\\nNOMTAG:\\n\",\"areaFlags\":1,\"requirement\":1},{\"\
-  recNo\":21945,\"createDateTime\":\"2022-12-22T00:03:11+00:00\",\"lastModifiedDateTime\"\
-  :\"2022-12-22T00:03:11+00:00\",\"name\":\"No Marketing\",\"referenced\":true,\"\
-  activeStatus\":true,\"valueFreeFlow\":false,\"valueRequired\":false,\"valueList\"\
-  :\"NOEMM\\nNOCBM\\nNOTBM\\nNOMKT\\nBDATA\",\"areaFlags\":3,\"requirement\":1}]"
+  nNOEMM:\\nNOMKT:No Marketing\\nNOTBM:No TouchBase Marketing\\nNOMTAG:\\nP1234:PCP\"\
+  ,\"areaFlags\":1,\"requirement\":1},{\"recNo\":21945,\"createDateTime\":\"2022-12-22T00:03:11+00:00\"\
+  ,\"lastModifiedDateTime\":\"2023-06-01T00:20:11+00:00\",\"name\":\"No Marketing\"\
+  ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":false,\"valueRequired\"\
+  :false,\"valueList\":\"NOEMM:\\nNOCBM:\\nNOTBM:\\nNOMKT:\\nBDATA:\",\"areaFlags\"\
+  :1,\"requirement\":1},{\"recNo\":25959,\"createDateTime\":\"2023-05-31T22:22:24+00:00\"\
+  ,\"lastModifiedDateTime\":\"2023-06-02T23:25:19+00:00\",\"name\":\"MarketingID\"\
+  ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":false,\"valueRequired\"\
+  :false,\"valueList\":\"BDATA:\\nNOEMM:\\nNOCBM:\\nNOTBM:\\nNOMKT:\\nEML01:Cruise01\\\
+  nP1234:Tour02\",\"areaFlags\":1,\"requirement\":1}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTMxVDE3OjIxOjAyKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQyNzg5LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.6Jb62yVa2Rc2Mi2WDhx_wVdm_MUNEmMBPcw6dsmbXRk
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTA4VDE4OjU5OjI2KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1MDM4LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.7_48jYONu16X-JwX9QL0knK4j4W-IylyzzC9ANGm4Vg
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

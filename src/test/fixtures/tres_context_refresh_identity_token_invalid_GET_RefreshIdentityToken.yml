@@ -1,5 +1,5 @@
 diagnostic: tres_context_refresh_identity_token_invalid
-url: https://api-dev.trestechnologies.com/RefreshIdentityToken
+url: https://api-dev-staging.trestechnologies.com/RefreshIdentityToken
 method: GET
 requestBody: null
 body: "{\"resultCode\":302,\"resultDescription\":\"Identity token missing\",\"method\"\

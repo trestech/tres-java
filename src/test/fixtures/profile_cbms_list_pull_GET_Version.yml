@@ -1,8 +1,8 @@
 diagnostic: profile_cbms_list_pull
-url: https://api-dev.trestechnologies.com/Version
+url: https://api-dev-staging.trestechnologies.com/Version
 method: GET
 requestBody: null
-body: "{\"version\":\"1.0.15.8\",\"resultCode\":0,\"resultDescription\":\"\"}"
+body: "{\"version\":\"1.0.17.3\",\"resultCode\":0,\"resultDescription\":\"\"}"
 status: HTTP/1.1 200 OK
 requestHeaders:
   Content-Type: application/json

@@ -24,6 +24,46 @@ public class ProfileTest extends BaseTestCase {
     
     assertFalse("did not expect empty result", list.isEmpty());
   }).group("profile_list_active_client"); }
+
+  public void testListByTagsNoRecNo ( ) { ((WithMockWebServer) (context) -> {
+    ProfileSearchParam params = new ProfileSearchParam();
+    TagSearchParam tagsParams = new TagSearchParam();
+    List<Profile> list;
+
+    tagsParams.setStartingRow(0);
+    tagsParams.setRowCount(1);
+    tagsParams.setTopRows(1);
+    tagsParams.setAreaFlags(AreaFlag.CLIENT, AreaFlag.TRAVELER);
+    tagsParams.setName("No Marketing");
+
+    Tag.search(context, tagsParams).forEach(tag -> {
+      List<String> values = Arrays.asList(tag.getValueList().split("\n"));
+      BaseSearchModel.TagSearchParam tagSearchParam = new BaseSearchModel.TagSearchParam();
+
+      tagSearchParam.setValue(new StringSearchParam(STARTING_WITH, values));
+      params.setTags(tagSearchParam);
+    });
+
+    params.setStartingRow(0);
+    params.setEmailPermitMarketing(true);
+    params.setIncludeCols(new String[] {
+      "recNo",
+      "clientInformalSalutation",
+      "primaryPersonFirstName",
+      "primaryPersonLastName",
+      "primaryEmail",
+      "primaryEmailPermitMarketing",
+      "stateProvince",
+      "country",
+      "clientAdvisorProfileRecNo"
+    });
+
+    try {
+      list = Profile.search(context, params);
+    } catch ( TresException e ) {
+      assertEquals("{\"resultCode\":404,\"resultDescription\":\"Missing or blank required parameter: The RecNo field is required.\",\"method\":\"Param\"}", e.getMessage());
+    }
+  }).group("profile_list_by_tags_no_rec_no"); }
   
   public void testListCbmsListPullWithMarketing ( ) { ((WithMockWebServer) (context) -> {
     ProfileSearchParam params = new ProfileSearchParam();

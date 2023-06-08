@@ -1,0 +1,11 @@
+diagnostic: profile_list_by_tags_no_rec_no
+url: https://api-dev-staging.trestechnologies.com/Logout
+method: GET
+requestBody: null
+body: "{\"resultCode\":0,\"resultDescription\":\"Logout Successful\"}"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTA4VDE4OjU5OjIxKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1MDMyLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.Zbj_PCREOzBj9YRwrRTBAO7t53LSs72j664AnPiXZcI
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json; charset=utf-8

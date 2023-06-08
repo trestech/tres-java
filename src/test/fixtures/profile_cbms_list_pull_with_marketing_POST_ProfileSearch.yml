@@ -1,20 +1,30 @@
 diagnostic: profile_cbms_list_pull_with_marketing
-url: https://api-dev.trestechnologies.com/ProfileSearch
+url: https://api-dev-staging.trestechnologies.com/ProfileSearch
 method: POST
 requestBody: "{\"startingRow\":0,\"includeCols\":[\"recNo\",\"clientInformalSalutation\"\
   ,\"primaryPersonFirstName\",\"primaryPersonLastName\",\"primaryEmail\",\"primaryEmailPermitMarketing\"\
-  ,\"stateProvince\",\"country\",\"clientAdvisorProfileRecNo\"],\"tags\":[{\"value\"\
-  :{\"value\":[\"NOEMM\",\"NOCBM\",\"NOTBM\",\"NOMKT\",\"BDATA\"],\"compareCondition\"\
-  :5}}],\"emailPermitMarketing\":true}"
-body: "[{\"recNo\":6518213,\"primaryPersonFirstName\":\"Charlie\",\"primaryPersonLastName\"\
-  :\"Penrose\",\"clientAdvisorProfileRecNo\":6517942,\"primaryEmail\":\"avdbaan04@gmail.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"},{\"recNo\":6518518,\"\
-  primaryPersonFirstName\":\"Janice\",\"primaryPersonLastName\":\"Lordeon\",\"primaryEmail\"\
-  :\"avdbaan02@gmail.com\",\"primaryEmailPermitMarketing\":true,\"stateProvince\"\
-  :\"CA\"}]"
+  ,\"stateProvince\",\"country\",\"clientAdvisorProfileRecNo\"],\"tags\":[{\"recNo\"\
+  :21945,\"value\":{\"value\":[\"NOEMM:\",\"NOCBM:\",\"NOTBM:\",\"NOMKT:\",\"BDATA:\"\
+  ],\"compareCondition\":5}}],\"emailPermitMarketing\":true}"
+body: "[{\"recNo\":6518576,\"primaryPersonFirstName\":\"Gene\",\"primaryPersonLastName\"\
+  :\"Roebuck\",\"clientAdvisorProfileRecNo\":6517932,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
+  },{\"recNo\":6518578,\"primaryPersonFirstName\":\"Steve\",\"primaryPersonLastName\"\
+  :\"Amaral\",\"clientAdvisorProfileRecNo\":6517937,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"clientInformalSalutation\"\
+  :\"Steve & Gini\"},{\"recNo\":6518579,\"primaryPersonFirstName\":\"Issac\",\"primaryPersonLastName\"\
+  :\"Jeffery\",\"clientAdvisorProfileRecNo\":6517949,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
+  },{\"recNo\":6518585,\"primaryPersonFirstName\":\"Also\",\"primaryPersonLastName\"\
+  :\"Bored\",\"clientAdvisorProfileRecNo\":6517959,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
+  },{\"recNo\":6518589,\"primaryPersonFirstName\":\"George\",\"primaryPersonLastName\"\
+  :\"Anthony\",\"clientAdvisorProfileRecNo\":6517933,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
+  }]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA1LTMxVDE3OjIwOjMyKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQyNzgyLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjU4IiwNCiAgImF1dGhlbnRpY2F0aW9uTWV0aG9kIjogMQ0KfQ.U9sLW-X7cHNlxoJ6jAy9i06XEgu0MU3QsCYiozWFWpY
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTA4VDE4OjU5OjEzKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1MDI1LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.F2P3TXaUYMt287ATxwoHVctT_Cyn11-v0IhXnXy-ayY
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json
