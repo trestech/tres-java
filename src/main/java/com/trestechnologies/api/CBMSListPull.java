@@ -121,7 +121,7 @@ public class CBMSListPull extends CommandLine {
         StringBuilder builder = new StringBuilder();
         
         builder.append(priority).append("\t"); // priority // #0
-        builder.append("[BRANCH_ID]").append("\t"); // branchId // #1
+        builder.append("\t"); // branchId // #1
         builder.append(profile.getRecNo()).append("\t"); // profileno // #2
         builder.append(profile.getClientInformalSalutation()).append("\t"); // salutation // #3
         builder.append(profile.getPrimaryPersonFirstName()).append("\t"); // firstname // #4
@@ -131,8 +131,8 @@ public class CBMSListPull extends CommandLine {
         builder.append(profile.getStateProvince()).append("\t"); // state // #8
         builder.append(profile.getCountry()).append("\t"); // country // #9
         builder.append(profile.getClientAdvisorProfileRecNo()).append("\t"); // primaryagentLinkno // #10
-        builder.append("-").append(profile.getRecNo()).append("\t"); // vpk // #11
-        builder.append("-").append(profile.getClientAdvisorProfileRecNo()).append("\t"); // paVpk // #12
+        builder.append(profile.getRecNo()).append("\t"); // vpk // #11
+        builder.append(profile.getClientAdvisorProfileRecNo()).append("\t"); // paVpk // #12
         builder.append("\t"); // shipname // #13
         builder.append("\t"); // departdate // #14
         builder.append("\t"); // departcity // #15
