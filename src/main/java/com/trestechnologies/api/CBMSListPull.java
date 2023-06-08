@@ -67,26 +67,20 @@ public class CBMSListPull extends CommandLine {
     cmd.refreshToken();
     
     try ( TresContext ctx = new TresContext(cmd.url, cmd.token) ) {
-      String marketingPartnerId;
+      String marketingPartnerId = args[0];
       TagSearchParam tagSearchParams = new TagSearchParam();
       String priority;
       List<Long> excludedProfileRecNos = new ArrayList<>();
       List<Profile> profiles;
       List<Long> marketingPartnerIdRecNos = new ArrayList<>();
       
-      if ( args.length > 0 ) {
-        marketingPartnerId = args[0];
-      } else {
-        marketingPartnerId = null;
-      }
-
       tagSearchParams.setStartingRow(0);
       tagSearchParams.setRowCount(1);
       tagSearchParams.setTopRows(1);
       tagSearchParams.setIncludeCols(new String[] {"recNo", "valueList"});
       tagSearchParams.setAreaFlags(AreaFlag.CLIENT, AreaFlag.TRAVELER);
 
-      tagSearchParams.setName("Marketing");
+      tagSearchParams.setName("MarketingID");
       Tag.search(ctx, tagSearchParams).forEach(tag -> {
         marketingPartnerIdRecNos.add(tag.getRecNo());
       });
