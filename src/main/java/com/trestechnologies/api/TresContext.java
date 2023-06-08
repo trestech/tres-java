@@ -50,13 +50,32 @@ import static org.apache.http.HttpStatus.*;
  *   context.close();
  * </pre></blockquote>
  * 
- * Or with self closing pattern:
+ * Or with self-closing pattern:
  * 
  * <blockquote><pre>
  *   new TresContext("username", "password", "PCC", (context) -> {
  *     System.out.println("Version: " + context.version());
  *   });
  * </pre></blockquote>
+ * 
+ * Or with try-with-resources:
+ * 
+ * <blockquote><pre>
+ *   try ( TresContext context = new TresContext("username", "password", "PCC") ) {
+ *     System.out.println("Version: " + context.version());
+ *   }
+ * </pre></blockquote>
+ * 
+ * Or with try-with-resources and batched requests:
+ * 
+ * <blockquote><pre>
+ *   try ( TresContext context = new TresContext("username", "password", "PCC") ) {
+ *     context.batch(ctx -> {
+ *       System.out.println("Version: " + ctx.version());
+ *     });
+ *   }
+ * </pre></blockquote>
+ *   
  */
 public class TresContext extends APIContextAdapter {
   public static final String DEFAULT_URL = "https://api.trestechnologies.com";
@@ -156,7 +175,13 @@ public class TresContext extends APIContextAdapter {
 
   @Override
   public JsonNode login ( String username, String password, String domain ) throws IOException {
-    JsonNode result = getWithBasicAuth(LOGIN + URL_SEP + domain, username, password);
+    String method = LOGIN;
+    
+    if ( domain != null && !domain.isEmpty() ) {
+      method += URL_SEP + domain;
+    }
+    
+    JsonNode result = getWithBasicAuth(method, username, password);
     
     this.token = result.get("identityToken").textValue();
     

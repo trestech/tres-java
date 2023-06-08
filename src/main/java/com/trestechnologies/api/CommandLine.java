@@ -84,7 +84,24 @@ public class CommandLine {
       try ( TresContext ctx = new TresContext(url, username, password, domain) ) {
         ctx.batch(c -> token = c.getToken());
       } catch ( Exception e ) {
-        System.err.println("Error: " + e.getMessage());
+        System.err.println("ERROR: " + e.getMessage());
+        System.exit(-1);
+      }
+    } else {
+      try ( TresContext ctx = new TresContext(url, token) ) {
+        JsonNode result = ctx.refreshIdentityToken();
+        String newToken = result.get("refreshIdentityToken").asText();
+        
+        assert newToken != null && !newToken.isEmpty() : "No token returned";
+        
+        if ( !newToken.equals(token) ) {
+          System.err.println("WARNING: Unexpected token change");
+        }
+        
+        token = newToken;
+      } catch ( Exception e ) {
+        System.err.println("ERROR: " + e.getMessage());
+        System.exit(-1);
       }
     }
   }
