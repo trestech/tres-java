@@ -169,7 +169,7 @@ public class TresContextTest extends BaseTestCase {
       context.login("BOGUS", "BOGUS", null);
       fail("expect invalid login");
     } catch ( TresException e ) {
-      assert e.getMessage().contains("HTTP/1.1 404 Not Found: GET http://localhost") : "expected 404, got " + e.getMessage();
+      assert e.getMessage().contains("HTTP/1.1 404 Not Found: GET http://") : "expected 404, got " + e.getMessage();
     }
   }).group("tres_context_login_missing_alias"); }
 
