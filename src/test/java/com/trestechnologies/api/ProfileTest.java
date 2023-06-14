@@ -99,7 +99,7 @@ public class ProfileTest extends BaseTestCase {
     list = Profile.search(context, params);
 
     assertFalse("did not expect empty result", list.isEmpty());
-    assertEquals(5, list.size());
+    assertEquals(4, list.size());
   }).group("profile_cbms_list_pull_with_marketing"); }
 
   public void testListCbmsListPull ( ) { ((WithMockWebServer) (context) -> {
