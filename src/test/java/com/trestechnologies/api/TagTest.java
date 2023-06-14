@@ -55,7 +55,7 @@ public class TagTest extends BaseTestCase {
     params.setRowCount(1);
     params.setTopRows(1);
     params.setAreaFlags(AreaFlag.CLIENT, AreaFlag.TRAVELER);
-    params.setName("No Marketing");
+    params.setName("Marketing Exclusions");
 
     tags = Tag.search(context, params);
 

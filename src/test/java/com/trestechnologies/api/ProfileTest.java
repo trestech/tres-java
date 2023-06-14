@@ -74,7 +74,7 @@ public class ProfileTest extends BaseTestCase {
     tagsParams.setRowCount(1);
     tagsParams.setTopRows(1);
     tagsParams.setAreaFlags(AreaFlag.CLIENT, AreaFlag.TRAVELER);
-    tagsParams.setName("No Marketing");
+    tagsParams.setName("Marketing Exclusions");
 
     Tag.search(context, tagsParams).forEach(tag -> {
       List<String> values = Arrays.asList(tag.getValueList().split("\n"));

@@ -1,0 +1,28 @@
+diagnostic: cbms_list_pull_pop
+url: https://api-dev-staging.trestechnologies.com/ProfileSearch
+method: POST
+paramsHash: a2dc56c
+requestBody: "{\"startingRow\":0,\"includeCols\":[\"recNo\",\"clientInformalSalutation\"\
+  ,\"primaryPersonFirstName\",\"primaryPersonLastName\",\"primaryEmail\",\"primaryEmailPermitMarketing\"\
+  ,\"stateProvince\",\"country\",\"clientAdvisorProfileRecNo\"],\"tags\":[{\"recNo\"\
+  :25959,\"value\":{\"value\":[\"EML01\"],\"compareCondition\":5}}],\"profileType\"\
+  :1,\"clientType\":1,\"emailPermitMarketing\":true,\"activestatus\":1}"
+body: "[{\"recNo\":6518566,\"primaryPersonFirstName\":\"Daniel\",\"primaryPersonLastName\"\
+  :\"Ko\",\"clientAdvisorProfileRecNo\":6517957,\"primaryEmail\":\"antonie.tres@outlook.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
+  ,\"clientInformalSalutation\":\"Ko\"},{\"recNo\":6518569,\"primaryPersonFirstName\"\
+  :\"Helen\",\"primaryPersonLastName\":\"Duncan\",\"primaryEmail\":\"avdbaan03@gmail.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"},{\"recNo\":6518570,\"\
+  primaryPersonFirstName\":\"David\",\"primaryPersonLastName\":\"Jones\",\"clientAdvisorProfileRecNo\"\
+  :6517957,\"primaryEmail\":\"avdbaan02@gmail.com\",\"primaryEmailPermitMarketing\"\
+  :true,\"stateProvince\":\"CA\",\"country\":\"US\",\"clientInformalSalutation\":\"\
+  Mr. Jones\"},{\"recNo\":6518589,\"primaryPersonFirstName\":\"George\",\"primaryPersonLastName\"\
+  :\"Anthony\",\"clientAdvisorProfileRecNo\":6517933,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
+  }]"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE0VDIwOjM5OjUzKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1ODQ2LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.vzq3BQuvpQ1DVOabsWbnakYXjpGzNFrdSgl_YjNzNjc
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

@@ -2,6 +2,7 @@ package com.trestechnologies.api;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.trestechnologies.api.interfaces.APIContext;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -31,6 +32,8 @@ public class CommandLine {
   protected String url, username, password, domain, token, fullCommand;
   
   protected StringBuilder in;
+  
+  protected APIContext context;
   
   protected CommandLine ( ) throws IOException {
     Map<String, String> env = System.getenv();
@@ -63,6 +66,10 @@ public class CommandLine {
 
       System.exit(2);
     }
+  }
+  
+  public CommandLine ( APIContext context ) {
+    this.context = context;
   }
   
   protected String bestCommand ( String command ) {

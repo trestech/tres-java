@@ -1,0 +1,17 @@
+diagnostic: tag_query_no_marketing
+url: https://api-dev-staging.trestechnologies.com/TagSearch
+method: POST
+paramsHash: 89fdfd5
+requestBody: "{\"startingRow\":0,\"rowCount\":1,\"topRows\":1,\"name\":{\"value\"\
+  :[\"Marketing Exclusions\"],\"compareCondition\":1},\"areaFlags\":3}"
+body: "[{\"recNo\":21945,\"createDateTime\":\"2022-12-22T00:03:11+00:00\",\"lastModifiedDateTime\"\
+  :\"2023-06-14T19:14:21+00:00\",\"name\":\"Marketing Exclusions\",\"referenced\"\
+  :true,\"activeStatus\":true,\"valueFreeFlow\":false,\"valueRequired\":false,\"valueList\"\
+  :\"NOEMM:\\nNOCBM:\\nNOTBM:\\nNOMKT:\\nBDATA:\",\"areaFlags\":1,\"requirement\"\
+  :1}]"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE0VDIwOjM5OjE5KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1ODEyLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.yeb60UmTSazkOo7wBOJIb6fA3Jd9WANkNmrr_Fwkjug
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

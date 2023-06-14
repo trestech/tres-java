@@ -13,10 +13,23 @@ import java.util.List;
  * Dumps the Tres API schema for a method to stdout.
  */
 public class CBMSListPull extends CommandLine {
+  public static final String TAG_MARKETING_PROMO_ID = "Marketing PromoID";
+  public static final String TAG_MARKETING_EXCLUSIONS = "Marketing Exclusions";
+  public static final String PRIORITY_0 = "0";
+  public static final String PRIORITY_1 = "1";
+  
+  private String includeTagName = TAG_MARKETING_PROMO_ID;
+  
+  private String excludeTagName = TAG_MARKETING_EXCLUSIONS;
+
   protected CBMSListPull () throws IOException {
     super();
   }
-
+  
+  public CBMSListPull ( APIContext context ) {
+    super(context);
+  }
+  
   protected List<Profile> queryProfiles ( APIContext ctx ) throws IOException {
     return queryProfiles(ctx, null, null);
   }
@@ -41,7 +54,7 @@ public class CBMSListPull extends CommandLine {
       "clientAdvisorProfileRecNo"
     });
     
-    if ( marketingPartnerId != null ) {
+    if ( marketingPartnerId != null && !marketingPartnerIdRecNos.isEmpty() ) {
       BaseSearchModel.TagSearchParam tagSearchParams = new BaseSearchModel.TagSearchParam();
       
       tagSearchParams.setValue(new StringSearchParam(StringSearchParam.Compare.STARTING_WITH, marketingPartnerId));
@@ -52,6 +65,86 @@ public class CBMSListPull extends CommandLine {
     return Profile.search(ctx, params);
   }
   
+  @FunctionalInterface
+  public interface Popper {
+    void pop ( Profile profile, String priority );
+  }
+  
+  public void pop ( String marketingPartnerId, Popper popper ) throws IOException {
+    pop(context, marketingPartnerId, popper);
+  }
+  
+  public void pop ( APIContext context, String marketingPartnerId, Popper popper ) throws IOException {
+    TagSearchParam tagSearchParams = new TagSearchParam();
+    String priority;
+    List<Long> excludedProfileRecNos = new ArrayList<>();
+    List<Profile> profiles;
+    List<Long> marketingPartnerIdRecNos = new ArrayList<>();
+
+    tagSearchParams.setStartingRow(0);
+    tagSearchParams.setRowCount(1);
+    tagSearchParams.setTopRows(1);
+    tagSearchParams.setIncludeCols(new String[] {"recNo", "valueList"});
+    tagSearchParams.setAreaFlags(AreaFlag.CLIENT, AreaFlag.TRAVELER);
+
+    tagSearchParams.setName(includeTagName);
+    Tag.search(context, tagSearchParams).forEach(tag -> {
+      marketingPartnerIdRecNos.add(tag.getRecNo());
+    });
+
+    tagSearchParams.setName(excludeTagName);
+    Tag.search(context, tagSearchParams).forEach(tag -> {
+      List<String> values = Arrays.asList(tag.getValueList().split("\n"));
+      ProfileSearchParam profileParams = new ProfileSearchParam();
+
+      profileParams.setStartingRow(0);
+      profileParams.setIncludeCols(new String[] {"recNo"});
+      profileParams.setTags(tag.getRecNo(), StringSearchParam.Compare.STARTING_WITH, values);
+
+      try {
+        Profile.search(context, profileParams).forEach(profile -> {
+          excludedProfileRecNos.add(profile.getRecNo());
+        });
+      } catch ( IOException e ) {
+        throw new RuntimeException(e);
+      }
+    });
+
+    if ( marketingPartnerId == null ) {
+      priority = PRIORITY_0;
+      profiles = queryProfiles(context);
+    } else {
+      profiles = queryProfiles(context, marketingPartnerId, marketingPartnerIdRecNos);
+
+      if ( profiles.isEmpty() ) {
+        priority = PRIORITY_1;
+        profiles = queryProfiles(context);
+      } else {
+        priority = PRIORITY_0;
+      }
+    }
+
+    profiles.stream().filter(profile -> !excludedProfileRecNos.contains(profile.getRecNo())).forEach(profile -> {
+      popper.pop(profile, priority);
+    });
+  }
+
+  public String getIncludeTagName () {
+    return includeTagName;
+  }
+
+  public void setIncludeTagName ( String includeTagName ) {
+    this.includeTagName = includeTagName;
+  }
+
+  public String getExcludeTagName () {
+    return excludeTagName;
+  }
+
+  public void setExcludeTagName ( String excludeTagName ) {
+    this.excludeTagName = excludeTagName;
+  }
+
   public static void main ( String[] args ) throws IOException {
     CBMSListPull cmd = new CBMSListPull();
     
@@ -68,57 +161,7 @@ public class CBMSListPull extends CommandLine {
     cmd.refreshToken();
     
     try ( TresContext ctx = new TresContext(cmd.url, cmd.token) ) {
-      String marketingPartnerId = args[0];
-      TagSearchParam tagSearchParams = new TagSearchParam();
-      String priority;
-      List<Long> excludedProfileRecNos = new ArrayList<>();
-      List<Profile> profiles;
-      List<Long> marketingPartnerIdRecNos = new ArrayList<>();
-      
-      tagSearchParams.setStartingRow(0);
-      tagSearchParams.setRowCount(1);
-      tagSearchParams.setTopRows(1);
-      tagSearchParams.setIncludeCols(new String[] {"recNo", "valueList"});
-      tagSearchParams.setAreaFlags(AreaFlag.CLIENT, AreaFlag.TRAVELER);
-
-      tagSearchParams.setName("MarketingID");
-      Tag.search(ctx, tagSearchParams).forEach(tag -> {
-        marketingPartnerIdRecNos.add(tag.getRecNo());
-      });
-      
-      tagSearchParams.setName("No Marketing");
-      Tag.search(ctx, tagSearchParams).forEach(tag -> {
-        List<String> values = Arrays.asList(tag.getValueList().split("\n"));
-        ProfileSearchParam profileParams = new ProfileSearchParam();
-
-        profileParams.setStartingRow(0);
-        profileParams.setIncludeCols(new String[] {"recNo"});
-        profileParams.setTags(tag.getRecNo(), StringSearchParam.Compare.STARTING_WITH, values);
-
-        try {
-          Profile.search(ctx, profileParams).forEach(profile -> {
-            excludedProfileRecNos.add(profile.getRecNo());
-          });
-        } catch ( IOException e ) {
-          throw new RuntimeException(e);
-        }
-      });
-      
-      if ( marketingPartnerId == null ) {
-        priority = "0";
-        profiles = cmd.queryProfiles(ctx);
-      } else {
-        profiles = cmd.queryProfiles(ctx, marketingPartnerId, marketingPartnerIdRecNos);
-        
-        if ( profiles.isEmpty() ) {
-          priority = "1";
-          profiles = cmd.queryProfiles(ctx);
-        } else {
-          priority = "0";
-        }
-      }
-
-      profiles.stream().filter(profile -> !excludedProfileRecNos.contains(profile.getRecNo())).forEach(profile -> {
+      cmd.pop(ctx, args[0], (profile, priority) -> {
         StringBuilder builder = new StringBuilder();
         
         builder.append(priority).append("\t"); // priority // #0
@@ -128,7 +171,7 @@ public class CBMSListPull extends CommandLine {
         builder.append(profile.getPrimaryPersonFirstName()).append("\t"); // firstname // #4
         builder.append(profile.getPrimaryPersonLastName()).append("\t"); // lastname // #5
         builder.append(profile.getPrimaryEmail()).append("\t"); // email // #6
-        builder.append("Y").append("\t"); // permitmarket // #7
+        builder.append(profile.isPrimaryEmailPermitMarketing() ? "Y" : "N").append("\t"); // permitmarket // #7
         builder.append(profile.getStateProvince()).append("\t"); // state // #8
         builder.append(profile.getCountry()).append("\t"); // country // #9
         builder.append(profile.getClientAdvisorProfileRecNo()).append("\t"); // primaryagentLinkno // #10

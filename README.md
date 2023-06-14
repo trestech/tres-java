@@ -91,27 +91,40 @@ cat support/ProfileSearchParams.json | ./bin/tres.sh ProfileSearch
 cat support/TripSearchParams.json | ./bin/tres.sh TripSearch
 ```
 
-## Test and Build
+## Build / Install / Test
 
-Check for outdated dependencies:
+**Check for outdated dependencies:** *Note, this will only check for outdated dependencies, not update your dependencies.*
 
 ```bash
 mvn versions:display-dependency-updates
 ```
 
-Build:
+**Check for outdated plugins:**
 
 ```bash
-mvn package
+mvn versions:display-plugin-updates
+``
 ```
 
-Tests:
+**Build:**
+
+```bash
+mvn package -DskipTests=true
+```
+
+**Install:** *Note, this will install the newly built jar in your local Maven repository.*
+
+```bash
+mvn install:install-file -Dfile=target/tres-java-0.1.6-SNAPSHOT.jar -DgroupId=trestech -DartifactId=tres-java -Dversion=0.1.6-SNAPSHOT -Dpackaging=jar
+```
+
+**Tests:**
 
 ```bash
 mvn test
 ```
 
-Tests without fixtures:
+**Tests without fixtures:**
 
 ```bash
 rm src/test/fixtures/*.yml
