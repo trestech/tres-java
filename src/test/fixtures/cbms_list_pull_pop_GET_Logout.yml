@@ -1,0 +1,12 @@
+diagnostic: cbms_list_pull_pop
+url: https://api-dev-staging.trestechnologies.com/Logout
+method: GET
+paramsHash: null
+requestBody: ""
+body: "{\"resultCode\":0,\"resultDescription\":\"Logout Successful\"}"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE0VDE2OjU2OjE3KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1NjYwLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.L5zBMNp2xHYOMpfe-vfiIWTCkadcSMODh_J8RehltaM
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json; charset=utf-8

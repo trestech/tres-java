@@ -9,8 +9,9 @@ import okhttp3.mockwebserver.RecordedRequest;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Method;
-import java.util.Arrays;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,18 +33,21 @@ public class Fixture {
   private String diagnostic;
   private String url;
   private String method;
+  private String paramsHash;
   private String requestBody;
   private String body;
   private String status;
   private Map<String, String> requestHeaders = new HashMap<>();
   private Map<String, String> responseHeaders = new HashMap<>();
 
-  public static Fixture read ( RecordedRequest request ) throws IOException {
+  public static Fixture read ( RecordedRequest request ) throws IOException, NoSuchAlgorithmException {
     String method = request.getMethod(); assert method != null;
     String requestPath = request.getPath(); assert requestPath != null;
     String diagnostic = extractDiagnostic(request);
+    String requestBody = request.getBody().readUtf8();
+    String paramsHash = extractParamsHash(requestBody);
     Fixture fixture;
-    String filePath = filePath(method, requestPath, diagnostic);
+    String filePath = filePath(method, requestPath, diagnostic, paramsHash);
     File file = new File(filePath);
 
     if ( file.isFile() && file.exists() ) {
@@ -53,6 +57,8 @@ public class Fixture {
 
       fixture.setDiagnostic(diagnostic);
       fixture.setMethod(method);
+      fixture.setRequestBody(requestBody);
+      fixture.setParamsHash(paramsHash);
     }
     
     fixture.setRequestPath(requestPath);
@@ -70,8 +76,23 @@ public class Fixture {
     return null;
   }
 
+  private static String extractParamsHash ( String requestBody ) throws NoSuchAlgorithmException {
+    StringBuilder hex = new StringBuilder ();
+    MessageDigest digest = MessageDigest.getInstance("SHA-256");
+    
+    if ( requestBody == null || requestBody.isEmpty() ) {
+      return null;
+    }
+    
+    for ( byte b : digest.digest(requestBody.getBytes(StandardCharsets.UTF_8))) {
+      hex.append(String.format ("%02x", b));
+    }
+    
+    return hex.substring(0, 7);
+  }
+
   public static void write ( Fixture fixture ) throws IOException {
-    String filePath = filePath(fixture.getMethod(), fixture.getRequestPath(), fixture.getDiagnostic());
+    String filePath = filePath(fixture.getMethod(), fixture.getRequestPath(), fixture.getDiagnostic(), fixture.getParamsHash());
     File file = new File(filePath);
 
     MAPPER.writeValue(file, fixture);
@@ -91,7 +112,7 @@ public class Fixture {
     }
   }
 
-  private static String filePath ( String method, String requestPath, String diagnostic ) {
+  private static String filePath ( String method, String requestPath, String diagnostic, String paramsHash ) {
     String retVal = method + requestPath.replaceAll("[^a-zA-Z]+", "_");
 
     retVal = retVal.replaceAll("[_]+$", "");
@@ -102,6 +123,10 @@ public class Fixture {
       retVal = "anonymous_" + retVal;
     } else {
       retVal = diagnostic + "_" + retVal;
+    }
+    
+    if ( paramsHash != null && !paramsHash.equals("0") ) {
+      retVal += "_" + paramsHash;
     }
     
     if ( !new File(FIXTURES_PATH).exists() ) {
@@ -122,6 +147,8 @@ public class Fixture {
   public void setUrl ( String url ) { this.url = url; }
   public String getMethod () { return method; }
   public void setMethod ( String method ) { this.method = method; }
+  public String getParamsHash () { return paramsHash; }
+  public void setParamsHash ( String paramsHash ) { this.paramsHash = paramsHash; }
   public String getRequestBody () { return requestBody; }
   public void setRequestBody ( String requestBody ) { this.requestBody = requestBody; }
   public String getBody () { return body; }

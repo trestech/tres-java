@@ -1,0 +1,12 @@
+diagnostic: profile_blank_name
+url: https://api-dev-staging.trestechnologies.com/ProfileSearch
+method: POST
+paramsHash: f4dcc4c
+requestBody: "{\"includeCols\":[\"name\"],\"profileName\":{\"compareCondition\":3}}"
+body: null
+status: HTTP/1.1 204 No Content
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE0VDE5OjQyOjM3KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1Njg4LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.PvyFrvRz6n6YUE7I2Qe_4jLwl1FvIsaEyypUqb4PWO4
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: text/plain; charset=utf-8

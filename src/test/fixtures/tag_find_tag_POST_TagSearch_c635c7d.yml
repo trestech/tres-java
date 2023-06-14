@@ -1,6 +1,7 @@
-diagnostic: tag_query
+diagnostic: tag_find_tag
 url: https://api-dev-staging.trestechnologies.com/TagSearch
 method: POST
+paramsHash: c635c7d
 requestBody: "{\"startingRow\":0}"
 body: "[{\"recNo\":21917,\"name\":\"ProfileMF_Company DK\",\"referenced\":true,\"\
   activeStatus\":true,\"valueFreeFlow\":true,\"valueRequired\":false,\"areaFlags\"\
@@ -54,13 +55,13 @@ body: "[{\"recNo\":21917,\"name\":\"ProfileMF_Company DK\",\"referenced\":true,\
   ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":false,\"valueRequired\"\
   :false,\"valueList\":\"NOEMM:\\nNOCBM:\\nNOTBM:\\nNOMKT:\\nBDATA:\",\"areaFlags\"\
   :1,\"requirement\":1},{\"recNo\":25959,\"createDateTime\":\"2023-05-31T22:22:24+00:00\"\
-  ,\"lastModifiedDateTime\":\"2023-06-02T23:25:19+00:00\",\"name\":\"MarketingID\"\
+  ,\"lastModifiedDateTime\":\"2023-06-09T23:33:11+00:00\",\"name\":\"MarketingID\"\
   ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":false,\"valueRequired\"\
   :false,\"valueList\":\"BDATA:\\nNOEMM:\\nNOCBM:\\nNOTBM:\\nNOMKT:\\nEML01:Cruise01\\\
-  nP1234:Tour02\",\"areaFlags\":1,\"requirement\":1}]"
+  nP1234:Tour02\\n--INACTIVE--\",\"areaFlags\":1,\"requirement\":1}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTA4VDE4OjU5OjA5KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1MDIwLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.hmHlpHCXj78QQfsn4LUQp_hmoDtLQPb0h_La10hu4ms
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE0VDE5OjQzOjAzKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1NzE0LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.gZazXBlgXQkR8pn8n2oJomCCTzYsybPPQrcTr_vjexo
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

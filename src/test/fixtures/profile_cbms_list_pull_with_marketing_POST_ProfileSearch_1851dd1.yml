@@ -1,6 +1,7 @@
 diagnostic: profile_cbms_list_pull_with_marketing
 url: https://api-dev-staging.trestechnologies.com/ProfileSearch
 method: POST
+paramsHash: 1851dd1
 requestBody: "{\"startingRow\":0,\"includeCols\":[\"recNo\",\"clientInformalSalutation\"\
   ,\"primaryPersonFirstName\",\"primaryPersonLastName\",\"primaryEmail\",\"primaryEmailPermitMarketing\"\
   ,\"stateProvince\",\"country\",\"clientAdvisorProfileRecNo\"],\"tags\":[{\"recNo\"\
@@ -18,13 +19,10 @@ body: "[{\"recNo\":6518576,\"primaryPersonFirstName\":\"Gene\",\"primaryPersonLa
   },{\"recNo\":6518585,\"primaryPersonFirstName\":\"Also\",\"primaryPersonLastName\"\
   :\"Bored\",\"clientAdvisorProfileRecNo\":6517959,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
   ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
-  },{\"recNo\":6518589,\"primaryPersonFirstName\":\"George\",\"primaryPersonLastName\"\
-  :\"Anthony\",\"clientAdvisorProfileRecNo\":6517933,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
   }]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTA4VDE4OjU5OjEzKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1MDI1LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.F2P3TXaUYMt287ATxwoHVctT_Cyn11-v0IhXnXy-ayY
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE0VDE5OjQyOjM4KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1Njg5LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.szB7QeUtSFPjlQ1FTdtgo4_nJWc3ahJxpUMduX4fNGs
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

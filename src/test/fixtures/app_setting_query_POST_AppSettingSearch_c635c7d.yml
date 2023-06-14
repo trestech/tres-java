@@ -1,7 +1,8 @@
-diagnostic: app_setting_query_area
+diagnostic: app_setting_query
 url: https://api-dev-staging.trestechnologies.com/AppSettingSearch
 method: POST
-requestBody: "{\"startingRow\":0,\"area\":\"clientProfileSearch\"}"
+paramsHash: c635c7d
+requestBody: "{\"startingRow\":0}"
 body: "[{\"recNo\":674,\"createDateTime\":\"2023-05-26T18:57:35+00:00\",\"lastModifiedDateTime\"\
   :\"2023-05-31T18:15:58+00:00\",\"area\":\"clientProfileSearch\",\"name\":\"MAST\
   \ View\",\"data\":\"{\\\"recNo\\\":674,\\\"name\\\":\\\"MAST View\\\",\\\"orderId\\\
@@ -51,15 +52,66 @@ body: "[{\"recNo\":674,\"createDateTime\":\"2023-05-26T18:57:35+00:00\",\"lastMo
   \":\\\"Email\\\"},{\\\"recNo\\\":0,\\\"field\\\":\\\"commValue\\\",\\\"label\\\"\
   :\\\"Communication Value\\\",\\\"value\\\":{\\\"trimString\\\":null,\\\"compareCondition\\\
   \":5,\\\"value\\\":[\\\"\\\"]},\\\"type\\\":\\\"TextBoxAreaOperator\\\",\\\"placeHolder\\\
-  \":\\\"Communication value\\\",\\\"displayText\\\":\\\"\\\"}]}]}\"},{\"recNo\":678,\"\
-  createDateTime\":\"2023-05-31T21:27:04+00:00\",\"lastModifiedDateTime\":\"2023-05-31T21:27:04+00:00\"\
-  ,\"area\":\"clientProfileSearch\",\"name\":\"N&M View\",\"data\":\"{\\\"recNo\\\"\
-  :null,\\\"name\\\":\\\"N&M View\\\",\\\"orderId\\\":1,\\\"isDefault\\\":null,\\\"\
-  isSelected\\\":true,\\\"isMain\\\":false,\\\"isDisplayInReportMenu\\\":null,\\\"\
-  categoryName\\\":null,\\\"reportOutputFormat\\\":null,\\\"isAgencyLevel\\\":true,\\\
-  \"sortColumn\\\":null,\\\"sortDirection\\\":null,\\\"searchAreaViewType\\\":null,\\\
-  \"columns\\\":[{\\\"recNo\\\":101,\\\"header\\\":\\\"All\\\",\\\"width\\\":\\\"\
-  50px\\\",\\\"orderId\\\":1,\\\"entityRecNo\\\":null,\\\"entityName\\\":null},{\\\
+  \":\\\"Communication value\\\",\\\"displayText\\\":\\\"\\\"}]}]}\"},{\"recNo\":675,\"\
+  createDateTime\":\"2023-05-26T18:57:35+00:00\",\"lastModifiedDateTime\":\"2023-06-02T23:36:28+00:00\"\
+  ,\"appUser_recNo\":6886,\"area\":\"clientProfileSearch_config\",\"name\":\"config\"\
+  ,\"data\":\"{\\\"recNo\\\":null,\\\"appUser_recNo\\\":null,\\\"area\\\":null,\\\"\
+  name\\\":null,\\\"selectedRecNo\\\":681,\\\"mainRecNo\\\":674,\\\"viewList\\\":[]}\"\
+  },{\"recNo\":676,\"createDateTime\":\"2023-05-31T19:39:17+00:00\",\"lastModifiedDateTime\"\
+  :\"2023-05-31T19:44:33+00:00\",\"area\":\"personSearch\",\"name\":\"MAST Traveler\"\
+  ,\"data\":\"{\\\"recNo\\\":676,\\\"name\\\":\\\"MAST Traveler\\\",\\\"orderId\\\"\
+  :1,\\\"isDefault\\\":null,\\\"isSelected\\\":true,\\\"isMain\\\":true,\\\"isDisplayInReportMenu\\\
+  \":null,\\\"categoryName\\\":null,\\\"reportOutputFormat\\\":null,\\\"isAgencyLevel\\\
+  \":true,\\\"sortColumn\\\":null,\\\"sortDirection\\\":null,\\\"searchAreaViewType\\\
+  \":null,\\\"columns\\\":[{\\\"recNo\\\":101,\\\"header\\\":\\\"All\\\",\\\"width\\\
+  \":\\\"50px\\\",\\\"orderId\\\":0,\\\"entityRecNo\\\":null,\\\"entityName\\\":null},{\\\
+  \"recNo\\\":1,\\\"header\\\":\\\"Traveler Name\\\",\\\"width\\\":\\\"25%\\\",\\\"\
+  orderId\\\":1,\\\"entityRecNo\\\":null,\\\"entityName\\\":null},{\\\"recNo\\\":5,\\\
+  \"header\\\":\\\"Primary Email Permit Marketing\\\",\\\"width\\\":\\\"15%\\\",\\\
+  \"orderId\\\":2,\\\"entityRecNo\\\":null,\\\"entityName\\\":null},{\\\"recNo\\\"\
+  :2,\\\"header\\\":\\\"Primary Email\\\",\\\"width\\\":null,\\\"orderId\\\":3,\\\"\
+  entityRecNo\\\":null,\\\"entityName\\\":null},{\\\"recNo\\\":11,\\\"header\\\":\\\
+  \"Status\\\",\\\"width\\\":null,\\\"orderId\\\":4,\\\"entityRecNo\\\":null,\\\"\
+  entityName\\\":null}],\\\"filters\\\":[{\\\"recNo\\\":1,\\\"label\\\":\\\"Traveler\
+  \ Last Name\\\",\\\"filterArea\\\":4,\\\"filterFieldList\\\":[{\\\"recNo\\\":0,\\\
+  \"field\\\":\\\"lastName\\\",\\\"label\\\":\\\"Last Name\\\",\\\"value\\\":null,\\\
+  \"type\\\":\\\"TextBoxAreaOperator\\\",\\\"placeHolder\\\":\\\"Last Name\\\",\\\"\
+  displayText\\\":\\\"\\\"}]},{\\\"recNo\\\":2,\\\"label\\\":\\\"Traveler First Name\\\
+  \",\\\"filterArea\\\":4,\\\"filterFieldList\\\":[{\\\"recNo\\\":0,\\\"field\\\"\
+  :\\\"firstName\\\",\\\"label\\\":\\\"First Name\\\",\\\"value\\\":null,\\\"type\\\
+  \":\\\"TextBoxAreaOperator\\\",\\\"placeHolder\\\":\\\"First Name\\\",\\\"displayText\\\
+  \":\\\"\\\"}]},{\\\"recNo\\\":3,\\\"label\\\":\\\"Client Name\\\",\\\"filterArea\\\
+  \":4,\\\"filterFieldList\\\":[{\\\"recNo\\\":0,\\\"field\\\":\\\"profileRecNo\\\"\
+  ,\\\"label\\\":\\\"Profile\\\",\\\"value\\\":null,\\\"type\\\":\\\"LookupFilter\\\
+  \",\\\"placeHolder\\\":\\\"Client\\\",\\\"displayText\\\":\\\"\\\"}]},{\\\"recNo\\\
+  \":17,\\\"label\\\":\\\"Traveler Advisor\\\",\\\"filterArea\\\":4,\\\"filterFieldList\\\
+  \":[{\\\"recNo\\\":0,\\\"field\\\":\\\"advisorProfileRecNo\\\",\\\"label\\\":\\\"\
+  Advisor\\\",\\\"value\\\":null,\\\"type\\\":\\\"LookupFilter\\\",\\\"placeHolder\\\
+  \":\\\"Advisor\\\",\\\"displayText\\\":\\\"\\\"}]},{\\\"recNo\\\":12,\\\"label\\\
+  \":\\\"Traveler Primary Email Permit Marketing\\\",\\\"filterArea\\\":4,\\\"filterFieldList\\\
+  \":[{\\\"recNo\\\":0,\\\"field\\\":\\\"emailPermitMarketing\\\",\\\"label\\\":\\\
+  \"Email Permit Marketing\\\",\\\"value\\\":true,\\\"type\\\":\\\"DropDownField\\\
+  \",\\\"placeHolder\\\":\\\"Primary Email Permit Marketing\\\",\\\"displayText\\\"\
+  :\\\"Yes\\\"}]},{\\\"recNo\\\":5,\\\"label\\\":\\\"Traveler Communication\\\",\\\
+  \"filterArea\\\":4,\\\"filterFieldList\\\":[{\\\"recNo\\\":0,\\\"field\\\":\\\"\
+  commType\\\",\\\"label\\\":\\\"Comm Type\\\",\\\"value\\\":2,\\\"type\\\":\\\"DropDownField\\\
+  \",\\\"placeHolder\\\":\\\"Communication\\\",\\\"displayText\\\":\\\"Email\\\"},{\\\
+  \"recNo\\\":0,\\\"field\\\":\\\"commValue\\\",\\\"label\\\":\\\"Comm Value\\\",\\\
+  \"value\\\":{\\\"trimString\\\":null,\\\"compareCondition\\\":5,\\\"value\\\":[\\\
+  \"\\\"]},\\\"type\\\":\\\"TextBoxAreaOperator\\\",\\\"placeHolder\\\":\\\"Communication\
+  \ value\\\",\\\"displayText\\\":\\\"\\\"}]}]}\"},{\"recNo\":677,\"createDateTime\"\
+  :\"2023-05-31T19:39:17+00:00\",\"lastModifiedDateTime\":\"2023-05-31T19:39:17+00:00\"\
+  ,\"appUser_recNo\":6886,\"area\":\"personSearch_config\",\"name\":\"config\",\"\
+  data\":\"{\\\"recNo\\\":null,\\\"appUser_recNo\\\":null,\\\"area\\\":null,\\\"name\\\
+  \":null,\\\"selectedRecNo\\\":676,\\\"mainRecNo\\\":676,\\\"viewList\\\":[]}\"},{\"\
+  recNo\":678,\"createDateTime\":\"2023-05-31T21:27:04+00:00\",\"lastModifiedDateTime\"\
+  :\"2023-05-31T21:27:04+00:00\",\"area\":\"clientProfileSearch\",\"name\":\"N&M View\"\
+  ,\"data\":\"{\\\"recNo\\\":null,\\\"name\\\":\\\"N&M View\\\",\\\"orderId\\\":1,\\\
+  \"isDefault\\\":null,\\\"isSelected\\\":true,\\\"isMain\\\":false,\\\"isDisplayInReportMenu\\\
+  \":null,\\\"categoryName\\\":null,\\\"reportOutputFormat\\\":null,\\\"isAgencyLevel\\\
+  \":true,\\\"sortColumn\\\":null,\\\"sortDirection\\\":null,\\\"searchAreaViewType\\\
+  \":null,\\\"columns\\\":[{\\\"recNo\\\":101,\\\"header\\\":\\\"All\\\",\\\"width\\\
+  \":\\\"50px\\\",\\\"orderId\\\":1,\\\"entityRecNo\\\":null,\\\"entityName\\\":null},{\\\
   \"recNo\\\":33,\\\"header\\\":\\\"Client Tag\\\",\\\"width\\\":null,\\\"orderId\\\
   \":2,\\\"entityRecNo\\\":\\\"21944\\\",\\\"entityName\\\":\\\"Marketing\\\"},{\\\
   \"recNo\\\":1,\\\"header\\\":\\\"Client Type\\\",\\\"width\\\":null,\\\"orderId\\\
@@ -270,7 +322,7 @@ body: "[{\"recNo\":674,\"createDateTime\":\"2023-05-26T18:57:35+00:00\",\"lastMo
   :\\\"Yes\\\"}]}]}\"}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTA4VDE4OjU5OjIzKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1MDM0LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.NvRZAJt8j4mClbAWR9CazZb5F4DmWha9lCmuQIZxOYY
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE0VDE5OjQyOjM0KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1Njg1LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.v9D2s_l9SLSOjlt1Qt7p3A26f7gVl_N2UCYLnn-rv3Q
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

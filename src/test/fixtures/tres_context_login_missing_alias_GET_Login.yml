@@ -1,7 +1,8 @@
 diagnostic: tres_context_login_missing_alias
 url: https://api-dev-staging.trestechnologies.com/Login
 method: GET
-requestBody: null
+paramsHash: null
+requestBody: ""
 body: ""
 status: HTTP/1.1 404 Not Found
 requestHeaders:

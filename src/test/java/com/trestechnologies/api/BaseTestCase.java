@@ -177,7 +177,6 @@ public abstract class BaseTestCase extends TestCase {
         } else if ( fixture.getMethod().equals("POST") ) {
           HttpPost livePostRequest;
           
-          fixture.setRequestBody(request.getBody().readUtf8());
           liveRequest = livePostRequest = new HttpPost(fixture.getUrl());
           
           livePostRequest.setEntity(new StringEntity(fixture.getRequestBody()));

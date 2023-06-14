@@ -1,7 +1,8 @@
 diagnostic: affiliation_get_tres
 url: https://api-dev-staging.trestechnologies.com/Affiliation/1
 method: GET
-requestBody: null
+paramsHash: null
+requestBody: ""
 body: "[{\"recNo\":1,\"name\":\"Tres\",\"affiliationMarketingCategory\":[{\"affiliation_recNo\"\
   :1,\"recNo\":1,\"name\":\"Color\",\"affiliationMarketingElement\":[{\"recNo\":1,\"\
   affiliationMarketingCategory_recNo\":1,\"name\":\"Red\",\"id\":\"RED\"},{\"recNo\"\
@@ -14,7 +15,7 @@ body: "[{\"recNo\":1,\"name\":\"Tres\",\"affiliationMarketingCategory\":[{\"affi
   :\"Hot\",\"id\":\"HOT\"}]}]}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTA4VDE4OjU5OjI0KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1MDM1LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.rSperMjShiUa1FX84XOQHexNLjSVmSwLRtiQifYWsp4
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE0VDE5OjQzOjA3KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1NzE4LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.X3WFCZoXYc0qoUuZruiOVN-cD1MSyH9OZqrZTN_9vCg
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

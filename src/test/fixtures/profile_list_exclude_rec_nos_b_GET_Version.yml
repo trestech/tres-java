@@ -1,8 +1,9 @@
 diagnostic: profile_list_exclude_rec_nos_b
 url: https://api-dev-staging.trestechnologies.com/Version
 method: GET
-requestBody: null
-body: "{\"version\":\"1.0.17.3\",\"resultCode\":0,\"resultDescription\":\"\"}"
+paramsHash: null
+requestBody: ""
+body: "{\"version\":\"1.0.17.6\",\"resultCode\":0,\"resultDescription\":\"\"}"
 status: HTTP/1.1 200 OK
 requestHeaders:
   Content-Type: application/json
