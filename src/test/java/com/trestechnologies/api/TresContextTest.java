@@ -84,7 +84,7 @@ public class TresContextTest extends BaseTestCase {
 
     result = context.post("CustomerProfileSearch", params);
 
-    System.out.println(result);
+    //System.out.println(result);
 
     ObjectNode productParams = JsonNodeFactory.instance.objectNode();
     ArrayNode productIncludeCols = productParams.putArray("includeCols");
@@ -100,10 +100,10 @@ public class TresContextTest extends BaseTestCase {
       customerProfileRecNos.add(customer.get("recNo"));
     });
 
-    System.out.println(productParams);
+    //System.out.println(productParams);
     productResult = context.post("CustomerProductSearch", productParams);
 
-    System.out.println(productResult);
+    //System.out.println(productResult);
   }).group("tres_context_admin_product_search"); }
   
   public void testUrlInvalid ( ) { ((WithMockWebServer) (context) -> {
@@ -244,7 +244,7 @@ public class TresContextTest extends BaseTestCase {
 
     node = context.post("AccountingEntrySearch", params);
 
-//    node.forEach(System.out::println);
+    //node.forEach(System.out::println);
 
     assert(!isNodeEmpty(node));
   }).group("tres_context_query_accounting_entries"); }

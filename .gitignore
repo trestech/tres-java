@@ -30,3 +30,5 @@ tres-java.iml
 tres.http
 
 .gradle
+
+env.sh
