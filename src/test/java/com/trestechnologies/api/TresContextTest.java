@@ -100,11 +100,26 @@ public class TresContextTest extends BaseTestCase {
       customerProfileRecNos.add(customer.get("recNo"));
     });
 
-    //System.out.println(productParams);
     productResult = context.post("CustomerProductSearch", productParams);
-
-    //System.out.println(productResult);
+    
+    assert (productResult.size() > 0) : "expect productResult size > 0";
   }).group("tres_context_admin_product_search"); }
+  
+  public void testAdminProductSearchInvalid ( ) { ((WithMockAdminWebServer) (context) -> {
+    ObjectNode params = JsonNodeFactory.instance.objectNode();
+    ArrayNode includeCols = params.putArray("includeCols");
+    ObjectNode tramsId = params.putObject("tramsId");
+    ArrayNode tramsIdValues = tramsId.putArray("value");
+    JsonNode result, productResult;
+
+    params.put("startingRow", 0);
+    tramsIdValues.add(987654321); // <- MAST TrinID on Dev Admin invalid
+    includeCols.add("recNo");
+    includeCols.add("tramsId");
+
+    result = context.post("CustomerProfileSearch", params);
+    assert result.isEmpty() : "expect result empty";
+  }).group("tres_context_admin_product_search_invalid"); }
   
   public void testUrlInvalid ( ) { ((WithMockWebServer) (context) -> {
     try ( TresContext ctx = new TresContext("http://localhost:9876", null, "url_invalid") ) {

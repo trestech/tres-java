@@ -80,26 +80,28 @@ public class DomainLookup extends CommandLine {
 //    }
     
     cmd.refreshToken();
-    cmd.refreshToken();
     
     try ( TresContext ctx = new TresContext(cmd.url, cmd.token) ) {
       JsonNode customerProfiles = cmd.queryCustomerProfiles(ctx, args);
-      JsonNode customerProducts = cmd.queryCustomerProducts(ctx, customerProfiles);
 
       // System.out.println("Looking up domains for CustomerProfile: " + customerProfiles);
       // System.out.println(customerProducts.toPrettyString());
       
       System.out.println("customerProduct_recNo\tcustomerProfile_recNo\tproductName\tserialNumber\tstatus\tcboAlias\ttramsId");
       
-      customerProducts.forEach(( JsonNode customerProduct ) -> {
-        System.out.print(extractKey(customerProduct, "recNo") + "\t");
-        System.out.print(extractKey(customerProduct, "customerProfile_recNo") + "\t");
-        System.out.print(extractKey(customerProduct, "productName") + "\t");
-        System.out.print(extractKey(customerProduct, "serialNumber") + "\t");
-        System.out.print(extractKey(customerProduct, "status") + "\t");
-        System.out.print(extractKey(customerProduct, "cboAlias") + "\t");
-        System.out.println(extractKey(customerProduct, "tramsId"));
-      });
+      if ( !customerProfiles.isEmpty() ) {
+        JsonNode customerProducts = cmd.queryCustomerProducts(ctx, customerProfiles);
+
+        customerProducts.forEach(( JsonNode customerProduct ) -> {
+          System.out.print(extractKey(customerProduct, "recNo") + "\t");
+          System.out.print(extractKey(customerProduct, "customerProfile_recNo") + "\t");
+          System.out.print(extractKey(customerProduct, "productName") + "\t");
+          System.out.print(extractKey(customerProduct, "serialNumber") + "\t");
+          System.out.print(extractKey(customerProduct, "status") + "\t");
+          System.out.print(extractKey(customerProduct, "cboAlias") + "\t");
+          System.out.println(extractKey(customerProduct, "tramsId"));
+        });
+      }
     }
   }
   
