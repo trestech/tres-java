@@ -71,8 +71,6 @@ public class DomainLookup extends CommandLine {
   public static void main ( String[] args ) throws IOException {
     DomainLookup cmd = new DomainLookup();
     
-    assert args.length < 2 : "Too many arguments";
-    
 //    if ( args.length == 0 ) {
 //      String command = cmd.bestCommand("./bin/domain-lookup.sh");
 //

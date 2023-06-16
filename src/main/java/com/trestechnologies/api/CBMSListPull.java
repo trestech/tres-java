@@ -148,8 +148,6 @@ public class CBMSListPull extends CommandLine {
   public static void main ( String[] args ) throws IOException {
     CBMSListPull cmd = new CBMSListPull();
     
-    assert args.length < 2 : "Too many arguments";
-    
     if ( args.length == 0 ) {
       String command = cmd.bestCommand("./bin/cbms-list-pull.sh");
 

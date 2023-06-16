@@ -23,8 +23,6 @@ public class DumpSchema extends CommandLine {
   public static void main ( String[] args ) throws IOException {
     CommandLine cmd = new DumpSchema();
     
-    assert args.length < 2 : "Too many arguments";
-    
     if ( args.length == 0 ) {
       String command = cmd.bestCommand("./bin/tres.sh");
       
