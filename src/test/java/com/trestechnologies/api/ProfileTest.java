@@ -110,6 +110,7 @@ public class ProfileTest extends BaseTestCase {
     params.setEmailPermitMarketing(true);
     params.setActiveStatus(Profile.ActiveStatus.ACTIVE);
     params.setProfileType(Profile.Type.CLIENT);
+    params.setStateProvince(NOT_BLANK);
     params.setIncludeCols(new String[] {
       "recNo",
       "clientInformalSalutation",

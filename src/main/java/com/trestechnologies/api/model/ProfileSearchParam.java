@@ -173,6 +173,8 @@ public class ProfileSearchParam extends BaseSearchModel {
   public StringSearchParam getStateProvince ( ) { return stateProvince; }
 
   public void setStateProvince ( StringSearchParam stateProvince ) { this.stateProvince = stateProvince; }
+  public void setStateProvince ( StringSearchParam.Compare compare, String value ) { setStateProvince(new StringSearchParam(compare, value)); }
+  public void setStateProvince ( StringSearchParam.Compare compare ) { setStateProvince(compare, null); }
 
   public StringSearchParam getZipPostalCode ( ) { return zipPostalCode; }
 

@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.trestechnologies.api.model.StringSearchParam.Compare.NOT_BLANK;
+
 /**
  * Dumps the Tres API schema for a method to stdout.
  */
@@ -42,6 +44,7 @@ public class CBMSListPull extends CommandLine {
     params.setActiveStatus(Profile.ActiveStatus.ACTIVE);
     params.setProfileType(Profile.Type.CLIENT);
     params.setClientType(Profile.ClientType.PERSONAL);
+    params.setStateProvince(NOT_BLANK);
     params.setIncludeCols(new String[] {
       "recNo",
       "clientInformalSalutation",
