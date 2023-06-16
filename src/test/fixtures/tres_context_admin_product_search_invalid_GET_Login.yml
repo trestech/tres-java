@@ -1,0 +1,13 @@
+diagnostic: tres_context_admin_product_search_invalid
+url: 'https://api-dev-staging.trestechnologies.com/Login/:'
+method: GET
+paramsHash: null
+requestBody: ""
+body: "{\"identityToken\":\"ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE3VDAwOjIzOjQyKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMwLA0KICAidXNlck5hbWUiOiAiTUFTVDpNQVNUIiwNCiAgImFsaWFzIjogIiIsDQogICJ0b2tlblJlY05vIjogMzQ2NTM3LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.HT4aWEiARdRPv5wBs3tesutiDLJo4GMHoti4Wg8TnUI\"\
+  ,\"resultCode\":0,\"resultDescription\":\"Login Successful\"}"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Basic TUFTVDpUcmVzIzIwMjM=
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json; charset=utf-8

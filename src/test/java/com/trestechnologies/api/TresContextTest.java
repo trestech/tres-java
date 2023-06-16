@@ -130,7 +130,7 @@ public class TresContextTest extends BaseTestCase {
   }).group("tres_context_url_invalid"); }
 
   public void testApiVersion ( ) { ((WithMockWebServer) (context) -> {
-    assertSemanticVersion("1.0.17.6", context.getApiVersion());
+    assertSemanticVersion("1.0.17.8", context.getApiVersion());
   }).group("tres_context_api_version"); }
 
   private void assertSemanticVersion ( @SuppressWarnings("SameParameterValue") String expectedVersion, String actualVersion ) {

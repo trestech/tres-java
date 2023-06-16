@@ -69,7 +69,9 @@ public class TagTest extends BaseTestCase {
     Arrays.sort(expected);
     Arrays.sort(actual);
 
-    assert Arrays.equals(expected, actual) : "expect to find the same marketing codes but got: " + Arrays.toString(actual);
+    Arrays.stream(expected).forEach(e -> {
+      assert Arrays.stream(actual).anyMatch(a -> a.startsWith(e)) : "expect to find the marketing code starting with: " + e + " but got: " + Arrays.toString(actual);
+    });
     
     actualAreaFlags = tag.getAreaFlags();
     

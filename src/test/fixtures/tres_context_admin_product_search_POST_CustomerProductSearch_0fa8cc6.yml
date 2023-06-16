@@ -14,7 +14,7 @@ body: "[{\"recNo\":2320,\"productName\":\"CBW\"},{\"recNo\":4777,\"productName\"
   :\"Interbase\"},{\"recNo\":9981,\"productName\":\"TBO\",\"cboAlias\":\"MST1\"}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE0VDIwOjM5OjQxKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMwLA0KICAidXNlck5hbWUiOiAiTUFTVDpNQVNUIiwNCiAgImFsaWFzIjogIiIsDQogICJ0b2tlblJlY05vIjogMzQ1ODM0LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.4yr6ZtaU7Xwtttk9MHw56ydcDzryd9DgYeeAH4q3o0Y
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE3VDAwOjIzOjM0KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMwLA0KICAidXNlck5hbWUiOiAiTUFTVDpNQVNUIiwNCiAgImFsaWFzIjogIiIsDQogICJ0b2tlblJlY05vIjogMzQ2NTI5LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.79nYxyznYgySLPQRtT0LHixBbmjRKnaZEohK-kKHA-A
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

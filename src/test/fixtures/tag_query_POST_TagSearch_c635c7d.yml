@@ -51,17 +51,18 @@ body: "[{\"recNo\":21917,\"name\":\"ProfileMF_Company DK\",\"referenced\":true,\
   :false,\"valueRequired\":false,\"valueList\":\"BDATA:\\nEML01:Promotion\\nNOCBM:\\\
   nNOEMM:\\nNOMKT:No Marketing\\nNOTBM:No TouchBase Marketing\\nNOMTAG:\\nP1234:PCP\"\
   ,\"areaFlags\":1,\"requirement\":1},{\"recNo\":21945,\"createDateTime\":\"2022-12-22T00:03:11+00:00\"\
-  ,\"lastModifiedDateTime\":\"2023-06-14T19:14:21+00:00\",\"name\":\"Marketing Exclusions\"\
+  ,\"lastModifiedDateTime\":\"2023-06-15T15:28:40+00:00\",\"name\":\"Marketing Exclusions\"\
   ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":false,\"valueRequired\"\
-  :false,\"valueList\":\"NOEMM:\\nNOCBM:\\nNOTBM:\\nNOMKT:\\nBDATA:\",\"areaFlags\"\
-  :1,\"requirement\":1},{\"recNo\":25959,\"createDateTime\":\"2023-05-31T22:22:24+00:00\"\
-  ,\"lastModifiedDateTime\":\"2023-06-14T19:16:21+00:00\",\"name\":\"Marketing PromoID\"\
+  :false,\"valueList\":\"NOEMM: NoeMailMrktng\\nNOCBM:noClientBaseMrktng\\nNOTBM:\
+  \ noTouchBaseMrktng\\nNOMKT:  noMrktng\\nBDATA:noBrthdyMrktng\\nRMVFM: RemoveFromMrktng\"\
+  ,\"areaFlags\":1,\"requirement\":1},{\"recNo\":25959,\"createDateTime\":\"2023-05-31T22:22:24+00:00\"\
+  ,\"lastModifiedDateTime\":\"2023-06-14T23:23:05+00:00\",\"name\":\"Marketing PromoID\"\
   ,\"referenced\":true,\"activeStatus\":true,\"valueFreeFlow\":false,\"valueRequired\"\
-  :false,\"valueList\":\"EML01:Cruise01\\nP1234:Tour02\",\"areaFlags\":1,\"requirement\"\
-  :1}]"
+  :false,\"valueList\":\"EML01:Cruise01\\nP1234: Tour02\\nXMKTG\",\"areaFlags\":1,\"\
+  requirement\":1}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE0VDIwOjM5OjE2KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ1ODEwLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.ZRkgNmDrEB8YWMI5pA1pNi1pXRXosuCa4E6yi-TncoU
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE3VDAwOjIzOjA4KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ2NTA2LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.0IXtfvgUUGL1EvPQ4NIdrPuu2s5SZp97DesjgLC0hI8
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

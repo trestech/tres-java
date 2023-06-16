@@ -1,0 +1,13 @@
+diagnostic: tres_context_admin_product_search_invalid
+url: https://api-dev-staging.trestechnologies.com/CustomerProfileSearch
+method: POST
+paramsHash: 3aa7448
+requestBody: "{\"includeCols\":[\"recNo\",\"tramsId\"],\"tramsId\":{\"value\":[987654321]},\"\
+  startingRow\":0}"
+body: null
+status: HTTP/1.1 204 No Content
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE3VDAwOjIzOjQyKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMwLA0KICAidXNlck5hbWUiOiAiTUFTVDpNQVNUIiwNCiAgImFsaWFzIjogIiIsDQogICJ0b2tlblJlY05vIjogMzQ2NTM3LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.HT4aWEiARdRPv5wBs3tesutiDLJo4GMHoti4Wg8TnUI
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: text/plain; charset=utf-8

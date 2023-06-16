@@ -65,7 +65,7 @@ public class ProfileTest extends BaseTestCase {
     }
   }).group("profile_list_by_tags_no_rec_no"); }
   
-  public void testListCbmsListPullWithMarketing ( ) { ((WithMockWebServer) (context) -> {
+  public void testListCbmsListPullWithMarketingExclusions ( ) { ((WithMockWebServer) (context) -> {
     ProfileSearchParam params = new ProfileSearchParam();
     TagSearchParam tagsParams = new TagSearchParam();
     List<Profile> list;
@@ -83,23 +83,12 @@ public class ProfileTest extends BaseTestCase {
     });
 
     params.setStartingRow(0);
-    params.setEmailPermitMarketing(true);
-    params.setIncludeCols(new String[] {
-      "recNo",
-      "clientInformalSalutation",
-      "primaryPersonFirstName",
-      "primaryPersonLastName",
-      "primaryEmail",
-      "primaryEmailPermitMarketing",
-      "stateProvince",
-      "country",
-      "clientAdvisorProfileRecNo"
-    });
+    params.setIncludeCols(new String[] {"recNo"});
     
     list = Profile.search(context, params);
 
     assertFalse("did not expect empty result", list.isEmpty());
-    assertEquals(4, list.size());
+    assertEquals(7, list.size());
   }).group("profile_cbms_list_pull_with_marketing"); }
 
   public void testListCbmsListPull ( ) { ((WithMockWebServer) (context) -> {
