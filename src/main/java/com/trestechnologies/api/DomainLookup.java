@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.trestechnologies.api.interfaces.APIContext;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -17,7 +18,15 @@ public class DomainLookup extends CommandLine {
     super();
   }
   
-  protected JsonNode queryCustomerProfiles ( TresContext ctx, String[] trinIds ) throws IOException {
+  public DomainLookup ( APIContext context ) {
+    super(context);
+  }
+
+  public JsonNode queryCustomerProfiles ( String[] trinIds ) throws IOException {
+    return queryCustomerProfiles(context, trinIds);
+  }
+  
+  public JsonNode queryCustomerProfiles ( APIContext ctx, String[] trinIds ) throws IOException {
     ObjectNode params = JsonNodeFactory.instance.objectNode();
     ArrayNode includeCols = params.putArray("includeCols");
     ObjectNode tramsId = params.putObject("tramsId");
@@ -33,8 +42,12 @@ public class DomainLookup extends CommandLine {
 
     return ctx.post("CustomerProfileSearch", params);
   }
+
+  public JsonNode queryCustomerProducts ( JsonNode customerProfiles ) throws IOException {
+    return queryCustomerProducts(context, customerProfiles);
+  }
   
-  protected JsonNode queryCustomerProducts ( TresContext ctx, JsonNode customerProfiles ) throws IOException {
+  public JsonNode queryCustomerProducts ( APIContext ctx, JsonNode customerProfiles ) throws IOException {
     ObjectNode productParams = JsonNodeFactory.instance.objectNode();
     ArrayNode productIncludeCols = productParams.putArray("includeCols");
     ObjectNode customerProfileRecNo = productParams.putObject("CustomerProfile_recNo");

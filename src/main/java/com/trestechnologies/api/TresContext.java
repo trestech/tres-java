@@ -53,7 +53,7 @@ import static org.apache.http.HttpStatus.*;
  * Or with self-closing pattern:
  * 
  * <blockquote><pre>
- *   new TresContext("username", "password", "PCC", (context) -> {
+ *   new TresContext("username", "password", "PCC", context -> {
  *     System.out.println("Version: " + context.version());
  *   });
  * </pre></blockquote>
