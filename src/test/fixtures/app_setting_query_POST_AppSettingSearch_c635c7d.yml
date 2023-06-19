@@ -53,10 +53,10 @@ body: "[{\"recNo\":674,\"createDateTime\":\"2023-05-26T18:57:35+00:00\",\"lastMo
   :\\\"Communication Value\\\",\\\"value\\\":{\\\"trimString\\\":null,\\\"compareCondition\\\
   \":5,\\\"value\\\":[\\\"\\\"]},\\\"type\\\":\\\"TextBoxAreaOperator\\\",\\\"placeHolder\\\
   \":\\\"Communication value\\\",\\\"displayText\\\":\\\"\\\"}]}]}\"},{\"recNo\":675,\"\
-  createDateTime\":\"2023-05-26T18:57:35+00:00\",\"lastModifiedDateTime\":\"2023-06-15T20:31:09+00:00\"\
+  createDateTime\":\"2023-05-26T18:57:35+00:00\",\"lastModifiedDateTime\":\"2023-06-19T20:02:36+00:00\"\
   ,\"appUser_recNo\":6886,\"area\":\"clientProfileSearch_config\",\"name\":\"config\"\
   ,\"data\":\"{\\\"recNo\\\":null,\\\"appUser_recNo\\\":null,\\\"area\\\":null,\\\"\
-  name\\\":null,\\\"selectedRecNo\\\":674,\\\"mainRecNo\\\":674,\\\"viewList\\\":[]}\"\
+  name\\\":null,\\\"selectedRecNo\\\":681,\\\"mainRecNo\\\":674,\\\"viewList\\\":[]}\"\
   },{\"recNo\":676,\"createDateTime\":\"2023-05-31T19:39:17+00:00\",\"lastModifiedDateTime\"\
   :\"2023-05-31T19:44:33+00:00\",\"area\":\"personSearch\",\"name\":\"MAST Traveler\"\
   ,\"data\":\"{\\\"recNo\\\":676,\\\"name\\\":\\\"MAST Traveler\\\",\\\"orderId\\\"\
@@ -320,7 +320,7 @@ body: "[{\"recNo\":674,\"createDateTime\":\"2023-05-26T18:57:35+00:00\",\"lastMo
   \",\\\"displayText\\\":[]}]}]}\"}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE3VDAwOjIzOjI0KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ2NTE5LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.vkUjj8UCw4ubHFRoUf6BjZtFm0PSE2_XQpIy-hL9hLU
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE5VDIyOjUyOjQyKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ2Nzk1LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.YVPm4hY3mlOLCp8HAEsPy8HJWHKebQVdt2I36ifgIcQ
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

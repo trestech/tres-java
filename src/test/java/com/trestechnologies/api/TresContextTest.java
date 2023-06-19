@@ -37,7 +37,7 @@ public class TresContextTest extends BaseTestCase {
     
     // Mocking out these calls.
     
-    ((WithMockWebServer) (context) -> {
+    ((WithMockWebServer) context -> {
       String url = context.getUrl().toString();
       
       new TresContext(url);
@@ -66,7 +66,7 @@ public class TresContextTest extends BaseTestCase {
     }).group("tres_context_all_constructors");
   }
 
-  public void testAdminProductSearch ( ) { ((WithMockAdminWebServer) (context) -> {
+  public void testAdminProductSearch ( ) { ((WithMockAdminWebServer) context -> {
     ObjectNode params = JsonNodeFactory.instance.objectNode();
     ArrayNode includeCols = params.putArray("includeCols");
     ObjectNode tramsId = params.putObject("tramsId");
@@ -105,7 +105,7 @@ public class TresContextTest extends BaseTestCase {
     assert (productResult.size() > 0) : "expect productResult size > 0";
   }).group("tres_context_admin_product_search"); }
   
-  public void testAdminProductSearchInvalid ( ) { ((WithMockAdminWebServer) (context) -> {
+  public void testAdminProductSearchInvalid ( ) { ((WithMockAdminWebServer) context -> {
     ObjectNode params = JsonNodeFactory.instance.objectNode();
     ArrayNode includeCols = params.putArray("includeCols");
     ObjectNode tramsId = params.putObject("tramsId");
@@ -121,7 +121,7 @@ public class TresContextTest extends BaseTestCase {
     assert result.isEmpty() : "expect result empty";
   }).group("tres_context_admin_product_search_invalid"); }
   
-  public void testUrlInvalid ( ) { ((WithMockWebServer) (context) -> {
+  public void testUrlInvalid ( ) { ((WithMockWebServer) context -> {
     try ( TresContext ctx = new TresContext("http://localhost:9876", null, "url_invalid") ) {
       fail("expect invalid url");
     } catch ( HttpHostConnectException e ) {
@@ -129,7 +129,7 @@ public class TresContextTest extends BaseTestCase {
     }
   }).group("tres_context_url_invalid"); }
 
-  public void testApiVersion ( ) { ((WithMockWebServer) (context) -> {
+  public void testApiVersion ( ) { ((WithMockWebServer) context -> {
     assertSemanticVersion("1.0.17.8", context.getApiVersion());
   }).group("tres_context_api_version"); }
 
@@ -143,12 +143,12 @@ public class TresContextTest extends BaseTestCase {
     assertEquals("minor build", expectedSemanticVersion[3], actualSemanticVersion[3]);
   }
 
-  public void testAddCustomHeaders ( ) { ((WithMockWebServer) (context) -> {
+  public void testAddCustomHeaders ( ) { ((WithMockWebServer) context -> {
     // Note, this header will replace bearer token.
     assertNotNull(context.get("Version", r -> r.setHeader("X-Test", "TEST")));
   }).group("tres_context_add_custom_headers"); }
 
-  public void testMethodInvalid ( ) { ((WithMockWebServer) (context) -> {
+  public void testMethodInvalid ( ) { ((WithMockWebServer) context -> {
     try {
       context.post("BOGUS");
     } catch ( TresException e ) {
@@ -161,7 +161,7 @@ public class TresContextTest extends BaseTestCase {
     }
   }).group("tres_context_method_invalid"); }
 
-  public void testLoginInvalidUsernamePassword ( ) { ((WithMockWebServer) (context) -> {
+  public void testLoginInvalidUsernamePassword ( ) { ((WithMockWebServer) context -> {
     try {
       context.login("BOGUS", "BOGUS", "0001");
       fail("expect invalid login");
@@ -170,7 +170,7 @@ public class TresContextTest extends BaseTestCase {
     }
   }).group("tres_context_login_invalid_username_password"); }
 
-  public void testLoginInvalidAlias ( ) { ((WithMockWebServer) (context) -> {
+  public void testLoginInvalidAlias ( ) { ((WithMockWebServer) context -> {
     try {
       context.login("BOGUS", "BOGUS", "BOGUS");
       fail("expect invalid login");
@@ -179,7 +179,7 @@ public class TresContextTest extends BaseTestCase {
     }
   }).group("tres_context_login_invalid_alias"); }
 
-  public void testLoginMissingAlias ( ) { ((WithMockWebServer) (context) -> {
+  public void testLoginMissingAlias ( ) { ((WithMockWebServer) context -> {
     try {
       context.login("BOGUS", "BOGUS", null);
       fail("expect invalid login");
@@ -188,12 +188,12 @@ public class TresContextTest extends BaseTestCase {
     }
   }).group("tres_context_login_missing_alias"); }
 
-  public void testRefreshIdentityToken ( ) { ((WithMockWebServer) (context) -> {
+  public void testRefreshIdentityToken ( ) { ((WithMockWebServer) context -> {
     assertEquals(0, context.refreshIdentityToken().get("resultCode").intValue());
   }).group("tres_context_refresh_identity_token"); }
 
   @SuppressWarnings("resource") // We're testing the constructor, not the close method.
-  public void testBatch ( ) { ((WithMockWebServer) ( context) -> {
+  public void testBatch ( ) { ((WithMockWebServer) context -> {
     new TresContext(context.getUrl().toString(), context.getToken(), "tres_context_batch").batch((ctx) -> {
       ctx.refreshIdentityToken();
       ctx.refreshIdentityToken();
@@ -201,7 +201,7 @@ public class TresContextTest extends BaseTestCase {
     });
   }).group("tres_context_batch"); }
 
-  public void testRefreshIdentityTokenInvalid ( ) { ((WithMockWebServer) (context) -> {
+  public void testRefreshIdentityTokenInvalid ( ) { ((WithMockWebServer) context -> {
     context.logout();
     
     try {
@@ -211,7 +211,7 @@ public class TresContextTest extends BaseTestCase {
     }
   }).group("tres_context_refresh_identity_token_invalid"); }
 
-  public void testQueryPendingActivities ( ) { ((WithMockWebServer) (context) -> {
+  public void testQueryPendingActivities ( ) { ((WithMockWebServer) context -> {
     int userRecNo = 1825;
     ActivitySearchParams params = new ActivitySearchParams();
 
@@ -225,7 +225,7 @@ public class TresContextTest extends BaseTestCase {
     });
   }).group("tres_context_query_pending_activities"); }
 
-  public void testQueryPendingActivitiesMultipleAppUsers ( ) { ((WithMockWebServer) (context) -> {
+  public void testQueryPendingActivitiesMultipleAppUsers ( ) { ((WithMockWebServer) context -> {
     ActivitySearchParams params = new ActivitySearchParams();
 
     params.setStartingRow(0);
@@ -240,7 +240,7 @@ public class TresContextTest extends BaseTestCase {
     assert(isNodeEmpty(node)) : "expect empty node";
   }).group("tres_context_query_pending_activities_multiple_app_users"); }
 
-  public void testQueryPendingActivitiesAppUserBlank ( ) { ((WithMockWebServer) (context) -> {
+  public void testQueryPendingActivitiesAppUserBlank ( ) { ((WithMockWebServer) context -> {
     ActivitySearchParams params = new ActivitySearchParams();
 
     params.setStartingRow(0);
@@ -252,7 +252,7 @@ public class TresContextTest extends BaseTestCase {
     assert(isNodeEmpty(node));
   }).group("tres_context_query_pending_activities_app_user_blank"); }
 
-  public void testQueryAccountingEntries ( ) { ((WithMockWebServer) (context) -> {
+  public void testQueryAccountingEntries ( ) { ((WithMockWebServer) context -> {
     ObjectNode params = JsonNodeFactory.instance.objectNode();
 
     params.put("startingRow", 0);
@@ -264,7 +264,7 @@ public class TresContextTest extends BaseTestCase {
     assert(!isNodeEmpty(node));
   }).group("tres_context_query_accounting_entries"); }
 
-  public void testTagCRUD ( ) { ((WithMockWebServer) (context) -> {
+  public void testTagCRUD ( ) { ((WithMockWebServer) context -> {
     ObjectNode payload = JsonNodeFactory.instance.objectNode();
     ObjectNode data = payload.putObject("oldNewDataset");
     ArrayNode oldData = data.putArray("oldData");

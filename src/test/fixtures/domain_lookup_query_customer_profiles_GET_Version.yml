@@ -1,0 +1,11 @@
+diagnostic: domain_lookup_query_customer_profiles
+url: https://api-dev-staging.trestechnologies.com/Version
+method: GET
+paramsHash: null
+requestBody: ""
+body: "{\"version\":\"1.0.17.8\",\"resultCode\":0,\"resultDescription\":\"\"}"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json; charset=utf-8

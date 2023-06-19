@@ -6,7 +6,7 @@ import com.trestechnologies.api.model.AppSettingSearchParam;
 import java.util.List;
 
 public class AppSettingTest extends BaseTestCase {
-  public void testQuery ( ) { ((WithMockWebServer) ( context ) -> {
+  public void testQuery ( ) { ((WithMockWebServer) context -> {
     List<AppSetting> settings;
     AppSettingSearchParam params = new AppSettingSearchParam();
     
@@ -17,7 +17,7 @@ public class AppSettingTest extends BaseTestCase {
     assert !settings.isEmpty() : "did not expect empty result";
   }).group("app_setting_query"); }
   
-  public void testQueryArea ( ) { ((WithMockWebServer) ( context ) -> {
+  public void testQueryArea ( ) { ((WithMockWebServer) context -> {
     List<AppSetting> settings;
     AppSettingSearchParam params = new AppSettingSearchParam();
 

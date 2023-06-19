@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import static com.trestechnologies.api.model.StringSearchParam.Compare.*;
 
 public class ProfileTest extends BaseTestCase {
-  public void testListActiveClient ( ) { ((WithMockWebServer) ( context ) -> {
+  public void testListActiveClient ( ) { ((WithMockWebServer) context -> {
     ProfileSearchParam params = new ProfileSearchParam();
     List<Profile> list;
     
@@ -25,7 +25,7 @@ public class ProfileTest extends BaseTestCase {
     assertFalse("did not expect empty result", list.isEmpty());
   }).group("profile_list_active_client"); }
 
-  public void testListByTagsNoRecNo ( ) { ((WithMockWebServer) (context) -> {
+  public void testListByTagsNoRecNo ( ) { ((WithMockWebServer) context -> {
     ProfileSearchParam params = new ProfileSearchParam();
     TagSearchParam tagsParams = new TagSearchParam();
     List<Profile> list;
@@ -65,7 +65,7 @@ public class ProfileTest extends BaseTestCase {
     }
   }).group("profile_list_by_tags_no_rec_no"); }
   
-  public void testListCbmsListPullWithMarketingExclusions ( ) { ((WithMockWebServer) (context) -> {
+  public void testListCbmsListPullWithMarketingExclusions ( ) { ((WithMockWebServer) context -> {
     ProfileSearchParam params = new ProfileSearchParam();
     TagSearchParam tagsParams = new TagSearchParam();
     List<Profile> list;
@@ -91,7 +91,7 @@ public class ProfileTest extends BaseTestCase {
     assertEquals(7, list.size());
   }).group("profile_cbms_list_pull_with_marketing"); }
 
-  public void testListCbmsListPull ( ) { ((WithMockWebServer) (context) -> {
+  public void testListCbmsListPull ( ) { ((WithMockWebServer) context -> {
     ProfileSearchParam params = new ProfileSearchParam();
     List<Profile> list;
 
@@ -118,7 +118,7 @@ public class ProfileTest extends BaseTestCase {
     assertEquals(69, list.size());
   }).group("profile_cbms_list_pull"); }
 
-  public void testListStartingWith ( ) { ((WithMockWebServer) (context) -> {
+  public void testListStartingWith ( ) { ((WithMockWebServer) context -> {
     String startingWith = "R";
     ProfileSearchParam params = new ProfileSearchParam();
     List<Profile> list;
@@ -135,7 +135,7 @@ public class ProfileTest extends BaseTestCase {
     });
   }).group("profile_starting_with"); }
 
-  public void testListBlankName ( ) { ((WithMockWebServer) (context) -> {
+  public void testListBlankName ( ) { ((WithMockWebServer) context -> {
     ProfileSearchParam params = new ProfileSearchParam();
     List<Profile> list;
 
@@ -147,7 +147,7 @@ public class ProfileTest extends BaseTestCase {
     assert list.isEmpty();
   }).group("profile_blank_name"); }
 
-  public void testListIncludeColsInvalid ( ) { ((WithMockWebServer) (context) -> {
+  public void testListIncludeColsInvalid ( ) { ((WithMockWebServer) context -> {
     ProfileSearchParam params = new ProfileSearchParam();
 
     params.setIncludeCols(new String[] {"BOGUS"});
@@ -160,7 +160,7 @@ public class ProfileTest extends BaseTestCase {
     }
   }).group("profile_include_cols_invalid"); }
 
-  public void testListIncludeAllCols ( ) { ((WithMockWebServer) (context) -> {
+  public void testListIncludeAllCols ( ) { ((WithMockWebServer) context -> {
     ProfileSearchParam params = new ProfileSearchParam();
     List<Profile> list;
 
@@ -174,7 +174,7 @@ public class ProfileTest extends BaseTestCase {
   public void testListExcludeRecNos ( ) {
     List<Long> recNos = new ArrayList<>();
     
-    ((WithMockWebServer) (context) -> {
+    ((WithMockWebServer) context -> {
       ProfileSearchParam params = new ProfileSearchParam();
       List<Profile> list;
       
@@ -188,7 +188,7 @@ public class ProfileTest extends BaseTestCase {
     
     assert !recNos.isEmpty() : "did not expect empty recNos";
     
-    ((WithMockWebServer) (context) -> {
+    ((WithMockWebServer) context -> {
       ProfileSearchParam params = new ProfileSearchParam();
       List<Profile> list;
       

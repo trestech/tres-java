@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TagTest extends BaseTestCase {
-  public void testFindTag ( ) { ((WithMockWebServer) ( context ) -> {
+  public void testFindTag ( ) { ((WithMockWebServer) context -> {
     TagSearchParam params = new TagSearchParam();
     Tag expectedTag, actualTag;
 
@@ -22,7 +22,7 @@ public class TagTest extends BaseTestCase {
     assertEquals(expectedTag.getName(), actualTag.getName());
   }).group("tag_find_tag"); }
   
-  public void testQuery ( ) { ((WithMockWebServer) ( context ) -> {
+  public void testQuery ( ) { ((WithMockWebServer) context -> {
     List<Tag> tags;
     TagSearchParam params = new TagSearchParam();
 
@@ -33,7 +33,7 @@ public class TagTest extends BaseTestCase {
     assert !tags.isEmpty() : "did not expect empty result";
   }).group("tag_query"); }
 
-  public void testQueryNone ( ) { ((WithMockWebServer) ( context ) -> {
+  public void testQueryNone ( ) { ((WithMockWebServer) context -> {
     List<Tag> tags;
     TagSearchParam params = new TagSearchParam();
 
@@ -44,7 +44,7 @@ public class TagTest extends BaseTestCase {
     assert tags.isEmpty() : "expect empty result";
   }).group("tag_query_none"); }
 
-  public void testQueryNoMarketing ( ) { ((WithMockWebServer) ( context ) -> {
+  public void testQueryNoMarketing ( ) { ((WithMockWebServer) context -> {
     TagSearchParam params = new TagSearchParam();
 //    int expectedAreaFlags = AreaFlag.CLIENT.flag | AreaFlag.TRAVELER.flag, actualAreaFlags;
     int expectedAreaFlags = AreaFlag.CLIENT.flag, actualAreaFlags;
