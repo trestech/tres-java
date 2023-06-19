@@ -37,6 +37,7 @@ public class CBMSListPull extends CommandLine {
   }
   
   protected List<Profile> queryProfiles ( APIContext ctx, String marketingPartnerId, List<Long> marketingPartnerIdRecNos ) throws IOException {
+    List<Profile> list;
     ProfileSearchParam params = new ProfileSearchParam();
     
     params.setStartingRow(0);
@@ -64,8 +65,24 @@ public class CBMSListPull extends CommandLine {
       tagSearchParams.setRecNo(marketingPartnerIdRecNos.get(0));
       params.setTags(tagSearchParams);
     }
-
-    return Profile.search(ctx, params);
+    
+    list = Profile.search(ctx, params);
+    
+    list = list.stream().filter(profile -> {
+      if ( profile.getStateProvince() == null ) {
+        return false;
+      } else if ( profile.getStateProvince().trim().isEmpty() ) {
+        // Even though we asked the API for non-blank state/province, we may still
+        // get some profiles with whitespace and/or empty strings.  It's possible
+        // that the API considers <null> as blank and empty strings as non-blank.
+        
+        return false;
+      }
+      
+      return true;
+    }).collect(java.util.stream.Collectors.toList());
+    
+    return list;
   }
   
   @FunctionalInterface

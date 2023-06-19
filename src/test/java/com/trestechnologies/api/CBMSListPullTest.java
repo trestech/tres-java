@@ -3,7 +3,7 @@ package com.trestechnologies.api;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class CBMSListPullTest extends BaseTestCase {
-  public void testPop ( ) { ((WithMockWebServer) ( context ) -> {
+  public void testPop ( ) { ((WithMockWebServer) context -> {
     CBMSListPull listPull = new CBMSListPull(context);
     AtomicBoolean ran = new AtomicBoolean(false);
 
@@ -12,6 +12,9 @@ public class CBMSListPullTest extends BaseTestCase {
       assert priority != null : "priority is null";
       
       assertEquals("expect priority to be 0", priority, "0");
+      
+      assert profile.getStateProvince() != null : "state province is null";
+      assert !profile.getStateProvince().isEmpty() : "state province is empty for: " + profile.getPrimaryEmail();
       
       ran.set(true);
     });
