@@ -29,10 +29,14 @@ public class TresException extends RuntimeException {
 
   public TresException ( int code ) {
     this(code, null);
+
+    this.code = code;
   }
   
   public TresException ( int code, String message ) {
     super(rootCause(code, message));
+  
+    this.code = code;
   }
   
   public TresException ( String message ) {
@@ -42,4 +46,8 @@ public class TresException extends RuntimeException {
   public TresException ( String message, Throwable cause ) {
     super(rootCause(-1, message), cause);
   }
+
+  public int getCode ( ) { return code; }
+
+  public void setCode ( int code ) { this.code = code; }
 }

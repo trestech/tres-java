@@ -1,9 +1,5 @@
 package com.trestechnologies.api.model;
 
-import com.trestechnologies.api.interfaces.AreaFlag;
-
-import java.util.Arrays;
-
 /**
  * Used when calling "AppSettingSearch".
  */
