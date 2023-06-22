@@ -1,5 +1,5 @@
 diagnostic: affiliation_get_signature_travel_network
-url: https://api-dev-staging.trestechnologies.com/Version
+url: https://api-dev.trestechnologies.com/Version
 method: GET
 paramsHash: null
 requestBody: ""

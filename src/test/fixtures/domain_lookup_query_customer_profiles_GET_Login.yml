@@ -1,9 +1,9 @@
 diagnostic: domain_lookup_query_customer_profiles
-url: 'https://api-dev-staging.trestechnologies.com/Login/:'
+url: 'https://api-dev.trestechnologies.com/Login/:'
 method: GET
 paramsHash: null
 requestBody: ""
-body: "{\"identityToken\":\"ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE5VDIyOjUzOjI1KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMwLA0KICAidXNlck5hbWUiOiAiTUFTVDpNQVNUIiwNCiAgImFsaWFzIjogIiIsDQogICJ0b2tlblJlY05vIjogMzQ2ODMxLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.nyzIyTcguwQMAWo5SWQ61QPvqa3o9aUfuYLU4ZnEYCo\"\
+body: "{\"identityToken\":\"ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTIyVDE3OjM4OjU5KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMwLA0KICAidXNlck5hbWUiOiAiTUFTVDpNQVNUIiwNCiAgImFsaWFzIjogIiIsDQogICJ0b2tlblJlY05vIjogMzQ3NTExLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.R56a8ZVADzhKaRTT6jO_dvRGjXIJnQCdxaGoqfpOWFc\"\
   ,\"resultCode\":0,\"resultDescription\":\"Login Successful\"}"
 status: HTTP/1.1 200 OK
 requestHeaders:

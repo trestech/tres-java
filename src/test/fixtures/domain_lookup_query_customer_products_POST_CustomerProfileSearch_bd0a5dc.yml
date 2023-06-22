@@ -1,5 +1,5 @@
 diagnostic: domain_lookup_query_customer_products
-url: https://api-dev-staging.trestechnologies.com/CustomerProfileSearch
+url: https://api-dev.trestechnologies.com/CustomerProfileSearch
 method: POST
 paramsHash: bd0a5dc
 requestBody: "{\"includeCols\":[\"recNo\",\"tramsId\"],\"tramsId\":{\"value\":[\"\
@@ -7,7 +7,7 @@ requestBody: "{\"includeCols\":[\"recNo\",\"tramsId\"],\"tramsId\":{\"value\":[\
 body: "[{\"recNo\":5058,\"tramsId\":57052}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE5VDIyOjUzOjI0KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMwLA0KICAidXNlck5hbWUiOiAiTUFTVDpNQVNUIiwNCiAgImFsaWFzIjogIiIsDQogICJ0b2tlblJlY05vIjogMzQ2ODMwLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.z67JTN4eYfKadt1zDt4dFH_cIFCIONaivN2Pmjy7uIA
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTIyVDE3OjM4OjU4KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMwLA0KICAidXNlck5hbWUiOiAiTUFTVDpNQVNUIiwNCiAgImFsaWFzIjogIiIsDQogICJ0b2tlblJlY05vIjogMzQ3NTEwLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.wOlzhomW6ZRtqyrVA-wgVMae7d8Ci_Ve13A6tPtWpWg
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

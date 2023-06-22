@@ -1,5 +1,5 @@
 diagnostic: tres_context_login_missing_alias
-url: https://api-dev-staging.trestechnologies.com/Logout
+url: https://api-dev.trestechnologies.com/Logout
 method: GET
 paramsHash: null
 requestBody: ""

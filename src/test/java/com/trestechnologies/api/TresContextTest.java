@@ -84,8 +84,6 @@ public class TresContextTest extends BaseTestCase {
 
     result = context.post("CustomerProfileSearch", params);
 
-    //System.out.println(result);
-
     ObjectNode productParams = JsonNodeFactory.instance.objectNode();
     ArrayNode productIncludeCols = productParams.putArray("includeCols");
     ObjectNode customerProfileRecNo = productParams.putObject("CustomerProfile_recNo");
@@ -258,8 +256,6 @@ public class TresContextTest extends BaseTestCase {
     params.put("startingRow", 0);
 
     node = context.post("AccountingEntrySearch", params);
-
-    //node.forEach(System.out::println);
 
     assert(!isNodeEmpty(node));
   }).group("tres_context_query_accounting_entries"); }

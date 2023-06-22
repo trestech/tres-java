@@ -1,5 +1,5 @@
 diagnostic: profile_list_by_tags_no_rec_no
-url: https://api-dev-staging.trestechnologies.com/Version
+url: https://api-dev.trestechnologies.com/Version
 method: GET
 paramsHash: null
 requestBody: ""

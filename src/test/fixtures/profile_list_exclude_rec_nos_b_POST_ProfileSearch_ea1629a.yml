@@ -1,8 +1,8 @@
 diagnostic: profile_list_exclude_rec_nos_b
-url: https://api-dev-staging.trestechnologies.com/ProfileSearch
+url: https://api-dev.trestechnologies.com/ProfileSearch
 method: POST
-paramsHash: 9c51edf
-requestBody: "{\"recNo\":{\"value\":[6518347,6517968,6518337,6518072,6518031,6518439,6518502,6518360,6518149,6518372,6518378,6518048,6518383,6518144,6517935,6517929,6517945,6517928,6517936,6517947,6517960,6517958,6518027,6518148,6518116,6518109,6517944,6518479,6518205,6518433,6518472,6518494,6518385,6518437,6518578,6518451,6518354,6518141,6518064,6518195,6518143,6518476,6518169,6518021,6518134,6518214,6518427,6518428,6518463,6518589,6518055,6518377,6517966,6518090,6518054,6518274,6518334,6518196,6518481,6518369,6518577,6517933,6518119,6517994,6518506,6518026,6518464,6518299,6518348,6518442,6518487,6517971,6518374,6518261,6518471,6518292,6518367,6518316,6518255,6518256,6518242,6518252,6518585,6518553,6518335,6518392,6518391,6518454,6518424,6517946,6518097,6518003,6518357,6518145,6518390,6518197,6518275,6518459,6518326,6518328,6518069,6518370,6518485,6518412,6518446,6518386,6518307,6518118,6518039,6518056,6517995,6518351,6518445,6518173,6518340,6518527,6518147,6517941,6518246,6517993,6517985,6517987,6518329,6518399,6518516,6518368,6518105,6518280,6518582,6518483,6518135,6518359,6518417,6518257,6518331,6518301,6518198,6518302,6517972,6518350,6518491,6518059,6518142,6518438,6518008,6518380,6518503,6518565,6518364,6518562,6518217,6518268,6518233,6518062,6518323,6518061,6518425,6518469,6518362,6518466,6518284,6518235,6518435,6518456,6518052,6518150,6518091,6518187,6518063,6518462,6518522,6518538,6518489,6518393,6518345,6518477,6518224,6518294,6518556,6518543,6518151,6518200,6518443,6518397,6518406,6518320,6518434,12225901,6518088,6518125,6518343,6517949,6518162,6517997,6518104,6518066,6517974,6517953,6518065,6518229,6518531,6518404,6518455,6518523,6518120,6518584,6518569,6518381,6517992,6518158,6518496,6518017,6518223,6518220,6518264,6518269,6518216,6518221,6518497,6518349,6518057,6518035,6518099,6518044,6518484,6517996,6518030,6518314,6518248,6518234,6518287,6518541,6518094,6518480,6518473,6518526,6518070,6518583,6518204,6518201,6518199,6518163,6518129,6518291,6518532,6518403,6518130,6518136,6518492,6518247,6518534,6518363,6518068,6518190,6518303,6517998,6518157,6518138,6518405,6518387,6518023,6518388,6518398,6518548,6518014,6518382,6518267,6518414,6518586,6518304,6518376,6518563,6518581,6518519,6518474,6518560,6518160,6518540,6517969,6518408,6518332,6518300,6518100,6518182,6518009,6517970,6518161,6518180,6518074,6518132,6518018,6518379,6518019,6518449,6518166,6518034,6518124,6518530,6518588,6518241,6518071,6518206,6518028,6518152,12225898,6518049,6518573,6518058,6518155,6517990,6517973,6518416,6518232,6518457,6518551,6518539,6517940,6517939,6517959,6518579,6518342,6518344,6518176,6518422,6517952,6518568,6518537,6518239,6518470,6518570,6518549,6518587,6518156,6518465,6517930,6517955,6518375,6518513,6518500,6518338,6518525,6518524,6518410,6518312,6518566,6518495,6517957,6518499,6518309,6518184,6517931,6517942,6518108,6518436,6518521,6518448,6518254,6518051,6518168,6518227,6518518,6518085,6518249,6518271,6518542,6518520,6518081,6517988,6518096,6518207,6518082,6517951,6518576,6518440,6517956,6517932,6518317,6518245,6518225,6518222,6518273,6518352,6518133,6518515,6518366,6518321,6518313,6518339,6518561,6518453,6518237,6518504,6518286,6518512,6518341,6518083,6518447,6518419,6518511,6517934,6518361,6518322,6518128,6518290,6518121,6518420,6518400,6518517,6518016,6518276,6518389,6518279,6518426,6518164,6518188,6518555,6518029,6518508,6518277,6518004,6518498,6517981,6518208,6518005,6518117,6518087,6518175,6518501,6518037,6518296,6518330,6518080,6518356,6518266,6518185,6518430,6518231,6518552,6518209,6518102,6518310,6517938,6518260,6517950,6518384,6517989,6518107,6518213,6518230,6518282,6518429,6518564,6518193,6518493,6518575,6518444,6518251,6518283,6518535,6518396,6517976,6518418,6518212,6518262,6518215,6518219,6518401,6518306,6518192,6518547,6518053,6518115,6518137,6518013,6518226,6518238,6518295,6518580,6518073,6518211,6518036,6518045,6518179,6518040,6517975,6518554,6518507,6517954,6518038,6518423,6518046,6518112,6518194,6518228,6518431,6518458,6518265,6518533,6518001,6518007,6518043,6518243,6518421,6518113,6518297,6518170,6518285,6518333,6518077,6518000,6518111,6518079,6517999,6518167,6518110,6517980,6518159,6518325,6518236,6517937,6518452,6518557,6518544,6517962,6517977,6518365,6518101,6518131,6518186,6518042,6518183,6518460,6518550,6518218,6518567,6518358,6518346,6518353,6518324,6518478,6518288,6518509,6518482,6518407,6518486,6518510,6518395,6518327,6518146,6518475,6518432,6518189,6518106,6518093,6518165,6518293,6518319,6518095,6518171,6518278,6518411,6518270,6518263,6518047,6518402,6518514,6518536,6518505,6518311,6517948,6517961,6517943,6518490,6518571,6518559,6518126,6518174,6518202,6518203,6518488,6518574,6518153,6518468,6518546,6518394,6518308,6517984,6518528,6518441,6518298,6518409,6518050,6518259,6518181,6517979,6518139,6518140,6518127,6518250,6518154,6518075,6518011,6518078,6518355,6518281,6517986,6518032,6517965,6517978,6518067,6518240,6518086,6517983,6518461,6518041,6518060,6518025,6518020,6518098,6518033,6518010,6517982,6517963,6518012,6517964,6518015,6518114,6518022,6518253,6518373,6518336,6518305,6518172,6517991,6517967,6518122,6518024,6518076,6518103,6518244,6518413,6518415,6518006,6518178,6518123,6518089,6518092,6518450,6518289,6518467,6518529,6518272,6518177,6518191,6518210,6518558,6518572,6518318,6518084,6518371,6518315,6518258,6518545,6518002],\"\
+paramsHash: ea1629a
+requestBody: "{\"recNo\":{\"value\":[6518347,6517968,6518337,6518072,6518031,6518439,6518502,6518360,6518149,6518372,6518378,6518048,6518383,6518144,6517935,6517929,6517945,6517928,6517936,6517947,6517960,6517958,6518027,6518148,6518116,6518109,6517944,6518479,6518205,6518433,6518472,6518494,6518385,6518437,6518578,6518451,6518354,6518141,6518064,6518195,6518143,6518476,6518169,6518021,6518134,6518214,6518427,6518428,6518463,6518589,6518055,6518377,6517966,6518090,6518054,6518274,6518334,6518196,6518481,6518369,6518577,6517933,6518119,6517994,6518506,6518026,6518464,6518299,6518348,6518442,6518487,6517971,6518374,6518261,6518471,6518292,6518367,6518316,6518255,6518256,6518242,6518252,6518585,6518553,6518335,6518392,6518391,6518454,6518424,6517946,6518097,6518003,6518357,6518145,6518390,6518197,6518275,6518459,6518326,6518328,6518069,6518370,6518485,6518412,6518446,6518386,6518307,6518118,6518039,6518056,6517995,6518351,6518445,6518173,6518340,6518527,6518147,6517941,6518246,6517993,6517985,6517987,6518329,6518399,6518516,6518368,6518105,6518280,6518582,6518483,12225985,6518135,6518359,6518417,6518257,6518331,6518301,6518198,6518302,6517972,6518350,6518491,6518059,6518142,6518438,6518008,6518380,6518503,6518565,6518364,6518562,6518217,6518268,6518233,6518062,6518323,6518061,6518425,6518469,6518362,6518466,6518284,6518235,6518435,6518456,6518052,6518150,6518091,6518187,6518063,6518462,6518522,6518538,6518489,6518393,6518345,6518477,6518224,6518294,6518556,6518543,6518151,6518200,6518443,6518397,6518406,6518320,6518434,12225901,6518088,6518125,6518343,6517949,6518162,6517997,6518104,6518066,6517974,6517953,6518065,6518229,6518531,6518404,6518455,6518523,6518120,6518584,6518569,6518381,6517992,6518158,6518496,6518017,6518223,6518220,6518264,6518269,6518216,6518221,6518497,6518349,6518057,6518035,6518099,6518044,6518484,6517996,6518030,6518314,6518248,6518234,6518287,6518541,6518094,6518480,6518473,6518526,6518070,6518583,6518204,6518201,6518199,6518163,6518129,6518291,6518532,6518403,6518130,6518136,6518492,6518247,6518534,6518363,6518068,6518190,6518303,6517998,6518157,6518138,6518405,6518387,6518023,6518388,6518398,6518548,6518014,6518382,6518267,6518414,6518586,6518304,6518376,6518563,6518581,6518519,6518474,6518560,6518160,6518540,6517969,6518408,6518332,6518300,6518100,6518182,6518009,6517970,6518161,6518180,6518074,6518132,6518018,6518379,6518019,6518449,6518166,6518034,6518124,6518530,6518588,6518241,6518071,6518206,6518028,6518152,12225898,6518049,6518573,6518058,6518155,6517990,6517973,6518416,6518232,6518457,6518551,6518539,6517940,6517939,6517959,6518579,6518342,6518344,6518176,6518422,6517952,6518568,6518537,6518239,6518470,6518570,6518549,6518587,6518156,6518465,6517930,6517955,6518375,6518513,6518500,6518338,6518525,6518524,6518410,6518312,6518566,6518495,6517957,6518499,6518309,6518184,6517931,6517942,6518108,6518436,6518521,6518448,6518254,6518051,6518168,6518227,6518518,6518085,6518249,6518271,6518542,6518520,6518081,6517988,6518096,6518207,6518082,6517951,6518576,6518440,6517956,6517932,6518317,6518245,6518225,6518222,6518273,6518352,6518133,6518515,6518366,6518321,6518313,6518339,6518561,6518453,6518237,6518504,6518286,6518512,6518341,6518083,6518447,6518419,6518511,6517934,6518361,6518322,6518128,6518290,6518121,6518420,6518400,6518517,6518016,6518276,6518389,6518279,6518426,6518164,6518188,6518555,6518029,6518508,6518277,6518004,6518498,6517981,6518208,6518005,6518117,6518087,6518175,6518501,6518037,6518296,6518330,6518080,6518356,6518266,6518185,6518430,6518231,6518552,6518209,6518102,6518310,6517938,6518260,6517950,6518384,6517989,6518107,6518213,6518230,6518282,6518429,6518564,6518193,6518493,6518575,6518444,6518251,6518283,6518535,6518396,6517976,6518418,6518212,6518262,6518215,6518219,6518401,6518306,6518192,6518547,6518053,6518115,6518137,6518013,6518226,6518238,6518295,6518580,6518073,6518211,6518036,6518045,6518179,6518040,6517975,6518554,6518507,6517954,6518038,6518423,6518046,6518112,6518194,6518228,6518431,6518458,6518265,6518533,6518001,6518007,6518043,6518243,6518421,6518113,6518297,6518170,6518285,6518333,6518077,6518000,6518111,6518079,6517999,6518167,6518110,6517980,6518159,6518325,6518236,6517937,6518452,6518557,6518544,6517962,6517977,6518365,6518101,6518131,6518186,6518042,6518183,6518460,6518550,6518218,6518567,6518358,6518346,6518353,6518324,6518478,6518288,6518509,6518482,6518407,6518486,6518510,6518395,6518327,6518146,6518475,6518432,6518189,6518106,6518093,6518165,6518293,6518319,6518095,6518171,6518278,6518411,6518270,6518263,6518047,6518402,6518514,6518536,6518505,6518311,6517948,6517961,6517943,6518490,6518571,6518559,6518126,6518174,6518202,6518203,6518488,6518574,6518153,6518468,6518546,6518394,6518308,6517984,6518528,6518441,6518298,6518409,6518050,6518259,6518181,6517979,6518139,6518140,6518127,6518250,6518154,6518075,6518011,6518078,6518355,6518281,6517986,6518032,6517965,6517978,6518067,6518240,6518086,6517983,6518461,6518041,6518060,6518025,6518020,6518098,6518033,6518010,6517982,6517963,6518012,6517964,6518015,6518114,6518022,6518253,6518373,6518336,6518305,6518172,6517991,6517967,6518122,6518024,6518076,6518103,6518244,6518413,6518415,6518006,6518178,6518123,6518089,6518092,6518450,6518289,6518467,6518529,6518272,6518177,6518191,6518210,6518558,6518572,6518318,6518084,6518371,6518315,6518258,6518545,6518002],\"\
   compareCondition\":2}}"
 body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPersonRecNo\"\
   :12808187,\"primaryPersonName\":\"Last168/First168 W\",\"primaryPersonFirstName\"\
@@ -4004,10 +4004,79 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   \ Associates, Inc.\",\"profileType\":1,\"clientType\":2,\"remarks\":\"\",\"activeStatus\"\
   :1,\"street1\":\"601 Bayshore Blvd Ste 600\",\"city\":\"Tampa\",\"stateProvince\"\
   :\"FL\",\"zipPostalCode\":\"33606\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"\",\"firstId\":\"95GLEA\"},{\"recNo\":6518549,\"name\":\"Jones/Hobo\",\"profileType\"\
-  :1,\"clientType\":1,\"primaryPersonRecNo\":12808411,\"primaryPersonName\":\"Jones/Hobo\
-  \ \",\"primaryPersonFirstName\":\"Hobo\",\"primaryPersonLastName\":\"Jones\",\"\
-  remarks\":\"\",\"activeStatus\":1,\"street1\":\"1055\",\"addressPermitMarketing\"\
+  :\"\",\"firstId\":\"95GLEA\"},{\"recNo\":6518454,\"name\":\"Briar Bay Developers\"\
+  ,\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\":12808359,\"primaryPersonName\"\
+  :\"Chratter/Jasmin \",\"primaryPersonFirstName\":\"Jasmin\",\"primaryPersonLastName\"\
+  :\"Chratter\",\"remarks\":\"\",\"activeStatus\":0,\"primaryPhone\":\"+1 (305) 238-9090\"\
+  ,\"primaryPhonePermitMarketing\":true,\"street1\":\"13-131 S/W 89th Place\",\"city\"\
+  :\"Miami\",\"stateProvince\":\"FL\",\"zipPostalCode\":\"33176\",\"addressPermitMarketing\"\
+  :true,\"clientFormalSalutation\":\"Jasmin Chratter\",\"profileCommType\":1,\"profileCommValue\"\
+  :\"+1 (305) 238-9090\",\"profileCommIsBillingContact\":false},{\"recNo\":6518456,\"\
+  name\":\"Crowne & Company\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
+  :12808361,\"primaryPersonName\":\"/Verna \",\"primaryPersonFirstName\":\"Verna\"\
+  ,\"remarks\":\"\",\"activeStatus\":1,\"primaryPhone\":\"+1 (206) 745-5070\",\"primaryPhonePermitMarketing\"\
+  :true,\"street1\":\"2615 West Casino Road\",\"city\":\"Everett\",\"stateProvince\"\
+  :\"WA\",\"zipPostalCode\":\"98204\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Verna\",\"profileCommType\":1,\"profileCommValue\":\"+1 (206) 745-5070\",\"profileCommIsBillingContact\"\
+  :false},{\"recNo\":6518457,\"name\":\"Jackson/John\",\"profileType\":1,\"clientType\"\
+  :1,\"primaryPersonRecNo\":12807880,\"primaryPersonName\":\"Jackson/John L\",\"primaryPersonFirstName\"\
+  :\"John\",\"primaryPersonLastName\":\"Jackson\",\"primaryPersonEmail\":\"jonjackson2@hotmail.com\"\
+  ,\"primaryPersonPhone\":\"+1 (323) 394-9147\",\"remarks\":\"\",\"activeStatus\"\
+  :1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\"\
+  :\"+1 (323) 754-9204\",\"primaryPhonePermitMarketing\":true,\"street1\":\"853 W.\
+  \ 95th Street\",\"street2\":\"Apt. 3\",\"city\":\"Los Angeles\",\"stateProvince\"\
+  :\"CA\",\"zipPostalCode\":\"90044\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
+  :\"Simmons\",\"clientFormalSalutation\":\"Mr. John Jackson\",\"firstId\":\"JLJ\"\
+  ,\"profileCommType\":1,\"profileCommValue\":\"+1 (323) 754-9204\",\"profileCommIsBillingContact\"\
+  :false},{\"recNo\":6518457,\"name\":\"Jackson/John\",\"profileType\":1,\"clientType\"\
+  :1,\"primaryPersonRecNo\":12807880,\"primaryPersonName\":\"Jackson/John L\",\"primaryPersonFirstName\"\
+  :\"John\",\"primaryPersonLastName\":\"Jackson\",\"primaryPersonEmail\":\"jonjackson2@hotmail.com\"\
+  ,\"primaryPersonPhone\":\"+1 (323) 394-9147\",\"remarks\":\"\",\"activeStatus\"\
+  :1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\"\
+  :\"+1 (323) 754-9204\",\"primaryPhonePermitMarketing\":true,\"street1\":\"853 W.\
+  \ 95th Street\",\"street2\":\"Apt. 3\",\"city\":\"Los Angeles\",\"stateProvince\"\
+  :\"CA\",\"zipPostalCode\":\"90044\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
+  :\"Simmons\",\"clientFormalSalutation\":\"Mr. John Jackson\",\"firstId\":\"JLJ\"\
+  ,\"profileCommType\":1,\"profileCommValue\":\"+1 (800) 388-8447\",\"profileCommIsBillingContact\"\
+  :false},{\"recNo\":6518457,\"name\":\"Jackson/John\",\"profileType\":1,\"clientType\"\
+  :1,\"primaryPersonRecNo\":12807880,\"primaryPersonName\":\"Jackson/John L\",\"primaryPersonFirstName\"\
+  :\"John\",\"primaryPersonLastName\":\"Jackson\",\"primaryPersonEmail\":\"jonjackson2@hotmail.com\"\
+  ,\"primaryPersonPhone\":\"+1 (323) 394-9147\",\"remarks\":\"\",\"activeStatus\"\
+  :1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\"\
+  :\"+1 (323) 754-9204\",\"primaryPhonePermitMarketing\":true,\"street1\":\"853 W.\
+  \ 95th Street\",\"street2\":\"Apt. 3\",\"city\":\"Los Angeles\",\"stateProvince\"\
+  :\"CA\",\"zipPostalCode\":\"90044\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
+  :\"Simmons\",\"clientFormalSalutation\":\"Mr. John Jackson\",\"firstId\":\"JLJ\"\
+  ,\"profileCommType\":2,\"profileCommValue\":\"1@tramsQA.com\",\"profileCommIsBillingContact\"\
+  :false},{\"recNo\":6518458,\"name\":\"Rose/Leeland\",\"profileType\":1,\"clientType\"\
+  :1,\"primaryPersonRecNo\":12808362,\"primaryPersonName\":\"Rose/Leeland \",\"primaryPersonFirstName\"\
+  :\"Leeland\",\"primaryPersonLastName\":\"Rose\",\"remarks\":\"[TBO Notes] Jamaica,Hawaii,Africa\\\
+  r\\n[TBO Add'l Notes] Linder = Wife\\r\\n[CB Remarks] \",\"activeStatus\":1,\"primaryPhone\"\
+  :\"+1 (213) 892-3809\",\"primaryPhonePermitMarketing\":true,\"street1\":\"828 Manhattan\
+  \ Beach Blvd\",\"city\":\"Manhattan Beach\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
+  :\"90023\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"Mr Leeland\
+  \ Rose\",\"firstId\":\"LROSE\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213)\
+  \ 892-3809\",\"profileCommIsBillingContact\":false},{\"recNo\":6518458,\"name\"\
+  :\"Rose/Leeland\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808362,\"\
+  primaryPersonName\":\"Rose/Leeland \",\"primaryPersonFirstName\":\"Leeland\",\"\
+  primaryPersonLastName\":\"Rose\",\"remarks\":\"[TBO Notes] Jamaica,Hawaii,Africa\\\
+  r\\n[TBO Add'l Notes] Linder = Wife\\r\\n[CB Remarks] \",\"activeStatus\":1,\"primaryPhone\"\
+  :\"+1 (213) 892-3809\",\"primaryPhonePermitMarketing\":true,\"street1\":\"828 Manhattan\
+  \ Beach Blvd\",\"city\":\"Manhattan Beach\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
+  :\"90023\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"Mr Leeland\
+  \ Rose\",\"firstId\":\"LROSE\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213)\
+  \ 641-8726\",\"profileCommIsBillingContact\":false},{\"recNo\":6518459,\"name\"\
+  :\"Bundschuh/Lori\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808363,\"\
+  primaryPersonName\":\"Bundschuh/Lori \",\"primaryPersonFirstName\":\"Lori\",\"primaryPersonLastName\"\
+  :\"Bundschuh\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\"\
+  :\"\",\"activeStatus\":1,\"primaryPhone\":\"+1 (213) 372-1892\",\"primaryPhonePermitMarketing\"\
+  :true,\"street1\":\"4216 E. 1st Street\",\"city\":\"Long Beach\",\"stateProvince\"\
+  :\"CA\",\"zipPostalCode\":\"90803\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Ms Lori Bundschuh\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 372-1892\"\
+  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518549,\"name\":\"Jones/Hobo\"\
+  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808411,\"primaryPersonName\"\
+  :\"Jones/Hobo \",\"primaryPersonFirstName\":\"Hobo\",\"primaryPersonLastName\":\"\
+  Jones\",\"remarks\":\"\",\"activeStatus\":1,\"street1\":\"1055\",\"addressPermitMarketing\"\
   :true,\"clientFormalSalutation\":\"Hobo Jones\"},{\"recNo\":6518558,\"name\":\"\
   X/X\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808413,\"primaryPersonName\"\
   :\"X/X \",\"primaryPersonFirstName\":\"X\",\"primaryPersonLastName\":\"X\",\"remarks\"\
@@ -4219,90 +4288,23 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   ,\"street2\":\"Suite 3\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
   :\"90044\",\"addressPermitMarketing\":true,\"clientInformalSalutation\":\"Norwood\"\
   ,\"clientFormalSalutation\":\"Brandy Norwood\",\"profileCommType\":2,\"profileCommValue\"\
-  :\"1@tramsQA.com\",\"profileCommIsBillingContact\":false},{\"recNo\":6518454,\"\
-  name\":\"Briar Bay Developers\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
-  :12808359,\"primaryPersonName\":\"Chratter/Jasmin \",\"primaryPersonFirstName\"\
-  :\"Jasmin\",\"primaryPersonLastName\":\"Chratter\",\"remarks\":\"\",\"activeStatus\"\
-  :0,\"primaryPhone\":\"+1 (305) 238-9090\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"13-131 S/W 89th Place\",\"city\":\"Miami\",\"stateProvince\":\"FL\"\
-  ,\"zipPostalCode\":\"33176\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Jasmin Chratter\",\"profileCommType\":1,\"profileCommValue\":\"+1 (305) 238-9090\"\
-  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518456,\"name\":\"Crowne & Company\"\
-  ,\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\":12808361,\"primaryPersonName\"\
-  :\"/Verna \",\"primaryPersonFirstName\":\"Verna\",\"remarks\":\"\",\"activeStatus\"\
-  :1,\"primaryPhone\":\"+1 (206) 745-5070\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"2615 West Casino Road\",\"city\":\"Everett\",\"stateProvince\":\"WA\"\
-  ,\"zipPostalCode\":\"98204\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Verna\",\"profileCommType\":1,\"profileCommValue\":\"+1 (206) 745-5070\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518457,\"name\":\"Jackson/John\",\"profileType\":1,\"clientType\"\
-  :1,\"primaryPersonRecNo\":12807880,\"primaryPersonName\":\"Jackson/John L\",\"primaryPersonFirstName\"\
-  :\"John\",\"primaryPersonLastName\":\"Jackson\",\"primaryPersonEmail\":\"jonjackson2@hotmail.com\"\
-  ,\"primaryPersonPhone\":\"+1 (323) 394-9147\",\"remarks\":\"\",\"activeStatus\"\
-  :1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\"\
-  :\"+1 (323) 754-9204\",\"primaryPhonePermitMarketing\":true,\"street1\":\"853 W.\
-  \ 95th Street\",\"street2\":\"Apt. 3\",\"city\":\"Los Angeles\",\"stateProvince\"\
-  :\"CA\",\"zipPostalCode\":\"90044\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
-  :\"Simmons\",\"clientFormalSalutation\":\"Mr. John Jackson\",\"firstId\":\"JLJ\"\
-  ,\"profileCommType\":1,\"profileCommValue\":\"+1 (323) 754-9204\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518457,\"name\":\"Jackson/John\",\"profileType\":1,\"clientType\"\
-  :1,\"primaryPersonRecNo\":12807880,\"primaryPersonName\":\"Jackson/John L\",\"primaryPersonFirstName\"\
-  :\"John\",\"primaryPersonLastName\":\"Jackson\",\"primaryPersonEmail\":\"jonjackson2@hotmail.com\"\
-  ,\"primaryPersonPhone\":\"+1 (323) 394-9147\",\"remarks\":\"\",\"activeStatus\"\
-  :1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\"\
-  :\"+1 (323) 754-9204\",\"primaryPhonePermitMarketing\":true,\"street1\":\"853 W.\
-  \ 95th Street\",\"street2\":\"Apt. 3\",\"city\":\"Los Angeles\",\"stateProvince\"\
-  :\"CA\",\"zipPostalCode\":\"90044\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
-  :\"Simmons\",\"clientFormalSalutation\":\"Mr. John Jackson\",\"firstId\":\"JLJ\"\
-  ,\"profileCommType\":1,\"profileCommValue\":\"+1 (800) 388-8447\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518457,\"name\":\"Jackson/John\",\"profileType\":1,\"clientType\"\
-  :1,\"primaryPersonRecNo\":12807880,\"primaryPersonName\":\"Jackson/John L\",\"primaryPersonFirstName\"\
-  :\"John\",\"primaryPersonLastName\":\"Jackson\",\"primaryPersonEmail\":\"jonjackson2@hotmail.com\"\
-  ,\"primaryPersonPhone\":\"+1 (323) 394-9147\",\"remarks\":\"\",\"activeStatus\"\
-  :1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\"\
-  :\"+1 (323) 754-9204\",\"primaryPhonePermitMarketing\":true,\"street1\":\"853 W.\
-  \ 95th Street\",\"street2\":\"Apt. 3\",\"city\":\"Los Angeles\",\"stateProvince\"\
-  :\"CA\",\"zipPostalCode\":\"90044\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
-  :\"Simmons\",\"clientFormalSalutation\":\"Mr. John Jackson\",\"firstId\":\"JLJ\"\
-  ,\"profileCommType\":2,\"profileCommValue\":\"1@tramsQA.com\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518458,\"name\":\"Rose/Leeland\",\"profileType\":1,\"clientType\"\
-  :1,\"primaryPersonRecNo\":12808362,\"primaryPersonName\":\"Rose/Leeland \",\"primaryPersonFirstName\"\
-  :\"Leeland\",\"primaryPersonLastName\":\"Rose\",\"remarks\":\"[TBO Notes] Jamaica,Hawaii,Africa\\\
-  r\\n[TBO Add'l Notes] Linder = Wife\\r\\n[CB Remarks] \",\"activeStatus\":1,\"primaryPhone\"\
-  :\"+1 (213) 892-3809\",\"primaryPhonePermitMarketing\":true,\"street1\":\"828 Manhattan\
-  \ Beach Blvd\",\"city\":\"Manhattan Beach\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
-  :\"90023\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"Mr Leeland\
-  \ Rose\",\"firstId\":\"LROSE\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213)\
-  \ 892-3809\",\"profileCommIsBillingContact\":false},{\"recNo\":6518458,\"name\"\
-  :\"Rose/Leeland\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808362,\"\
-  primaryPersonName\":\"Rose/Leeland \",\"primaryPersonFirstName\":\"Leeland\",\"\
-  primaryPersonLastName\":\"Rose\",\"remarks\":\"[TBO Notes] Jamaica,Hawaii,Africa\\\
-  r\\n[TBO Add'l Notes] Linder = Wife\\r\\n[CB Remarks] \",\"activeStatus\":1,\"primaryPhone\"\
-  :\"+1 (213) 892-3809\",\"primaryPhonePermitMarketing\":true,\"street1\":\"828 Manhattan\
-  \ Beach Blvd\",\"city\":\"Manhattan Beach\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
-  :\"90023\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"Mr Leeland\
-  \ Rose\",\"firstId\":\"LROSE\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213)\
-  \ 641-8726\",\"profileCommIsBillingContact\":false},{\"recNo\":6518459,\"name\"\
-  :\"Bundschuh/Lori\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808363,\"\
-  primaryPersonName\":\"Bundschuh/Lori \",\"primaryPersonFirstName\":\"Lori\",\"primaryPersonLastName\"\
-  :\"Bundschuh\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\"\
-  :\"\",\"activeStatus\":1,\"primaryPhone\":\"+1 (213) 372-1892\",\"primaryPhonePermitMarketing\"\
-  :true,\"street1\":\"4216 E. 1st Street\",\"city\":\"Long Beach\",\"stateProvince\"\
-  :\"CA\",\"zipPostalCode\":\"90803\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Ms Lori Bundschuh\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 372-1892\"\
-  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518475,\"name\":\"Software Services\"\
-  ,\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\":12808373,\"primaryPersonName\"\
-  :\"Bailey/Susan \",\"primaryPersonFirstName\":\"Susan\",\"primaryPersonLastName\"\
-  :\"Bailey\",\"remarks\":\"\",\"activeStatus\":1,\"primaryPhone\":\"+1 (213) 338-5278\"\
-  ,\"primaryPhonePermitMarketing\":true,\"street1\":\"219 44th  Street\",\"city\"\
-  :\"Manhattan Beach\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"90266\",\"addressPermitMarketing\"\
-  :true,\"clientFormalSalutation\":\"Susan Bailey\",\"profileCommType\":1,\"profileCommValue\"\
-  :\"+1 (213) 338-5278\",\"profileCommIsBillingContact\":false},{\"recNo\":6518476,\"\
-  name\":\"American International\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
-  :12808371,\"primaryPersonName\":\"/Susan \",\"primaryPersonFirstName\":\"Susan\"\
-  ,\"remarks\":\"\",\"activeStatus\":0,\"primaryPhone\":\"+1 (609) 585-9100\",\"primaryPhonePermitMarketing\"\
-  :true,\"street1\":\"1351 Kuser Road\",\"city\":\"Trenton\",\"stateProvince\":\"\
-  NJ\",\"zipPostalCode\":\"08619\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Susan\",\"profileCommType\":1,\"profileCommValue\":\"+1 (609) 585-9100\",\"profileCommIsBillingContact\"\
+  :\"1@tramsQA.com\",\"profileCommIsBillingContact\":false},{\"recNo\":12225985,\"\
+  createDateTime\":\"2023-06-21T21:33:57+00:00\",\"lastModifiedDateTime\":\"2023-06-21T21:33:57+00:00\"\
+  ,\"name\":\"Cloyd/Elroy\",\"profileType\":1,\"clientType\":1,\"activeStatus\":1},{\"\
+  recNo\":6518475,\"name\":\"Software Services\",\"profileType\":1,\"clientType\"\
+  :2,\"primaryPersonRecNo\":12808373,\"primaryPersonName\":\"Bailey/Susan \",\"primaryPersonFirstName\"\
+  :\"Susan\",\"primaryPersonLastName\":\"Bailey\",\"remarks\":\"\",\"activeStatus\"\
+  :1,\"primaryPhone\":\"+1 (213) 338-5278\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"219 44th  Street\",\"city\":\"Manhattan Beach\",\"stateProvince\":\"\
+  CA\",\"zipPostalCode\":\"90266\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Susan Bailey\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 338-5278\"\
+  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518476,\"name\":\"American International\"\
+  ,\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\":12808371,\"primaryPersonName\"\
+  :\"/Susan \",\"primaryPersonFirstName\":\"Susan\",\"remarks\":\"\",\"activeStatus\"\
+  :0,\"primaryPhone\":\"+1 (609) 585-9100\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"1351 Kuser Road\",\"city\":\"Trenton\",\"stateProvince\":\"NJ\",\"zipPostalCode\"\
+  :\"08619\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"Susan\"\
+  ,\"profileCommType\":1,\"profileCommValue\":\"+1 (609) 585-9100\",\"profileCommIsBillingContact\"\
   :false},{\"recNo\":6518477,\"name\":\"Davis/Cledith\",\"profileType\":1,\"clientType\"\
   :1,\"primaryPersonRecNo\":12807810,\"primaryPersonName\":\"Davis/Joan \",\"primaryPersonFirstName\"\
   :\"Joan\",\"primaryPersonLastName\":\"Davis\",\"remarks\":\"\",\"activeStatus\"\
@@ -4586,30 +4588,14 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   1800 Century Park East\",\"city\":\"Century City\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
   :\"90607\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"Sidneye\
   \ Azar\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 839-1208 x374\",\"\
-  profileCommIsBillingContact\":false},{\"recNo\":6518527,\"name\":\"Carroll/James\"\
-  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808402,\"primaryPersonName\"\
-  :\"Carroll/James \",\"primaryPersonFirstName\":\"James\",\"primaryPersonLastName\"\
-  :\"Carroll\",\"remarks\":\"\",\"activeStatus\":1,\"primaryPhone\":\"+1 (213) 372-3821\"\
-  ,\"primaryPhonePermitMarketing\":true,\"street1\":\"4100 The Strand\",\"city\":\"\
-  Manhattan Beach\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"90266\",\"addressPermitMarketing\"\
-  :true,\"clientFormalSalutation\":\"Dr. James Carroll\",\"profileCommType\":1,\"\
-  profileCommValue\":\"+1 (213) 372-3821\",\"profileCommIsBillingContact\":false},{\"\
-  recNo\":6518561,\"name\":\"McDonalds\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
-  :12808415,\"primaryPersonName\":\"McDonald/Ronald C\",\"primaryPersonFirstName\"\
-  :\"Ronald\",\"primaryPersonLastName\":\"McDonald\",\"remarks\":\"[TBO Notes] x\\\
-  r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"primaryPhone\":\"+1 (310) 555-2600\"\
-  ,\"primaryPhonePermitMarketing\":true,\"street1\":\"1234 Hambuger Street\",\"city\"\
-  :\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"90210\",\"country\"\
-  :\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"Ronald McDonald\"\
-  ,\"profileCommType\":1,\"profileCommValue\":\"+1 (310) 555-2600\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518563,\"lastModifiedDateTime\":\"2023-06-15T15:27:48+00:00\"\
-  ,\"name\":\"Hawlow/Debbe\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
-  :12808417,\"primaryPersonName\":\"Hawlow/Debbe J\",\"primaryPersonFirstName\":\"\
-  Debbe\",\"primaryPersonLastName\":\"Hawlow\",\"remarks\":\"[CB Remarks] \",\"activeStatus\"\
-  :1,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"primaryPhone\":\"+1 (310) 641-8726\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"5777 W. Century Blvd., Suite 1200\",\"city\":\"Los Angeles\",\"stateProvince\"\
-  :\"CA\",\"zipPostalCode\":\"90045\",\"country\":\"US\",\"addressPermitMarketing\"\
+  profileCommIsBillingContact\":false},{\"recNo\":6518563,\"lastModifiedDateTime\"\
+  :\"2023-06-15T15:27:48+00:00\",\"name\":\"Hawlow/Debbe\",\"profileType\":1,\"clientType\"\
+  :1,\"primaryPersonRecNo\":12808417,\"primaryPersonName\":\"Hawlow/Debbe J\",\"primaryPersonFirstName\"\
+  :\"Debbe\",\"primaryPersonLastName\":\"Hawlow\",\"remarks\":\"[CB Remarks] \",\"\
+  activeStatus\":1,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\",\"\
+  primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (310) 641-8726\",\"primaryPhonePermitMarketing\"\
+  :true,\"street1\":\"5777 W. Century Blvd., Suite 1200\",\"city\":\"Los Angeles\"\
+  ,\"stateProvince\":\"CA\",\"zipPostalCode\":\"90045\",\"country\":\"US\",\"addressPermitMarketing\"\
   :true,\"clientFormalSalutation\":\"Ms. Debbe Hawlow\",\"firstId\":\"DJH\",\"profileCommType\"\
   :1,\"profileCommValue\":\"+1 (310) 641-8726\",\"profileCommIsBillingContact\":false},{\"\
   recNo\":6518563,\"lastModifiedDateTime\":\"2023-06-15T15:27:48+00:00\",\"name\"\
@@ -4682,20 +4668,36 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   :\"4500 S. Main Street\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
   :\"90045\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"Tom Duncan\"\
   ,\"profileCommType\":2,\"profileCommValue\":\"avdbaan03@gmail.com\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518575,\"name\":\"Polk/Latresa\",\"profileType\":1,\"clientType\"\
-  :1,\"primaryPersonRecNo\":12808109,\"primaryPersonName\":\"Polk/Tyrell \",\"primaryPersonFirstName\"\
-  :\"Tyrell\",\"primaryPersonLastName\":\"Polk\",\"remarks\":\"[TBO Notes] Test\\\
-  r\\n[TBO Add'l Notes] Test\",\"activeStatus\":1,\"primaryPhone\":\"+1 (323) 756-3212\"\
-  ,\"primaryPhonePermitMarketing\":true,\"street1\":\"843 W. 99th Street\",\"city\"\
-  :\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"90045\",\"addressPermitMarketing\"\
-  :true,\"clientFormalSalutation\":\"Latresa Polk\",\"firstId\":\"TAP\",\"profileCommType\"\
-  :1,\"profileCommValue\":\"+1 (323) 756-3212\",\"profileCommIsBillingContact\":false},{\"\
-  recNo\":6518580,\"name\":\"Rayner/Chuck\",\"profileType\":1,\"clientType\":1,\"\
-  primaryPersonRecNo\":12808419,\"primaryPersonName\":\"Rayner/Chuck \",\"primaryPersonFirstName\"\
-  :\"Chuck\",\"primaryPersonLastName\":\"Rayner\",\"remarks\":\"\",\"activeStatus\"\
-  :1,\"primaryPhone\":\"+1 (213) 773-8932\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"28530 Radbrook Court\",\"city\":\"Rancho Pls Vds\",\"stateProvince\"\
-  :\"CA\",\"zipPostalCode\":\"90732\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :false},{\"recNo\":6518527,\"name\":\"Carroll/James\",\"profileType\":1,\"clientType\"\
+  :1,\"primaryPersonRecNo\":12808402,\"primaryPersonName\":\"Carroll/James \",\"primaryPersonFirstName\"\
+  :\"James\",\"primaryPersonLastName\":\"Carroll\",\"remarks\":\"\",\"activeStatus\"\
+  :1,\"primaryPhone\":\"+1 (213) 372-3821\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"4100 The Strand\",\"city\":\"Manhattan Beach\",\"stateProvince\":\"\
+  CA\",\"zipPostalCode\":\"90266\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Dr. James Carroll\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 372-3821\"\
+  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518561,\"name\":\"McDonalds\"\
+  ,\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\":12808415,\"primaryPersonName\"\
+  :\"McDonald/Ronald C\",\"primaryPersonFirstName\":\"Ronald\",\"primaryPersonLastName\"\
+  :\"McDonald\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\"\
+  :1,\"primaryPhone\":\"+1 (310) 555-2600\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"1234 Hambuger Street\",\"city\":\"Los Angeles\",\"stateProvince\":\"\
+  CA\",\"zipPostalCode\":\"90210\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
+  clientFormalSalutation\":\"Ronald McDonald\",\"profileCommType\":1,\"profileCommValue\"\
+  :\"+1 (310) 555-2600\",\"profileCommIsBillingContact\":false},{\"recNo\":6518575,\"\
+  name\":\"Polk/Latresa\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
+  :12808109,\"primaryPersonName\":\"Polk/Tyrell \",\"primaryPersonFirstName\":\"Tyrell\"\
+  ,\"primaryPersonLastName\":\"Polk\",\"remarks\":\"[TBO Notes] Test\\r\\n[TBO Add'l\
+  \ Notes] Test\",\"activeStatus\":1,\"primaryPhone\":\"+1 (323) 756-3212\",\"primaryPhonePermitMarketing\"\
+  :true,\"street1\":\"843 W. 99th Street\",\"city\":\"Los Angeles\",\"stateProvince\"\
+  :\"CA\",\"zipPostalCode\":\"90045\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Latresa Polk\",\"firstId\":\"TAP\",\"profileCommType\":1,\"profileCommValue\"\
+  :\"+1 (323) 756-3212\",\"profileCommIsBillingContact\":false},{\"recNo\":6518580,\"\
+  name\":\"Rayner/Chuck\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
+  :12808419,\"primaryPersonName\":\"Rayner/Chuck \",\"primaryPersonFirstName\":\"\
+  Chuck\",\"primaryPersonLastName\":\"Rayner\",\"remarks\":\"\",\"activeStatus\":1,\"\
+  primaryPhone\":\"+1 (213) 773-8932\",\"primaryPhonePermitMarketing\":true,\"street1\"\
+  :\"28530 Radbrook Court\",\"city\":\"Rancho Pls Vds\",\"stateProvince\":\"CA\",\"\
+  zipPostalCode\":\"90732\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
   :\"Mr Chuck Rayner\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 773-8932\"\
   ,\"profileCommIsBillingContact\":false},{\"recNo\":6518586,\"name\":\"Harvey/Steve\"\
   ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808144,\"primaryPersonName\"\
@@ -4814,7 +4816,7 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   90301\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
   :\"Dr. Test Individual\",\"firstId\":\"TESTIND\",\"profileCommType\":1,\"profileCommValue\"\
   :\"+1 (310) 655-4000\",\"profileCommIsBillingContact\":false},{\"recNo\":6518578,\"\
-  lastModifiedDateTime\":\"2023-06-15T00:40:38+00:00\",\"name\":\"Amaral/Steve\",\"\
+  lastModifiedDateTime\":\"2023-06-20T22:02:36+00:00\",\"name\":\"Amaral/Steve\",\"\
   profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12807778,\"primaryPersonName\"\
   :\"Amaral/Steve \",\"primaryPersonFirstName\":\"Steve\",\"primaryPersonLastName\"\
   :\"Amaral\",\"primaryPersonEmail\":\"antonie.vanderbaan@trestechnologies.com\",\"\
@@ -4834,24 +4836,7 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   :true,\"street1\":\"4440 Ambrose Ave. #203\",\"city\":\"Los Angeles\",\"stateProvince\"\
   :\"CA\",\"zipPostalCode\":\"90027\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
   :\"Ms Amy Roonm\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 474-8972\"\
-  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518473,\"name\":\"Foran/Dave\"\
-  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12807825,\"primaryPersonName\"\
-  :\"Foran/David \",\"primaryPersonFirstName\":\"David\",\"primaryPersonLastName\"\
-  :\"Foran\",\"clientAdvisorProfileRecNo\":6517937,\"clientAdvisorName\":\"Shari Mey\"\
-  ,\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\",\"activeStatus\"\
-  :1,\"primaryPhone\":\"+1 (213) 874-3298\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"3619 Crest\",\"city\":\"Manhattan Beach\",\"stateProvince\":\"CA\",\"\
-  zipPostalCode\":\"90266\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
-  :\"Lillian and Dave\",\"clientFormalSalutation\":\"Mr. and Mrs. Dave Foran\",\"\
-  firstId\":\"2138743298\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 874-3298\"\
-  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518541,\"name\":\"Fields/Cookie\"\
-  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808151,\"primaryPersonName\"\
-  :\"Fields/Cookie \",\"primaryPersonFirstName\":\"Cookie\",\"primaryPersonLastName\"\
-  :\"Fields\",\"clientAdvisorProfileRecNo\":6517937,\"clientAdvisorName\":\"Shari\
-  \ Mey\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\",\"\
-  activeStatus\":1,\"street1\":\"100 Bakers Lane\",\"city\":\"Oak Brook\",\"stateProvince\"\
-  :\"IL\",\"zipPostalCode\":\"60523\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Mrs. Cookie Fields\",\"firstId\":\"7001\"},{\"recNo\":6518460,\"name\":\"Simmel/La\
+  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518460,\"name\":\"Simmel/La\
   \ Tina\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808113,\"primaryPersonName\"\
   :\"Simmel/La Tina Monique\",\"primaryPersonFirstName\":\"La Tina\",\"primaryPersonLastName\"\
   :\"Simmel\",\"primaryPersonEmail\":\"1@tramsQA.com\",\"primaryPersonPhone\":\"+1\
@@ -4902,21 +4887,48 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   :\"90044\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
   :\"Simmel\",\"clientFormalSalutation\":\"Ms. La Tina Simmel\",\"firstId\":\"TMS\"\
   ,\"profileCommType\":2,\"profileCommValue\":\"4@tramsQA.net\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518562,\"name\":\"Corporate Organization\",\"profileType\":1,\"\
-  clientType\":2,\"primaryPersonRecNo\":12808416,\"primaryPersonName\":\"Davenport/Mary\
-  \ \",\"primaryPersonFirstName\":\"Mary\",\"primaryPersonLastName\":\"Davenport\"\
-  ,\"clientAdvisorProfileRecNo\":6517937,\"clientAdvisorName\":\"Shari Mey\",\"clientBranchRecNo\"\
-  :5090,\"clientBranchName\":\"0\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes]\
-  \ x\",\"activeStatus\":1,\"primaryEmail\":\"corporate@mail.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"primaryPhone\":\"+1 (800) 656-5844\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"5600 Frankfort Ave.\",\"city\":\"Inglewood\",\"stateProvince\":\"CA\"\
-  ,\"zipPostalCode\":\"90301\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
-  clientFormalSalutation\":\"Ms. Mary Davenport\",\"firstId\":\"ORGANIZE\",\"profileCommType\"\
-  :1,\"profileCommValue\":\"+1 (800) 656-5844\",\"profileCommIsBillingContact\":false},{\"\
-  recNo\":6518562,\"name\":\"Corporate Organization\",\"profileType\":1,\"clientType\"\
-  :2,\"primaryPersonRecNo\":12808416,\"primaryPersonName\":\"Davenport/Mary \",\"\
-  primaryPersonFirstName\":\"Mary\",\"primaryPersonLastName\":\"Davenport\",\"clientAdvisorProfileRecNo\"\
-  :6517937,\"clientAdvisorName\":\"Shari Mey\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
+  :false},{\"recNo\":6518541,\"name\":\"Fields/Cookie\",\"profileType\":1,\"clientType\"\
+  :1,\"primaryPersonRecNo\":12808151,\"primaryPersonName\":\"Fields/Cookie \",\"primaryPersonFirstName\"\
+  :\"Cookie\",\"primaryPersonLastName\":\"Fields\",\"clientAdvisorProfileRecNo\":6517937,\"\
+  clientAdvisorName\":\"Shari Mey\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
+  :\"0\",\"remarks\":\"\",\"activeStatus\":1,\"street1\":\"100 Bakers Lane\",\"city\"\
+  :\"Oak Brook\",\"stateProvince\":\"IL\",\"zipPostalCode\":\"60523\",\"addressPermitMarketing\"\
+  :true,\"clientFormalSalutation\":\"Mrs. Cookie Fields\",\"firstId\":\"7001\"},{\"\
+  recNo\":6518508,\"name\":\"Newton/Norris\",\"profileType\":1,\"clientType\":1,\"\
+  primaryPersonRecNo\":12808148,\"primaryPersonName\":\"Newton/Norris \",\"primaryPersonFirstName\"\
+  :\"Norris\",\"primaryPersonLastName\":\"Newton\",\"clientAdvisorProfileRecNo\":6517937,\"\
+  clientAdvisorName\":\"Shari Mey\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
+  :\"0\",\"remarks\":\"\",\"activeStatus\":1,\"primaryPhone\":\"+1 (415) 345-6778\"\
+  ,\"primaryPhonePermitMarketing\":true,\"street1\":\"1012 Hyde Street\",\"street2\"\
+  :\"202\",\"city\":\"San Francisco\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
+  94011\",\"addressPermitMarketing\":true,\"clientInformalSalutation\":\"Skip\",\"\
+  clientFormalSalutation\":\"Mr. Norris Newton\",\"firstId\":\"4153456788\",\"profileCommType\"\
+  :1,\"profileCommValue\":\"+1 (415) 345-6778\",\"profileCommIsBillingContact\":false},{\"\
+  recNo\":6518473,\"name\":\"Foran/Dave\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
+  :12807825,\"primaryPersonName\":\"Foran/David \",\"primaryPersonFirstName\":\"David\"\
+  ,\"primaryPersonLastName\":\"Foran\",\"clientAdvisorProfileRecNo\":6517937,\"clientAdvisorName\"\
+  :\"Shari Mey\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\"\
+  :\"\",\"activeStatus\":1,\"primaryPhone\":\"+1 (213) 874-3298\",\"primaryPhonePermitMarketing\"\
+  :true,\"street1\":\"3619 Crest\",\"city\":\"Manhattan Beach\",\"stateProvince\"\
+  :\"CA\",\"zipPostalCode\":\"90266\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
+  :\"Lillian and Dave\",\"clientFormalSalutation\":\"Mr. and Mrs. Dave Foran\",\"\
+  firstId\":\"2138743298\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 874-3298\"\
+  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518562,\"name\":\"Corporate\
+  \ Organization\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\":12808416,\"\
+  primaryPersonName\":\"Davenport/Mary \",\"primaryPersonFirstName\":\"Mary\",\"primaryPersonLastName\"\
+  :\"Davenport\",\"clientAdvisorProfileRecNo\":6517937,\"clientAdvisorName\":\"Shari\
+  \ Mey\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"[TBO\
+  \ Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"primaryEmail\":\"corporate@mail.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (800) 656-5844\",\"\
+  primaryPhonePermitMarketing\":true,\"street1\":\"5600 Frankfort Ave.\",\"city\"\
+  :\"Inglewood\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"90301\",\"country\"\
+  :\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"Ms. Mary Davenport\"\
+  ,\"firstId\":\"ORGANIZE\",\"profileCommType\":1,\"profileCommValue\":\"+1 (800)\
+  \ 656-5844\",\"profileCommIsBillingContact\":false},{\"recNo\":6518562,\"name\"\
+  :\"Corporate Organization\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
+  :12808416,\"primaryPersonName\":\"Davenport/Mary \",\"primaryPersonFirstName\":\"\
+  Mary\",\"primaryPersonLastName\":\"Davenport\",\"clientAdvisorProfileRecNo\":6517937,\"\
+  clientAdvisorName\":\"Shari Mey\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
   :\"0\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"\
   primaryEmail\":\"corporate@mail.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\"\
   :\"+1 (800) 656-5844\",\"primaryPhonePermitMarketing\":true,\"street1\":\"5600 Frankfort\
@@ -5033,7 +5045,47 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   \ Brook\",\"stateProvince\":\"IL\",\"zipPostalCode\":\"60523\",\"addressPermitMarketing\"\
   :true,\"clientFormalSalutation\":\"Mr. Rob Simmel\",\"firstId\":\"UA\",\"profileCommType\"\
   :1,\"profileCommValue\":\"+1 (310) 665-9844\",\"profileCommIsBillingContact\":false},{\"\
-  recNo\":6518537,\"name\":\"Jonder/Kent\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
+  recNo\":6518505,\"name\":\"Taylor/Lynn\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
+  :12808089,\"primaryPersonName\":\"Taylor/Lynn \",\"primaryPersonFirstName\":\"Lynn\"\
+  ,\"primaryPersonLastName\":\"Taylor\",\"clientAdvisorProfileRecNo\":6517937,\"clientAdvisorName\"\
+  :\"Shari Mey\",\"remarks\":\"\",\"activeStatus\":1,\"primaryPhone\":\"+1 (310) 456-5566\"\
+  ,\"primaryPhonePermitMarketing\":true,\"street1\":\"145 Jones Street\",\"city\"\
+  :\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"90044\",\"addressPermitMarketing\"\
+  :true,\"clientInformalSalutation\":\"Lynn\",\"clientFormalSalutation\":\"Ms. Lynn\
+  \ Taylor\",\"firstId\":\"3104565566\",\"profileCommType\":1,\"profileCommValue\"\
+  :\"+1 (310) 456-5566\",\"profileCommIsBillingContact\":false},{\"recNo\":6518514,\"\
+  name\":\"Superior Market Shares\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
+  :12808182,\"primaryPersonName\":\"Dundee/Jessica \",\"primaryPersonFirstName\":\"\
+  Jessica\",\"primaryPersonLastName\":\"Dundee\",\"clientAdvisorProfileRecNo\":6517937,\"\
+  clientAdvisorName\":\"Shari Mey\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes]\
+  \ x\",\"activeStatus\":1,\"primaryEmail\":\"superior@mail.com\",\"primaryEmailPermitMarketing\"\
+  :true,\"primaryPhone\":\"+1 (310) 555-6988\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"4588 Western Avenue\",\"city\":\"Los Angeles\",\"stateProvince\":\"\
+  CA\",\"zipPostalCode\":\"90003\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
+  clientFormalSalutation\":\"Ms. Jessica Dundee\",\"firstId\":\"SUPER\",\"profileCommType\"\
+  :1,\"profileCommValue\":\"+1 (310) 555-6988\",\"profileCommIsBillingContact\":false},{\"\
+  recNo\":6518514,\"name\":\"Superior Market Shares\",\"profileType\":1,\"clientType\"\
+  :2,\"primaryPersonRecNo\":12808182,\"primaryPersonName\":\"Dundee/Jessica \",\"\
+  primaryPersonFirstName\":\"Jessica\",\"primaryPersonLastName\":\"Dundee\",\"clientAdvisorProfileRecNo\"\
+  :6517937,\"clientAdvisorName\":\"Shari Mey\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO\
+  \ Add'l Notes] x\",\"activeStatus\":1,\"primaryEmail\":\"superior@mail.com\",\"\
+  primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (310) 555-6988\",\"primaryPhonePermitMarketing\"\
+  :true,\"street1\":\"4588 Western Avenue\",\"city\":\"Los Angeles\",\"stateProvince\"\
+  :\"CA\",\"zipPostalCode\":\"90003\",\"country\":\"US\",\"addressPermitMarketing\"\
+  :true,\"clientFormalSalutation\":\"Ms. Jessica Dundee\",\"firstId\":\"SUPER\",\"\
+  profileCommType\":2,\"profileCommValue\":\"superior@mail.com\",\"profileCommIsBillingContact\"\
+  :false},{\"recNo\":6518514,\"name\":\"Superior Market Shares\",\"profileType\":1,\"\
+  clientType\":2,\"primaryPersonRecNo\":12808182,\"primaryPersonName\":\"Dundee/Jessica\
+  \ \",\"primaryPersonFirstName\":\"Jessica\",\"primaryPersonLastName\":\"Dundee\"\
+  ,\"clientAdvisorProfileRecNo\":6517937,\"clientAdvisorName\":\"Shari Mey\",\"remarks\"\
+  :\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"primaryEmail\"\
+  :\"superior@mail.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"\
+  +1 (310) 555-6988\",\"primaryPhonePermitMarketing\":true,\"street1\":\"4588 Western\
+  \ Avenue\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
+  90003\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Ms. Jessica Dundee\",\"firstId\":\"SUPER\",\"profileCommType\":1,\"profileCommValue\"\
+  :\"+1 (310) 555-6987\",\"profileCommIsBillingContact\":false},{\"recNo\":6518537,\"\
+  name\":\"Jonder/Kent\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
   :12808032,\"primaryPersonName\":\"Jonder/Kent \",\"primaryPersonFirstName\":\"Kent\"\
   ,\"primaryPersonLastName\":\"Jonder\",\"clientAdvisorProfileRecNo\":6517937,\"clientAdvisorName\"\
   :\"Shari Mey\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\"\
@@ -5097,57 +5149,7 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   ,\"stateProvince\":\"WY\",\"zipPostalCode\":\"58234\",\"addressPermitMarketing\"\
   :true,\"clientInformalSalutation\":\"Harry\",\"clientFormalSalutation\":\"Mr. Harrison\
   \ Ford\",\"firstId\":\"4075551234\",\"profileCommType\":2,\"profileCommValue\":\"\
-  indyjones@bestlook.com\",\"profileCommIsBillingContact\":false},{\"recNo\":6518508,\"\
-  name\":\"Newton/Norris\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
-  :12808148,\"primaryPersonName\":\"Newton/Norris \",\"primaryPersonFirstName\":\"\
-  Norris\",\"primaryPersonLastName\":\"Newton\",\"clientAdvisorProfileRecNo\":6517937,\"\
-  clientAdvisorName\":\"Shari Mey\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
-  :\"0\",\"remarks\":\"\",\"activeStatus\":1,\"primaryPhone\":\"+1 (415) 345-6778\"\
-  ,\"primaryPhonePermitMarketing\":true,\"street1\":\"1012 Hyde Street\",\"street2\"\
-  :\"202\",\"city\":\"San Francisco\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
-  94011\",\"addressPermitMarketing\":true,\"clientInformalSalutation\":\"Skip\",\"\
-  clientFormalSalutation\":\"Mr. Norris Newton\",\"firstId\":\"4153456788\",\"profileCommType\"\
-  :1,\"profileCommValue\":\"+1 (415) 345-6778\",\"profileCommIsBillingContact\":false},{\"\
-  recNo\":6518505,\"name\":\"Taylor/Lynn\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
-  :12808089,\"primaryPersonName\":\"Taylor/Lynn \",\"primaryPersonFirstName\":\"Lynn\"\
-  ,\"primaryPersonLastName\":\"Taylor\",\"clientAdvisorProfileRecNo\":6517937,\"clientAdvisorName\"\
-  :\"Shari Mey\",\"remarks\":\"\",\"activeStatus\":1,\"primaryPhone\":\"+1 (310) 456-5566\"\
-  ,\"primaryPhonePermitMarketing\":true,\"street1\":\"145 Jones Street\",\"city\"\
-  :\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"90044\",\"addressPermitMarketing\"\
-  :true,\"clientInformalSalutation\":\"Lynn\",\"clientFormalSalutation\":\"Ms. Lynn\
-  \ Taylor\",\"firstId\":\"3104565566\",\"profileCommType\":1,\"profileCommValue\"\
-  :\"+1 (310) 456-5566\",\"profileCommIsBillingContact\":false},{\"recNo\":6518514,\"\
-  name\":\"Superior Market Shares\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
-  :12808182,\"primaryPersonName\":\"Dundee/Jessica \",\"primaryPersonFirstName\":\"\
-  Jessica\",\"primaryPersonLastName\":\"Dundee\",\"clientAdvisorProfileRecNo\":6517937,\"\
-  clientAdvisorName\":\"Shari Mey\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes]\
-  \ x\",\"activeStatus\":1,\"primaryEmail\":\"superior@mail.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"primaryPhone\":\"+1 (310) 555-6988\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"4588 Western Avenue\",\"city\":\"Los Angeles\",\"stateProvince\":\"\
-  CA\",\"zipPostalCode\":\"90003\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
-  clientFormalSalutation\":\"Ms. Jessica Dundee\",\"firstId\":\"SUPER\",\"profileCommType\"\
-  :1,\"profileCommValue\":\"+1 (310) 555-6988\",\"profileCommIsBillingContact\":false},{\"\
-  recNo\":6518514,\"name\":\"Superior Market Shares\",\"profileType\":1,\"clientType\"\
-  :2,\"primaryPersonRecNo\":12808182,\"primaryPersonName\":\"Dundee/Jessica \",\"\
-  primaryPersonFirstName\":\"Jessica\",\"primaryPersonLastName\":\"Dundee\",\"clientAdvisorProfileRecNo\"\
-  :6517937,\"clientAdvisorName\":\"Shari Mey\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO\
-  \ Add'l Notes] x\",\"activeStatus\":1,\"primaryEmail\":\"superior@mail.com\",\"\
-  primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (310) 555-6988\",\"primaryPhonePermitMarketing\"\
-  :true,\"street1\":\"4588 Western Avenue\",\"city\":\"Los Angeles\",\"stateProvince\"\
-  :\"CA\",\"zipPostalCode\":\"90003\",\"country\":\"US\",\"addressPermitMarketing\"\
-  :true,\"clientFormalSalutation\":\"Ms. Jessica Dundee\",\"firstId\":\"SUPER\",\"\
-  profileCommType\":2,\"profileCommValue\":\"superior@mail.com\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518514,\"name\":\"Superior Market Shares\",\"profileType\":1,\"\
-  clientType\":2,\"primaryPersonRecNo\":12808182,\"primaryPersonName\":\"Dundee/Jessica\
-  \ \",\"primaryPersonFirstName\":\"Jessica\",\"primaryPersonLastName\":\"Dundee\"\
-  ,\"clientAdvisorProfileRecNo\":6517937,\"clientAdvisorName\":\"Shari Mey\",\"remarks\"\
-  :\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"primaryEmail\"\
-  :\"superior@mail.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"\
-  +1 (310) 555-6988\",\"primaryPhonePermitMarketing\":true,\"street1\":\"4588 Western\
-  \ Avenue\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
-  90003\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Ms. Jessica Dundee\",\"firstId\":\"SUPER\",\"profileCommType\":1,\"profileCommValue\"\
-  :\"+1 (310) 555-6987\",\"profileCommIsBillingContact\":false},{\"recNo\":6518317,\"\
+  indyjones@bestlook.com\",\"profileCommIsBillingContact\":false},{\"recNo\":6518317,\"\
   name\":\"Mathis/Wendy\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
   :12807797,\"primaryPersonName\":\"Mathis/Wendy \",\"primaryPersonFirstName\":\"\
   Wendy\",\"primaryPersonLastName\":\"Mathis\",\"clientAdvisorProfileRecNo\":6517937,\"\
@@ -5584,8 +5586,28 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   :\"90277\",\"addressPermitMarketing\":true,\"clientInformalSalutation\":\"Peabody\"\
   ,\"clientFormalSalutation\":\"Mr Charlie Penrose\",\"profileCommType\":2,\"profileCommValue\"\
   :\"antonie.vanderbaan@trestechnologies.com\",\"profileCommIsBillingContact\":false},{\"\
-  recNo\":6518552,\"name\":\"Panakool/Lina\",\"profileType\":1,\"clientType\":1,\"\
-  primaryPersonRecNo\":12808076,\"primaryPersonName\":\"Panakool/Torren \",\"primaryPersonFirstName\"\
+  recNo\":6518503,\"name\":\"Corporate Client Profile\",\"profileType\":1,\"clientType\"\
+  :2,\"primaryPersonRecNo\":12808163,\"primaryPersonName\":\"Lowe/Irene \",\"primaryPersonFirstName\"\
+  :\"Irene\",\"primaryPersonLastName\":\"Lowe\",\"clientAdvisorProfileRecNo\":6517942,\"\
+  clientAdvisorName\":\"Leeland Rose\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
+  :\"0\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"\
+  primaryPhone\":\"+1 (800) 655-2102\",\"primaryPhonePermitMarketing\":true,\"street1\"\
+  :\"2500 5th Avenue\",\"city\":\"Inglewood\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
+  :\"90301\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Mr. Tom Hayes\",\"firstId\":\"TOM\",\"profileCommType\":1,\"profileCommValue\"\
+  :\"+1 (800) 655-2102\",\"profileCommIsBillingContact\":false},{\"recNo\":6518503,\"\
+  name\":\"Corporate Client Profile\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
+  :12808163,\"primaryPersonName\":\"Lowe/Irene \",\"primaryPersonFirstName\":\"Irene\"\
+  ,\"primaryPersonLastName\":\"Lowe\",\"clientAdvisorProfileRecNo\":6517942,\"clientAdvisorName\"\
+  :\"Leeland Rose\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\"\
+  :\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"primaryPhone\"\
+  :\"+1 (800) 655-2102\",\"primaryPhonePermitMarketing\":true,\"street1\":\"2500 5th\
+  \ Avenue\",\"city\":\"Inglewood\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
+  90301\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Mr. Tom Hayes\",\"firstId\":\"TOM\",\"profileCommType\":1,\"profileCommValue\"\
+  :\"+1 (800) 655-2100\",\"profileCommIsBillingContact\":false},{\"recNo\":6518552,\"\
+  name\":\"Panakool/Lina\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
+  :12808076,\"primaryPersonName\":\"Panakool/Torren \",\"primaryPersonFirstName\"\
   :\"Torren\",\"primaryPersonLastName\":\"Panakool\",\"clientAdvisorProfileRecNo\"\
   :6517942,\"clientAdvisorName\":\"Leeland Rose\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
   :\"0\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\\r\\n[CB Remarks] \"\
@@ -5630,32 +5652,12 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   :\"CA\",\"zipPostalCode\":\"90043\",\"country\":\"US\",\"addressPermitMarketing\"\
   :true,\"clientFormalSalutation\":\"Mrs. Jackie Buck\",\"firstId\":\"CCOA\",\"profileCommType\"\
   :2,\"profileCommValue\":\"antonie.vanderbaan@trestechnologies.com\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518503,\"name\":\"Corporate Client Profile\",\"profileType\"\
-  :1,\"clientType\":2,\"primaryPersonRecNo\":12808163,\"primaryPersonName\":\"Lowe/Irene\
-  \ \",\"primaryPersonFirstName\":\"Irene\",\"primaryPersonLastName\":\"Lowe\",\"\
-  clientAdvisorProfileRecNo\":6517942,\"clientAdvisorName\":\"Leeland Rose\",\"clientBranchRecNo\"\
-  :5090,\"clientBranchName\":\"0\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes]\
-  \ x\",\"activeStatus\":1,\"primaryPhone\":\"+1 (800) 655-2102\",\"primaryPhonePermitMarketing\"\
-  :true,\"street1\":\"2500 5th Avenue\",\"city\":\"Inglewood\",\"stateProvince\":\"\
-  CA\",\"zipPostalCode\":\"90301\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
-  clientFormalSalutation\":\"Mr. Tom Hayes\",\"firstId\":\"TOM\",\"profileCommType\"\
-  :1,\"profileCommValue\":\"+1 (800) 655-2102\",\"profileCommIsBillingContact\":false},{\"\
-  recNo\":6518503,\"name\":\"Corporate Client Profile\",\"profileType\":1,\"clientType\"\
-  :2,\"primaryPersonRecNo\":12808163,\"primaryPersonName\":\"Lowe/Irene \",\"primaryPersonFirstName\"\
-  :\"Irene\",\"primaryPersonLastName\":\"Lowe\",\"clientAdvisorProfileRecNo\":6517942,\"\
-  clientAdvisorName\":\"Leeland Rose\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
-  :\"0\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"\
-  primaryPhone\":\"+1 (800) 655-2102\",\"primaryPhonePermitMarketing\":true,\"street1\"\
-  :\"2500 5th Avenue\",\"city\":\"Inglewood\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
-  :\"90301\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Mr. Tom Hayes\",\"firstId\":\"TOM\",\"profileCommType\":1,\"profileCommValue\"\
-  :\"+1 (800) 655-2100\",\"profileCommIsBillingContact\":false},{\"recNo\":6518370,\"\
-  name\":\"Cady/Steven\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
-  :12807819,\"primaryPersonName\":\"Cady/Steven \",\"primaryPersonFirstName\":\"Steven\"\
-  ,\"primaryPersonLastName\":\"Cady\",\"primaryPersonPhone\":\"+1 (310) 333-6620\"\
-  ,\"clientAdvisorProfileRecNo\":6517944,\"clientAdvisorName\":\"Alice Smith\",\"\
-  clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"[CB Remarks] remarks\"\
-  ,\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
+  :false},{\"recNo\":6518370,\"name\":\"Cady/Steven\",\"profileType\":1,\"clientType\"\
+  :1,\"primaryPersonRecNo\":12807819,\"primaryPersonName\":\"Cady/Steven \",\"primaryPersonFirstName\"\
+  :\"Steven\",\"primaryPersonLastName\":\"Cady\",\"primaryPersonPhone\":\"+1 (310)\
+  \ 333-6620\",\"clientAdvisorProfileRecNo\":6517944,\"clientAdvisorName\":\"Alice\
+  \ Smith\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"[CB\
+  \ Remarks] remarks\",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
   :true,\"primaryPhone\":\"+1 (310) 121-2121\",\"primaryPhonePermitMarketing\":true,\"\
   street1\":\"2508 Alma Ave.\",\"city\":\"Manhattan Beach\",\"stateProvince\":\"CA\"\
   ,\"zipPostalCode\":\"90266\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
@@ -5736,39 +5738,27 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   :true,\"stateProvince\":\"CA\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
   clientInformalSalutation\":\"Test\",\"clientFormalSalutation\":\"Tester Test\",\"\
   profileCommType\":1,\"profileCommValue\":\"+1 (310) 454-5454\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518577,\"name\":\"ASWS-Village Clean Water\",\"profileType\"\
-  :1,\"clientType\":2,\"primaryPersonRecNo\":12808155,\"primaryPersonName\":\"Fletcher/Clifford\
-  \ \",\"primaryPersonFirstName\":\"Clifford\",\"primaryPersonLastName\":\"Fletcher\"\
-  ,\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina Simmel\"\
-  ,\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\",\"activeStatus\"\
-  :1,\"primaryPhone\":\"+1 (907) 522-5234\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"5777 W. Century Blvd\",\"city\":\"Los Angeles\",\"stateProvince\":\"\
-  CA\",\"zipPostalCode\":\"90045\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
-  clientInformalSalutation\":\"Fletcher\",\"clientFormalSalutation\":\"Clifford Fletcher\"\
-  ,\"firstId\":\"9075225234\",\"profileCommType\":1,\"profileCommValue\":\"+1 (907)\
-  \ 522-5234\",\"profileCommIsBillingContact\":false},{\"recNo\":6518577,\"name\"\
-  :\"ASWS-Village Clean Water\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
-  :12808155,\"primaryPersonName\":\"Fletcher/Clifford \",\"primaryPersonFirstName\"\
-  :\"Clifford\",\"primaryPersonLastName\":\"Fletcher\",\"clientAdvisorProfileRecNo\"\
+  :false},{\"recNo\":6518581,\"name\":\"Henderson/George\",\"profileType\":1,\"clientType\"\
+  :1,\"primaryPersonRecNo\":12808125,\"primaryPersonName\":\"Henderson/Tony \",\"\
+  primaryPersonFirstName\":\"Tony\",\"primaryPersonLastName\":\"Henderson\",\"clientAdvisorProfileRecNo\"\
   :6517957,\"clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"\
-  clientBranchName\":\"0\",\"remarks\":\"\",\"activeStatus\":1,\"primaryPhone\":\"\
-  +1 (907) 522-5234\",\"primaryPhonePermitMarketing\":true,\"street1\":\"5777 W. Century\
-  \ Blvd\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
-  90045\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
-  :\"Fletcher\",\"clientFormalSalutation\":\"Clifford Fletcher\",\"firstId\":\"9075225234\"\
-  ,\"profileCommType\":1,\"profileCommValue\":\"+1 (907) 852-6640\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518577,\"name\":\"ASWS-Village Clean Water\",\"profileType\"\
-  :1,\"clientType\":2,\"primaryPersonRecNo\":12808155,\"primaryPersonName\":\"Fletcher/Clifford\
-  \ \",\"primaryPersonFirstName\":\"Clifford\",\"primaryPersonLastName\":\"Fletcher\"\
-  ,\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina Simmel\"\
-  ,\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\",\"activeStatus\"\
-  :1,\"primaryPhone\":\"+1 (907) 522-5234\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"5777 W. Century Blvd\",\"city\":\"Los Angeles\",\"stateProvince\":\"\
-  CA\",\"zipPostalCode\":\"90045\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
-  clientInformalSalutation\":\"Fletcher\",\"clientFormalSalutation\":\"Clifford Fletcher\"\
-  ,\"firstId\":\"9075225234\",\"profileCommType\":1,\"profileCommValue\":\"+1 (907)\
-  \ 852-6639\",\"profileCommIsBillingContact\":false},{\"recNo\":6518587,\"name\"\
-  :\"Jones/Tom\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808132,\"\
+  clientBranchName\":\"0\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\"\
+  ,\"activeStatus\":1,\"primaryPhone\":\"+1 (310) 566-9898\",\"primaryPhonePermitMarketing\"\
+  :true,\"street1\":\"5489 Sepulveda Blvd.\",\"city\":\"Los Angeles\",\"stateProvince\"\
+  :\"CA\",\"zipPostalCode\":\"90045\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"George Henderson\",\"firstId\":\"HEND\",\"profileCommType\":1,\"profileCommValue\"\
+  :\"+1 (310) 566-9898\",\"profileCommIsBillingContact\":false},{\"recNo\":6518583,\"\
+  name\":\"Fox Sports\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
+  :12808040,\"primaryPersonName\":\"Long/Howard \",\"primaryPersonFirstName\":\"Howard\"\
+  ,\"primaryPersonLastName\":\"Long\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\"\
+  :\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\"\
+  :\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"primaryPhone\"\
+  :\"+1 (310) 555-4000\",\"primaryPhonePermitMarketing\":true,\"street1\":\"1000 Hollywood\
+  \ Blvd.\",\"city\":\"Hollywood\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"90210\"\
+  ,\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"\
+  John Madden\",\"firstId\":\"FOX\",\"profileCommType\":1,\"profileCommValue\":\"\
+  +1 (310) 555-4000\",\"profileCommIsBillingContact\":false},{\"recNo\":6518587,\"\
+  name\":\"Jones/Tom\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808132,\"\
   primaryPersonName\":\"Jones/Tom \",\"primaryPersonFirstName\":\"Tom\",\"primaryPersonLastName\"\
   :\"Jones\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina\
   \ Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\
@@ -5797,115 +5787,6 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   :\"5488 W. 7th Street\",\"city\":\"Long Beach\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
   :\"90254\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
   :\"Mrs. Valarie Howard\",\"profileCommType\":1,\"profileCommValue\":\"+1 (310) 565-9989\"\
-  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518581,\"name\":\"Henderson/George\"\
-  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808125,\"primaryPersonName\"\
-  :\"Henderson/Tony \",\"primaryPersonFirstName\":\"Tony\",\"primaryPersonLastName\"\
-  :\"Henderson\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La\
-  \ Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\"\
-  :\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"primaryPhone\"\
-  :\"+1 (310) 566-9898\",\"primaryPhonePermitMarketing\":true,\"street1\":\"5489 Sepulveda\
-  \ Blvd.\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
-  90045\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"George Henderson\"\
-  ,\"firstId\":\"HEND\",\"profileCommType\":1,\"profileCommValue\":\"+1 (310) 566-9898\"\
-  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518583,\"name\":\"Fox Sports\"\
-  ,\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\":12808040,\"primaryPersonName\"\
-  :\"Long/Howard \",\"primaryPersonFirstName\":\"Howard\",\"primaryPersonLastName\"\
-  :\"Long\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina\
-  \ Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\
-  [TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"primaryPhone\":\"\
-  +1 (310) 555-4000\",\"primaryPhonePermitMarketing\":true,\"street1\":\"1000 Hollywood\
-  \ Blvd.\",\"city\":\"Hollywood\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"90210\"\
-  ,\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"\
-  John Madden\",\"firstId\":\"FOX\",\"profileCommType\":1,\"profileCommValue\":\"\
-  +1 (310) 555-4000\",\"profileCommIsBillingContact\":false},{\"recNo\":6518478,\"\
-  name\":\"Skinna/Susana\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
-  :12808112,\"primaryPersonName\":\"Skinna/Susana \",\"primaryPersonFirstName\":\"\
-  Susana\",\"primaryPersonLastName\":\"Skinna\",\"clientAdvisorProfileRecNo\":6517957,\"\
-  clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
-  :\"0\",\"remarks\":\"[CB Remarks] \",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (310) 655-8454\",\"\
-  primaryPhonePermitMarketing\":true,\"street1\":\"577 W. Century Blvd.\",\"street2\"\
-  :\"Suite 1200\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
-  :\"90045\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
-  :\"Ms. Skinna\",\"clientFormalSalutation\":\"Ms. Susana Skinna\",\"firstId\":\"\
-  3106558454\",\"profileCommType\":1,\"profileCommValue\":\"+1 (310) 655-8454\",\"\
-  profileCommIsBillingContact\":false},{\"recNo\":6518478,\"name\":\"Skinna/Susana\"\
-  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808112,\"primaryPersonName\"\
-  :\"Skinna/Susana \",\"primaryPersonFirstName\":\"Susana\",\"primaryPersonLastName\"\
-  :\"Skinna\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina\
-  \ Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\
-  [CB Remarks] \",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"primaryPhone\":\"+1 (310) 655-8454\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"577 W. Century Blvd.\",\"street2\":\"Suite 1200\",\"city\":\"Los Angeles\"\
-  ,\"stateProvince\":\"CA\",\"zipPostalCode\":\"90045\",\"country\":\"US\",\"addressPermitMarketing\"\
-  :true,\"clientInformalSalutation\":\"Ms. Skinna\",\"clientFormalSalutation\":\"\
-  Ms. Susana Skinna\",\"firstId\":\"3106558454\",\"profileCommType\":1,\"profileCommValue\"\
-  :\"+1 (800) 655-9865\",\"profileCommIsBillingContact\":false},{\"recNo\":6518478,\"\
-  name\":\"Skinna/Susana\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
-  :12808112,\"primaryPersonName\":\"Skinna/Susana \",\"primaryPersonFirstName\":\"\
-  Susana\",\"primaryPersonLastName\":\"Skinna\",\"clientAdvisorProfileRecNo\":6517957,\"\
-  clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
-  :\"0\",\"remarks\":\"[CB Remarks] \",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (310) 655-8454\",\"\
-  primaryPhonePermitMarketing\":true,\"street1\":\"577 W. Century Blvd.\",\"street2\"\
-  :\"Suite 1200\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
-  :\"90045\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
-  :\"Ms. Skinna\",\"clientFormalSalutation\":\"Ms. Susana Skinna\",\"firstId\":\"\
-  3106558454\",\"profileCommType\":2,\"profileCommValue\":\"1@tramsQA.com\",\"profileCommIsBillingContact\"\
-  :false},{\"recNo\":6518502,\"name\":\"Abler/Kent\",\"profileType\":1,\"clientType\"\
-  :1,\"primaryPersonRecNo\":12808079,\"primaryPersonName\":\"Abler/Kent \",\"primaryPersonFirstName\"\
-  :\"Kent\",\"primaryPersonLastName\":\"Abler\",\"primaryPersonEmail\":\"1@tramsQA.com\"\
-  ,\"primaryPersonPhone\":\"+1 (650) 988-1222\",\"clientAnniversaryMonth\":4,\"clientAdvisorProfileRecNo\"\
-  :6517957,\"clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"\
-  clientBranchName\":\"0\",\"remarks\":\"[CB Remarks] \",\"activeStatus\":1,\"primaryEmail\"\
-  :\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (650)\
-  \ 784-7447\",\"primaryPhonePermitMarketing\":true,\"street1\":\"1255 East Apple\
-  \ Street\",\"city\":\"Los Altos\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
-  94022\",\"addressPermitMarketing\":true,\"clientInformalSalutation\":\"Mr. & Mrs.\
-  \ Abler\",\"clientFormalSalutation\":\"Mr. and Mrs. Kent Abler\",\"firstId\":\"\
-  6509881222\",\"profileCommType\":1,\"profileCommValue\":\"+1 (650) 425-9833\",\"\
-  profileCommIsBillingContact\":false},{\"recNo\":6518502,\"name\":\"Abler/Kent\"\
-  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808079,\"primaryPersonName\"\
-  :\"Abler/Kent \",\"primaryPersonFirstName\":\"Kent\",\"primaryPersonLastName\":\"\
-  Abler\",\"primaryPersonEmail\":\"1@tramsQA.com\",\"primaryPersonPhone\":\"+1 (650)\
-  \ 988-1222\",\"clientAnniversaryMonth\":4,\"clientAdvisorProfileRecNo\":6517957,\"\
-  clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
-  :\"0\",\"remarks\":\"[CB Remarks] \",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (650) 784-7447\",\"\
-  primaryPhonePermitMarketing\":true,\"street1\":\"1255 East Apple Street\",\"city\"\
-  :\"Los Altos\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"94022\",\"addressPermitMarketing\"\
-  :true,\"clientInformalSalutation\":\"Mr. & Mrs. Abler\",\"clientFormalSalutation\"\
-  :\"Mr. and Mrs. Kent Abler\",\"firstId\":\"6509881222\",\"profileCommType\":1,\"\
-  profileCommValue\":\"+1 (650) 784-7447\",\"profileCommIsBillingContact\":false},{\"\
-  recNo\":6518474,\"name\":\"Herman/Marlena\",\"profileType\":1,\"clientType\":1,\"\
-  primaryPersonRecNo\":12807762,\"primaryPersonName\":\"Herman/John \",\"primaryPersonFirstName\"\
-  :\"John\",\"primaryPersonLastName\":\"Herman\",\"clientAdvisorProfileRecNo\":6517957,\"\
-  clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
-  :\"0\",\"remarks\":\"\",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"\
-  primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (213) 867-4763\",\"primaryPhonePermitMarketing\"\
-  :true,\"street1\":\"569 Montana Ave.\",\"city\":\"Santa Monica\",\"stateProvince\"\
-  :\"CA\",\"zipPostalCode\":\"90103\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Ms Marlena Herman\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 867-4763\"\
-  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518474,\"name\":\"Herman/Marlena\"\
-  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12807762,\"primaryPersonName\"\
-  :\"Herman/John \",\"primaryPersonFirstName\":\"John\",\"primaryPersonLastName\"\
-  :\"Herman\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina\
-  \ Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\"\
-  ,\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"primaryPhone\":\"+1 (213) 867-4763\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"569 Montana Ave.\",\"city\":\"Santa Monica\",\"stateProvince\":\"CA\"\
-  ,\"zipPostalCode\":\"90103\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Ms Marlena Herman\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 564-8900\"\
-  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518474,\"name\":\"Herman/Marlena\"\
-  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12807762,\"primaryPersonName\"\
-  :\"Herman/John \",\"primaryPersonFirstName\":\"John\",\"primaryPersonLastName\"\
-  :\"Herman\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina\
-  \ Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\"\
-  ,\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"primaryPhone\":\"+1 (213) 867-4763\",\"primaryPhonePermitMarketing\":true,\"\
-  street1\":\"569 Montana Ave.\",\"city\":\"Santa Monica\",\"stateProvince\":\"CA\"\
-  ,\"zipPostalCode\":\"90103\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Ms Marlena Herman\",\"profileCommType\":2,\"profileCommValue\":\"1@tramsQA.com\"\
   ,\"profileCommIsBillingContact\":false},{\"recNo\":6518566,\"lastModifiedDateTime\"\
   :\"2023-06-14T23:08:16+00:00\",\"name\":\"Ko/Daniel\",\"profileType\":1,\"clientType\"\
   :1,\"primaryPersonRecNo\":12808152,\"primaryPersonName\":\"Ko/Daniel S\",\"primaryPersonFirstName\"\
@@ -5949,18 +5830,67 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   ,\"primaryPhonePermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
   ,\"addressPermitMarketing\":true,\"clientInformalSalutation\":\"Johnson\",\"clientFormalSalutation\"\
   :\"Russ Johnson\",\"firstId\":\"3105695545\",\"profileCommType\":1,\"profileCommValue\"\
-  :\"+1 (310) 569-5545\",\"profileCommIsBillingContact\":false},{\"recNo\":6518570,\"\
-  lastModifiedDateTime\":\"2023-06-03T01:03:16+00:00\",\"name\":\"Jones/David\",\"\
-  profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808091,\"primaryPersonName\"\
-  :\"Jones/David M\",\"primaryPersonFirstName\":\"David\",\"primaryPersonLastName\"\
-  :\"Jones\",\"primaryPersonEmail\":\"2@tramsQA.com\",\"clientAdvisorProfileRecNo\"\
+  :\"+1 (310) 569-5545\",\"profileCommIsBillingContact\":false},{\"recNo\":6518555,\"\
+  name\":\"New Pleasant Hill Church\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
+  :12808161,\"primaryPersonName\":\"Hill/Mary \",\"primaryPersonFirstName\":\"Mary\"\
+  ,\"primaryPersonLastName\":\"Hill\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\"\
+  :\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\"\
+  :\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"street1\":\"850\
+  \ W. 96th Street\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
+  :\"90044\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Mr. Melvin Hill\",\"firstId\":\"MELVIN\",\"profileCommType\":4,\"profileCommValue\"\
+  :\"www.newpleasant_intra.com\",\"profileCommIsBillingContact\":false},{\"recNo\"\
+  :6518555,\"name\":\"New Pleasant Hill Church\",\"profileType\":1,\"clientType\"\
+  :2,\"primaryPersonRecNo\":12808161,\"primaryPersonName\":\"Hill/Mary \",\"primaryPersonFirstName\"\
+  :\"Mary\",\"primaryPersonLastName\":\"Hill\",\"clientAdvisorProfileRecNo\":6517957,\"\
+  clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
+  :\"0\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"\
+  street1\":\"850 W. 96th Street\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\"\
+  ,\"zipPostalCode\":\"90044\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
+  clientFormalSalutation\":\"Mr. Melvin Hill\",\"firstId\":\"MELVIN\",\"profileCommType\"\
+  :1,\"profileCommValue\":\"+1 (323) 779-9000\",\"profileCommIsBillingContact\":false},{\"\
+  recNo\":6518577,\"name\":\"ASWS-Village Clean Water\",\"profileType\":1,\"clientType\"\
+  :2,\"primaryPersonRecNo\":12808155,\"primaryPersonName\":\"Fletcher/Clifford \"\
+  ,\"primaryPersonFirstName\":\"Clifford\",\"primaryPersonLastName\":\"Fletcher\"\
+  ,\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina Simmel\"\
+  ,\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\",\"activeStatus\"\
+  :1,\"primaryPhone\":\"+1 (907) 522-5234\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"5777 W. Century Blvd\",\"city\":\"Los Angeles\",\"stateProvince\":\"\
+  CA\",\"zipPostalCode\":\"90045\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
+  clientInformalSalutation\":\"Fletcher\",\"clientFormalSalutation\":\"Clifford Fletcher\"\
+  ,\"firstId\":\"9075225234\",\"profileCommType\":1,\"profileCommValue\":\"+1 (907)\
+  \ 522-5234\",\"profileCommIsBillingContact\":false},{\"recNo\":6518577,\"name\"\
+  :\"ASWS-Village Clean Water\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
+  :12808155,\"primaryPersonName\":\"Fletcher/Clifford \",\"primaryPersonFirstName\"\
+  :\"Clifford\",\"primaryPersonLastName\":\"Fletcher\",\"clientAdvisorProfileRecNo\"\
   :6517957,\"clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"\
-  clientBranchName\":\"0\",\"remarks\":\"\",\"activeStatus\":1,\"primaryEmail\":\"\
-  avdbaan02@gmail.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1\
-  \ (310) 555-1212\",\"primaryPhonePermitMarketing\":true,\"street1\":\"5777 W. Century\"\
-  ,\"stateProvince\":\"CA\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
-  clientInformalSalutation\":\"Mr. Jones\",\"clientFormalSalutation\":\"Mr. David\
-  \ Jones\",\"firstId\":\"3105551212\",\"profileCommType\":1,\"profileCommValue\"\
+  clientBranchName\":\"0\",\"remarks\":\"\",\"activeStatus\":1,\"primaryPhone\":\"\
+  +1 (907) 522-5234\",\"primaryPhonePermitMarketing\":true,\"street1\":\"5777 W. Century\
+  \ Blvd\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
+  90045\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
+  :\"Fletcher\",\"clientFormalSalutation\":\"Clifford Fletcher\",\"firstId\":\"9075225234\"\
+  ,\"profileCommType\":1,\"profileCommValue\":\"+1 (907) 852-6640\",\"profileCommIsBillingContact\"\
+  :false},{\"recNo\":6518577,\"name\":\"ASWS-Village Clean Water\",\"profileType\"\
+  :1,\"clientType\":2,\"primaryPersonRecNo\":12808155,\"primaryPersonName\":\"Fletcher/Clifford\
+  \ \",\"primaryPersonFirstName\":\"Clifford\",\"primaryPersonLastName\":\"Fletcher\"\
+  ,\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina Simmel\"\
+  ,\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\",\"activeStatus\"\
+  :1,\"primaryPhone\":\"+1 (907) 522-5234\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"5777 W. Century Blvd\",\"city\":\"Los Angeles\",\"stateProvince\":\"\
+  CA\",\"zipPostalCode\":\"90045\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
+  clientInformalSalutation\":\"Fletcher\",\"clientFormalSalutation\":\"Clifford Fletcher\"\
+  ,\"firstId\":\"9075225234\",\"profileCommType\":1,\"profileCommValue\":\"+1 (907)\
+  \ 852-6639\",\"profileCommIsBillingContact\":false},{\"recNo\":6518570,\"lastModifiedDateTime\"\
+  :\"2023-06-03T01:03:16+00:00\",\"name\":\"Jones/David\",\"profileType\":1,\"clientType\"\
+  :1,\"primaryPersonRecNo\":12808091,\"primaryPersonName\":\"Jones/David M\",\"primaryPersonFirstName\"\
+  :\"David\",\"primaryPersonLastName\":\"Jones\",\"primaryPersonEmail\":\"2@tramsQA.com\"\
+  ,\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina Simmel\"\
+  ,\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\",\"activeStatus\"\
+  :1,\"primaryEmail\":\"avdbaan02@gmail.com\",\"primaryEmailPermitMarketing\":true,\"\
+  primaryPhone\":\"+1 (310) 555-1212\",\"primaryPhonePermitMarketing\":true,\"street1\"\
+  :\"5777 W. Century\",\"stateProvince\":\"CA\",\"country\":\"US\",\"addressPermitMarketing\"\
+  :true,\"clientInformalSalutation\":\"Mr. Jones\",\"clientFormalSalutation\":\"Mr.\
+  \ David Jones\",\"firstId\":\"3105551212\",\"profileCommType\":1,\"profileCommValue\"\
   :\"+1 (310) 555-1212\",\"profileCommIsBillingContact\":false},{\"recNo\":6518570,\"\
   lastModifiedDateTime\":\"2023-06-03T01:03:16+00:00\",\"name\":\"Jones/David\",\"\
   profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808091,\"primaryPersonName\"\
@@ -6009,32 +5939,14 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   ,\"stateProvince\":\"CA\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
   clientInformalSalutation\":\"Mr. Jones\",\"clientFormalSalutation\":\"Mr. David\
   \ Jones\",\"firstId\":\"3105551212\",\"profileCommType\":4,\"profileCommValue\"\
-  :\"www.msn.com\",\"profileCommIsBillingContact\":false},{\"recNo\":6518555,\"name\"\
-  :\"New Pleasant Hill Church\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\"\
-  :12808161,\"primaryPersonName\":\"Hill/Mary \",\"primaryPersonFirstName\":\"Mary\"\
-  ,\"primaryPersonLastName\":\"Hill\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\"\
+  :\"www.msn.com\",\"profileCommIsBillingContact\":false},{\"recNo\":6518506,\"name\"\
+  :\"Ballys Fitness\",\"profileType\":1,\"clientType\":2,\"primaryPersonRecNo\":12808015,\"\
+  primaryPersonName\":\"Hughes/Tamika \",\"primaryPersonFirstName\":\"Tamika\",\"\
+  primaryPersonLastName\":\"Hughes\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\"\
   :\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\"\
-  :\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"street1\":\"850\
-  \ W. 96th Street\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
-  :\"90044\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
-  :\"Mr. Melvin Hill\",\"firstId\":\"MELVIN\",\"profileCommType\":4,\"profileCommValue\"\
-  :\"www.newpleasant_intra.com\",\"profileCommIsBillingContact\":false},{\"recNo\"\
-  :6518555,\"name\":\"New Pleasant Hill Church\",\"profileType\":1,\"clientType\"\
-  :2,\"primaryPersonRecNo\":12808161,\"primaryPersonName\":\"Hill/Mary \",\"primaryPersonFirstName\"\
-  :\"Mary\",\"primaryPersonLastName\":\"Hill\",\"clientAdvisorProfileRecNo\":6517957,\"\
-  clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
-  :\"0\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"\
-  street1\":\"850 W. 96th Street\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\"\
-  ,\"zipPostalCode\":\"90044\",\"country\":\"US\",\"addressPermitMarketing\":true,\"\
-  clientFormalSalutation\":\"Mr. Melvin Hill\",\"firstId\":\"MELVIN\",\"profileCommType\"\
-  :1,\"profileCommValue\":\"+1 (323) 779-9000\",\"profileCommIsBillingContact\":false},{\"\
-  recNo\":6518506,\"name\":\"Ballys Fitness\",\"profileType\":1,\"clientType\":2,\"\
-  primaryPersonRecNo\":12808015,\"primaryPersonName\":\"Hughes/Tamika \",\"primaryPersonFirstName\"\
-  :\"Tamika\",\"primaryPersonLastName\":\"Hughes\",\"clientAdvisorProfileRecNo\":6517957,\"\
-  clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
-  :\"0\",\"remarks\":\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"\
-  primaryEmail\":\"ballys@mail.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\"\
-  :\"+1 (800) 565-2100\",\"primaryPhonePermitMarketing\":true,\"street1\":\"1000 Century\
+  :\"[TBO Notes] x\\r\\n[TBO Add'l Notes] x\",\"activeStatus\":1,\"primaryEmail\"\
+  :\"ballys@mail.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1\
+  \ (800) 565-2100\",\"primaryPhonePermitMarketing\":true,\"street1\":\"1000 Century\
   \ Blvd.\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
   90043\",\"addressPermitMarketing\":true,\"clientFormalSalutation\":\"Frank Jones\"\
   ,\"firstId\":\"BALLYS\",\"profileCommType\":1,\"profileCommValue\":\"+1 (800) 565-2100\"\
@@ -6070,6 +5982,95 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   :\"CA\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
   :\"Lufton\",\"clientFormalSalutation\":\"Brice Lufton\",\"firstId\":\"BKL\",\"profileCommType\"\
   :2,\"profileCommValue\":\"1@tramsQA.com\",\"profileCommIsBillingContact\":false},{\"\
+  recNo\":6518474,\"name\":\"Herman/Marlena\",\"profileType\":1,\"clientType\":1,\"\
+  primaryPersonRecNo\":12807762,\"primaryPersonName\":\"Herman/John \",\"primaryPersonFirstName\"\
+  :\"John\",\"primaryPersonLastName\":\"Herman\",\"clientAdvisorProfileRecNo\":6517957,\"\
+  clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
+  :\"0\",\"remarks\":\"\",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"\
+  primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (213) 867-4763\",\"primaryPhonePermitMarketing\"\
+  :true,\"street1\":\"569 Montana Ave.\",\"city\":\"Santa Monica\",\"stateProvince\"\
+  :\"CA\",\"zipPostalCode\":\"90103\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Ms Marlena Herman\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 867-4763\"\
+  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518474,\"name\":\"Herman/Marlena\"\
+  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12807762,\"primaryPersonName\"\
+  :\"Herman/John \",\"primaryPersonFirstName\":\"John\",\"primaryPersonLastName\"\
+  :\"Herman\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina\
+  \ Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\"\
+  ,\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
+  :true,\"primaryPhone\":\"+1 (213) 867-4763\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"569 Montana Ave.\",\"city\":\"Santa Monica\",\"stateProvince\":\"CA\"\
+  ,\"zipPostalCode\":\"90103\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Ms Marlena Herman\",\"profileCommType\":1,\"profileCommValue\":\"+1 (213) 564-8900\"\
+  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518474,\"name\":\"Herman/Marlena\"\
+  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12807762,\"primaryPersonName\"\
+  :\"Herman/John \",\"primaryPersonFirstName\":\"John\",\"primaryPersonLastName\"\
+  :\"Herman\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina\
+  \ Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\"\
+  ,\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
+  :true,\"primaryPhone\":\"+1 (213) 867-4763\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"569 Montana Ave.\",\"city\":\"Santa Monica\",\"stateProvince\":\"CA\"\
+  ,\"zipPostalCode\":\"90103\",\"addressPermitMarketing\":true,\"clientFormalSalutation\"\
+  :\"Ms Marlena Herman\",\"profileCommType\":2,\"profileCommValue\":\"1@tramsQA.com\"\
+  ,\"profileCommIsBillingContact\":false},{\"recNo\":6518478,\"name\":\"Skinna/Susana\"\
+  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808112,\"primaryPersonName\"\
+  :\"Skinna/Susana \",\"primaryPersonFirstName\":\"Susana\",\"primaryPersonLastName\"\
+  :\"Skinna\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina\
+  \ Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\
+  [CB Remarks] \",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
+  :true,\"primaryPhone\":\"+1 (310) 655-8454\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"577 W. Century Blvd.\",\"street2\":\"Suite 1200\",\"city\":\"Los Angeles\"\
+  ,\"stateProvince\":\"CA\",\"zipPostalCode\":\"90045\",\"country\":\"US\",\"addressPermitMarketing\"\
+  :true,\"clientInformalSalutation\":\"Ms. Skinna\",\"clientFormalSalutation\":\"\
+  Ms. Susana Skinna\",\"firstId\":\"3106558454\",\"profileCommType\":1,\"profileCommValue\"\
+  :\"+1 (310) 655-8454\",\"profileCommIsBillingContact\":false},{\"recNo\":6518478,\"\
+  name\":\"Skinna/Susana\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
+  :12808112,\"primaryPersonName\":\"Skinna/Susana \",\"primaryPersonFirstName\":\"\
+  Susana\",\"primaryPersonLastName\":\"Skinna\",\"clientAdvisorProfileRecNo\":6517957,\"\
+  clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
+  :\"0\",\"remarks\":\"[CB Remarks] \",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (310) 655-8454\",\"\
+  primaryPhonePermitMarketing\":true,\"street1\":\"577 W. Century Blvd.\",\"street2\"\
+  :\"Suite 1200\",\"city\":\"Los Angeles\",\"stateProvince\":\"CA\",\"zipPostalCode\"\
+  :\"90045\",\"country\":\"US\",\"addressPermitMarketing\":true,\"clientInformalSalutation\"\
+  :\"Ms. Skinna\",\"clientFormalSalutation\":\"Ms. Susana Skinna\",\"firstId\":\"\
+  3106558454\",\"profileCommType\":1,\"profileCommValue\":\"+1 (800) 655-9865\",\"\
+  profileCommIsBillingContact\":false},{\"recNo\":6518478,\"name\":\"Skinna/Susana\"\
+  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808112,\"primaryPersonName\"\
+  :\"Skinna/Susana \",\"primaryPersonFirstName\":\"Susana\",\"primaryPersonLastName\"\
+  :\"Skinna\",\"clientAdvisorProfileRecNo\":6517957,\"clientAdvisorName\":\"La Tina\
+  \ Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\":\"0\",\"remarks\":\"\
+  [CB Remarks] \",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
+  :true,\"primaryPhone\":\"+1 (310) 655-8454\",\"primaryPhonePermitMarketing\":true,\"\
+  street1\":\"577 W. Century Blvd.\",\"street2\":\"Suite 1200\",\"city\":\"Los Angeles\"\
+  ,\"stateProvince\":\"CA\",\"zipPostalCode\":\"90045\",\"country\":\"US\",\"addressPermitMarketing\"\
+  :true,\"clientInformalSalutation\":\"Ms. Skinna\",\"clientFormalSalutation\":\"\
+  Ms. Susana Skinna\",\"firstId\":\"3106558454\",\"profileCommType\":2,\"profileCommValue\"\
+  :\"1@tramsQA.com\",\"profileCommIsBillingContact\":false},{\"recNo\":6518502,\"\
+  name\":\"Abler/Kent\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\"\
+  :12808079,\"primaryPersonName\":\"Abler/Kent \",\"primaryPersonFirstName\":\"Kent\"\
+  ,\"primaryPersonLastName\":\"Abler\",\"primaryPersonEmail\":\"1@tramsQA.com\",\"\
+  primaryPersonPhone\":\"+1 (650) 988-1222\",\"clientAnniversaryMonth\":4,\"clientAdvisorProfileRecNo\"\
+  :6517957,\"clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"\
+  clientBranchName\":\"0\",\"remarks\":\"[CB Remarks] \",\"activeStatus\":1,\"primaryEmail\"\
+  :\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (650)\
+  \ 784-7447\",\"primaryPhonePermitMarketing\":true,\"street1\":\"1255 East Apple\
+  \ Street\",\"city\":\"Los Altos\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"\
+  94022\",\"addressPermitMarketing\":true,\"clientInformalSalutation\":\"Mr. & Mrs.\
+  \ Abler\",\"clientFormalSalutation\":\"Mr. and Mrs. Kent Abler\",\"firstId\":\"\
+  6509881222\",\"profileCommType\":1,\"profileCommValue\":\"+1 (650) 425-9833\",\"\
+  profileCommIsBillingContact\":false},{\"recNo\":6518502,\"name\":\"Abler/Kent\"\
+  ,\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808079,\"primaryPersonName\"\
+  :\"Abler/Kent \",\"primaryPersonFirstName\":\"Kent\",\"primaryPersonLastName\":\"\
+  Abler\",\"primaryPersonEmail\":\"1@tramsQA.com\",\"primaryPersonPhone\":\"+1 (650)\
+  \ 988-1222\",\"clientAnniversaryMonth\":4,\"clientAdvisorProfileRecNo\":6517957,\"\
+  clientAdvisorName\":\"La Tina Simmel\",\"clientBranchRecNo\":5090,\"clientBranchName\"\
+  :\"0\",\"remarks\":\"[CB Remarks] \",\"activeStatus\":1,\"primaryEmail\":\"1@tramsQA.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"primaryPhone\":\"+1 (650) 784-7447\",\"\
+  primaryPhonePermitMarketing\":true,\"street1\":\"1255 East Apple Street\",\"city\"\
+  :\"Los Altos\",\"stateProvince\":\"CA\",\"zipPostalCode\":\"94022\",\"addressPermitMarketing\"\
+  :true,\"clientInformalSalutation\":\"Mr. & Mrs. Abler\",\"clientFormalSalutation\"\
+  :\"Mr. and Mrs. Kent Abler\",\"firstId\":\"6509881222\",\"profileCommType\":1,\"\
+  profileCommValue\":\"+1 (650) 784-7447\",\"profileCommIsBillingContact\":false},{\"\
   recNo\":6518585,\"lastModifiedDateTime\":\"2023-06-15T00:42:34+00:00\",\"name\"\
   :\"Bored/I am\",\"profileType\":1,\"clientType\":1,\"primaryPersonRecNo\":12808180,\"\
   primaryPersonName\":\"Bored/Also \",\"primaryPersonFirstName\":\"Also\",\"primaryPersonLastName\"\
@@ -6096,7 +6097,7 @@ body: "[{\"recNo\":6517928,\"name\":\"Agent 168\",\"profileType\":3,\"primaryPer
   :false}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE5VDIyOjUyOjQ5KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ2ODAxLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.lEk_x17mw4p3_SIMNJinweE9uWi1856uoIcwo8bqElI
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTIyVDE3OjM4OjI2KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ3NDgwLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.b5hAafRWXLJVpLyMM6--Si2tsJsfaBl1jND1zN3uQWs
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

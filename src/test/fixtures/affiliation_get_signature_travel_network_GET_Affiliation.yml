@@ -1,5 +1,5 @@
 diagnostic: affiliation_get_signature_travel_network
-url: https://api-dev-staging.trestechnologies.com/Affiliation/2
+url: https://api-dev.trestechnologies.com/Affiliation/2
 method: GET
 paramsHash: null
 requestBody: ""
@@ -364,7 +364,7 @@ body: "[{\"recNo\":2,\"name\":\"Signature Travel Network\",\"affiliationMarketin
   :516,\"name\":\"Winter\",\"id\":\"10030\"}]}]}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTE5VDIyOjUzOjI5KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ2ODM0LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.nKelYi2fB44CCCZhgxlpqxcddm7VWoOLxDuiElRnfK0
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTIyVDE3OjM4OjM4KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ3NDkwLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.6kKVRyE4JBcIQ9SgGzuQuZbBD7Yc4XbeOz-6ikN_qlo
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

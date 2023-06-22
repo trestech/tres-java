@@ -24,7 +24,7 @@ correct login credentials.
 Or with self-closing pattern:
 
 ```java
-  new TresContext("username", "password", "PCC", (context) -> {
+  new TresContext("username", "password", "PCC", context -> {
     System.out.println("Version: " + context.version());
   });
 ```
@@ -115,7 +115,7 @@ mvn package -DskipTests=true
 **Install:** *Note, this will install the newly built jar in your local Maven repository.*
 
 ```bash
-mvn install:install-file -Dfile=target/tres-java-0.1.6-SNAPSHOT.jar -DgroupId=trestech -DartifactId=tres-java -Dversion=0.1.6-SNAPSHOT -Dpackaging=jar
+mvn install:install-file -Dfile=target/tres-java-0.1.11-SNAPSHOT.jar -DgroupId=trestech -DartifactId=tres-java -Dversion=0.1.11-SNAPSHOT -Dpackaging=jar
 ```
 
 **Tests:**

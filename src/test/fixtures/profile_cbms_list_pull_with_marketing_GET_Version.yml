@@ -1,5 +1,5 @@
 diagnostic: profile_cbms_list_pull_with_marketing
-url: https://api-dev-staging.trestechnologies.com/Version
+url: https://api-dev.trestechnologies.com/Version
 method: GET
 paramsHash: null
 requestBody: ""

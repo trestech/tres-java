@@ -1,5 +1,5 @@
 diagnostic: tres_context_refresh_identity_token
-url: https://api-dev-staging.trestechnologies.com/Version
+url: https://api-dev.trestechnologies.com/Version
 method: GET
 paramsHash: null
 requestBody: ""

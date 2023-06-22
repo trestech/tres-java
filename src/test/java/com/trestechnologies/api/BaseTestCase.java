@@ -32,6 +32,8 @@ import java.net.URL;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
+import static java.lang.System.err;
+
 public abstract class BaseTestCase extends TestCase {
   /**
    * Fixes that are pending should skip at this point until they are fixed.
@@ -40,8 +42,8 @@ public abstract class BaseTestCase extends TestCase {
    */
   protected static final boolean SKIP_PENDING_FIX = true;
 
-//  protected static final String LIVE_URL = "https://api-dev.trestechnologies.com";
-  protected static final String LIVE_URL = "https://api-dev-staging.trestechnologies.com";
+  protected static final String LIVE_URL = "https://api-dev.trestechnologies.com";
+  //protected static final String LIVE_URL = "https://api-dev-staging.trestechnologies.com";
   
   protected static final String USERNAME = "MAST";
   
@@ -215,7 +217,7 @@ public abstract class BaseTestCase extends TestCase {
             );
           }
         } catch ( Exception e ) {
-          System.err.println("Unable to read response body: " + e);
+          err.println("Unable to read response body: " + e);
         }
 
         fixture.setStatus(liveResponse.getStatusLine().toString());

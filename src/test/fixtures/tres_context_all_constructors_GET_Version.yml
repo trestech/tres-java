@@ -1,5 +1,5 @@
 diagnostic: tres_context_all_constructors
-url: https://api-dev-staging.trestechnologies.com/Version
+url: https://api-dev.trestechnologies.com/Version
 method: GET
 paramsHash: null
 requestBody: ""
