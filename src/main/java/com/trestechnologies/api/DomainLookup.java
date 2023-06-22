@@ -5,10 +5,12 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.trestechnologies.api.interfaces.APIContext;
+import com.trestechnologies.api.model.CustomerProduct;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+
+import static java.lang.System.out;
 
 /**
  * Export product records for a given Trin ID to stdout.
@@ -22,11 +24,11 @@ public class DomainLookup extends CommandLine {
     super(context);
   }
 
-  public JsonNode queryCustomerProfiles ( String[] trinIds ) throws IOException {
+  public JsonNode queryCustomerProfiles ( List<String> trinIds ) throws IOException {
     return queryCustomerProfiles(context, trinIds);
   }
   
-  public JsonNode queryCustomerProfiles ( APIContext ctx, String[] trinIds ) throws IOException {
+  public JsonNode queryCustomerProfiles ( APIContext ctx, List<String> trinIds ) throws IOException {
     ObjectNode params = JsonNodeFactory.instance.objectNode();
     ArrayNode includeCols = params.putArray("includeCols");
     ObjectNode tramsId = params.putObject("tramsId");
@@ -36,8 +38,8 @@ public class DomainLookup extends CommandLine {
     includeCols.add("recNo");
     includeCols.add("tramsId");
 
-    for ( String trinId : trinIds ) {
-      tramsIdValues.add(trinId);
+    if ( trinIds != null ) {
+      trinIds.forEach(tramsIdValues::add);
     }
 
     return ctx.post("CustomerProfileSearch", params);
@@ -46,12 +48,20 @@ public class DomainLookup extends CommandLine {
   public JsonNode queryCustomerProducts ( JsonNode customerProfiles ) throws IOException {
     return queryCustomerProducts(context, customerProfiles);
   }
-  
+
+  public JsonNode queryCustomerProducts ( JsonNode customerProfiles, List<CustomerProduct.Product> products ) throws IOException {
+    return queryCustomerProducts(context, customerProfiles, products);
+  }
+
   public JsonNode queryCustomerProducts ( APIContext ctx, JsonNode customerProfiles ) throws IOException {
+    return queryCustomerProducts(ctx, customerProfiles, null);
+  }
+  
+  public JsonNode queryCustomerProducts ( APIContext ctx, JsonNode customerProfiles, List<CustomerProduct.Product> products ) throws IOException {
     ObjectNode productParams = JsonNodeFactory.instance.objectNode();
     ArrayNode productIncludeCols = productParams.putArray("includeCols");
-    ObjectNode customerProfileRecNo = productParams.putObject("CustomerProfile_recNo");
-    ArrayNode customerProfileRecNos = customerProfileRecNo.putArray("value");
+    ArrayNode customerProfileRecNos = productParams.putObject("CustomerProfile_recNo").putArray("value");
+    ArrayNode statuses = productParams.putObject("status").putArray("value");
     JsonNode customerProducts;
 
     productParams.put("startingRow", 0);
@@ -62,21 +72,23 @@ public class DomainLookup extends CommandLine {
     productIncludeCols.add("status");
     productIncludeCols.add("cboAlias");
 
-    customerProfiles.forEach(( JsonNode customer ) -> {
-      customerProfileRecNos.add(customer.get("recNo"));
-    });
+    customerProfiles.forEach(customer -> customerProfileRecNos.add(customer.get("recNo")));
     
-    // TODO Add product id filter
+    if ( products != null && !products.isEmpty() ) {
+      ArrayNode productRecNos = productParams.putObject("product_recNo").putArray("value");
+      
+      products.forEach(product -> productRecNos.add(product.ordinal()));
+    }
+    
+    statuses.add(CustomerProduct.Status.ACTIVE.ordinal());
     
     customerProducts = ctx.post("CustomerProductSearch", productParams);
     
-    customerProducts.forEach(( JsonNode customerProduct ) -> {
-      customerProfiles.forEach(( JsonNode customer ) -> {
-        if ( customerProduct.get("customerProfile_recNo").asLong() == customer.get("recNo").asLong() ) {
-          ((ObjectNode) customerProduct).put("tramsId", customer.get("tramsId").asLong());
-        }
-      });
-    });
+    customerProducts.forEach(customerProduct -> customerProfiles.forEach(customer -> {
+      if ( customerProduct.get("customerProfile_recNo").asLong() == customer.get("recNo").asLong() ) {
+        ((ObjectNode) customerProduct).put("tramsId", customer.get("tramsId").asLong());
+      }
+    }));
     
     return customerProducts;
   }
@@ -87,7 +99,7 @@ public class DomainLookup extends CommandLine {
 //    if ( args.length == 0 ) {
 //      String command = cmd.bestCommand("./bin/domain-lookup.sh");
 //
-//      System.out.println("Usage: " + command + " [Trin ID]");
+//      out.println("Usage: " + command + " [Trin ID]");
 //
 //      System.exit(1);
 //    }
@@ -95,24 +107,25 @@ public class DomainLookup extends CommandLine {
     cmd.refreshToken();
     
     try ( TresContext ctx = new TresContext(cmd.url, cmd.token) ) {
-      JsonNode customerProfiles = cmd.queryCustomerProfiles(ctx, args);
+      JsonNode customerProfiles = cmd.queryCustomerProfiles(ctx, Arrays.asList(args));
 
-      // System.out.println("Looking up domains for CustomerProfile: " + customerProfiles);
-      // System.out.println(customerProducts.toPrettyString());
+      // out.println("Looking up domains for CustomerProfile: " + customerProfiles);
+      // out.println(customerProducts.toPrettyString());
       
-      System.out.println("customerProduct_recNo\tcustomerProfile_recNo\tproductName\tserialNumber\tstatus\tcboAlias\ttramsId");
+      out.println("customerProduct_recNo\tcustomerProfile_recNo\tproductName\tserialNumber\tstatus\tcboAlias\ttramsId");
       
       if ( !customerProfiles.isEmpty() ) {
-        JsonNode customerProducts = cmd.queryCustomerProducts(ctx, customerProfiles);
+        List<CustomerProduct.Product> products = Collections.singletonList(CustomerProduct.Product.TRES_MBO); // TODO use TRES_MBO instead of TBO
+        JsonNode customerProducts = cmd.queryCustomerProducts(ctx, customerProfiles, products);
 
         customerProducts.forEach(( JsonNode customerProduct ) -> {
-          System.out.print(extractKey(customerProduct, "recNo") + "\t");
-          System.out.print(extractKey(customerProduct, "customerProfile_recNo") + "\t");
-          System.out.print(extractKey(customerProduct, "productName") + "\t");
-          System.out.print(extractKey(customerProduct, "serialNumber") + "\t");
-          System.out.print(extractKey(customerProduct, "status") + "\t");
-          System.out.print(extractKey(customerProduct, "cboAlias") + "\t");
-          System.out.println(extractKey(customerProduct, "tramsId"));
+          out.print(extractKey(customerProduct, "recNo") + "\t");
+          out.print(extractKey(customerProduct, "customerProfile_recNo") + "\t");
+          out.print(extractKey(customerProduct, "productName") + "\t");
+          out.print(extractKey(customerProduct, "serialNumber") + "\t");
+          out.print(extractKey(customerProduct, "status") + "\t");
+          out.print(extractKey(customerProduct, "cboAlias") + "\t");
+          out.println(extractKey(customerProduct, "tramsId"));
         });
       }
     }
