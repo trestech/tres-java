@@ -11,6 +11,8 @@ import java.util.Map;
 
 import static com.trestechnologies.api.Methods.*;
 import static com.trestechnologies.api.TresContext.DEVELOP_URL;
+import static java.lang.System.err;
+import static java.lang.System.out;
 
 /**
  * Command line interface for Tres API.  This class is used to test the API and
@@ -57,12 +59,12 @@ public class CommandLine {
     }
 
     if ( url == null || url.isEmpty() ) {
-      System.out.println("Environment variable not set: TRES_URL");
-      System.out.println("E.g.: TRES_URL=" + DEVELOP_URL);
+      out.println("Environment variable not set: TRES_URL");
+      out.println("E.g.: TRES_URL=" + DEVELOP_URL);
 
       System.exit(2);
     } else if ( ( username == null || password == null || domain == null ) && token == null ) {
-      System.out.println("One or more environment variables not set: TRES_USERNAME, TRES_PASSWORD, TRES_DOMAIN, TRES_TOKEN");
+      out.println("One or more environment variables not set: TRES_USERNAME, TRES_PASSWORD, TRES_DOMAIN, TRES_TOKEN");
 
       System.exit(2);
     }
@@ -91,7 +93,7 @@ public class CommandLine {
       try ( TresContext ctx = new TresContext(url, username, password, domain) ) {
         ctx.batch(c -> token = c.getToken());
       } catch ( Exception e ) {
-        System.err.println("ERROR: " + e.getMessage());
+        err.println("ERROR: " + e.getMessage());
         System.exit(-1);
       }
     } else {
@@ -102,12 +104,12 @@ public class CommandLine {
         assert newToken != null && !newToken.isEmpty() : "No token returned";
         
         if ( !newToken.equals(token) ) {
-          System.err.println("WARNING: Unexpected token change");
+          err.println("WARNING: Unexpected token change");
         }
         
         token = newToken;
       } catch ( Exception e ) {
-        System.err.println("ERROR: " + e.getMessage());
+        err.println("ERROR: " + e.getMessage());
         System.exit(-1);
       }
     }
@@ -119,16 +121,16 @@ public class CommandLine {
     if ( args.length == 0 ) {
       String command = cmd.bestCommand("./bin/tres.sh");
       
-      System.out.println("Usage: " + command + " <method>");
-      System.out.println("\nMethods:");
-      System.out.println("\t" + VERSION);
-      System.out.println("\t" + LOGIN);
-      System.out.println("\t" + LOGOUT);
-      System.out.println("\t" + REFRESH_IDENTITY_TOKEN);
-      System.out.println("\nAlso see: " + cmd.url + "/swagger");
-      System.out.println("          https://devportal.trestechnologies.com/api/");
-      System.out.println("\nExample POST:\n\necho '{\"topRows\": 5, \"includeCols\": [\"name\", \"primaryEmail\"]}' | " + command + " ProfileSearch");
-      System.out.println("echo '{\"topRows\": 5}' | " + command + " TagSearch");
+      out.println("Usage: " + command + " <method>");
+      out.println("\nMethods:");
+      out.println("\t" + VERSION);
+      out.println("\t" + LOGIN);
+      out.println("\t" + LOGOUT);
+      out.println("\t" + REFRESH_IDENTITY_TOKEN);
+      out.println("\nAlso see: " + cmd.url + "/swagger");
+      out.println("          https://devportal.trestechnologies.com/api/");
+      out.println("\nExample POST:\n\necho '{\"topRows\": 5, \"includeCols\": [\"name\", \"primaryEmail\"]}' | " + command + " ProfileSearch");
+      out.println("echo '{\"topRows\": 5}' | " + command + " TagSearch");
       
       System.exit(1);
     }
@@ -158,7 +160,7 @@ public class CommandLine {
           result = c.post(method, params);
         }
 
-        System.out.println(result.toPrettyString());
+        out.println(result.toPrettyString());
       });
     }
   }

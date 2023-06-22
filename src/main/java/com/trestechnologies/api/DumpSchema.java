@@ -3,14 +3,11 @@ package com.trestechnologies.api;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicReference;
 
 import static com.trestechnologies.api.Methods.*;
-import static com.trestechnologies.api.TresContext.DEVELOP_URL;
+import static java.lang.System.err;
+import static java.lang.System.out;
 
 /**
  * Dumps the Tres API schema for a method to stdout.
@@ -26,16 +23,16 @@ public class DumpSchema extends CommandLine {
     if ( args.length == 0 ) {
       String command = cmd.bestCommand("./bin/tres.sh");
       
-      System.out.println("Usage: " + command + " <method>");
-      System.out.println("\nMethods:");
-      System.out.println("\t" + VERSION);
-      System.out.println("\t" + LOGIN);
-      System.out.println("\t" + LOGOUT);
-      System.out.println("\t" + REFRESH_IDENTITY_TOKEN);
-      System.out.println("\nAlso see: " + cmd.url + "/swagger");
-      System.out.println("          https://devportal.trestechnologies.com/api/");
-      System.out.println("\nExample POST:\n\necho '{\"topRows\": 5, \"includeCols\": [\"name\", \"primaryEmail\"]}' | " + command + " ProfileSearch");
-      System.out.println("echo '{\"topRows\": 5}' | " + command + " TagSearch");
+      out.println("Usage: " + command + " <method>");
+      out.println("\nMethods:");
+      out.println("\t" + VERSION);
+      out.println("\t" + LOGIN);
+      out.println("\t" + LOGOUT);
+      out.println("\t" + REFRESH_IDENTITY_TOKEN);
+      out.println("\nAlso see: " + cmd.url + "/swagger");
+      out.println("          https://devportal.trestechnologies.com/api/");
+      out.println("\nExample POST:\n\necho '{\"topRows\": 5, \"includeCols\": [\"name\", \"primaryEmail\"]}' | " + command + " ProfileSearch");
+      out.println("echo '{\"topRows\": 5}' | " + command + " TagSearch");
       
       System.exit(1);
     }
@@ -71,13 +68,13 @@ public class DumpSchema extends CommandLine {
           sample = result.get(0);
         } else {
           sample = null;
-          System.err.println("No results returned");
+          err.println("No results returned");
 
           System.exit(1);
         }
         
         sample.fields().forEachRemaining(e -> {
-          System.out.println(e.getValue().getNodeType() + " " + e.getKey());
+          out.println(e.getValue().getNodeType() + " " + e.getKey());
         });
       });
     }

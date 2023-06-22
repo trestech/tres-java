@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static com.trestechnologies.api.model.StringSearchParam.Compare.NOT_BLANK;
+import static java.lang.System.out;
 
 /**
  * Dumps the Tres API schema for a method to stdout.
@@ -171,7 +172,7 @@ public class CBMSListPull extends CommandLine {
     if ( args.length == 0 ) {
       String command = cmd.bestCommand("./bin/cbms-list-pull.sh");
 
-      System.out.println("Usage: " + command + " <Marketing Partner ID>");
+      out.println("Usage: " + command + " <Marketing Partner ID>");
 
       System.exit(1);
     }
@@ -202,7 +203,7 @@ public class CBMSListPull extends CommandLine {
         builder.append("\t"); // shipid // #17
         builder.append("\t"); // nights // #18
 
-        System.out.println(new String(builder));
+        out.println(new String(builder));
       });
     }
   }
