@@ -6,7 +6,7 @@
 
   <groupId>trestech</groupId>
   <artifactId>tres-java</artifactId>
-  <version>0.1.11-SNAPSHOT</version>
+  <version>0.1.12-SNAPSHOT</version>
   <packaging>jar</packaging>
   
   <build>

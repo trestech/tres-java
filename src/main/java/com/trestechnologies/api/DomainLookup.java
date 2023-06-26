@@ -1,14 +1,18 @@
 package com.trestechnologies.api;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.trestechnologies.api.interfaces.APIContext;
 import com.trestechnologies.api.model.CustomerProduct;
+import com.trestechnologies.api.model.StringSearchParam;
 
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.lang.System.out;
 
@@ -71,7 +75,7 @@ public class DomainLookup extends CommandLine {
     productIncludeCols.add("serialNumber");
     productIncludeCols.add("status");
     productIncludeCols.add("cboAlias");
-
+    
     customerProfiles.forEach(customer -> customerProfileRecNos.add(customer.get("recNo")));
     
     if ( products != null && !products.isEmpty() ) {
@@ -84,11 +88,27 @@ public class DomainLookup extends CommandLine {
     
     customerProducts = ctx.post("CustomerProductSearch", productParams);
     
-    customerProducts.forEach(customerProduct -> customerProfiles.forEach(customer -> {
-      if ( customerProduct.get("customerProfile_recNo").asLong() == customer.get("recNo").asLong() ) {
-        ((ObjectNode) customerProduct).put("tramsId", customer.get("tramsId").asLong());
+    // Now we mutate the result because the API doesn't support these joins or
+    // certain filters.
+    
+    for ( Iterator<JsonNode> i = customerProducts.iterator(); i.hasNext(); ) {
+      JsonNode customerProduct = i.next();
+      JsonNode cboAlias = customerProduct.get("cboAlias");
+      
+      // Joins
+      
+      customerProfiles.forEach(customer -> {
+        if ( customerProduct.get("customerProfile_recNo").asLong() == customer.get("recNo").asLong() ) {
+          ((ObjectNode) customerProduct).put("tramsId", customer.get("tramsId").asLong());
+        }
+      });
+      
+      // Filters
+      
+      if ( cboAlias == null || cboAlias.asText().isEmpty() ) {
+        i.remove();
       }
-    }));
+    }
     
     return customerProducts;
   }
