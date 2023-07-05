@@ -20,6 +20,20 @@ import static java.lang.System.out;
  * Export product records for a given Trin ID to stdout.
  */
 public class DomainLookup extends CommandLine {
+  private static final String[] PROFILE_COLS = {
+    "recNo",
+    "tramsId",
+  };
+  
+  private static final String[] PRODUCT_COLS = {
+    "recNo",
+    "customerProfile_recNo",
+    "product_recNo",
+    "serialNumber",
+    "status",
+    "cboAlias",
+  };
+  
   protected DomainLookup () throws IOException {
     super();
   }
@@ -39,9 +53,11 @@ public class DomainLookup extends CommandLine {
     ArrayNode tramsIdValues = tramsId.putArray("value");
 
     params.put("startingRow", 0);
-    includeCols.add("recNo");
-    includeCols.add("tramsId");
-
+    
+    for ( String col : PROFILE_COLS ) {
+      includeCols.add(col);
+    }
+    
     if ( trinIds != null ) {
       trinIds.forEach(tramsIdValues::add);
     }
@@ -69,12 +85,10 @@ public class DomainLookup extends CommandLine {
     JsonNode customerProducts;
 
     productParams.put("startingRow", 0);
-    productIncludeCols.add("recNo");
-    productIncludeCols.add("customerProfile_recNo");
-    productIncludeCols.add("productName");
-    productIncludeCols.add("serialNumber");
-    productIncludeCols.add("status");
-    productIncludeCols.add("cboAlias");
+    
+    for ( String col : PRODUCT_COLS ) {
+      productIncludeCols.add(col);
+    }
     
     customerProfiles.forEach(customer -> customerProfileRecNos.add(customer.get("recNo")));
     
@@ -132,19 +146,26 @@ public class DomainLookup extends CommandLine {
       // out.println("Looking up domains for CustomerProfile: " + customerProfiles);
       // out.println(customerProducts.toPrettyString());
       
-      out.println("customerProduct_recNo\tcustomerProfile_recNo\tproductName\tserialNumber\tstatus\tcboAlias\ttramsId");
+      for ( String col : PRODUCT_COLS ) {
+        if ( col.equals("product_recNo") ) {
+          out.print("productName\t");
+        } else {
+          out.print(col + "\t");
+        }
+      }
+      
+      out.print("tramsId");
+      out.print("\n");
       
       if ( !customerProfiles.isEmpty() ) {
         List<CustomerProduct.Product> products = Collections.singletonList(CustomerProduct.Product.TRES_MBO); // TODO use TRES_MBO instead of TBO
         JsonNode customerProducts = cmd.queryCustomerProducts(ctx, customerProfiles, products);
 
         customerProducts.forEach(( JsonNode customerProduct ) -> {
-          out.print(extractKey(customerProduct, "recNo") + "\t");
-          out.print(extractKey(customerProduct, "customerProfile_recNo") + "\t");
-          out.print(extractKey(customerProduct, "productName") + "\t");
-          out.print(extractKey(customerProduct, "serialNumber") + "\t");
-          out.print(extractKey(customerProduct, "status") + "\t");
-          out.print(extractKey(customerProduct, "cboAlias") + "\t");
+          for ( String col : PRODUCT_COLS ) {
+            out.print(extractKey(customerProduct, col) + "\t");
+          }
+          
           out.println(extractKey(customerProduct, "tramsId"));
         });
       }
@@ -155,7 +176,13 @@ public class DomainLookup extends CommandLine {
     JsonNode value = node.get(key);
     
     if ( value == null || value.isNull() ) { return ""; }
-    
-    return value.asText();
+
+    if ( key.equals("product_recNo") ) {
+      return CustomerProduct.Product.values()[value.intValue()].name;
+    } else if ( key.equals("status") ) {
+      return CustomerProduct.Status.values()[value.intValue()].name;
+    } else {
+      return value.asText();
+    }
   }
 }

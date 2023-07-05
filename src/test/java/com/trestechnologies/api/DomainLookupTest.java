@@ -41,9 +41,9 @@ public class DomainLookupTest extends BaseTestCase {
       assert !customerProducts.isEmpty() : "customer products is empty";
       
       customerProducts.forEach(product -> {
-        String productName = product.get("productName").asText();
+        int productRecNo = product.get("product_recNo").intValue();
         
-        assert productName.equals("TBO") || productName.equals("CBO") : "product name is not TBO or CBO: " + productName;
+        assert productRecNo == CustomerProduct.Product.TBO.ordinal() || productRecNo == CustomerProduct.Product.CBO.ordinal() : "product is not TBO or CBO: " + productRecNo;
       });
     }
   }).group("domain_lookup_query_customer_products_only_tbo_cbo"); }

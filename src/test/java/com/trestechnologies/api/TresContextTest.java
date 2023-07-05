@@ -93,7 +93,7 @@ public class TresContextTest extends BaseTestCase {
 
     productParams.put("startingRow", 0);
     productIncludeCols.add("recNo");
-    productIncludeCols.add("productName");
+    productIncludeCols.add("product_recNo");
     productIncludeCols.add("cboAlias");
 
     result.forEach(( JsonNode customer ) -> {
