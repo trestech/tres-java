@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.trestechnologies.api.annotation.ExitOnError;
 import com.trestechnologies.api.interfaces.APIContext;
 import com.trestechnologies.api.model.*;
 import org.apache.http.conn.HttpHostConnectException;
@@ -12,6 +13,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
+@ExitOnError
 public class TresContextTest extends BaseTestCase {
   JsonNode node;
 
@@ -159,14 +161,25 @@ public class TresContextTest extends BaseTestCase {
     }
   }).group("tres_context_method_invalid"); }
 
+  @ExitOnError(exceptCodes = {101})
   public void testLoginInvalidUsernamePassword ( ) { ((WithMockWebServer) context -> {
     try {
-      context.login("BOGUS", "BOGUS", "0001");
+      context.login("BOGUS", "MCBOGUSFACE", "0001");
       fail("expect invalid login");
     } catch ( TresException e ) {
       assertEquals("Invalid Username/Password", e.getMessage());
     }
   }).group("tres_context_login_invalid_username_password"); }
+
+  @ExitOnError(exceptCodes = {101})
+  public void testAdminLoginInvalidUsernamePassword ( ) { ((WithMockWebServer) context -> {
+    try {
+      context.login("BOGUSADMIN", "MCBOGUSADMINFACE", ":");
+      fail("expect invalid login");
+    } catch ( TresException e ) {
+      assertEquals("Invalid Username/Password", e.getMessage());
+    }
+  }).group("tres_context_admin_login_invalid_username_password"); }
 
   public void testLoginInvalidAlias ( ) { ((WithMockWebServer) context -> {
     try {

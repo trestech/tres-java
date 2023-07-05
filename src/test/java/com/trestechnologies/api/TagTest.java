@@ -1,5 +1,6 @@
 package com.trestechnologies.api;
 
+import com.trestechnologies.api.annotation.ExitOnError;
 import com.trestechnologies.api.interfaces.Flaggable;
 import com.trestechnologies.api.model.Tag;
 import com.trestechnologies.api.model.TagSearchParam;
@@ -8,6 +9,7 @@ import com.trestechnologies.api.interfaces.AreaFlag;
 import java.util.Arrays;
 import java.util.List;
 
+@ExitOnError
 public class TagTest extends BaseTestCase {
   public void testFindTag ( ) { ((WithMockWebServer) context -> {
     TagSearchParam params = new TagSearchParam();

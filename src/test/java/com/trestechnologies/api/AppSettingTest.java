@@ -1,10 +1,12 @@
 package com.trestechnologies.api;
 
+import com.trestechnologies.api.annotation.ExitOnError;
 import com.trestechnologies.api.model.AppSetting;
 import com.trestechnologies.api.model.AppSettingSearchParam;
 
 import java.util.List;
 
+@ExitOnError
 public class AppSettingTest extends BaseTestCase {
   public void testQuery ( ) { ((WithMockWebServer) context -> {
     List<AppSetting> settings;

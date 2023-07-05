@@ -1,5 +1,6 @@
 package com.trestechnologies.api;
 
+import com.trestechnologies.api.annotation.ExitOnError;
 import com.trestechnologies.api.interfaces.AreaFlag;
 import com.trestechnologies.api.model.*;
 
@@ -10,6 +11,7 @@ import java.util.stream.Collectors;
 
 import static com.trestechnologies.api.model.StringSearchParam.Compare.*;
 
+@ExitOnError
 public class ProfileTest extends BaseTestCase {
   public void testListActiveClient ( ) { ((WithMockWebServer) context -> {
     ProfileSearchParam params = new ProfileSearchParam();

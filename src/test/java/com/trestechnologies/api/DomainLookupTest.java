@@ -1,12 +1,14 @@
 package com.trestechnologies.api;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.trestechnologies.api.annotation.ExitOnError;
 import com.trestechnologies.api.model.CustomerProduct;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+@ExitOnError
 public class DomainLookupTest extends BaseTestCase {
   public void testQueryCustomerProfiles ( ) { ((WithMockAdminWebServer) context -> {
     DomainLookup domainLookup = new DomainLookup(context);

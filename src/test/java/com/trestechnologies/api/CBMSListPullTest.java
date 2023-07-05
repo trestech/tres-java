@@ -1,7 +1,10 @@
 package com.trestechnologies.api;
 
+import com.trestechnologies.api.annotation.ExitOnError;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
+@ExitOnError
 public class CBMSListPullTest extends BaseTestCase {
   public void testPop ( ) { ((WithMockWebServer) context -> {
     CBMSListPull listPull = new CBMSListPull(context);

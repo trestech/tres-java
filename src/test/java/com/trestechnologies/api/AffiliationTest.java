@@ -1,7 +1,9 @@
 package com.trestechnologies.api;
 
+import com.trestechnologies.api.annotation.ExitOnError;
 import com.trestechnologies.api.model.Affiliation;
 
+@ExitOnError
 public class AffiliationTest extends BaseTestCase {
   public void testGetTres ( ) { ((WithMockWebServer) context -> {
     Affiliation affiliation = Affiliation.find(context, 1);

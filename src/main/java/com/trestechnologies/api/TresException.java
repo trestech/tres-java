@@ -1,5 +1,7 @@
 package com.trestechnologies.api;
 
+import com.trestechnologies.api.annotation.ExitOnError;
+
 public class TresException extends RuntimeException {
   private int code = -1;
   
@@ -26,17 +28,25 @@ public class TresException extends RuntimeException {
         return "Unknown root cause (code: " + code + ").";
     }
   }
-
+  
   public TresException ( int code ) {
     this(code, null);
-
+    
     this.code = code;
   }
   
   public TresException ( int code, String message ) {
     super(rootCause(code, message));
-  
+    
     this.code = code;
+    
+    ExitOnError.Evaluator.ifShouldExit(code, annotation -> {
+      System.err.println("=== Halted to avoid locking the user out of the system. ===");
+      System.err.println("Applicable annotation: " + annotation);
+      System.err.println("Applicable error message: " + message);
+      
+      System.exit(code);
+    });
   }
   
   public TresException ( String message ) {
