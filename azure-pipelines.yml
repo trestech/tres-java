@@ -13,7 +13,7 @@ pool:
 steps:
   - script: |
       echo Maven
-      mvn package
+      TRES_USERNAME=MAST TRES_DOMAIN=MST1 mvn package
     displayName: 'Maven'
   
   # https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/pipeline-artifacts

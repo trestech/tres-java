@@ -44,15 +44,15 @@ public abstract class BaseTestCase extends TestCase {
 
   protected static final String LIVE_URL = System.getenv("TRES_URL");
   
-  protected static final String USERNAME = System.getenv("TRES_USERNAME");
+  protected static String USERNAME = System.getenv("TRES_USERNAME");
   
   protected static String ADMIN_USERNAME = System.getenv("TRES_ADMIN_USERNAME");
   
-  protected static final String PASSWORD = System.getenv("TRES_PASSWORD");
+  protected static String PASSWORD = System.getenv("TRES_PASSWORD");
   
   protected static String ADMIN_PASSWORD = System.getenv("TRES_ADMIN_PASSWORD");
 
-  protected static final String DOMAIN = System.getenv("TRES_DOMAIN");
+  protected static String DOMAIN = System.getenv("TRES_DOMAIN");
   
   protected static final String ADMIN_DOMAIN = ":";
 
@@ -65,7 +65,7 @@ public abstract class BaseTestCase extends TestCase {
   // rm src/test/fixtures/*.yml
   //
   // Otherwise, set USE_TOKEN = false (and set USERNAME, PASSWORD, and DOMAIN)
-  protected static final String TOKEN = System.getenv("TRES_TOKEN");
+  protected static String TOKEN = System.getenv("TRES_TOKEN");
   protected static final boolean USE_TOKEN = System.getenv("TRES_USE_TOKEN") != null && System.getenv("TRES_USE_TOKEN").equals("true");
   
   // Set USE_ADMIN_TOKEN = false (and set ADMIN_USERNAME, ADMIN_PASSWORD, and ADMIN_DOMAIN)
@@ -73,6 +73,12 @@ public abstract class BaseTestCase extends TestCase {
   protected static final boolean USE_ADMIN_TOKEN = System.getenv("TRES_USE_ADMIN_TOKEN") != null && System.getenv("TRES_USE_ADMIN_TOKEN").equals("true");
   
   static {
+    // Mock tests still need these to be set.
+    if ( USERNAME == null ) { USERNAME = "MOCKNAME"; }
+    if ( PASSWORD == null ) { PASSWORD = "MOCKWORD"; }
+    if ( DOMAIN == null ) { DOMAIN = "MOCKMAIN"; }
+    if ( TOKEN == null ) { TOKEN = "MOCKEN"; }
+    
     // Fall-back these just in time.
     if ( ADMIN_USERNAME == null ) { ADMIN_USERNAME = USERNAME; }
     if ( ADMIN_PASSWORD == null ) { ADMIN_PASSWORD = PASSWORD; }
