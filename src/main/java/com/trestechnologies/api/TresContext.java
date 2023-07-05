@@ -33,6 +33,7 @@ import java.io.InputStreamReader;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.URL;
+import java.util.function.Consumer;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
@@ -265,9 +266,7 @@ public class TresContext extends APIContextAdapter {
       }
       
       if ( LOG.isLoggable(FINE) ) {
-        json = toJson(mapper.readTree(json));
-        
-        LOG.fine("post -> " + json);
+        prettyJson(mapper.readTree(json), prettyJson -> LOG.fine("post -> " + prettyJson));
       }
       
       request.setEntity(new StringEntity(json));
@@ -361,9 +360,7 @@ public class TresContext extends APIContextAdapter {
         String message = "No result code for request: " + request;
         
         if ( LOG.isLoggable(FINE) ) {
-          message += "\n" + toJson(node);
-
-          LOG.warning(message);
+          prettyJson(node, prettyJson -> LOG.warning(message + "\n" + prettyJson));
         }
       }
       
@@ -413,15 +410,15 @@ public class TresContext extends APIContextAdapter {
     return headers[0].getValue();
   }
 
-  private String toJson ( JsonNode node ) {
+  private void prettyJson ( JsonNode node, Consumer<String> action ) {
     Class<? extends JsonNode> c = node.getClass();
 
     try {
       Method m = c.getMethod("toPrettyString");
 
-      return m.invoke(node).toString();
+      action.accept(m.invoke(node).toString());
     } catch ( NoSuchMethodException | IllegalAccessException | InvocationTargetException e ) {
-      return node.toString();
+      action.accept(node.toString());
     }
   }
 }

@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.ObjIntConsumer;
 
 import static com.trestechnologies.api.model.StringSearchParam.Compare.NOT_BLANK;
 import static java.lang.System.out;
@@ -18,19 +19,27 @@ import static java.lang.System.out;
 public class CBMSListPull extends CommandLine {
   public static final String TAG_MARKETING_PROMO_ID = "Marketing PromoID";
   public static final String TAG_MARKETING_EXCLUSIONS = "Marketing Exclusions";
-  public static final String PRIORITY_0 = "0";
-  public static final String PRIORITY_1 = "1";
+  public static final int PRIORITY_0 = 0;
+  public static final int PRIORITY_1 = 1;
   
   private String includeTagName = TAG_MARKETING_PROMO_ID;
   
   private String excludeTagName = TAG_MARKETING_EXCLUSIONS;
-
+  
+  private String marketingPartnerId;
+  
   protected CBMSListPull () throws IOException {
     super();
   }
-  
+
   public CBMSListPull ( APIContext context ) {
+    this(context, null);
+  }
+  
+  public CBMSListPull ( APIContext context, String marketingPartnerId ) {
     super(context);
+    
+    this.marketingPartnerId = marketingPartnerId;
   }
   
   protected List<Profile> queryProfiles ( APIContext ctx ) throws IOException {
@@ -86,18 +95,17 @@ public class CBMSListPull extends CommandLine {
     return list;
   }
   
-  @FunctionalInterface
-  public interface Popper {
-    void pop ( Profile profile, String priority );
+  public void forEach ( ObjIntConsumer<Profile> action ) throws IOException {
+    forEach(context, marketingPartnerId, action);
   }
   
-  public void pop ( String marketingPartnerId, Popper popper ) throws IOException {
-    pop(context, marketingPartnerId, popper);
+  public void forEach ( String marketingPartnerId, ObjIntConsumer<Profile> action ) throws IOException {
+    forEach(context, marketingPartnerId, action);
   }
   
-  public void pop ( APIContext context, String marketingPartnerId, Popper popper ) throws IOException {
+  public void forEach ( APIContext context, String marketingPartnerId, ObjIntConsumer<Profile> action ) throws IOException {
     TagSearchParam tagSearchParams = new TagSearchParam();
-    String priority;
+    int priority;
     List<Long> excludedProfileRecNos = new ArrayList<>();
     List<Profile> profiles;
     List<Long> marketingPartnerIdRecNos = new ArrayList<>();
@@ -146,7 +154,7 @@ public class CBMSListPull extends CommandLine {
     }
 
     profiles.stream().filter(profile -> !excludedProfileRecNos.contains(profile.getRecNo())).forEach(profile -> {
-      popper.pop(profile, priority);
+      action.accept(profile, priority);
     });
   }
 
@@ -180,7 +188,7 @@ public class CBMSListPull extends CommandLine {
     cmd.refreshToken();
     
     try ( TresContext ctx = new TresContext(cmd.url, cmd.token) ) {
-      cmd.pop(ctx, args[0], (profile, priority) -> {
+      cmd.forEach(ctx, args[0], (profile, priority) -> {
         StringBuilder builder = new StringBuilder();
         
         builder.append(priority).append("\t"); // priority // #0
