@@ -1,0 +1,16 @@
+diagnostic: domain_lookup_query_customer_products
+url: https://api-dev.trestechnologies.com/CustomerProductSearch
+method: POST
+paramsHash: 726a72e
+requestBody: "{\"includeCols\":[\"recNo\",\"customerProfile_recNo\",\"product_recNo\"\
+  ,\"serialNumber\",\"status\",\"cboAlias\"],\"CustomerProfile_recNo\":{\"value\"\
+  :[5058]},\"status\":{\"value\":[1]},\"startingRow\":0}"
+body: "[{\"recNo\":9981,\"customerProfile_recNo\":5058,\"product_recNo\":1,\"serialNumber\"\
+  :7153076,\"status\":1,\"cboAlias\":\"MST1\"},{\"recNo\":9982,\"customerProfile_recNo\"\
+  :5058,\"product_recNo\":9,\"status\":1,\"cboAlias\":\"MST1\"}]"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA3LTA1VDIxOjI2OjIzKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMxLA0KICAidXNlck5hbWUiOiAiQ01TVVNFUiIsDQogICJhbGlhcyI6ICIiLA0KICAidG9rZW5SZWNObyI6IDM1MDI3NCwNCiAgImFwcE5hbWUiOiAiV2ViIEFQSSIsDQogICJjbGllbnRJUEFkZHJlc3MiOiAiNDcuMjA4LjIzMS4yMTciLA0KICAiYXV0aGVudGljYXRpb25NZXRob2QiOiAxDQp9.Wc7RfIUF0gb3RQ4A4nS7jiFfppgK2vmykE-m8ntoWTE
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

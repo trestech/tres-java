@@ -1,0 +1,13 @@
+diagnostic: profile_list_active_client
+url: 'https://api-dev-staging.trestechnologies.com/Login/:'
+method: GET
+paramsHash: null
+requestBody: ""
+body: "{\"identityToken\":\"ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA3LTA1VDIxOjI3OjQ4KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMxLA0KICAidXNlck5hbWUiOiAiQ01TVVNFUiIsDQogICJhbGlhcyI6ICIiLA0KICAidG9rZW5SZWNObyI6IDM1MDI3OSwNCiAgImFwcE5hbWUiOiAiV2ViIEFQSSIsDQogICJjbGllbnRJUEFkZHJlc3MiOiAiNDcuMjA4LjIzMS4yMTciLA0KICAiYXV0aGVudGljYXRpb25NZXRob2QiOiAxDQp9.yDB_4Im01lQmrGehbKeiSVqQoipVsdvxTV5-nuarxtA\"\
+  ,\"resultCode\":0,\"resultDescription\":\"Login Successful\"}"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Basic Q01TVVNFUjpUcmVzJDA2MzA=
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json; charset=utf-8

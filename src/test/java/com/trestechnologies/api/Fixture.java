@@ -46,6 +46,11 @@ public class Fixture {
     String diagnostic = extractDiagnostic(request);
     String requestBody = request.getBody().readUtf8();
     String paramsHash = extractParamsHash(requestBody);
+
+    return findOrInitializeFixture(method, requestPath, diagnostic, requestBody, paramsHash);
+  }
+
+  private static Fixture findOrInitializeFixture ( String method, String requestPath, String diagnostic, String requestBody, String paramsHash ) throws IOException {
     Fixture fixture;
     String filePath = filePath(method, requestPath, diagnostic, paramsHash);
     File file = new File(filePath);
@@ -60,9 +65,9 @@ public class Fixture {
       fixture.setRequestBody(requestBody);
       fixture.setParamsHash(paramsHash);
     }
-    
-    fixture.setRequestPath(requestPath);
 
+    fixture.setRequestPath(requestPath);
+    
     return fixture;
   }
 
@@ -101,15 +106,15 @@ public class Fixture {
   /**
    * Deletes the fixture file for the given method and request path.  Use with
    * caution, as this might make tests tricky to repeat.
-   * 
-   * @param fileName
    */
-  public static void clobber ( String fileName ) {
+  public static boolean clobber ( String fileName ) {
     File file = new File(FIXTURES_PATH + File.separator + fileName + ".yml");
 
     if ( file.isFile() && file.exists() ) {
-      file.delete();
+      return file.delete();
     }
+    
+    return false;
   }
 
   private static String filePath ( String method, String requestPath, String diagnostic, String paramsHash ) {

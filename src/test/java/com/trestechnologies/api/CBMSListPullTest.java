@@ -7,14 +7,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 @ExitOnError
 public class CBMSListPullTest extends BaseTestCase {
   public void testPop ( ) { ((WithMockWebServer) context -> {
-    CBMSListPull listPull = new CBMSListPull(context);
+    CBMSListPull listPull = new CBMSListPull(context, "EML01");
     AtomicBoolean ran = new AtomicBoolean(false);
 
-    listPull.pop("EML01", (profile, priority) -> {
+    listPull.forEach((profile, priority) -> {
       assert profile != null : "profile is null";
-      assert priority != null : "priority is null";
       
-      assertEquals("expect priority to be 0", priority, "0");
+      assertEquals("expect priority to be 0", priority, 0);
       
       assert profile.getStateProvince() != null : "state province is null";
       assert !profile.getStateProvince().isEmpty() : "state province is empty for: " + profile.getPrimaryEmail();

@@ -130,7 +130,7 @@ public class TresContextTest extends BaseTestCase {
   }).group("tres_context_url_invalid"); }
 
   public void testApiVersion ( ) { ((WithMockWebServer) context -> {
-    assertSemanticVersion("1.0.17.8", context.getApiVersion());
+    assertSemanticVersion("1.0.18.13", context.getApiVersion());
   }).group("tres_context_api_version"); }
 
   private void assertSemanticVersion ( @SuppressWarnings("SameParameterValue") String expectedVersion, String actualVersion ) {
@@ -260,7 +260,7 @@ public class TresContextTest extends BaseTestCase {
 
     node = context.post("ActivitySearch", params);
 
-    assert(isNodeEmpty(node));
+    assert !isNodeEmpty(node) : "expect non-empty node";
   }).group("tres_context_query_pending_activities_app_user_blank"); }
 
   public void testQueryAccountingEntries ( ) { ((WithMockWebServer) context -> {

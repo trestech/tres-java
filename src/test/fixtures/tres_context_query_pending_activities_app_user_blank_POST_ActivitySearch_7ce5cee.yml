@@ -4,10 +4,12 @@ method: POST
 paramsHash: 7ce5cee
 requestBody: "{\"startingRow\":0,\"appUserRecNo\":{\"compareCondition\":3},\"completed\"\
   :false}"
-body: null
-status: HTTP/1.1 204 No Content
+body: "[{\"recNo\":15999519,\"createDateTime\":\"2023-06-29T18:30:30-07:00\",\"lastModifiedDateTime\"\
+  :\"2023-06-29T18:30:30-07:00\",\"type\":4,\"priority\":1,\"targetDateTime\":\"2023-06-29T18:30:30-07:00\"\
+  ,\"clientProfileRecNo\":12226005,\"clientProfileName\":\"Rosen/Lee\"}]"
+status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTIyVDE3OjM4OjUyKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ3NTA2LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.LoUb3J83TMpMikUFiicGTza2NDzi-y41UoEVZul-V-0
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA3LTA1VDIxOjI2OjE3KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzUwMjcwLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.Y1UiVNvaU-838epA9t9sz_fwDp5f8ZTlN0BrbZHuhfg
   Content-Type: application/json
 responseHeaders:
-  Content-Type: text/plain; charset=utf-8
+  Content-Type: application/json

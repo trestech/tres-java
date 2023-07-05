@@ -57,7 +57,6 @@ body: "[{\"recNo\":11275394,\"createDate\":\"2022-12-19T12:28:26.133\",\"descrip
   ,\"description\":\"client payment\"},{\"recNo\":11275445,\"createDate\":\"2022-12-19T12:28:32.2\"\
   ,\"description\":\"client payment\"},{\"recNo\":11275446,\"createDate\":\"2022-12-19T12:28:32.313\"\
   ,\"description\":\"client payment\"},{\"recNo\":11275447,\"createDate\":\"2022-12-19T12:28:32.33\"\
-  ,\"description\":\"client payment\"},{\"recNo\":11275448,\"createDate\":\"2022-12-19T12:28:32.343\"\
   ,\"description\":\"client payment\"},{\"recNo\":11275449,\"createDate\":\"2022-12-19T12:28:32.487\"\
   ,\"description\":\"client payment\"},{\"recNo\":11275450,\"createDate\":\"2022-12-19T12:28:32.51\"\
   ,\"description\":\"client payment\"},{\"recNo\":11275451,\"createDate\":\"2022-12-19T12:28:32.65\"\
@@ -551,8 +550,7 @@ body: "[{\"recNo\":11275394,\"createDate\":\"2022-12-19T12:28:26.133\",\"descrip
   ,\"description\":\"client payment\"},{\"recNo\":11275939,\"createDate\":\"2022-12-19T12:29:09.923\"\
   ,\"description\":\"client payment\"},{\"recNo\":11275940,\"createDate\":\"2022-12-19T12:29:10.12\"\
   ,\"description\":\"client payment\"},{\"recNo\":11275941,\"createDate\":\"2022-12-19T12:29:10.453\"\
-  ,\"description\":\"client payment\"},{\"recNo\":11275942,\"createDate\":\"2022-12-19T12:29:11.567\"\
-  ,\"description\":\"supplier payment\"},{\"recNo\":11275943,\"createDate\":\"2022-12-19T12:29:11.59\"\
+  ,\"description\":\"client payment\"},{\"recNo\":11275943,\"createDate\":\"2022-12-19T12:29:11.59\"\
   ,\"description\":\"supplier payment\"},{\"recNo\":11275944,\"createDate\":\"2022-12-19T12:29:11.67\"\
   ,\"description\":\"supplier payment\"},{\"recNo\":11275945,\"createDate\":\"2022-12-19T12:29:11.72\"\
   ,\"description\":\"supplier payment\"},{\"recNo\":11275946,\"createDate\":\"2022-12-19T12:29:11.743\"\
@@ -1274,7 +1272,7 @@ body: "[{\"recNo\":11275394,\"createDate\":\"2022-12-19T12:28:26.133\",\"descrip
   2022-12-19T12:29:57.053\"}]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTIyVDE3OjM4OjQzKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ3NDk1LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.-8-8X-XI4PmHeOvNKwmn-rT_5PzHOeceONQz4FDyCtQ
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA3LTA1VDIxOjI2OjA5KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzUwMjU5LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.MNPLLBuGzV1KmRe5zrPsHfFTCZOwG-NadvOspN2DsA8
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

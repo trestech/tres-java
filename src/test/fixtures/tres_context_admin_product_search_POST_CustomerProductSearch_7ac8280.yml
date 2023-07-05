@@ -1,0 +1,20 @@
+diagnostic: tres_context_admin_product_search
+url: https://api-dev.trestechnologies.com/CustomerProductSearch
+method: POST
+paramsHash: 7ac8280
+requestBody: "{\"includeCols\":[\"recNo\",\"product_recNo\",\"cboAlias\"],\"CustomerProfile_recNo\"\
+  :{\"value\":[5027,1937,2927,3385,5058]},\"startingRow\":0}"
+body: "[{\"recNo\":2320,\"product_recNo\":2},{\"recNo\":4777,\"product_recNo\":1},{\"\
+  recNo\":7231,\"product_recNo\":7},{\"recNo\":410,\"product_recNo\":6},{\"recNo\"\
+  :975,\"product_recNo\":3,\"cboAlias\":\"A18F\"},{\"recNo\":2562,\"product_recNo\"\
+  :2},{\"recNo\":5080,\"product_recNo\":1},{\"recNo\":8101,\"product_recNo\":7},{\"\
+  recNo\":2380,\"product_recNo\":2},{\"recNo\":8474,\"product_recNo\":7},{\"recNo\"\
+  :3613,\"product_recNo\":2},{\"recNo\":6250,\"product_recNo\":1},{\"recNo\":6342,\"\
+  product_recNo\":7},{\"recNo\":9981,\"product_recNo\":1,\"cboAlias\":\"MST1\"},{\"\
+  recNo\":9982,\"product_recNo\":9,\"cboAlias\":\"MST1\"}]"
+status: HTTP/1.1 200 OK
+requestHeaders:
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA3LTA1VDIxOjI2OjEwKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZG1pblVzZXJSZWNObyI6IDMxLA0KICAidXNlck5hbWUiOiAiQ01TVVNFUiIsDQogICJhbGlhcyI6ICIiLA0KICAidG9rZW5SZWNObyI6IDM1MDI2MCwNCiAgImFwcE5hbWUiOiAiV2ViIEFQSSIsDQogICJjbGllbnRJUEFkZHJlc3MiOiAiNDcuMjA4LjIzMS4yMTciLA0KICAiYXV0aGVudGljYXRpb25NZXRob2QiOiAxDQp9.75oD3V-5oiy1-_gEVysblVY7zNFzqwy56Sl5aeTzcZY
+  Content-Type: application/json
+responseHeaders:
+  Content-Type: application/json

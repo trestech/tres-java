@@ -3,7 +3,7 @@ url: https://api-dev.trestechnologies.com/Version
 method: GET
 paramsHash: null
 requestBody: ""
-body: "{\"version\":\"1.0.17.8\",\"resultCode\":0,\"resultDescription\":\"\"}"
+body: "{\"version\":\"1.0.18.13\",\"resultCode\":0,\"resultDescription\":\"\"}"
 status: HTTP/1.1 200 OK
 requestHeaders:
   Content-Type: application/json

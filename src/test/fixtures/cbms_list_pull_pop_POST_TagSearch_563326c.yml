@@ -5,11 +5,12 @@ paramsHash: 563326c
 requestBody: "{\"startingRow\":0,\"rowCount\":1,\"topRows\":1,\"includeCols\":[\"\
   recNo\",\"valueList\"],\"name\":{\"value\":[\"Marketing PromoID\"],\"compareCondition\"\
   :1},\"areaFlags\":3}"
-body: "[{\"recNo\":25959,\"valueList\":\"EML01:Cruise01\\nP1234: Tour02\\nXMKTG\"\
+body: "[{\"recNo\":25959,\"valueList\":\"EML01:Cruise01\\nP1234: Tour02\\nXMKTG: MrktngXclsns\\\
+  nNOEPM: NoEmailMrktng\\nNACTV: Inactive\\nCORPC: CorpClient\\nNOSTT: No State\"\
   }]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTIyVDE3OjM4OjU2KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ3NTA5LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.Z6AImp-cAn7GqWqB6L5DNCbVv3XYO-RGpGE28gf-h1w
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA3LTA1VDIxOjI2OjIxKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzUwMjczLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.6m1yyr-a4UG2TO_nKePpipOYLB9rpMnZp9kEwrsuGp0
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

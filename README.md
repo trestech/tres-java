@@ -130,3 +130,11 @@ mvn test
 rm src/test/fixtures/*.yml
 mvn test
 ```
+
+**Tests in IntelliJ IDEA:**
+
+The following configuration line can be used in Environment Variables:
+
+```bash
+TRES_ADMIN_PASSWORD=<PASSWORD>;TRES_ADMIN_USERNAME=<ADMIN_USERNAME>;TRES_USERNAME=<USERNAME>;TRES_DOMAIN=<DOMAIN>;TRES_PASSWORD=<PASSWORD>;TRES_URL=https://api-dev.trestechnologies.com;
+```

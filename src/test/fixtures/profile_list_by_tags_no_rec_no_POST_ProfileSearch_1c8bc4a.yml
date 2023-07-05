@@ -43,9 +43,7 @@ body: "[{\"recNo\":6517933,\"primaryPersonFirstName\":\"Antonie\",\"primaryPerso
   :true,\"stateProvince\":\"TX\"},{\"recNo\":6518071,\"primaryEmail\":\"hyattva@hotel.com\"\
   ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"VA\"},{\"recNo\":6518087,\"\
   primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"stateProvince\"\
-  :\"FL\"},{\"recNo\":6518116,\"primaryPersonFirstName\":\"John\",\"primaryEmail\"\
-  :\"john@e-mail.com\",\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"IL\"\
-  },{\"recNo\":6518117,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
+  :\"FL\"},{\"recNo\":6518117,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
   :true,\"stateProvince\":\"FL\"},{\"recNo\":6518118,\"primaryPersonFirstName\":\"\
   Joanie\",\"primaryPersonLastName\":\"Brown\",\"primaryEmail\":\"joanie@carnival.com\"\
   ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"FL\"},{\"recNo\":6518170,\"\
@@ -128,46 +126,46 @@ body: "[{\"recNo\":6517933,\"primaryPersonFirstName\":\"Antonie\",\"primaryPerso
   stateProvince\":\"CA\",\"clientInformalSalutation\":\"Gary & Diane\"},{\"recNo\"\
   :6518352,\"primaryPersonFirstName\":\"Hanna\",\"primaryPersonLastName\":\"Matthews\"\
   ,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"stateProvince\":\"\",\"country\":\"\"},{\"recNo\":6518362,\"primaryPersonFirstName\"\
-  :\"Victor\",\"primaryPersonLastName\":\"Craven\",\"primaryEmail\":\"vcraven@aol.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"clientInformalSalutation\"\
-  :\"Vic\"},{\"recNo\":6518370,\"primaryPersonFirstName\":\"Steven\",\"primaryPersonLastName\"\
-  :\"Cady\",\"clientAdvisorProfileRecNo\":6517944,\"primaryEmail\":\"1@tramsQA.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"},{\"recNo\":6518372,\"\
-  primaryPersonFirstName\":\"Steve\",\"primaryPersonLastName\":\"Acorn\",\"primaryEmail\"\
-  :\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"IL\"\
-  },{\"recNo\":6518375,\"primaryPersonFirstName\":\"Sue\",\"primaryPersonLastName\"\
-  :\"Kazamek\",\"clientAdvisorProfileRecNo\":6517937,\"primaryEmail\":\"Tomk2@aol.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"clientInformalSalutation\"\
-  :\"Tom & Sue\"},{\"recNo\":6518385,\"primaryPersonFirstName\":\"Vicki\",\"primaryPersonLastName\"\
-  :\"Allison\",\"clientAdvisorProfileRecNo\":6517937,\"primaryEmail\":\"1@tramsQA.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"clientInformalSalutation\"\
-  :\"Vicki\"},{\"recNo\":6518390,\"primaryPersonFirstName\":\"Jami\",\"primaryPersonLastName\"\
-  :\"Brown\",\"primaryEmail\":\"ttt@aol.com\",\"primaryEmailPermitMarketing\":true,\"\
-  stateProvince\":\"CA\"},{\"recNo\":6518398,\"primaryPersonFirstName\":\"Jan\",\"\
-  primaryPersonLastName\":\"Harmon\",\"clientAdvisorProfileRecNo\":6517937,\"primaryEmail\"\
-  :\"janHaromon@earthlink.net\",\"primaryEmailPermitMarketing\":true,\"stateProvince\"\
-  :\"ME\"},{\"recNo\":6518406,\"primaryPersonFirstName\":\"Brant\",\"primaryPersonLastName\"\
-  :\"Decht\",\"clientAdvisorProfileRecNo\":6517937,\"primaryEmail\":\"1@tramsQA.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"clientInformalSalutation\"\
-  :\"Brant and Cintia\"},{\"recNo\":6518412,\"primaryPersonFirstName\":\"Janice\"\
-  ,\"primaryPersonLastName\":\"Cantillon\",\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"stateProvince\":\"CA\",\"clientInformalSalutation\":\"John and Janice\"\
-  },{\"recNo\":6518427,\"primaryPersonFirstName\":\"Edward\",\"primaryPersonLastName\"\
-  :\"Anderson\",\"clientAdvisorProfileRecNo\":6517940,\"primaryEmail\":\"1@tramsQA.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"FL\",\"clientInformalSalutation\"\
-  :\"Liz and Ed\"},{\"recNo\":6518436,\"primaryPersonFirstName\":\"Dwight\",\"primaryPersonLastName\"\
-  :\"Lewis\",\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"\
-  stateProvince\":\"CA\"},{\"recNo\":6518447,\"primaryPersonFirstName\":\"Shari\"\
-  ,\"primaryPersonLastName\":\"Mey\",\"clientAdvisorProfileRecNo\":6517937,\"primaryEmail\"\
+  :true},{\"recNo\":6518362,\"primaryPersonFirstName\":\"Victor\",\"primaryPersonLastName\"\
+  :\"Craven\",\"primaryEmail\":\"vcraven@aol.com\",\"primaryEmailPermitMarketing\"\
+  :true,\"stateProvince\":\"CA\",\"clientInformalSalutation\":\"Vic\"},{\"recNo\"\
+  :6518370,\"primaryPersonFirstName\":\"Steven\",\"primaryPersonLastName\":\"Cady\"\
+  ,\"clientAdvisorProfileRecNo\":6517944,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
+  :true,\"stateProvince\":\"CA\"},{\"recNo\":6518372,\"primaryPersonFirstName\":\"\
+  Steve\",\"primaryPersonLastName\":\"Acorn\",\"primaryEmail\":\"1@tramsQA.com\",\"\
+  primaryEmailPermitMarketing\":true,\"stateProvince\":\"IL\"},{\"recNo\":6518375,\"\
+  primaryPersonFirstName\":\"Sue\",\"primaryPersonLastName\":\"Kazamek\",\"clientAdvisorProfileRecNo\"\
+  :6517937,\"primaryEmail\":\"Tomk2@aol.com\",\"primaryEmailPermitMarketing\":true,\"\
+  stateProvince\":\"CA\",\"clientInformalSalutation\":\"Tom & Sue\"},{\"recNo\":6518385,\"\
+  primaryPersonFirstName\":\"Vicki\",\"primaryPersonLastName\":\"Allison\",\"clientAdvisorProfileRecNo\"\
+  :6517937,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"\
+  stateProvince\":\"CA\",\"clientInformalSalutation\":\"Vicki\"},{\"recNo\":6518390,\"\
+  primaryPersonFirstName\":\"Jami\",\"primaryPersonLastName\":\"Brown\",\"primaryEmail\"\
+  :\"ttt@aol.com\",\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"},{\"\
+  recNo\":6518398,\"primaryPersonFirstName\":\"Jan\",\"primaryPersonLastName\":\"\
+  Harmon\",\"clientAdvisorProfileRecNo\":6517937,\"primaryEmail\":\"janHaromon@earthlink.net\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"ME\"},{\"recNo\":6518406,\"\
+  primaryPersonFirstName\":\"Brant\",\"primaryPersonLastName\":\"Decht\",\"clientAdvisorProfileRecNo\"\
+  :6517937,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"\
+  stateProvince\":\"CA\",\"clientInformalSalutation\":\"Brant and Cintia\"},{\"recNo\"\
+  :6518412,\"primaryPersonFirstName\":\"Janice\",\"primaryPersonLastName\":\"Cantillon\"\
+  ,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"stateProvince\"\
+  :\"CA\",\"clientInformalSalutation\":\"John and Janice\"},{\"recNo\":6518427,\"\
+  primaryPersonFirstName\":\"Edward\",\"primaryPersonLastName\":\"Anderson\",\"clientAdvisorProfileRecNo\"\
+  :6517940,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"\
+  stateProvince\":\"FL\",\"clientInformalSalutation\":\"Liz and Ed\"},{\"recNo\":6518436,\"\
+  primaryPersonFirstName\":\"Dwight\",\"primaryPersonLastName\":\"Lewis\",\"primaryEmail\"\
   :\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"\
-  },{\"recNo\":6518457,\"primaryPersonFirstName\":\"John\",\"primaryPersonLastName\"\
-  :\"Jackson\",\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"stateProvince\":\"CA\",\"clientInformalSalutation\":\"Simmons\"},{\"recNo\"\
-  :6518460,\"primaryPersonFirstName\":\"La Tina\",\"primaryPersonLastName\":\"Simmel\"\
-  ,\"clientAdvisorProfileRecNo\":6517937,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"stateProvince\":\"CA\",\"country\":\"US\",\"clientInformalSalutation\":\"\
-  Simmel\"},{\"recNo\":6518464,\"primaryPersonFirstName\":\"Cynthia\",\"primaryPersonLastName\"\
+  },{\"recNo\":6518447,\"primaryPersonFirstName\":\"Shari\",\"primaryPersonLastName\"\
+  :\"Mey\",\"clientAdvisorProfileRecNo\":6517937,\"primaryEmail\":\"1@tramsQA.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"},{\"recNo\":6518457,\"\
+  primaryPersonFirstName\":\"John\",\"primaryPersonLastName\":\"Jackson\",\"primaryEmail\"\
+  :\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"\
+  ,\"clientInformalSalutation\":\"Simmons\"},{\"recNo\":6518460,\"primaryPersonFirstName\"\
+  :\"La Tina\",\"primaryPersonLastName\":\"Simmel\",\"clientAdvisorProfileRecNo\"\
+  :6517937,\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\":true,\"\
+  stateProvince\":\"CA\",\"country\":\"US\",\"clientInformalSalutation\":\"Simmel\"\
+  },{\"recNo\":6518464,\"primaryPersonFirstName\":\"Cynthia\",\"primaryPersonLastName\"\
   :\"Jones\",\"primaryEmail\":\"bebe@mail.com\",\"primaryEmailPermitMarketing\":true,\"\
   stateProvince\":\"CA\"},{\"recNo\":6518470,\"primaryPersonFirstName\":\"Jessica\"\
   ,\"primaryPersonLastName\":\"Jones\",\"primaryEmail\":\"1@tramsQA.com\",\"primaryEmailPermitMarketing\"\
@@ -244,18 +242,15 @@ body: "[{\"recNo\":6517933,\"primaryPersonFirstName\":\"Antonie\",\"primaryPerso
   ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
   ,\"clientInformalSalutation\":\"Ko\"},{\"recNo\":6518569,\"primaryPersonFirstName\"\
   :\"Helen\",\"primaryPersonLastName\":\"Duncan\",\"primaryEmail\":\"avdbaan03@gmail.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"},{\"recNo\":6518570,\"\
-  primaryPersonFirstName\":\"David\",\"primaryPersonLastName\":\"Jones\",\"clientAdvisorProfileRecNo\"\
-  :6517957,\"primaryEmail\":\"avdbaan02@gmail.com\",\"primaryEmailPermitMarketing\"\
-  :true,\"stateProvince\":\"CA\",\"country\":\"US\",\"clientInformalSalutation\":\"\
-  Mr. Jones\"},{\"recNo\":6518576,\"primaryPersonFirstName\":\"Gene\",\"primaryPersonLastName\"\
-  :\"Roebuck\",\"clientAdvisorProfileRecNo\":6517932,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
-  },{\"recNo\":6518578,\"primaryPersonFirstName\":\"Steve\",\"primaryPersonLastName\"\
-  :\"Amaral\",\"clientAdvisorProfileRecNo\":6517937,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
-  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"clientInformalSalutation\"\
-  :\"Steve & Gini\"},{\"recNo\":6518579,\"primaryPersonFirstName\":\"Issac\",\"primaryPersonLastName\"\
-  :\"Jeffery\",\"clientAdvisorProfileRecNo\":6517949,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"},{\"recNo\":6518576,\"\
+  primaryPersonFirstName\":\"Gene\",\"primaryPersonLastName\":\"Roebuck\",\"clientAdvisorProfileRecNo\"\
+  :6517932,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\",\"primaryEmailPermitMarketing\"\
+  :true,\"stateProvince\":\"CA\",\"country\":\"US\"},{\"recNo\":6518578,\"primaryPersonFirstName\"\
+  :\"Steve\",\"primaryPersonLastName\":\"Amaral\",\"clientAdvisorProfileRecNo\":6517937,\"\
+  primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\",\"primaryEmailPermitMarketing\"\
+  :true,\"stateProvince\":\"CA\",\"clientInformalSalutation\":\"Steve & Gini\"},{\"\
+  recNo\":6518579,\"primaryPersonFirstName\":\"Issac\",\"primaryPersonLastName\":\"\
+  Jeffery\",\"clientAdvisorProfileRecNo\":6517949,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
   ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
   },{\"recNo\":6518585,\"primaryPersonFirstName\":\"Also\",\"primaryPersonLastName\"\
   :\"Bored\",\"clientAdvisorProfileRecNo\":6517959,\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
@@ -266,10 +261,17 @@ body: "[{\"recNo\":6517933,\"primaryPersonFirstName\":\"Antonie\",\"primaryPerso
   },{\"recNo\":12225898,\"primaryEmail\":\"quintin.iannone@example.com\",\"primaryEmailPermitMarketing\"\
   :true},{\"recNo\":12225901,\"primaryPersonFirstName\":\"Lon\",\"primaryPersonLastName\"\
   :\"Delafontaine\",\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\",\"\
-  primaryEmailPermitMarketing\":true}]"
+  primaryEmailPermitMarketing\":true},{\"recNo\":12225994,\"primaryPersonFirstName\"\
+  :\"Teodoro\",\"primaryPersonLastName\":\"Roseum\",\"primaryEmail\":\"antonie.vanderbaan@trestechnologies.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\"},{\"recNo\":12225995,\"\
+  primaryEmail\":\"avdbaan@yahoo.com\",\"primaryEmailPermitMarketing\":true,\"stateProvince\"\
+  :\"CA\",\"country\":\"US\"},{\"recNo\":12226005,\"primaryPersonFirstName\":\"Linda\"\
+  ,\"primaryPersonLastName\":\"Rosen\",\"primaryEmail\":\"info@trestechnologies.com\"\
+  ,\"primaryEmailPermitMarketing\":true,\"stateProvince\":\"CA\",\"country\":\"US\"\
+  }]"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTIyVDE3OjM4OjMzKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ3NDg1LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.d7jO1wK9POa_MTahOpDPNxw3IVKsicfJ2TUUaYFMnUs
+  Authorization: Bearer ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA3LTA1VDIxOjI2OjAxKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzUwMjQ5LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.TMCbMbJfvc38TO4V8qS0NNgJZgHN_gSGaT0nq2jPieo
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json

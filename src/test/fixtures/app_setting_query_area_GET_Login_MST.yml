@@ -3,11 +3,11 @@ url: https://api-dev.trestechnologies.com/Login/MST1
 method: GET
 paramsHash: null
 requestBody: ""
-body: "{\"identityToken\":\"ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA2LTIyVDE3OjM4OjM1KzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzQ3NDg3LA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.sKqep1waOVksCoa6n-vqxrw1CPlBb1l1HxWv_mGPqxQ\"\
+body: "{\"identityToken\":\"ew0KICAiYWxnIjogIkhTMjU2IiwNCiAgInR5cCI6ICJKV1QiDQp9.ew0KICAiZXhwaXJlRGF0ZSI6ICIyMDIzLTA3LTA1VDIxOjI2OjAzKzAwOjAwIiwNCiAgImV4cGlyZUludGVydmFsIjogMzAsDQogICJhZ2VuY3lSZWNObyI6IDYwLA0KICAiYXBwVXNlclJlY05vIjogNjg4NiwNCiAgInVzZXJOYW1lIjogIk1BU1QiLA0KICAiYWxpYXMiOiAiTVNUMSIsDQogICJ0b2tlblJlY05vIjogMzUwMjUxLA0KICAiYXBwTmFtZSI6ICJXZWIgQVBJIiwNCiAgImNsaWVudElQQWRkcmVzcyI6ICI0Ny4yMDguMjMxLjIxNyIsDQogICJhdXRoZW50aWNhdGlvbk1ldGhvZCI6IDENCn0.RYNSGuRK_Xz9AzLS8qavvVjPk35VD0a2gKdUNl6AIlA\"\
   ,\"resultCode\":0,\"resultDescription\":\"Login Successful\"}"
 status: HTTP/1.1 200 OK
 requestHeaders:
-  Authorization: Basic TUFTVDpUcmVzIzA1MjM=
+  Authorization: Basic TUFTVDpUcmVzIzA2Mjk=
   Content-Type: application/json
 responseHeaders:
   Content-Type: application/json; charset=utf-8
