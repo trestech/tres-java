@@ -6,12 +6,12 @@ import java.lang.reflect.Method;
 import java.util.function.Consumer;
 
 /**
- * This annotation will allow things like unit test to tell the context to
+ * This annotation will allow things like unit tests to tell the context to
  * handle certain exceptions differently.  The default behavior is to JVM exit
  * using <code>System.exit(code)</code> on codes 101, 102, 103, and 104.  This
  * annotation will allow you to override that behavior.
  * 
- * This allows tests to fail fast when there's a configuration problem and avoid
+ * This allows tests to fail-fast when there's a configuration problem and avoid
  * locking the users out of the system.  It might also come in handy for certain
  * command-line implementations for the same reason.
  * 
@@ -40,7 +40,7 @@ public @interface ExitOnError {
   int[] exceptCodes () default {};
   
   class Evaluator {
-    public static void ifShouldExit ( int code, Consumer<ExitOnError> consumer ) {
+    public static void ifShouldExit ( int code, Consumer<ExitOnError> action ) {
       ExitOnError classScopeAnnotation = null, annotation = null;
       boolean onlyCodeMatch = false, exceptCodeMatch = false;
       
@@ -63,7 +63,7 @@ public @interface ExitOnError {
             break;
           }
         } catch ( ClassNotFoundException e ) {
-          throw new RuntimeException("Could not inspect for annotations.", e);
+          //throw new RuntimeException("Could not inspect for annotations in " + className + ".", e);
         }
       }
       
@@ -88,7 +88,7 @@ public @interface ExitOnError {
       }
       
       if ( onlyCodeMatch && !exceptCodeMatch ) {
-        consumer.accept(annotation);
+        action.accept(annotation);
       }
     }
   }
